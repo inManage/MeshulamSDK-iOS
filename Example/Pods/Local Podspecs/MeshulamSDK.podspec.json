@@ -1,0 +1,22 @@
+{
+  "name": "MeshulamSDK",
+  "version": "0.1.0",
+  "summary": "A short description of MeshulamSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/amita@inmanage.net/MeshulamSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amita@inmanage.net": "amita@inmanage.net"
+  },
+  "source": {
+    "git": "https://github.com/amita@inmanage.net/MeshulamSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MeshulamSDK/Classes/**/*"
+}
