@@ -6,13 +6,16 @@
 //
 
 import Foundation
+import Alamofire
 
 public class Logger {
     
     public init(){}
     
     public func printLog() {
-        print("Hello")
+        print("Hello")//
+        
+            //fdsf
     }
     
     private func privateMathod() {

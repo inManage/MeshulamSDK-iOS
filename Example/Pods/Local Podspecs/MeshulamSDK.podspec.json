@@ -2,6 +2,8 @@
   "name": "MeshulamSDK",
   "version": "0.1.0",
   "summary": "A short description of MeshulamSDK.",
+  "static_framework": true,
+  "requires_arc": true,
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/amita@inmanage.net/MeshulamSDK",
   "license": {
@@ -16,7 +18,17 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
-  "source_files": "MeshulamSDK/Classes/**/*"
+  "source_files": "MeshulamSDK/Classes/**/*",
+  "xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+    "ENABLE_BITCODE": "YES",
+    "SWIFT_VERSION": "5.0"
+  },
+  "dependencies": {
+    "Alamofire": [
+
+    ]
+  }
 }
