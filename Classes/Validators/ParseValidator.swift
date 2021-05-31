@@ -9,7 +9,7 @@ import Foundation
 
 class ParseValidator: NSObject {
     
-    public class func parseUrlToJson(strUrl: String, andSubString: String) -> [String: Any] {
+    public class func parseUrlToJson(strUrl: String, andSubString: String) -> Dict {
         var stringParseToJson = ""
         let start = strUrl.range(of: andSubString)
         
@@ -27,15 +27,15 @@ class ParseValidator: NSObject {
         let data = Data(strJsonData.utf8)
         do {
             // make sure this JSON is in the format we expect
-            if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+            if let json = try JSONSerialization.jsonObject(with: data, options: []) as? Dict {
                 // try to read out a string array
                 return json
             }
         } catch let error as NSError {
             print("Failed to load: \(error.localizedDescription)")
-            return [String: Any]()
+            return Dict()
         }
-        return [String: Any]()
+        return Dict()
     }
     
     

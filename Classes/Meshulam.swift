@@ -10,8 +10,7 @@ import Foundation
 public class Meshulam {
     
     public init() {
-        StartupManager.shared.callInitSDK { (response) in
-            print(response)
-        }
+        StartupManager.shared.callInitSDK(Dict())
+
     }
 }

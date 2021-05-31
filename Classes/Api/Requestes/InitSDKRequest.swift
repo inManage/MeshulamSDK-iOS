@@ -7,12 +7,17 @@
 
 import Foundation
 
-class InitSDKRequest: BaseRequest {
+public class InitSDKRequest: BaseRequest {
     
-    override func createResponseFromJSONDict(JSONDict: Dictionary<String, Any>) -> BaseOuterResponse? {
+    public override func createResponseFromJSONDict(JSONDict: Dict) -> BaseServerResponse? {
         let response = InitSDKResponse()
-        
-        return  BaseOuterResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
+        return  BaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
     }
     
+    public override var requestName: String {
+        get {
+            return ServerRequests.initSDK
+        }
+    }
 }
+

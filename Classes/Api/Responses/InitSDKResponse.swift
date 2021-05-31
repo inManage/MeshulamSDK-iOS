@@ -11,11 +11,9 @@ class InitSDKResponse: BaseInnerResponse {
     
     var hostURL: String = ""
     
-    override func buildFromJSONDict(JSONDict: [String: Any]) -> BaseInnerResponse {
+    override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
-        
         hostURL = ParseValidator.getStringForKey(key: "hostUrl", JSONDict: JSONDict, defaultValue: "")
-        
         return self
     }
 }
