@@ -9,5 +9,5 @@ import Foundation
 
 public protocol RequestFinishedProtocol : class {
     func requestSucceeded(request:BaseRequest, response:BaseInnerResponse)
-    func requestFailed(request:BaseRequest, response:BaseServerResponse)
+    func requestFailed(request:BaseRequest, response:BaseServerResponse?)
 }

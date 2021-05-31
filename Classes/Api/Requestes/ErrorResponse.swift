@@ -9,7 +9,7 @@ import Foundation
 
 public class ErrorResponse: BaseInnerResponse {
     
-    var message: String?
+    var message: String = ""
     
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)

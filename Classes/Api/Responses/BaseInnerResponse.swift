@@ -9,7 +9,6 @@ import Foundation
 
 public class BaseInnerResponse: NSObject {
     
-    var applicationToken: String = ""
     var id: Int = 0
     
     required override init() {
@@ -17,7 +16,6 @@ public class BaseInnerResponse: NSObject {
     }
     
     @objc @discardableResult dynamic public func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
-        applicationToken = ParseValidator.getStringForKey(key: "applicationToken", JSONDict: JSONDict, defaultValue: "")
         id = ParseValidator.getIntForKey(key: "id", JSONDict: JSONDict, defaultValue: 0)
         return self
     }

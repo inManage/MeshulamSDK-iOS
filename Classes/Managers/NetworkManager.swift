@@ -14,12 +14,16 @@ public class NetworkManager: NSObject {
     
     public static let shared = NetworkManager()
     
-    private var baseURL = "https://plusecure.meshulam.co.il/api/light/iphone/1.0/"
+    public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/"
+    public private(set) var applicationToken: String = ""
+    public private(set) var maxTime : Int = 0
+    public private(set) var startDelay : Int = 0
+    public private(set) var intervalLength: Int = 0
     
     public func sendRequest(_ request: BaseRequest) {
         
-        let headers   : HTTPHeaders      = [HeadersRequest.token: HeadersRequest.inmangaSecure]
-        let urlRequest: String           = "\(baseURL)\(request.requestName)/"
+        let headers   : HTTPHeaders  = [HeadersRequest.token: HeadersRequest.inmangaSecure]
+        let urlRequest: String       = "\(baseURL)\(defaultPath)\(request.requestName)/"
         
         let afRequest = AF.request(urlRequest, method: .post, parameters: request.dictParams, headers: headers).validate()
         LogMsg("Full Path:\(logHelper)\(urlRequest)\nParams:\(logHelper)\(request.dictParams)")
@@ -58,9 +62,11 @@ public class NetworkManager: NSObject {
     
     private func handleAFnetworkingFailure(_ request: BaseRequest) {
         let sendRequestAgain = request.shouldAttemptSendingRequestAgain()
-        if sendRequestAgain {
-            self.perform(#selector(self.sendReqSelector(params:)), with: [ServerRequests.request:request], afterDelay: 0.1)
-        }
+        sendRequestAgain ? handleSendRequestAgain(request) : handleFailureForRequest(request)
+    }
+    
+    private func handleSendRequestAgain(_ request: BaseRequest) {
+        perform(#selector(self.sendReqSelector(params:)), with: [ServerRequests.request:request], afterDelay: 0.1)
     }
     
     private func handleSuccessForRequest(_ request: BaseRequest,_ serverResponse: BaseServerResponse) {
@@ -69,10 +75,18 @@ public class NetworkManager: NSObject {
         }
     }
     
-    private func handleFailureForRequest(_ request: BaseRequest,_ serverResponse: BaseServerResponse) {
+    private func handleFailureForRequest(_ request: BaseRequest,_ serverResponse: BaseServerResponse? = nil) {
         if let delegate = request.requestFinishedDelegate {
-            delegate.requestFailed(request: request, response: serverResponse)
+            delegate.requestFailed(request: request, response: serverResponse ?? nil)
         }
+    }
+    
+    public func fillWithInitSDKResponse(_ response: InitSDKResponse) {
+        baseURL = response.hostURL
+        maxTime = response.maxTime
+        startDelay = response.startDelay
+        intervalLength = response.intervalLength
+        applicationToken = response.applicationToken
     }
 }
 

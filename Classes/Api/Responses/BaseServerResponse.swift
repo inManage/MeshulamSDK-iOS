@@ -52,8 +52,8 @@ public class BaseServerResponse {
             
             baseOuterResponse.errorResponse = errorResponse.buildFromJSONDict(JSONDict: dictError) as? ErrorResponse
 
-            if let message = baseOuterResponse.errorResponse.message {
-                baseOuterResponse.failureMessage = message
+            if !baseOuterResponse.errorResponse.message.isEmpty {
+                baseOuterResponse.failureMessage = baseOuterResponse.errorResponse.message
             }
             
             break

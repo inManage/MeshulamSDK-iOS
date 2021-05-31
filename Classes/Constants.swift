@@ -18,10 +18,15 @@ public class Constants {
 public struct ServerRequests {
     static let request = "request"
     static let initSDK = "initSDK"
+    static let createPaymentProcess = "createPaymentProcess"
 }
 
 public struct ServerParamNames {
     static let udid = "udid"
+    static let applicationToken = "applicationToken"
+    static let pageCode = "pageCode"
+    static let userId = "userId"
+    static let apiKey = "apiKey"
 }
 
 public struct HeadersRequest {
@@ -29,6 +34,13 @@ public struct HeadersRequest {
     static let inmangaSecure = "inmanga_secure"
 }
 
+public struct Error {
+    var id: Int = 0
+    var errorMessage = ""
+}
+
+let apiVersion = "1.0"
+let defaultPath = "api/light/iphone/\(apiVersion)/"
 let logHelper = "\n\t\t"
 
 func LogMsg(_ logMessage: Any) {
