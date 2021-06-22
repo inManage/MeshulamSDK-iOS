@@ -7,67 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00CDB56107106C9FA4F158736800F929 /* CreatePaymentProcessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503D3ED8EEBCAC1E8A99E9A557D9471 /* CreatePaymentProcessRequest.swift */; };
 		013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */; };
 		0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBFC4256A48F45E26B860D38479E52 /* Combine.swift */; };
 		0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */; };
+		0B3A88AE517489DA927A23EE3677AF76 /* BaseInnerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50858A25CBBB2E69C308732607FD1BCB /* BaseInnerResponse.swift */; };
 		1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */; };
-		1333E6225FCCDF48AAD843270A2D9C86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 		19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */; };
+		1A7174E4835912B54B27E9E3F6EF23A0 /* InitSDKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDDD24E59C4CDD99CD18A72BE355EA6 /* InitSDKRequest.swift */; };
+		1BFBAECE8155EC10179368880ECE0F04 /* InitSDKResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F736A90953C60C476869AEC5333417 /* InitSDKResponse.swift */; };
+		202C54AB53E29EBDBEA38833BFB33019 /* RequestFinishedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4180B89CF01F550E30C5247DA19C1 /* RequestFinishedProtocol.swift */; };
 		212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A51515830AB9FE94E01DF6F48146153 /* StringEncoding+Alamofire.swift */; };
 		218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D45A2AF061C99B2355F19EC47243D9 /* Protected.swift */; };
+		220D0DF8B197665EA9FFDC7F944BAD76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991DCE6CDED148976C635FAE75C34E0 /* Constants.swift */; };
 		27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABD9F54297FF27309F1F8A34F99417C /* DispatchQueue+Alamofire.swift */; };
 		381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72312136F76CCB5AC50BCDD37ED4A2 /* SessionDelegate.swift */; };
-		4052063FFB1E0F46BD3F72DCF5DCE28C /* MeshulamSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF5D373011503A529E4FDC6BC54010EA /* MeshulamSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */; };
 		476D5F33E25386C60D6BD75C4FA97C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */; };
+		49209DB5C5F5AA59F420E3CD82A1D004 /* CreatePaymentProcessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32826581B759D67E7D4E09BDDB4CED3 /* CreatePaymentProcessResponse.swift */; };
 		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */; };
-		5F9B4268C79E284C90A42C9EAF2ABB3D /* Pods-MeshulamSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D482297679AF614D1FD03D6C29902432 /* Pods-MeshulamSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CAF6FFF24628E114BBD1D9938259D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		5563D23D513C84E0B956A47CF1C60487 /* StartupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0825FCEA5059709FAE666370455213 /* StartupManager.swift */; };
+		5C9DB759A5DE9313C98E0E1CD04AA650 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B67C5A0FD22E99AF8DB5B68247A5A /* NetworkManager.swift */; };
+		5F9B4268C79E284C90A42C9EAF2ABB3D /* Pods-MeshulamSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1C3DFEC5FF8057CD6312264248B2DE /* Pods-MeshulamSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC45C560942C5BCAB401419728808D3 /* EventMonitor.swift */; };
 		666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB40D0E4136A2EBA646F9A9D0DA652 /* RedirectHandler.swift */; };
 		66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673CB7AF23C7E1475678C8CCC286CF41 /* Result+Alamofire.swift */; };
-		6752D8D56FE997DDB8A9D09907321A48 /* MeshulamSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2607F7495F66B88648F49D5C9075BF9C /* MeshulamSDK-dummy.m */; };
 		6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591D5844289F02F52985F30FFDA6BB5 /* Session.swift */; };
 		6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B8687B00F57762F34D3282826817C5 /* RequestTaskMap.swift */; };
-		6DFDAAAF3FB261939755605729355D38 /* Pods-MeshulamSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E18E2BF9A796B4CD619F7E2DD2463D75 /* Pods-MeshulamSDK_Tests-dummy.m */; };
+		6DFDAAAF3FB261939755605729355D38 /* Pods-MeshulamSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94657E4ED96FC7F89C2DE5E6720C72F0 /* Pods-MeshulamSDK_Tests-dummy.m */; };
 		6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */; };
+		6EF0C6EAFE2FD3F7D408E909449DB2D6 /* NSObjectExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8714124E322B16EDEAF856962373C4 /* NSObjectExtenstion.swift */; };
 		72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */; };
 		7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */; };
-		8D4FEBAC2663A3D60089F37D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FEBA626639E350089F37D /* Constants.swift */; };
-		8D4FEBE82663C42F0089F37D /* RequestFinishedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FEBDE2663C3B50089F37D /* RequestFinishedProtocol.swift */; };
-		8D4FEC22266503FD0089F37D /* MeshulamDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FEC21266503FD0089F37D /* MeshulamDelegate.swift */; };
-		8D4FEC2A26652E760089F37D /* PaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FEC2926652E750089F37D /* PaymentManager.swift */; };
-		8D4FEC4426652EC00089F37D /* CreatePaymentProcessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FEC4326652EC00089F37D /* CreatePaymentProcessRequest.swift */; };
-		8D4FEC4A26652F890089F37D /* CreatePaymentProcessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FEC4926652F890089F37D /* CreatePaymentProcessResponse.swift */; };
-		8D7392D5265E7315004047CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7392D4265E7315004047CF /* NetworkManager.swift */; };
-		8D73931D265E7C0A004047CF /* Meshulam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73931C265E7C0A004047CF /* Meshulam.swift */; };
-		8D739338265E82E9004047CF /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D739337265E82E9004047CF /* BaseRequest.swift */; };
-		8D739345265E8653004047CF /* InitSDKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D739344265E8653004047CF /* InitSDKRequest.swift */; };
-		8D73934B265E86FF004047CF /* BaseServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73934A265E86FF004047CF /* BaseServerResponse.swift */; };
-		8D739351265E876E004047CF /* InitSDKResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D739350265E876E004047CF /* InitSDKResponse.swift */; };
-		8D73935B265E8DEF004047CF /* BaseInnerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73935A265E8DEF004047CF /* BaseInnerResponse.swift */; };
-		8D739366265E9073004047CF /* ParseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D739365265E9073004047CF /* ParseValidator.swift */; };
-		8D739370265E9369004047CF /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73936F265E9369004047CF /* ErrorResponse.swift */; };
-		8D739377265E95EC004047CF /* StartupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D739376265E95EC004047CF /* StartupManager.swift */; };
-		8D84DECB2681D55F00A2BA17 /* NSObjectExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84DECA2681D55F00A2BA17 /* NSObjectExtenstion.swift */; };
-		8DE024F52681E7D100767A00 /* BitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE024F32681E7D100767A00 /* BitViewController.swift */; };
-		8DE024F62681E7D100767A00 /* BitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE024F42681E7D100767A00 /* BitViewController.xib */; };
 		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */; };
 		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */; };
+		94193EE8975990A34217AF78FF24A19A /* MainS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD861B0D8ED2514D40D26C326CE47B9 /* MainS.storyboard */; };
+		9A8F00AF3FF509A87773B5B566300AB3 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43DDA4FD066218131BB0C484E09A80 /* ErrorResponse.swift */; };
 		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */; };
 		9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */; };
-		A702B3977BE16994E40DBE3FEE8E6CE6 /* Pods-MeshulamSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26CC43F7403B30AE628BA1C07A099148 /* Pods-MeshulamSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A702B3977BE16994E40DBE3FEE8E6CE6 /* Pods-MeshulamSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A8CA6868BA868801A1AE8CD915DE0D /* Pods-MeshulamSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9C7B29D4878F1690BBE3F8195CF0313 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */; };
+		AB5C1332A47CE678D38E77670F960A7A /* Meshulam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBC8141AEFD75D51FF027684ED8DD3 /* Meshulam.swift */; };
 		ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D233027C8491F55B2473FCDA12389 /* CachedResponseHandler.swift */; };
+		ACEE48F4EDEBE364E33EA1E466BBD184 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784556A0C0F86B3778869DC424DB6A90 /* BaseRequest.swift */; };
+		AFFDF11683DA3C768F7E7DB21AB56514 /* MeshulamSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 790E74547805FE72BDAB6BE0B0142976 /* MeshulamSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B01B2654EF29C73D08120F383EC3ED36 /* BitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0FA24F6103CDDEE450A0D5EA29E3 /* BitViewController.swift */; };
+		B7780888E1C47CEAC075CAA8C9E02B8D /* MeshulamSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 210E4783C96B36398D7DFD594934292A /* MeshulamSDK-dummy.m */; };
+		BFF39DD7B46B28FC0E20B13C9E397CCA /* PaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF85D94345FCF731BF2A82AEC70D92 /* PaymentManager.swift */; };
 		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */; };
 		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */; };
-		C5619734A6EFBC6463D166D1DF70B82B /* Pods-MeshulamSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770F8404CC6782E161572A616DFFD83 /* Pods-MeshulamSDK_Example-dummy.m */; };
+		C5619734A6EFBC6463D166D1DF70B82B /* Pods-MeshulamSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D883A3C59F3F8582DEE084AEEDB65845 /* Pods-MeshulamSDK_Example-dummy.m */; };
 		C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC11D87B8E53578044EA373E7DE6642 /* Alamofire-dummy.m */; };
+		CAABC838FB5348EA185E518B11664889 /* ParseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A00E43C499016E621B65F9B19BA72 /* ParseValidator.swift */; };
 		CFD760217445F04B4D1A915DD84A2139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 		D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BB5063650D66E661FD979273F90078 /* MultipartUpload.swift */; };
 		D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */; };
 		D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F2B90B6F80D8F30747B3E178F5528F /* URLEncodedFormEncoder.swift */; };
+		D37925EC3E95D9A047AE1EFC5B31B94E /* MeshulamDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9629F729091CD068939A9BD3FE8F6A80 /* MeshulamDelegate.swift */; };
+		D50AD65DA03007C41DE0D687EC21463D /* BaseServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1D6630496F3E9BFFDA92E4769E03D5 /* BaseServerResponse.swift */; };
 		D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062C7841BFC1EEBD8A094A3CA60AEADA /* URLRequest+Alamofire.swift */; };
 		DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA36ADD8B0E94CE139C28448821E13 /* AuthenticationInterceptor.swift */; };
 		DCDA2BC885B3E0A6A9949DE61F3E6D18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
@@ -77,131 +77,132 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		31DE42DEF3192B48E8E096BD205567A9 /* PBXContainerItemProxy */ = {
+		2D9720F071706E75BF95DCA18D9749F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 11A29FD9D8AE06C53CB25F0B8AA20DBD;
-			remoteInfo = MeshulamSDK;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
 		};
-		97912354B25E8EF7CE0D7D2F10E5738C /* PBXContainerItemProxy */ = {
+		B437CF663F33E294514E7F6FD9F5299A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 16FE490789A2B1758E422A712A15C863;
 			remoteInfo = "Pods-MeshulamSDK_Example";
 		};
-		BC0964FBD039C6A0150216D756DC0728 /* PBXContainerItemProxy */ = {
+		C9262F6E6D46A178D2456AA29705833B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		FAEF8032CA4C327EFE57114F3CC83322 /* PBXContainerItemProxy */ = {
+		CD490CCE51C2222ABFE6D8A9197EA984 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
+			remoteGlobalIDString = 11A29FD9D8AE06C53CB25F0B8AA20DBD;
+			remoteInfo = MeshulamSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04824DC98C91399D58094590D1C50EAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		000F8CFD01A3AF72DC36676A8932FF4B /* Pods-MeshulamSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		062C7841BFC1EEBD8A094A3CA60AEADA /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		0DDF08C0568294DB7181591A2C58EAE9 /* MeshulamSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.release.xcconfig; sourceTree = "<group>"; };
+		0BFBC8141AEFD75D51FF027684ED8DD3 /* Meshulam.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Meshulam.swift; path = MeshulamSDK/Classes/Meshulam.swift; sourceTree = "<group>"; };
 		0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		0EC45C560942C5BCAB401419728808D3 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
-		1669E693D88D425FA74FECB627EC6FB2 /* Pods-MeshulamSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		10EFEABBEA74DF3B77A972054EBD087D /* Pods-MeshulamSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		20097F794E1A1791AB97EBE230264E61 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		2607F7495F66B88648F49D5C9075BF9C /* MeshulamSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MeshulamSDK-dummy.m"; sourceTree = "<group>"; };
-		26CC43F7403B30AE628BA1C07A099148 /* Pods-MeshulamSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		210E4783C96B36398D7DFD594934292A /* MeshulamSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MeshulamSDK-dummy.m"; sourceTree = "<group>"; };
+		22B2345347C390CBAA9306C51B9C847F /* MeshulamSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.release.xcconfig; sourceTree = "<group>"; };
+		2655CFFF703373D0F4711B53E5118DB5 /* Pods-MeshulamSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		27A8CA6868BA868801A1AE8CD915DE0D /* Pods-MeshulamSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		2991DCE6CDED148976C635FAE75C34E0 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = MeshulamSDK/Classes/Constants.swift; sourceTree = "<group>"; };
 		29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		2A7A0F88593A95D9D70AEA69B1C3F8B3 /* MeshulamSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MeshulamSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2B0F05A3DBDE8E8AD6A8511F035D63D3 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		2F95CB9BBED31531FD677AD0DFA11477 /* MeshulamSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MeshulamSDK-Info.plist"; sourceTree = "<group>"; };
 		333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		38D96F79A3F6A0C3E89B73BD7B264DB6 /* Pods-MeshulamSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3C4707B92782BA31D4EDB4EB2EBB55EF /* Pods_MeshulamSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3646E88CECA8A839E92CD9DD3C30A6D6 /* MeshulamSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MeshulamSDK-prefix.pch"; sourceTree = "<group>"; };
+		3A8714124E322B16EDEAF856962373C4 /* NSObjectExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSObjectExtenstion.swift; sourceTree = "<group>"; };
+		3C4707B92782BA31D4EDB4EB2EBB55EF /* Pods_MeshulamSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MeshulamSDK_Tests.framework; path = "Pods-MeshulamSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EDDD24E59C4CDD99CD18A72BE355EA6 /* InitSDKRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitSDKRequest.swift; sourceTree = "<group>"; };
 		401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		40D85E4068F86D7D1E6FDA53BD4CA124 /* Pods-MeshulamSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MeshulamSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4368A7B672820104729EC788E6FA3FFA /* Pods-MeshulamSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		4591D5844289F02F52985F30FFDA6BB5 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
 		4ABD9F54297FF27309F1F8A34F99417C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		4C70DE933FBC23BD91760C41D86B6BFE /* Pods-MeshulamSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4D3E0E1E34DD4394C6023B622C262222 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		4E0825FCEA5059709FAE666370455213 /* StartupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartupManager.swift; sourceTree = "<group>"; };
+		50858A25CBBB2E69C308732607FD1BCB /* BaseInnerResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseInnerResponse.swift; sourceTree = "<group>"; };
 		51BB5063650D66E661FD979273F90078 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		51D45A2AF061C99B2355F19EC47243D9 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		5A51515830AB9FE94E01DF6F48146153 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F2B90B6F80D8F30747B3E178F5528F /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
-		654A33F6237F3DF4D23D96F66E59B6C4 /* Pods-MeshulamSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-Info.plist"; sourceTree = "<group>"; };
-		658FE25F5340BD57E747C025E9B116F3 /* MeshulamSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MeshulamSDK.modulemap; sourceTree = "<group>"; };
 		673CB7AF23C7E1475678C8CCC286CF41 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
-		6770F8404CC6782E161572A616DFFD83 /* Pods-MeshulamSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		6B52770345AA88EDE7AA86BA9E8092C6 /* Pods-MeshulamSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		6E29AADB15AC3FD344D80AF297661780 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		7266AE33421F12809588FD206CE89AB0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7372E73D748B3BC34954E24BD058EA15 /* Pods-MeshulamSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		784556A0C0F86B3778869DC424DB6A90 /* BaseRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		790E74547805FE72BDAB6BE0B0142976 /* MeshulamSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MeshulamSDK-umbrella.h"; sourceTree = "<group>"; };
 		79BFAE4F0928F95479DE70C637654FC5 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		79EB40D0E4136A2EBA646F9A9D0DA652 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
-		7D2253964FB21DFCBBFC9BE8E8B45960 /* Pods_MeshulamSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80FC2449B877CF3EA17B84FD7B624574 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82E0680C129F05B90E07FE802485CDB3 /* Pods-MeshulamSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D2253964FB21DFCBBFC9BE8E8B45960 /* Pods_MeshulamSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MeshulamSDK_Example.framework; path = "Pods-MeshulamSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FC2449B877CF3EA17B84FD7B624574 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MeshulamSDK.framework; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		84B14ACFFB6A91762B582B46A3466A3F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		8D4FEBA626639E350089F37D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		8D4FEBDE2663C3B50089F37D /* RequestFinishedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFinishedProtocol.swift; sourceTree = "<group>"; };
-		8D4FEC21266503FD0089F37D /* MeshulamDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshulamDelegate.swift; sourceTree = "<group>"; };
-		8D4FEC2926652E750089F37D /* PaymentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentManager.swift; sourceTree = "<group>"; };
-		8D4FEC4326652EC00089F37D /* CreatePaymentProcessRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePaymentProcessRequest.swift; sourceTree = "<group>"; };
-		8D4FEC4926652F890089F37D /* CreatePaymentProcessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePaymentProcessResponse.swift; sourceTree = "<group>"; };
-		8D7392D4265E7315004047CF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		8D73931C265E7C0A004047CF /* Meshulam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meshulam.swift; sourceTree = "<group>"; };
-		8D739337265E82E9004047CF /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
-		8D739344265E8653004047CF /* InitSDKRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitSDKRequest.swift; sourceTree = "<group>"; };
-		8D73934A265E86FF004047CF /* BaseServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServerResponse.swift; sourceTree = "<group>"; };
-		8D739350265E876E004047CF /* InitSDKResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitSDKResponse.swift; sourceTree = "<group>"; };
-		8D73935A265E8DEF004047CF /* BaseInnerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInnerResponse.swift; sourceTree = "<group>"; };
-		8D739365265E9073004047CF /* ParseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseValidator.swift; sourceTree = "<group>"; };
-		8D73936F265E9369004047CF /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		8D739376265E95EC004047CF /* StartupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupManager.swift; sourceTree = "<group>"; };
-		8D84DECA2681D55F00A2BA17 /* NSObjectExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtenstion.swift; sourceTree = "<group>"; };
-		8DE024F32681E7D100767A00 /* BitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitViewController.swift; sourceTree = "<group>"; };
-		8DE024F42681E7D100767A00 /* BitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BitViewController.xib; sourceTree = "<group>"; };
-		919FB3BDC1EC963C8ED3F9085D4CFDBE /* Pods-MeshulamSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		92A4180B89CF01F550E30C5247DA19C1 /* RequestFinishedProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestFinishedProtocol.swift; sourceTree = "<group>"; };
+		94657E4ED96FC7F89C2DE5E6720C72F0 /* Pods-MeshulamSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		96148E2BC8A360C791152C2E3011A697 /* MeshulamSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MeshulamSDK.modulemap; sourceTree = "<group>"; };
+		9629F729091CD068939A9BD3FE8F6A80 /* MeshulamDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamDelegate.swift; sourceTree = "<group>"; };
 		970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4153404C4C0A47E701390CEDAB4A093 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
-		A54D8ECBA8780CED2B452094ABE35C7F /* Pods-MeshulamSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MeshulamSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		A8F7C591D25DF4BBF4E06FB24313DF94 /* MeshulamSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MeshulamSDK-prefix.pch"; sourceTree = "<group>"; };
-		AF076CBB920B52E3FD1B7DD7CA206C37 /* MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.debug.xcconfig; sourceTree = "<group>"; };
-		B0824493ECA6CC129C4C552CDAB023E6 /* MeshulamSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MeshulamSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8CFDCF6E3BF21D7D75F1244405A432E /* Pods-MeshulamSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ABFB9E97B110DFA09568182600CB5C4A /* Pods-MeshulamSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Example.modulemap"; sourceTree = "<group>"; };
 		B0EBFC4256A48F45E26B860D38479E52 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		B32826581B759D67E7D4E09BDDB4CED3 /* CreatePaymentProcessResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreatePaymentProcessResponse.swift; sourceTree = "<group>"; };
 		B4B8687B00F57762F34D3282826817C5 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		B5DA36ADD8B0E94CE139C28448821E13 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
-		B8D39139445E86EEF9C8A21CFD419C21 /* Pods-MeshulamSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B8FF85D94345FCF731BF2A82AEC70D92 /* PaymentManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentManager.swift; sourceTree = "<group>"; };
 		BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		C3F1C3E00BA9CD193B483DE3EAE65601 /* Pods-MeshulamSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Example.modulemap"; sourceTree = "<group>"; };
-		C69DFE77F09E4B45FBA2EEB21BFAD4FF /* Pods-MeshulamSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Tests.modulemap"; sourceTree = "<group>"; };
-		CF5D373011503A529E4FDC6BC54010EA /* MeshulamSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MeshulamSDK-umbrella.h"; sourceTree = "<group>"; };
-		D0E820C7DE69A9B0754701A374AB8E43 /* Pods-MeshulamSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD66884D975D4A1B507A8DBA846EB623 /* Pods-MeshulamSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MeshulamSDK_Example-resources.sh"; sourceTree = "<group>"; };
+		C08590278A8AE9CFACA18F4044BF41A7 /* Pods-MeshulamSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C85A91CA67CE5AA9061948337DFCB04F /* MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.debug.xcconfig; sourceTree = "<group>"; };
+		CB1D6630496F3E9BFFDA92E4769E03D5 /* BaseServerResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseServerResponse.swift; sourceTree = "<group>"; };
+		CB43DDA4FD066218131BB0C484E09A80 /* ErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		D12A0FA24F6103CDDEE450A0D5EA29E3 /* BitViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BitViewController.swift; path = MeshulamSDK/Classes/BitViewController.swift; sourceTree = "<group>"; };
 		D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		D3A62CBA0DCCB9BEDFD02F5938FF77DF /* Pods-MeshulamSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D482297679AF614D1FD03D6C29902432 /* Pods-MeshulamSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D883A3C59F3F8582DEE084AEEDB65845 /* Pods-MeshulamSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		D8F736A90953C60C476869AEC5333417 /* InitSDKResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitSDKResponse.swift; sourceTree = "<group>"; };
 		DA4D233027C8491F55B2473FCDA12389 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		DC1C3DFEC5FF8057CD6312264248B2DE /* Pods-MeshulamSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		DFC11D87B8E53578044EA373E7DE6642 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		E18E2BF9A796B4CD619F7E2DD2463D75 /* Pods-MeshulamSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		E7044054B1FC8B7005A57AA88C7940F2 /* MeshulamSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MeshulamSDK-Info.plist"; sourceTree = "<group>"; };
+		E503D3ED8EEBCAC1E8A99E9A557D9471 /* CreatePaymentProcessRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreatePaymentProcessRequest.swift; sourceTree = "<group>"; };
+		E6198FFCB7A90A4A6EBCB371DF8707A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E850E4E30AF179ED2D04F635D31FE21D /* Pods-MeshulamSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EED0773077D7CC2E68E0D01063750908 /* Pods-MeshulamSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F093E3C8F75049F13A31C751661B844A /* Pods-MeshulamSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		F71BBCEF1586B8C48F6C090283FD70AA /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		F76B67C5A0FD22E99AF8DB5B68247A5A /* NetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F9C2838BACDE921F92698638469BF2CC /* Pods-MeshulamSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		FCD861B0D8ED2514D40D26C326CE47B9 /* MainS.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = MainS.storyboard; path = MeshulamSDK/Resources/MainS.storyboard; sourceTree = "<group>"; };
 		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FF6A00E43C499016E621B65F9B19BA72 /* ParseValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParseValidator.swift; sourceTree = "<group>"; };
 		FF72312136F76CCB5AC50BCDD37ED4A2 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,11 +215,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5962D2072501DB2BBFCC9468703E7C0E /* Frameworks */ = {
+		5410ACCDB8C8936A186F3A679A3CCD68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1333E6225FCCDF48AAD843270A2D9C86 /* Foundation.framework in Frameworks */,
+				4CAF6FFF24628E114BBD1D9938259D8E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,32 +243,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A45926898CE779ED5E3DBCD94DB6C02 /* Pods-MeshulamSDK_Example */ = {
+		0F7B242E3A2768224979EEEF16C4873E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C3F1C3E00BA9CD193B483DE3EAE65601 /* Pods-MeshulamSDK_Example.modulemap */,
-				D0E820C7DE69A9B0754701A374AB8E43 /* Pods-MeshulamSDK_Example-acknowledgements.markdown */,
-				1669E693D88D425FA74FECB627EC6FB2 /* Pods-MeshulamSDK_Example-acknowledgements.plist */,
-				6770F8404CC6782E161572A616DFFD83 /* Pods-MeshulamSDK_Example-dummy.m */,
-				A54D8ECBA8780CED2B452094ABE35C7F /* Pods-MeshulamSDK_Example-frameworks.sh */,
-				6B52770345AA88EDE7AA86BA9E8092C6 /* Pods-MeshulamSDK_Example-Info.plist */,
-				26CC43F7403B30AE628BA1C07A099148 /* Pods-MeshulamSDK_Example-umbrella.h */,
-				D3A62CBA0DCCB9BEDFD02F5938FF77DF /* Pods-MeshulamSDK_Example.debug.xcconfig */,
-				B8D39139445E86EEF9C8A21CFD419C21 /* Pods-MeshulamSDK_Example.release.xcconfig */,
+				C152E9DF46C177330D0E2B4E3FC639CD /* MeshulamSDK */,
 			);
-			name = "Pods-MeshulamSDK_Example";
-			path = "Target Support Files/Pods-MeshulamSDK_Example";
-			sourceTree = "<group>";
-		};
-		0D63F3E5672C93B9F9BF143E670610D8 /* MeshulamSDK */ = {
-			isa = PBXGroup;
-			children = (
-				8D73932A265E8209004047CF /* Classes */,
-				443A2ECE1C604DFA4F3C19011D623926 /* Pod */,
-				E04E863A590C6736FFE4E8E649B2235C /* Support Files */,
-			);
-			name = MeshulamSDK;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
@@ -278,20 +259,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3ECCC8965F15A5034EA8D5032AE57ECD /* Development Pods */ = {
+		28BCF862CD728A6435132DC0DFCE46F8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D63F3E5672C93B9F9BF143E670610D8 /* MeshulamSDK */,
+				96148E2BC8A360C791152C2E3011A697 /* MeshulamSDK.modulemap */,
+				210E4783C96B36398D7DFD594934292A /* MeshulamSDK-dummy.m */,
+				2F95CB9BBED31531FD677AD0DFA11477 /* MeshulamSDK-Info.plist */,
+				3646E88CECA8A839E92CD9DD3C30A6D6 /* MeshulamSDK-prefix.pch */,
+				790E74547805FE72BDAB6BE0B0142976 /* MeshulamSDK-umbrella.h */,
+				C85A91CA67CE5AA9061948337DFCB04F /* MeshulamSDK.debug.xcconfig */,
+				22B2345347C390CBAA9306C51B9C847F /* MeshulamSDK.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MeshulamSDK";
 			sourceTree = "<group>";
 		};
-		443A2ECE1C604DFA4F3C19011D623926 /* Pod */ = {
+		2E4F91E24FC51312421C7D199E7DD643 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				7266AE33421F12809588FD206CE89AB0 /* LICENSE */,
-				B0824493ECA6CC129C4C552CDAB023E6 /* MeshulamSDK.podspec */,
-				04824DC98C91399D58094590D1C50EAC /* README.md */,
+				7C50A9EAC1C8D2D4450EFB5AB3FD8401 /* Requestes */,
+				5E7A2F342C8977EE0AFD570CC86CC76E /* Responses */,
+			);
+			name = Api;
+			path = MeshulamSDK/Classes/Api;
+			sourceTree = "<group>";
+		};
+		42EEF18DB28A68E0C5E20F38697144D8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6E29AADB15AC3FD344D80AF297661780 /* LICENSE */,
+				2A7A0F88593A95D9D70AEA69B1C3F8B3 /* MeshulamSDK.podspec */,
+				E6198FFCB7A90A4A6EBCB371DF8707A8 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -311,6 +309,27 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
+		5E7A2F342C8977EE0AFD570CC86CC76E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				50858A25CBBB2E69C308732607FD1BCB /* BaseInnerResponse.swift */,
+				CB1D6630496F3E9BFFDA92E4769E03D5 /* BaseServerResponse.swift */,
+				B32826581B759D67E7D4E09BDDB4CED3 /* CreatePaymentProcessResponse.swift */,
+				D8F736A90953C60C476869AEC5333417 /* InitSDKResponse.swift */,
+			);
+			name = Responses;
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		5F76C4F0195120DDB45CC611C29F8E8E /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				3A8714124E322B16EDEAF856962373C4 /* NSObjectExtenstion.swift */,
+			);
+			name = Extenstions;
+			path = MeshulamSDK/Classes/Extenstions;
+			sourceTree = "<group>";
+		};
 		61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +337,16 @@
 				FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		6690846E33E92F6ED3DF13644C914F0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9629F729091CD068939A9BD3FE8F6A80 /* MeshulamDelegate.swift */,
+				92A4180B89CF01F550E30C5247DA19C1 /* RequestFinishedProtocol.swift */,
+			);
+			name = Protocols;
+			path = MeshulamSDK/Classes/Protocols;
 			sourceTree = "<group>";
 		};
 		6FF97FACCA57A9A7BC9912B94BE14E47 /* Alamofire */ = {
@@ -360,89 +389,74 @@
 				20097F794E1A1791AB97EBE230264E61 /* Validation.swift */,
 				5A6F22EC0F5633257B85B6E660A2165F /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		8D4FEBDD2663C39F0089F37D /* Protocols */ = {
+		7C50A9EAC1C8D2D4450EFB5AB3FD8401 /* Requestes */ = {
 			isa = PBXGroup;
 			children = (
-				8D4FEBDE2663C3B50089F37D /* RequestFinishedProtocol.swift */,
-				8D4FEC21266503FD0089F37D /* MeshulamDelegate.swift */,
+				784556A0C0F86B3778869DC424DB6A90 /* BaseRequest.swift */,
+				E503D3ED8EEBCAC1E8A99E9A557D9471 /* CreatePaymentProcessRequest.swift */,
+				CB43DDA4FD066218131BB0C484E09A80 /* ErrorResponse.swift */,
+				3EDDD24E59C4CDD99CD18A72BE355EA6 /* InitSDKRequest.swift */,
 			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		8D73932A265E8209004047CF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8DE024F32681E7D100767A00 /* BitViewController.swift */,
-				8DE024F42681E7D100767A00 /* BitViewController.xib */,
-				8D73931C265E7C0A004047CF /* Meshulam.swift */,
-				8D4FEBA626639E350089F37D /* Constants.swift */,
-				8D84DEC92681D54500A2BA17 /* Extenstions */,
-				8D4FEBDD2663C39F0089F37D /* Protocols */,
-				8D739375265E95A7004047CF /* Managers */,
-				8D739364265E9056004047CF /* Validators */,
-				8D73933D265E851D004047CF /* Api */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		8D73933D265E851D004047CF /* Api */ = {
-			isa = PBXGroup;
-			children = (
-				8D73933F265E8530004047CF /* Responses */,
-				8D73933E265E8527004047CF /* Requestes */,
-			);
-			path = Api;
-			sourceTree = "<group>";
-		};
-		8D73933E265E8527004047CF /* Requestes */ = {
-			isa = PBXGroup;
-			children = (
-				8D739337265E82E9004047CF /* BaseRequest.swift */,
-				8D739344265E8653004047CF /* InitSDKRequest.swift */,
-				8D4FEC4326652EC00089F37D /* CreatePaymentProcessRequest.swift */,
-				8D73936F265E9369004047CF /* ErrorResponse.swift */,
-			);
+			name = Requestes;
 			path = Requestes;
 			sourceTree = "<group>";
 		};
-		8D73933F265E8530004047CF /* Responses */ = {
+		8D589F0B58E3BF3F9FBF675611C15180 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				8D73934A265E86FF004047CF /* BaseServerResponse.swift */,
-				8D73935A265E8DEF004047CF /* BaseInnerResponse.swift */,
-				8D739350265E876E004047CF /* InitSDKResponse.swift */,
-				8D4FEC4926652F890089F37D /* CreatePaymentProcessResponse.swift */,
+				F76B67C5A0FD22E99AF8DB5B68247A5A /* NetworkManager.swift */,
+				B8FF85D94345FCF731BF2A82AEC70D92 /* PaymentManager.swift */,
+				4E0825FCEA5059709FAE666370455213 /* StartupManager.swift */,
 			);
-			path = Responses;
+			name = Managers;
+			path = MeshulamSDK/Classes/Managers;
 			sourceTree = "<group>";
 		};
-		8D739364265E9056004047CF /* Validators */ = {
+		91B849B54486C4E3441D697BDC3BF580 /* Pods-MeshulamSDK_Example */ = {
 			isa = PBXGroup;
 			children = (
-				8D739365265E9073004047CF /* ParseValidator.swift */,
+				ABFB9E97B110DFA09568182600CB5C4A /* Pods-MeshulamSDK_Example.modulemap */,
+				C08590278A8AE9CFACA18F4044BF41A7 /* Pods-MeshulamSDK_Example-acknowledgements.markdown */,
+				F9C2838BACDE921F92698638469BF2CC /* Pods-MeshulamSDK_Example-acknowledgements.plist */,
+				D883A3C59F3F8582DEE084AEEDB65845 /* Pods-MeshulamSDK_Example-dummy.m */,
+				40D85E4068F86D7D1E6FDA53BD4CA124 /* Pods-MeshulamSDK_Example-frameworks.sh */,
+				2655CFFF703373D0F4711B53E5118DB5 /* Pods-MeshulamSDK_Example-Info.plist */,
+				BD66884D975D4A1B507A8DBA846EB623 /* Pods-MeshulamSDK_Example-resources.sh */,
+				27A8CA6868BA868801A1AE8CD915DE0D /* Pods-MeshulamSDK_Example-umbrella.h */,
+				E850E4E30AF179ED2D04F635D31FE21D /* Pods-MeshulamSDK_Example.debug.xcconfig */,
+				4368A7B672820104729EC788E6FA3FFA /* Pods-MeshulamSDK_Example.release.xcconfig */,
 			);
-			path = Validators;
+			name = "Pods-MeshulamSDK_Example";
+			path = "Target Support Files/Pods-MeshulamSDK_Example";
 			sourceTree = "<group>";
 		};
-		8D739375265E95A7004047CF /* Managers */ = {
+		97218321739A5A7B9B4D982C6E9B6E81 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D7392D4265E7315004047CF /* NetworkManager.swift */,
-				8D739376265E95EC004047CF /* StartupManager.swift */,
-				8D4FEC2926652E750089F37D /* PaymentManager.swift */,
+				91B849B54486C4E3441D697BDC3BF580 /* Pods-MeshulamSDK_Example */,
+				AE8D359F24545422ED56D75D4B0BA66E /* Pods-MeshulamSDK_Tests */,
 			);
-			path = Managers;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8D84DEC92681D54500A2BA17 /* Extenstions */ = {
+		AE8D359F24545422ED56D75D4B0BA66E /* Pods-MeshulamSDK_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8D84DECA2681D55F00A2BA17 /* NSObjectExtenstion.swift */,
+				000F8CFD01A3AF72DC36676A8932FF4B /* Pods-MeshulamSDK_Tests.modulemap */,
+				F093E3C8F75049F13A31C751661B844A /* Pods-MeshulamSDK_Tests-acknowledgements.markdown */,
+				10EFEABBEA74DF3B77A972054EBD087D /* Pods-MeshulamSDK_Tests-acknowledgements.plist */,
+				94657E4ED96FC7F89C2DE5E6720C72F0 /* Pods-MeshulamSDK_Tests-dummy.m */,
+				7372E73D748B3BC34954E24BD058EA15 /* Pods-MeshulamSDK_Tests-Info.plist */,
+				DC1C3DFEC5FF8057CD6312264248B2DE /* Pods-MeshulamSDK_Tests-umbrella.h */,
+				EED0773077D7CC2E68E0D01063750908 /* Pods-MeshulamSDK_Tests.debug.xcconfig */,
+				A8CFDCF6E3BF21D7D75F1244405A432E /* Pods-MeshulamSDK_Tests.release.xcconfig */,
 			);
-			path = Extenstions;
+			name = "Pods-MeshulamSDK_Tests";
+			path = "Target Support Files/Pods-MeshulamSDK_Tests";
 			sourceTree = "<group>";
 		};
 		BE22266354A038E71E331F961EF16055 /* Products */ = {
@@ -456,15 +470,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C152E9DF46C177330D0E2B4E3FC639CD /* MeshulamSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D12A0FA24F6103CDDEE450A0D5EA29E3 /* BitViewController.swift */,
+				2991DCE6CDED148976C635FAE75C34E0 /* Constants.swift */,
+				FCD861B0D8ED2514D40D26C326CE47B9 /* MainS.storyboard */,
+				0BFBC8141AEFD75D51FF027684ED8DD3 /* Meshulam.swift */,
+				2E4F91E24FC51312421C7D199E7DD643 /* Api */,
+				5F76C4F0195120DDB45CC611C29F8E8E /* Extenstions */,
+				8D589F0B58E3BF3F9FBF675611C15180 /* Managers */,
+				42EEF18DB28A68E0C5E20F38697144D8 /* Pod */,
+				6690846E33E92F6ED3DF13644C914F0D /* Protocols */,
+				28BCF862CD728A6435132DC0DFCE46F8 /* Support Files */,
+				D8F5A8226BE82EB3F0052FECDEE01DD9 /* Validators */,
+			);
+			name = MeshulamSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				3ECCC8965F15A5034EA8D5032AE57ECD /* Development Pods */,
+				0F7B242E3A2768224979EEEF16C4873E /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				D6535AE6278B88B90F3A376D1347504F /* Pods */,
 				BE22266354A038E71E331F961EF16055 /* Products */,
-				E8650C13E82180692763523FA2E4C3EA /* Targets Support Files */,
+				97218321739A5A7B9B4D982C6E9B6E81 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -476,44 +509,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E04E863A590C6736FFE4E8E649B2235C /* Support Files */ = {
+		D8F5A8226BE82EB3F0052FECDEE01DD9 /* Validators */ = {
 			isa = PBXGroup;
 			children = (
-				658FE25F5340BD57E747C025E9B116F3 /* MeshulamSDK.modulemap */,
-				2607F7495F66B88648F49D5C9075BF9C /* MeshulamSDK-dummy.m */,
-				E7044054B1FC8B7005A57AA88C7940F2 /* MeshulamSDK-Info.plist */,
-				A8F7C591D25DF4BBF4E06FB24313DF94 /* MeshulamSDK-prefix.pch */,
-				CF5D373011503A529E4FDC6BC54010EA /* MeshulamSDK-umbrella.h */,
-				AF076CBB920B52E3FD1B7DD7CA206C37 /* MeshulamSDK.debug.xcconfig */,
-				0DDF08C0568294DB7181591A2C58EAE9 /* MeshulamSDK.release.xcconfig */,
+				FF6A00E43C499016E621B65F9B19BA72 /* ParseValidator.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MeshulamSDK";
-			sourceTree = "<group>";
-		};
-		E8650C13E82180692763523FA2E4C3EA /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0A45926898CE779ED5E3DBCD94DB6C02 /* Pods-MeshulamSDK_Example */,
-				FC713D61727992062F8878DA38FA5477 /* Pods-MeshulamSDK_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FC713D61727992062F8878DA38FA5477 /* Pods-MeshulamSDK_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C69DFE77F09E4B45FBA2EEB21BFAD4FF /* Pods-MeshulamSDK_Tests.modulemap */,
-				82E0680C129F05B90E07FE802485CDB3 /* Pods-MeshulamSDK_Tests-acknowledgements.markdown */,
-				919FB3BDC1EC963C8ED3F9085D4CFDBE /* Pods-MeshulamSDK_Tests-acknowledgements.plist */,
-				E18E2BF9A796B4CD619F7E2DD2463D75 /* Pods-MeshulamSDK_Tests-dummy.m */,
-				654A33F6237F3DF4D23D96F66E59B6C4 /* Pods-MeshulamSDK_Tests-Info.plist */,
-				D482297679AF614D1FD03D6C29902432 /* Pods-MeshulamSDK_Tests-umbrella.h */,
-				38D96F79A3F6A0C3E89B73BD7B264DB6 /* Pods-MeshulamSDK_Tests.debug.xcconfig */,
-				4C70DE933FBC23BD91760C41D86B6BFE /* Pods-MeshulamSDK_Tests.release.xcconfig */,
-			);
-			name = "Pods-MeshulamSDK_Tests";
-			path = "Target Support Files/Pods-MeshulamSDK_Tests";
+			name = Validators;
+			path = MeshulamSDK/Classes/Validators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,11 +529,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C41C6E6DB226E8E6195D268018827B3 /* Headers */ = {
+		77E4FEB85520AE4A4D50EECDD5F93B77 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4052063FFB1E0F46BD3F72DCF5DCE28C /* MeshulamSDK-umbrella.h in Headers */,
+				AFFDF11683DA3C768F7E7DB21AB56514 /* MeshulamSDK-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,17 +558,17 @@
 /* Begin PBXNativeTarget section */
 		11A29FD9D8AE06C53CB25F0B8AA20DBD /* MeshulamSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3B7157CBEC36BF8BC7166101EA2D5D8 /* Build configuration list for PBXNativeTarget "MeshulamSDK" */;
+			buildConfigurationList = FC6C7B1EA447554F512B8E2626099603 /* Build configuration list for PBXNativeTarget "MeshulamSDK" */;
 			buildPhases = (
-				4C41C6E6DB226E8E6195D268018827B3 /* Headers */,
-				EE0BBC44CF1F4E87DEB855D9E3161022 /* Sources */,
-				5962D2072501DB2BBFCC9468703E7C0E /* Frameworks */,
-				9E2764D59F5B9A20657B767CD8EE5E74 /* Resources */,
+				77E4FEB85520AE4A4D50EECDD5F93B77 /* Headers */,
+				971E092187FBA4AE334A8AC6B5ECCBAE /* Sources */,
+				5410ACCDB8C8936A186F3A679A3CCD68 /* Frameworks */,
+				398F7915FCFAF6B4D36B4D8684B951B7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9F1EE6A3CFCFC6A5F991EF99F5E39D00 /* PBXTargetDependency */,
+				C909EC3CF461DAA4CED4D72C03A737D5 /* PBXTargetDependency */,
 			);
 			name = MeshulamSDK;
 			productName = MeshulamSDK;
@@ -585,8 +587,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				6E10CD82EAE38573878AEEB65D76445B /* PBXTargetDependency */,
-				9D8079D7E9F61D25B10E14AE6F6815C4 /* PBXTargetDependency */,
+				5CF788AAB4FF7376DF9A11EF60750E62 /* PBXTargetDependency */,
+				427A2A2DAD23EFDACF591391C3D61310 /* PBXTargetDependency */,
 			);
 			name = "Pods-MeshulamSDK_Example";
 			productName = "Pods-MeshulamSDK_Example";
@@ -605,7 +607,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7907043BD7B4AEBC1855979C0EBF7222 /* PBXTargetDependency */,
+				7952993D2633ED9F90D4E5FAEBD2647F /* PBXTargetDependency */,
 			);
 			name = "Pods-MeshulamSDK_Tests";
 			productName = "Pods-MeshulamSDK_Tests";
@@ -637,7 +639,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -661,6 +663,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		398F7915FCFAF6B4D36B4D8684B951B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94193EE8975990A34217AF78FF24A19A /* MainS.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		841304B722C1AC6D442A36724E0551BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -672,14 +682,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9E2764D59F5B9A20657B767CD8EE5E74 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8DE024F62681E7D100767A00 /* BitViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +701,6 @@
 			files = (
 				1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */,
 				C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */,
-				8D84DECB2681D55F00A2BA17 /* NSObjectExtenstion.swift in Sources */,
 				C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */,
 				72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */,
 				DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */,
@@ -745,6 +746,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		971E092187FBA4AE334A8AC6B5ECCBAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3A88AE517489DA927A23EE3677AF76 /* BaseInnerResponse.swift in Sources */,
+				ACEE48F4EDEBE364E33EA1E466BBD184 /* BaseRequest.swift in Sources */,
+				D50AD65DA03007C41DE0D687EC21463D /* BaseServerResponse.swift in Sources */,
+				B01B2654EF29C73D08120F383EC3ED36 /* BitViewController.swift in Sources */,
+				220D0DF8B197665EA9FFDC7F944BAD76 /* Constants.swift in Sources */,
+				00CDB56107106C9FA4F158736800F929 /* CreatePaymentProcessRequest.swift in Sources */,
+				49209DB5C5F5AA59F420E3CD82A1D004 /* CreatePaymentProcessResponse.swift in Sources */,
+				9A8F00AF3FF509A87773B5B566300AB3 /* ErrorResponse.swift in Sources */,
+				1A7174E4835912B54B27E9E3F6EF23A0 /* InitSDKRequest.swift in Sources */,
+				1BFBAECE8155EC10179368880ECE0F04 /* InitSDKResponse.swift in Sources */,
+				AB5C1332A47CE678D38E77670F960A7A /* Meshulam.swift in Sources */,
+				D37925EC3E95D9A047AE1EFC5B31B94E /* MeshulamDelegate.swift in Sources */,
+				B7780888E1C47CEAC075CAA8C9E02B8D /* MeshulamSDK-dummy.m in Sources */,
+				5C9DB759A5DE9313C98E0E1CD04AA650 /* NetworkManager.swift in Sources */,
+				6EF0C6EAFE2FD3F7D408E909449DB2D6 /* NSObjectExtenstion.swift in Sources */,
+				CAABC838FB5348EA185E518B11664889 /* ParseValidator.swift in Sources */,
+				BFF39DD7B46B28FC0E20B13C9E397CCA /* PaymentManager.swift in Sources */,
+				202C54AB53E29EBDBEA38833BFB33019 /* RequestFinishedProtocol.swift in Sources */,
+				5563D23D513C84E0B956A47CF1C60487 /* StartupManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C157E4FB3C4BB05F4624225509A1522D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -753,65 +780,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE0BBC44CF1F4E87DEB855D9E3161022 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D73935B265E8DEF004047CF /* BaseInnerResponse.swift in Sources */,
-				8D739338265E82E9004047CF /* BaseRequest.swift in Sources */,
-				8D4FEC4426652EC00089F37D /* CreatePaymentProcessRequest.swift in Sources */,
-				8D4FEC22266503FD0089F37D /* MeshulamDelegate.swift in Sources */,
-				8D4FEBE82663C42F0089F37D /* RequestFinishedProtocol.swift in Sources */,
-				8D4FEC4A26652F890089F37D /* CreatePaymentProcessResponse.swift in Sources */,
-				8DE024F52681E7D100767A00 /* BitViewController.swift in Sources */,
-				8D73931D265E7C0A004047CF /* Meshulam.swift in Sources */,
-				8D739351265E876E004047CF /* InitSDKResponse.swift in Sources */,
-				8D4FEC2A26652E760089F37D /* PaymentManager.swift in Sources */,
-				8D7392D5265E7315004047CF /* NetworkManager.swift in Sources */,
-				8D739370265E9369004047CF /* ErrorResponse.swift in Sources */,
-				8D739366265E9073004047CF /* ParseValidator.swift in Sources */,
-				8D73934B265E86FF004047CF /* BaseServerResponse.swift in Sources */,
-				8D739377265E95EC004047CF /* StartupManager.swift in Sources */,
-				6752D8D56FE997DDB8A9D09907321A48 /* MeshulamSDK-dummy.m in Sources */,
-				8D739345265E8653004047CF /* InitSDKRequest.swift in Sources */,
-				8D4FEBAC2663A3D60089F37D /* Constants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6E10CD82EAE38573878AEEB65D76445B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = FAEF8032CA4C327EFE57114F3CC83322 /* PBXContainerItemProxy */;
-		};
-		7907043BD7B4AEBC1855979C0EBF7222 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MeshulamSDK_Example";
-			target = 16FE490789A2B1758E422A712A15C863 /* Pods-MeshulamSDK_Example */;
-			targetProxy = 97912354B25E8EF7CE0D7D2F10E5738C /* PBXContainerItemProxy */;
-		};
-		9D8079D7E9F61D25B10E14AE6F6815C4 /* PBXTargetDependency */ = {
+		427A2A2DAD23EFDACF591391C3D61310 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MeshulamSDK;
 			target = 11A29FD9D8AE06C53CB25F0B8AA20DBD /* MeshulamSDK */;
-			targetProxy = 31DE42DEF3192B48E8E096BD205567A9 /* PBXContainerItemProxy */;
+			targetProxy = CD490CCE51C2222ABFE6D8A9197EA984 /* PBXContainerItemProxy */;
 		};
-		9F1EE6A3CFCFC6A5F991EF99F5E39D00 /* PBXTargetDependency */ = {
+		5CF788AAB4FF7376DF9A11EF60750E62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = BC0964FBD039C6A0150216D756DC0728 /* PBXContainerItemProxy */;
+			targetProxy = C9262F6E6D46A178D2456AA29705833B /* PBXContainerItemProxy */;
+		};
+		7952993D2633ED9F90D4E5FAEBD2647F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MeshulamSDK_Example";
+			target = 16FE490789A2B1758E422A712A15C863 /* Pods-MeshulamSDK_Example */;
+			targetProxy = B437CF663F33E294514E7F6FD9F5299A /* PBXContainerItemProxy */;
+		};
+		C909EC3CF461DAA4CED4D72C03A737D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 2D9720F071706E75BF95DCA18D9749F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		07C2375F3D5E1EF492B44DDEB130A64A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B2345347C390CBAA9306C51B9C847F /* MeshulamSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MeshulamSDK/MeshulamSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK.modulemap";
+				PRODUCT_MODULE_NAME = MeshulamSDK;
+				PRODUCT_NAME = MeshulamSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		11A55B97DA3A5AB8CA60C322E78B6A33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D3E0E1E34DD4394C6023B622C262222 /* Alamofire.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -824,7 +860,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
@@ -839,11 +875,44 @@
 			};
 			name = Debug;
 		};
+		49915386E217D1D96C41909F7F06314A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85A91CA67CE5AA9061948337DFCB04F /* MeshulamSDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MeshulamSDK/MeshulamSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK.modulemap";
+				PRODUCT_MODULE_NAME = MeshulamSDK;
+				PRODUCT_NAME = MeshulamSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5FA9A588D61E51D272897569A1DF00C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3A62CBA0DCCB9BEDFD02F5938FF77DF /* Pods-MeshulamSDK_Example.debug.xcconfig */;
+			baseConfigurationReference = E850E4E30AF179ED2D04F635D31FE21D /* Pods-MeshulamSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -855,7 +924,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.modulemap";
@@ -872,43 +941,12 @@
 			};
 			name = Debug;
 		};
-		65B90C20B731E5F77B5B9DB688E6F4E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DDF08C0568294DB7181591A2C58EAE9 /* MeshulamSDK.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MeshulamSDK/MeshulamSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK.modulemap";
-				PRODUCT_MODULE_NAME = MeshulamSDK;
-				PRODUCT_NAME = MeshulamSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		67A698ECDADF8F9E2373E12B680E4B8E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C70DE933FBC23BD91760C41D86B6BFE /* Pods-MeshulamSDK_Tests.release.xcconfig */;
+			baseConfigurationReference = A8CFDCF6E3BF21D7D75F1244405A432E /* Pods-MeshulamSDK_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -920,7 +958,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.modulemap";
@@ -942,6 +980,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4153404C4C0A47E701390CEDAB4A093 /* Alamofire.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -954,7 +993,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
@@ -972,9 +1011,10 @@
 		};
 		8C7B01E003A53C8ABEB61E38F44818F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8D39139445E86EEF9C8A21CFD419C21 /* Pods-MeshulamSDK_Example.release.xcconfig */;
+			baseConfigurationReference = 4368A7B672820104729EC788E6FA3FFA /* Pods-MeshulamSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -986,7 +1026,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.modulemap";
@@ -1054,47 +1094,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		AFAF8B9EC092AF465257F2A2B17D1191 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF076CBB920B52E3FD1B7DD7CA206C37 /* MeshulamSDK.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MeshulamSDK/MeshulamSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK.modulemap";
-				PRODUCT_MODULE_NAME = MeshulamSDK;
-				PRODUCT_NAME = MeshulamSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1149,7 +1159,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1164,9 +1174,10 @@
 		};
 		DA3E3F4D3403DC785C983B56D8A86F7F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38D96F79A3F6A0C3E89B73BD7B264DB6 /* Pods-MeshulamSDK_Tests.debug.xcconfig */;
+			baseConfigurationReference = EED0773077D7CC2E68E0D01063750908 /* Pods-MeshulamSDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1178,7 +1189,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.modulemap";
@@ -1225,20 +1236,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3B7157CBEC36BF8BC7166101EA2D5D8 /* Build configuration list for PBXNativeTarget "MeshulamSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AFAF8B9EC092AF465257F2A2B17D1191 /* Debug */,
-				65B90C20B731E5F77B5B9DB688E6F4E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E77E51B84711CF5E6CB0032E5CFD4661 /* Build configuration list for PBXNativeTarget "Pods-MeshulamSDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA3E3F4D3403DC785C983B56D8A86F7F /* Debug */,
 				67A698ECDADF8F9E2373E12B680E4B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC6C7B1EA447554F512B8E2626099603 /* Build configuration list for PBXNativeTarget "MeshulamSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49915386E217D1D96C41909F7F06314A /* Debug */,
+				07C2375F3D5E1EF492B44DDEB130A64A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
