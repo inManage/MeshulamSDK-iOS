@@ -28,7 +28,17 @@ extension PaymentManager: RequestFinishedProtocol {
     }
     
     public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
-    
+        let requestName = request.requestName
+        switch requestName {
+        case ServerRequests.createPaymentProcess:
+            if let response = response as? CreatePaymentProcessResponse {
+                if let url = URL(string: response.url) {
+                    UIApplication.shared.open(url)
+                }
+            }
+            break
+        default: break
+        }
     }
 }
 
