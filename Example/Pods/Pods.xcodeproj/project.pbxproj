@@ -50,6 +50,7 @@
 		8D739366265E9073004047CF /* ParseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D739365265E9073004047CF /* ParseValidator.swift */; };
 		8D739370265E9369004047CF /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73936F265E9369004047CF /* ErrorResponse.swift */; };
 		8D739377265E95EC004047CF /* StartupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D739376265E95EC004047CF /* StartupManager.swift */; };
+		8D84DECB2681D55F00A2BA17 /* NSObjectExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84DECA2681D55F00A2BA17 /* NSObjectExtenstion.swift */; };
 		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */; };
 		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */; };
 		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */; };
@@ -164,6 +165,7 @@
 		8D739365265E9073004047CF /* ParseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseValidator.swift; sourceTree = "<group>"; };
 		8D73936F265E9369004047CF /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		8D739376265E95EC004047CF /* StartupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupManager.swift; sourceTree = "<group>"; };
+		8D84DECA2681D55F00A2BA17 /* NSObjectExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtenstion.swift; sourceTree = "<group>"; };
 		919FB3BDC1EC963C8ED3F9085D4CFDBE /* Pods-MeshulamSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 			children = (
 				8D73931C265E7C0A004047CF /* Meshulam.swift */,
 				8D4FEBA626639E350089F37D /* Constants.swift */,
+				8D84DEC92681D54500A2BA17 /* Extenstions */,
 				8D4FEBDD2663C39F0089F37D /* Protocols */,
 				8D739375265E95A7004047CF /* Managers */,
 				8D739364265E9056004047CF /* Validators */,
@@ -426,6 +429,14 @@
 				8D4FEC2926652E750089F37D /* PaymentManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		8D84DEC92681D54500A2BA17 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				8D84DECA2681D55F00A2BA17 /* NSObjectExtenstion.swift */,
+			);
+			path = Extenstions;
 			sourceTree = "<group>";
 		};
 		BE22266354A038E71E331F961EF16055 /* Products */ = {
@@ -681,6 +692,7 @@
 			files = (
 				1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */,
 				C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */,
+				8D84DECB2681D55F00A2BA17 /* NSObjectExtenstion.swift in Sources */,
 				C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */,
 				72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */,
 				DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */,
