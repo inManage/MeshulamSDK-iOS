@@ -28,22 +28,7 @@ extension PaymentManager: RequestFinishedProtocol {
     }
     
     public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
-        
-        let storyboard: UIStoryboard = UIStoryboard(name: "Status", bundle: nil)
-        let vc: UIViewController = storyboard.instantiateViewController(withIdentifier: "StatusViewController") as! StatusViewController
-        
-        
-        if var topController = UIApplication.shared.keyWindow?.rootViewController {
-            while let presentedViewController = topController.presentedViewController {
-                topController = presentedViewController
-            }
-
-            topController.present(vc, animated: true, completion: nil)
-
-        }
-
-//        guard let url = URL(string: "iazrieli://?ofe_restore_password_page=1&token=valueToken") else { return }
-//        UIApplication.shared.open(url)
+    
     }
 }
 
