@@ -51,6 +51,8 @@
 		8D739370265E9369004047CF /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73936F265E9369004047CF /* ErrorResponse.swift */; };
 		8D739377265E95EC004047CF /* StartupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D739376265E95EC004047CF /* StartupManager.swift */; };
 		8D84DECB2681D55F00A2BA17 /* NSObjectExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84DECA2681D55F00A2BA17 /* NSObjectExtenstion.swift */; };
+		8DE024F52681E7D100767A00 /* BitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE024F32681E7D100767A00 /* BitViewController.swift */; };
+		8DE024F62681E7D100767A00 /* BitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE024F42681E7D100767A00 /* BitViewController.xib */; };
 		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */; };
 		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */; };
 		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */; };
@@ -166,6 +168,8 @@
 		8D73936F265E9369004047CF /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		8D739376265E95EC004047CF /* StartupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupManager.swift; sourceTree = "<group>"; };
 		8D84DECA2681D55F00A2BA17 /* NSObjectExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtenstion.swift; sourceTree = "<group>"; };
+		8DE024F32681E7D100767A00 /* BitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitViewController.swift; sourceTree = "<group>"; };
+		8DE024F42681E7D100767A00 /* BitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BitViewController.xib; sourceTree = "<group>"; };
 		919FB3BDC1EC963C8ED3F9085D4CFDBE /* Pods-MeshulamSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -371,6 +375,8 @@
 		8D73932A265E8209004047CF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8DE024F32681E7D100767A00 /* BitViewController.swift */,
+				8DE024F42681E7D100767A00 /* BitViewController.xib */,
 				8D73931C265E7C0A004047CF /* Meshulam.swift */,
 				8D4FEBA626639E350089F37D /* Constants.swift */,
 				8D84DEC92681D54500A2BA17 /* Extenstions */,
@@ -673,6 +679,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE024F62681E7D100767A00 /* BitViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +763,7 @@
 				8D4FEC22266503FD0089F37D /* MeshulamDelegate.swift in Sources */,
 				8D4FEBE82663C42F0089F37D /* RequestFinishedProtocol.swift in Sources */,
 				8D4FEC4A26652F890089F37D /* CreatePaymentProcessResponse.swift in Sources */,
+				8DE024F52681E7D100767A00 /* BitViewController.swift in Sources */,
 				8D73931D265E7C0A004047CF /* Meshulam.swift in Sources */,
 				8D739351265E876E004047CF /* InitSDKResponse.swift in Sources */,
 				8D4FEC2A26652E760089F37D /* PaymentManager.swift in Sources */,

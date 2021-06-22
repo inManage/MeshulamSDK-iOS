@@ -17,6 +17,10 @@ public class StartupManager  {
         let request    = InitSDKRequest().initWithDictParams(parameters, delegate)
         NetworkManager.shared.sendRequest(request)
     }
+    
+    private func pushBitVC() {
+        
+    }
 }
 
 extension StartupManager: RequestFinishedProtocol {
@@ -30,6 +34,7 @@ extension StartupManager: RequestFinishedProtocol {
     public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
         if request.requestName == ServerRequests.initSDK {
             let response = response as! InitSDKResponse
+            pushBitVC()
             NetworkManager.shared.fillWithInitSDKResponse(response)
             PaymentManager.shared.callCreatePaymentProcess()
         }

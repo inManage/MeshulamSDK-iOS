@@ -42,9 +42,10 @@ Pod::Spec.new do |s|
     }
     
     s.resources = [
-    'MeshulamSDK/**/*.xcassets',
-    'MeshulamSDK/**/*.storyboard',
-    'MeshulamSDK/**/*.png']
+    'MeshulamSDK/Classes/*.xcassets',
+    'MeshulamSDK/Classes/*.storyboard',
+    'MeshulamSDK/Classes/*.xib',
+    'MeshulamSDK/Classes/*.png']
     
     #pods
     s.dependency 'Alamofire'
