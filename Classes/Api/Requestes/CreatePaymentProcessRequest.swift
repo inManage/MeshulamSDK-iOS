@@ -37,6 +37,13 @@ class CreatePaymentProcessRequest: BaseRequest {
             initialDictParams.updateValue(apiKey, forKey: ServerParamNames.apiKey)
         }
         
+        initialDictParams.updateValue("1", forKey: "sum")
+        initialDictParams.updateValue("2", forKey: "chargeType")
+        initialDictParams.updateValue("test test", forKey: "pageField[fullName]")
+        initialDictParams.updateValue("0542533691", forKey: "pageField[phone]")
+        initialDictParams.updateValue("8", forKey: "templateType")
+
+
         return initialDictParams
     }
     

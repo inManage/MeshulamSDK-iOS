@@ -20,10 +20,5 @@ open class Meshulam: NSObject {
     private override init() {
         StartupManager.shared.callInitSDK()
     }
-  
-//    public func createPaymentProcess(pageCode: String, apiKey: String, userId: String) {
-//        self.userId = userId
-//        self.apiKey = apiKey
-//        self.pageCode = pageCode
-//    }
+    
 }

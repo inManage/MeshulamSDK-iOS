@@ -7,53 +7,53 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'MeshulamSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MeshulamSDK.'
-  s.static_framework = true
-  s.requires_arc = true
-  
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't wors.versionry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/amita@inmanage.net/MeshulamSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'amita@inmanage.net' => 'amita@inmanage.net' }
-  s.source           = { :git => 'https://github.com/amita@inmanage.net/MeshulamSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '11.0'
-  s.static_framework = true
-  s.requires_arc = true
-  
-  s.source_files = 'MeshulamSDK/Classes/**/*'
-  
-  s.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-  'ENABLE_BITCODE' => 'YES',
-  'SWIFT_VERSION' => '5.0'
-}
-
-  # s.resources = [
-  #             'IAILoginPlugin/**/*.xcassets',
-  #             'IAILoginPlugin/**/*.storyboard',
-  #             'IAILoginPlugin/**/*.png']
-
-  #pods 
-  s.dependency 'Alamofire'
-
-  # s.resource_bundles = {
-  #   'MeshulamSDK' => ['MeshulamSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.name             = 'MeshulamSDK'
+    s.version          = '0.1.0'
+    s.summary          = 'A short description of MeshulamSDK.'
+    s.static_framework = true
+    s.requires_arc = true
+    
+    # This description is used to generate tags and improve search results.
+    #   * Think: What does it do? Why did you write it? What is the focus?
+    #   * Try to keep it short, snappy and to the point.
+    #   * Write the description between the DESC delimiters below.
+    #   * Finally, don't wors.versionry about the indent, CocoaPods strips it!
+    
+    s.description      = <<-DESC
+    TODO: Add long description of the pod here.
+    DESC
+    
+    s.homepage         = 'https://github.com/amita@inmanage.net/MeshulamSDK'
+    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'amita@inmanage.net' => 'amita@inmanage.net' }
+    s.source           = { :git => 'https://github.com/amita@inmanage.net/MeshulamSDK.git', :tag => s.version.to_s }
+    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    
+    s.ios.deployment_target = '11.0'
+    s.static_framework = true
+    s.requires_arc = true
+    
+    s.source_files = 'MeshulamSDK/Classes/**/*'
+    
+    s.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+        'ENABLE_BITCODE' => 'YES',
+        'SWIFT_VERSION' => '5.0'
+    }
+    
+    s.resources = [
+    'MeshulamSDK/**/*.xcassets',
+    'MeshulamSDK/**/*.storyboard',
+    'MeshulamSDK/**/*.png']
+    
+    #pods
+    s.dependency 'Alamofire'
+    
+    # s.resource_bundles = {
+    #   'MeshulamSDK' => ['MeshulamSDK/Assets/*.png']
+    # }
+    
+    # s.public_header_files = 'Pod/Classes/**/*.h'
+    # s.frameworks = 'UIKit', 'MapKit'
+    # s.dependency 'AFNetworking', '~> 2.3'
 end

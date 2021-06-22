@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Meshulam.shared.delegate = self
-        Meshulam.shared.apiKey = "cbf3b862e094"
-        Meshulam.shared.userId = "41deb6f1347ee8b2"
-        Meshulam.shared.pageCode = "38d28496fc75"
+        Meshulam.shared.userId   = "41deb6f1347ee8b2"
+        Meshulam.shared.apiKey   = "cbf3b862e094"
+        Meshulam.shared.pageCode = "a1a40d5ce46f"
     }
 }
 

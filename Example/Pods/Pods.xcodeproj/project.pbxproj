@@ -369,12 +369,12 @@
 		8D73932A265E8209004047CF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8D73931C265E7C0A004047CF /* Meshulam.swift */,
 				8D4FEBA626639E350089F37D /* Constants.swift */,
 				8D4FEBDD2663C39F0089F37D /* Protocols */,
 				8D739375265E95A7004047CF /* Managers */,
 				8D739364265E9056004047CF /* Validators */,
 				8D73933D265E851D004047CF /* Api */,
-				8D73931C265E7C0A004047CF /* Meshulam.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
