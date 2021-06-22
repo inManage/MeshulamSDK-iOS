@@ -11,6 +11,8 @@ public class StartupManager  {
     
     static let shared = StartupManager()
     
+    let storyboard = UIStoryboard(name: "MainS", bundle: nil)
+    
     public func callInitSDK(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = InitSDKRequest.createInitialDictParams()
@@ -19,6 +21,9 @@ public class StartupManager  {
     }
     
     private func pushBitVC() {
+        guard let bitVC = storyboard.instantiateViewController(withIdentifier: "BitViewController") as? BitViewController else { return }
+        bitVC.modalPresentationStyle = .fullScreen
+        UIApplication.shared.keyWindow!.rootViewController?.present(bitVC, animated: true)
         
     }
 }

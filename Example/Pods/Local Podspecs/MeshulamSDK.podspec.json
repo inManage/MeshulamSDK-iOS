@@ -20,12 +20,18 @@
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "MeshulamSDK/Classes/**/*",
   "xcconfig": {
     "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
     "ENABLE_BITCODE": "YES",
     "SWIFT_VERSION": "5.0"
   },
+  "resources": [
+    "MeshulamSDK/**/*.xcassets",
+    "MeshulamSDK/**/*.storyboard",
+    "MeshulamSDK/**/*.xib",
+    "MeshulamSDK/**/*.png"
+  ],
+  "source_files": "MeshulamSDK/Classes/**/*",
   "dependencies": {
     "Alamofire": [
 

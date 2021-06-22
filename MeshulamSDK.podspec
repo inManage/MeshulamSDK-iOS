@@ -34,19 +34,20 @@ Pod::Spec.new do |s|
     s.static_framework = true
     s.requires_arc = true
     
-    s.source_files = 'MeshulamSDK/Classes/**/*'
-    
+
     s.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
         'ENABLE_BITCODE' => 'YES',
         'SWIFT_VERSION' => '5.0'
     }
     
     s.resources = [
-    'MeshulamSDK/Classes/*.xcassets',
-    'MeshulamSDK/Classes/*.storyboard',
-    'MeshulamSDK/Classes/*.xib',
-    'MeshulamSDK/Classes/*.png']
+    'MeshulamSDK/**/*.xcassets',
+    'MeshulamSDK/**/*.storyboard',
+    'MeshulamSDK/**/*.xib',
+    'MeshulamSDK/**/*.png']
     
+    s.source_files = 'MeshulamSDK/Classes/**/*'
+
     #pods
     s.dependency 'Alamofire'
     
