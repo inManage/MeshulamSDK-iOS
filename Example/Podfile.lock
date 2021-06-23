@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.4.3)
-  - MeshulamSDK (0.1.0):
+  - MeshulamSDK (0.0.1):
     - Alamofire
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
-  MeshulamSDK: 07c28f40bc0d0936f34a763b066d5342f06520a8
+  MeshulamSDK: 92a3547002eac04e0a251e0d3a80f9b893ca21fa
 
 PODFILE CHECKSUM: 220b5f0d26351d0ed1fb6d3434006d1015d1cfce
 
