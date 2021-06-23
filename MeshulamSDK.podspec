@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'MeshulamSDK'
-    s.version          = '0.0.1'
+    s.version          = '0.0.2'
     s.summary          = 'A short description of MeshulamSDK.'
     s.static_framework = true
     s.requires_arc = true
