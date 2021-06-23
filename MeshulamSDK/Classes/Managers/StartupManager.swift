@@ -11,21 +11,13 @@ public class StartupManager  {
     
     static let shared = StartupManager()
     
-    let storyboard = UIStoryboard(name: "MainS", bundle: nil)
-    
     public func callInitSDK(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = InitSDKRequest.createInitialDictParams()
         let request    = InitSDKRequest().initWithDictParams(parameters, delegate)
         NetworkManager.shared.sendRequest(request)
     }
-    
-    private func pushBitVC() {
-        guard let bitVC = storyboard.instantiateViewController(withIdentifier: "BitViewController") as? BitViewController else { return }
-        bitVC.modalPresentationStyle = .fullScreen
-        UIApplication.shared.keyWindow!.rootViewController?.present(bitVC, animated: true)
-        
-    }
+  
 }
 
 extension StartupManager: RequestFinishedProtocol {
@@ -39,7 +31,6 @@ extension StartupManager: RequestFinishedProtocol {
     public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
         if request.requestName == ServerRequests.initSDK {
             let response = response as! InitSDKResponse
-            pushBitVC()
             NetworkManager.shared.fillWithInitSDKResponse(response)
             PaymentManager.shared.callCreatePaymentProcess()
         }

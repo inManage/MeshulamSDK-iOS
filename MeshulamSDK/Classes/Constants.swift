@@ -19,6 +19,12 @@ public struct ServerRequests {
     static let request = "request"
     static let initSDK = "initSDK"
     static let createPaymentProcess = "createPaymentProcess"
+    static let getBitPaymentStatus = "getBitPaymentStatus"
+    static let setBitPayment = "setBitPaymentRequest"
+    static let cancelBitPayment = "cancelBitPayment"
+    static let getPaymentProcessInfo = "getPaymentProcessInfo"
+    static let settleSuspendedTransaction = "settleSuspendedTransactionRequest"
+    static let doPayment = "doPayment"
 }
 
 public struct ServerParamNames {
@@ -37,6 +43,10 @@ public struct HeadersRequest {
 public struct Error {
     var id: Int = 0
     var errorMessage = ""
+}
+
+public enum PaymentStatusOptions: Int {
+    case success = 1, failed, pending
 }
 
 let apiVersion = "1.0"

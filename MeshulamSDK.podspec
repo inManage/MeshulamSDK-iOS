@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'MeshulamSDK'
-    s.version          = '0.1.0'
+    s.version          = '0.0.1'
     s.summary          = 'A short description of MeshulamSDK.'
     s.static_framework = true
     s.requires_arc = true
@@ -23,11 +23,11 @@ Pod::Spec.new do |s|
     TODO: Add long description of the pod here.
     DESC
     
-    s.homepage         = 'https://github.com/amita@inmanage.net/MeshulamSDK'
+    s.homepage         = 'https://github.com/inManage/MeshulamSDK-iOS'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    s.author           = { 'amita@inmanage.net' => 'amita@inmanage.net' }
-    s.source           = { :git => 'https://github.com/amita@inmanage.net/MeshulamSDK.git', :tag => s.version.to_s }
+    s.author           = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
+    s.source           = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
     
     s.ios.deployment_target = '11.0'

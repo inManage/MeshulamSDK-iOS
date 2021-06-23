@@ -9,9 +9,27 @@ import UIKit
 
 class BitViewController: UIViewController {
 
+    var createPaymentProcess: CreatePaymentProcessResponse?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        PaymentManager.shared.delegate = self
+    }
+    
+    private func startBitProgress() {
+        openBitApp()
+    }
+    
+    private func openBitApp() {
+        if let url = URL(string: createPaymentProcess?.url ?? "") {
+            UIApplication.shared.open(url)
+        }
+    }
+}
 
-        // Do any additional setup after loading the view.
+extension BitViewController: PaymentManagerDelegate {
+    func createPaymentProcessResponseSucceeded(with response: CreatePaymentProcessResponse) {
+        createPaymentProcess = response
+        startBitProgress()
     }
 }

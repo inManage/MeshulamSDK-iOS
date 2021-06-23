@@ -18,7 +18,8 @@ open class Meshulam: NSObject {
     public var userId = ""
     
     private override init() {
+        super.init()
         StartupManager.shared.callInitSDK()
+        SessionManager.shared.pushBitVC()
     }
-    
 }

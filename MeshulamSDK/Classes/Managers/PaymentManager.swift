@@ -7,14 +7,26 @@
 
 import Foundation
 
+protocol PaymentManagerDelegate: class {
+    func createPaymentProcessResponseSucceeded(with response: CreatePaymentProcessResponse)
+}
+
 public class PaymentManager {
     
     static let shared = PaymentManager()
-
+    weak var delegate: PaymentManagerDelegate?
+    
     public func callCreatePaymentProcess(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CreatePaymentProcessRequest.createPaymentProcessDictParams()
         let request    = CreatePaymentProcessRequest().initWithDictParams(parameters, delegate)
+        NetworkManager.shared.sendRequest(request)
+    }
+    
+    public func callGetBitPaymentStatusRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+        let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
+        let parameters = Dict()//CreatePaymentStatusRequest.createPaymentProcessDictParams()
+        let request    = GetBitPaymentStatusRequest().initWithDictParams(parameters, delegate)
         NetworkManager.shared.sendRequest(request)
     }
 }
@@ -30,13 +42,13 @@ extension PaymentManager: RequestFinishedProtocol {
     public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
         let requestName = request.requestName
         switch requestName {
+       
         case ServerRequests.createPaymentProcess:
             if let response = response as? CreatePaymentProcessResponse {
-                if let url = URL(string: response.url) {
-                    UIApplication.shared.open(url)
-                }
+                delegate?.createPaymentProcessResponseSucceeded(with: response)
             }
             break
+            
         default: break
         }
     }
