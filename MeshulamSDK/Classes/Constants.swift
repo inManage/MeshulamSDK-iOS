@@ -33,6 +33,7 @@ public struct ServerParamNames {
     static let pageCode = "pageCode"
     static let userId = "userId"
     static let apiKey = "apiKey"
+    static let bitPaymentId = "bit_payment_id"
 }
 
 public struct HeadersRequest {

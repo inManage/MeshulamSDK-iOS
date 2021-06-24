@@ -11,9 +11,9 @@ public class CreatePaymentProcessResponse: BaseInnerResponse {
     
     var url = ""
     var bitPaymentId = ""
-    var processId = 0
     var processToken = ""
     var doPaymentRequestArr = DoPaymentRequestArr()
+    var processId = 0
     
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)

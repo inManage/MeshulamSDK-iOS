@@ -13,9 +13,10 @@ class CancelBitPaymentRequest: BaseRequest {
         return  BaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
     }
     
-    public static func createInitialDictParams() -> Dict {
+    public static func createCancelBitPaymentParams() -> Dict {
         var initialDictParams = [String:Any]()
-        // add params to dictionary params
+        let bitPaymentId = PaymentManager.shared.bitPaymentId
+        initialDictParams.updateValue(bitPaymentId, forKey: ServerParamNames.bitPaymentId)
         return initialDictParams
     }
     

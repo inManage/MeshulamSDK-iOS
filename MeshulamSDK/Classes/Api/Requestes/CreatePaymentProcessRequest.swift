@@ -52,5 +52,4 @@ class CreatePaymentProcessRequest: BaseRequest {
             return ServerRequests.createPaymentProcess
         }
     }
-    
 }
