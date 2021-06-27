@@ -16,6 +16,8 @@ public class PaymentManager {
     static let shared = PaymentManager()
     weak var delegate: PaymentManagerDelegate?
     
+    public var bitPaymentId = ""
+    
     public func callCreatePaymentProcess(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CreatePaymentProcessRequest.createPaymentProcessDictParams()
@@ -27,6 +29,13 @@ public class PaymentManager {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = Dict()//CreatePaymentStatusRequest.createPaymentProcessDictParams()
         let request    = GetBitPaymentStatusRequest().initWithDictParams(parameters, delegate)
+        NetworkManager.shared.sendRequest(request)
+    }
+    
+    public func callCancelBitPaymentRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+        let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
+        let parameters = CancelBitPaymentRequest.createCancelBitPaymentParams()
+        let request    = CancelBitPaymentRequest().initWithDictParams(parameters, delegate)
         NetworkManager.shared.sendRequest(request)
     }
 }
@@ -45,10 +54,14 @@ extension PaymentManager: RequestFinishedProtocol {
        
         case ServerRequests.createPaymentProcess:
             if let response = response as? CreatePaymentProcessResponse {
+                bitPaymentId = response.bitPaymentId
                 delegate?.createPaymentProcessResponseSucceeded(with: response)
             }
             break
             
+        case ServerRequests.cancelBitPayment:
+            print("cancelBitPayment")
+            break
         default: break
         }
     }

@@ -25,6 +25,10 @@ class BitViewController: UIViewController {
             UIApplication.shared.open(url)
         }
     }
+    
+    @IBAction func didTapExit(_ sender: Any) {
+        PaymentManager.shared.callCancelBitPaymentRequest(requestFinishDelegate: nil)
+    }
 }
 
 extension BitViewController: PaymentManagerDelegate {

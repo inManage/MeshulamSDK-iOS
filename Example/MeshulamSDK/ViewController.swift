@@ -28,6 +28,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: MeshulamDelegate {
+    func onCancle() {
+        //
+    }
+    
     func onSuccess() {
         //
     }
