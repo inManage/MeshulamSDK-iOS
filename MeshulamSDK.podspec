@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'MeshulamSDK'
-    s.version          = '0.0.2'
+    s.version          = '0.0.3'
     s.summary          = 'A short description of MeshulamSDK.'
     s.static_framework = true
     s.requires_arc = true
@@ -46,7 +46,8 @@ Pod::Spec.new do |s|
     'MeshulamSDK/**/*.xib',
     'MeshulamSDK/**/*.png']
     
-    s.source_files = 'MeshulamSDK/Classes/**/*'
+    s.source_files = 'MeshulamSDK/Classes/**/*.{h,m,c}'
+    s.ios.public_header_files =  'MeshulamSDK/Classes/PublicHeaders/*.h'
 
     #pods
     s.dependency 'Alamofire'
