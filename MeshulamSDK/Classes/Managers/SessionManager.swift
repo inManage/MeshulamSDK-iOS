@@ -5,7 +5,7 @@
 //  Created by Inmanage LTD on 22/06/2021.
 //
 
-import Foundation
+import UIKit
 
 public class SessionManager  {
     

@@ -5,7 +5,7 @@
 //  Created by Inmanage LTD on 26/05/2021.
 //
 
-import Foundation
+import UIKit
 
 public class InitSDKRequest: BaseRequest {
     
