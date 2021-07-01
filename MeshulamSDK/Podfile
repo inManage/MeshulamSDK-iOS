@@ -6,6 +6,7 @@ target 'MeshulamSDK' do
   use_frameworks!
 
   pod 'Alamofire'
+  pod 'lottie-ios'
   # Pods for MeshulamSDK
 
 end

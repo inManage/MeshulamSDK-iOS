@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DB45E17268DEAFE009EAA00 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB45E16268DEAFE009EAA00 /* Alamofire.framework */; };
+		8DB45E18268DEB00009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
+		8DB45E19268DEB07009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
 		C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
 		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76470C5268DCCE00076AAB7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76470BF268DCC2B0076AAB7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -63,6 +66,7 @@
 /* Begin PBXFileReference section */
 		4E30A5DD2ED8771447877801 /* Pods-MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK/Pods-MeshulamSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB45E16268DEAFE009EAA00 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76470BF268DCC2B0076AAB7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3664A268DA11D0018D734 /* MeshulamSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeshulamSDK.h; sourceTree = "<group>"; };
@@ -108,6 +112,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */,
+				8DB45E19268DEB07009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */,
+				8DB45E18268DEB00009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */,
+				8DB45E17268DEAFE009EAA00 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +248,7 @@
 		D4DDD34A0811702E2C816062 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DB45E16268DEAFE009EAA00 /* Alamofire.framework */,
 				C76470BF268DCC2B0076AAB7 /* Alamofire.framework */,
 				55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */,
 			);
