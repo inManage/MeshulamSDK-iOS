@@ -4,6 +4,46 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<data>
+		tNjMmXTR1ESWppIH4YN7wu+qDq0=
+		</data>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<data>
+		mNR/lU9r5g/njTUvgKfqscbN49c=
+		</data>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<data>
+		cqXVHqniVR6MCeFwLfK8ZFR+pvA=
+		</data>
+		<key>Frameworks/Pods_MeshulamSDK.framework/Info.plist</key>
+		<data>
+		87pXXBS3mAYZ207oaGTBM/++LHs=
+		</data>
+		<key>Frameworks/Pods_MeshulamSDK.framework/Pods_MeshulamSDK</key>
+		<data>
+		0s4V6xqXdSqapmen9LcuyVPttNA=
+		</data>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeDirectory</key>
+		<data>
+		qIB5J1hmIpxph6/aYNDPdFLVTqM=
+		</data>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeRequirements</key>
+		<data>
+		G145mUGlEXvEEFDWLt1JxI9/BYI=
+		</data>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		cPgrtiggNDhmqF7LGG8AAB5H5m8=
+		</data>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeResources</key>
+		<data>
+		deL7L6PrvQUYlxuYpj6oqgk9KlI=
+		</data>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeSignature</key>
+		<data>
+		r47EeT8/3uFTKhvTpFkb4aucTfk=
+		</data>
 		<key>Headers/MeshulamSDK-Swift.h</key>
 		<data>
 		b8fJbJJU/y/h/e9fDh+Rvw8r8s4=
@@ -67,6 +107,76 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+7AaiWHmbNbB74pIZXlDtimXu66mpmAXK2i5jUmruDI=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Rq55ynIhi8MQhrqOoGZryioeSA0qHGRRkdvJ7cTatls=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2kPu8bvXqZnnxKeEDBcYDWV3NPdsso5+ebCC6QcRYe0=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_MeshulamSDK.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1/1eeb9DiZxPYFqIKyfocdBdiPaVQKerV+TfXZg5pTw=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_MeshulamSDK.framework/Pods_MeshulamSDK</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lpABSqMDV1fudiCl+bWcXFEiCAu8mpAXHM4uvvooZcs=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wI6g5eNQY0tZ7wsYyC4cPnQMyYeGJk7vsPfttyT1fGY=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mCupAGYCjR7rxxli4qYMm5N/LftILJLrJiqQ5bp2HLY=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iAsVtJGcUjl2YgPVjrcPGo3ej0l17XCETwZrunBS14A=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qi+epTLhfdV5SjtNaAVhLVUKnMr1L0nJj6IF/a9Iedw=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RggccAVjI5ohc8hCsuuJqFQUbvN41dfKV5qqce1NwNQ=
+			</data>
+		</dict>
 		<key>Headers/MeshulamSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
