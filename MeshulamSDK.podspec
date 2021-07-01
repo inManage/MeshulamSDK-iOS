@@ -60,11 +60,11 @@ Pod::Spec.new do |s|
    #     'SWIFT_VERSION' => '4.0'
   #  }
     
-  #  s.resources = [
-   # 'MeshulamSDK/**/*.xcassets',
-   # 'MeshulamSDK/**/*.storyboard',
-    #'MeshulamSDK/**/*.xib',
-   # 'MeshulamSDK/**/*.png']
+   s.resources = [
+   'MeshulamSDK/**/*.xcassets',
+   'MeshulamSDK/**/*.storyboard',
+    'MeshulamSDK/**/*.xib',
+   'MeshulamSDK/**/*.png']
     
    # s.source_files = 'MeshulamSDK/Classes/**/*'
 #    s.public_header_files =  'MeshulamSDK/Classes/PublicHeaders/*.h'

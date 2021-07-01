@@ -21,5 +21,11 @@
     "git": "https://github.com/inManage/MeshulamSDK-iOS.git",
     "tag": "0.0.3"
   },
-  "exclude_files": "Classes/Exclude"
+  "exclude_files": "Classes/Exclude",
+  "resources": [
+    "MeshulamSDK/**/*.xcassets",
+    "MeshulamSDK/**/*.storyboard",
+    "MeshulamSDK/**/*.xib",
+    "MeshulamSDK/**/*.png"
+  ]
 }

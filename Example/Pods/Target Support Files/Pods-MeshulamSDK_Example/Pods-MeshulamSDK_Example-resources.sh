@@ -97,10 +97,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MainS.storyboardc"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/MainS.storyboard"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/Resources/MainS.storyboard"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MainS.storyboardc"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/MainS.storyboard"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/Resources/MainS.storyboard"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
