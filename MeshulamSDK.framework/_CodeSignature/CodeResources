@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1Y00Auzxn7+ug8UaSNv5CHZ21qQ=
+		1znl68jFdEY/YSTBMY4FkaD1PRI=
 		</data>
 		<key>MainS.storyboardc/BitViewController.nib</key>
 		<data>
-		VuLNtae+8GndoH8XzBTRyJrz8Ok=
+		sYG1iShGs2oRZFjYLPehOywmtCw=
 		</data>
 		<key>MainS.storyboardc/Info.plist</key>
 		<data>
@@ -26,31 +26,31 @@
 		</data>
 		<key>MainS.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
 		<data>
-		b/LeLg1v43DP/kFF/r+b9+k0yVs=
+		VAoHWbchFZSr+ZMn+sbZaYrkT7s=
 		</data>
-		<key>Modules/MeshulamSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/MeshulamSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		bL8SKJ7Dn5D2yxuKws4UzB4ulys=
+		WkGAXsQWf/T9F+skochZJJKIXWA=
 		</data>
-		<key>Modules/MeshulamSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/MeshulamSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		bL8SKJ7Dn5D2yxuKws4UzB4ulys=
+		WkGAXsQWf/T9F+skochZJJKIXWA=
 		</data>
-		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		sGYtEGHck6xL4Wb/sz/8dhXofPI=
+		xiLXX8Ncw85pei6htuxLantCHvQ=
 		</data>
-		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		igETtqSQpOJt9AkOtzKFtT8OJVk=
+		tB/FSB7Q01C/ptoa4oqpm9W33IM=
 		</data>
-		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		sGYtEGHck6xL4Wb/sz/8dhXofPI=
+		xiLXX8Ncw85pei6htuxLantCHvQ=
 		</data>
-		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		igETtqSQpOJt9AkOtzKFtT8OJVk=
+		tB/FSB7Q01C/ptoa4oqpm9W33IM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,7 +77,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F7xpsUMjt0DJb/O1JoisrRU9NA8Tk5Xo2eJhRkwnwt8=
+			uLLWSoVpArmYkqEaqjUhx4B/pQc8m++pIPwrJMUcfjg=
 			</data>
 		</dict>
 		<key>MainS.storyboardc/Info.plist</key>
@@ -91,49 +91,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qreCc9fQy5EP6TSvX+pcNKy80Svdk0sjXyg4lQ9HECg=
+			kBRXGf96yNIJ+7vgiqHCCBm8cSBDs7TaVFawT+/kll4=
 			</data>
 		</dict>
-		<key>Modules/MeshulamSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/MeshulamSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZmUwYc151VIaYmgvw6E4W1Mzu80DiJt2v1RGT5x7alU=
+			oBNkjfNh1isFhtuHC0DWvFO6QzmJ7VuEQJ8MwMf5ncU=
 			</data>
 		</dict>
-		<key>Modules/MeshulamSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/MeshulamSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZmUwYc151VIaYmgvw6E4W1Mzu80DiJt2v1RGT5x7alU=
+			oBNkjfNh1isFhtuHC0DWvFO6QzmJ7VuEQJ8MwMf5ncU=
 			</data>
 		</dict>
-		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Oi0Q9jPtZwSYZqV83UsnoJb6HLWafLHDDX70+2w5qE=
+			Ld6RVGxQ4/aEdF/dd5Lk2YGgrL4wy06KYlNE3KCa9z0=
 			</data>
 		</dict>
-		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qEhM+Nmni5fYSwnKMbRYb9xb0uYJTLJZxLTi3t4y8Zc=
+			e0b05CbUH+kNTixOyUIVoyy1+ieyDYO++Hdj0XoisLw=
 			</data>
 		</dict>
-		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Oi0Q9jPtZwSYZqV83UsnoJb6HLWafLHDDX70+2w5qE=
+			Ld6RVGxQ4/aEdF/dd5Lk2YGgrL4wy06KYlNE3KCa9z0=
 			</data>
 		</dict>
-		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qEhM+Nmni5fYSwnKMbRYb9xb0uYJTLJZxLTi3t4y8Zc=
+			e0b05CbUH+kNTixOyUIVoyy1+ieyDYO++Hdj0XoisLw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
