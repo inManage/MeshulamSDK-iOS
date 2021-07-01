@@ -25,9 +25,11 @@
 			<string></string>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>org.cocoapods.demo.MeshulamSDK-Example</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>MeshulamSDK</string>
+				<string>imeshulamsdk</string>
 			</array>
 		</dict>
 	</array>
