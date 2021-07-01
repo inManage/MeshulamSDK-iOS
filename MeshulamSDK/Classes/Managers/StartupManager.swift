@@ -18,6 +18,11 @@ public class StartupManager  {
         NetworkManager.shared.sendRequest(request)
     }
   
+    private func handleInitSDKResponse(_ response: InitSDKResponse) {
+        NetworkManager.shared.fillWithInitSDKResponse(response)
+        PaymentManager.shared.callCreatePaymentProcess()
+        SessionManager.shared.pushBitVC()
+    }
 }
 
 extension StartupManager: RequestFinishedProtocol {
@@ -29,10 +34,9 @@ extension StartupManager: RequestFinishedProtocol {
     }
     
     public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
-        if request.requestName == ServerRequests.initSDK {
-            let response = response as! InitSDKResponse
-            NetworkManager.shared.fillWithInitSDKResponse(response)
-            PaymentManager.shared.callCreatePaymentProcess()
+        let requestName = request.requestName
+        if requestName == ServerRequests.initSDK {
+            handleInitSDKResponse(response as! InitSDKResponse)
         }
     }
 }

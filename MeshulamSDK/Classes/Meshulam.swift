@@ -20,6 +20,5 @@ open class Meshulam: NSObject {
     private override init() {
         super.init()
         StartupManager.shared.callInitSDK()
-        SessionManager.shared.pushBitVC()
     }
 }
