@@ -5,7 +5,7 @@
 //  Created by Inmanage LTD on 26/05/2021.
 //
 
-import Foundation
+import UIKit
 
 
 open class Meshulam: NSObject {
@@ -20,5 +20,9 @@ open class Meshulam: NSObject {
     private override init() {
         super.init()
         StartupManager.shared.callInitSDK()
+    }
+    
+    public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
+        print("url meshulam",url.absoluteString)
     }
 }

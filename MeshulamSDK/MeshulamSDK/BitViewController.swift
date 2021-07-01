@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BitViewController: UIViewController {
+ class BitViewController: UIViewController, UIAlertViewDelegate {
 
     var createPaymentProcess: CreatePaymentProcessResponse?
     
@@ -29,7 +29,19 @@ class BitViewController: UIViewController {
     @IBAction func didTapExit(_ sender: Any) {
         PaymentManager.shared.callCancelBitPaymentRequest(requestFinishDelegate: nil)
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
+    
+        let alert = UIAlertController(title: "Bit",
+                                      message: "Succ",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        present(alert, animated: true)
+       
+    }
 }
+
+
 
 extension BitViewController: PaymentManagerDelegate {
     func createPaymentProcessResponseSucceeded(with response: CreatePaymentProcessResponse) {

@@ -50,6 +50,7 @@ public enum PaymentStatusOptions : Swift.Int {
   public var pageCode: Swift.String
   public var apiKey: Swift.String
   public var userId: Swift.String
+  public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class BaseRequest : ObjectiveC.NSObject {
