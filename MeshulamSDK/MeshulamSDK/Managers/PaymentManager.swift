@@ -14,7 +14,8 @@ protocol PaymentManagerDelegate: class {
 
 public class PaymentManager {
     
-    static let shared = PaymentManager()
+    public static var shared = PaymentManager()
+    
     weak var delegate: PaymentManagerDelegate?
     public var isTappedOnExitBtn = false
     public var createPaymentProcess: CreatePaymentProcessResponse?
@@ -52,7 +53,7 @@ extension PaymentManager: RequestFinishedProtocol {
     public func requestFailed(request: BaseRequest, response: BaseServerResponse?) {
         if let response = response {
             let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
-            Meshulam.shared.delegate?.onFailure(error)
+            Meshulam.shared().delegate?.onFailure(error)
         }
     }
     
@@ -73,7 +74,8 @@ extension PaymentManager: RequestFinishedProtocol {
             break
             
         case ServerRequests.cancelBitPayment:
-            print("cancelBitPayment")
+            Meshulam.shared().delegate?.onCancel()
+            Meshulam.destroy()
             break
         default: break
         }

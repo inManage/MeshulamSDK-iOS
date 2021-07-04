@@ -10,7 +10,15 @@ import UIKit
 
 public class SessionManager  {
     
-    static let shared = SessionManager()
+    private static var sharedInstance: SessionManager?
+    
+    public static func shared() -> SessionManager {
+        guard let instance = self.sharedInstance else {
+            self.sharedInstance = SessionManager()
+            return sharedInstance!
+        }
+        return instance
+    }
     
     public func pushBitVC() {
         let storyboard = UIStoryboard(name: "MainS", bundle: nil)

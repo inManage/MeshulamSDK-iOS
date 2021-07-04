@@ -14,7 +14,7 @@ class SettleSuspendedTransactionRequest: BaseRequest {
     }
     
     public static func createInitialDictParams() -> Dict {
-        var initialDictParams = [String:Any]()
+        let initialDictParams = [String:Any]()
         // add params to dictionary params
         return initialDictParams
     }

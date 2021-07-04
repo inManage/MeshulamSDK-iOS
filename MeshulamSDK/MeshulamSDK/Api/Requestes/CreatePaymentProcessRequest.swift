@@ -22,17 +22,17 @@ class CreatePaymentProcessRequest: BaseRequest {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }
         
-        let pageCode = Meshulam.shared.pageCode
+        let pageCode = Meshulam.shared().pageCode
         if !pageCode.isEmpty {
             initialDictParams.updateValue(pageCode, forKey: ServerParamNames.pageCode)
         }
         
-        let userId = Meshulam.shared.userId
+        let userId = Meshulam.shared().userId
         if !userId.isEmpty {
             initialDictParams.updateValue(userId, forKey: ServerParamNames.userId)
         }
         
-        let apiKey = Meshulam.shared.apiKey
+        let apiKey = Meshulam.shared().apiKey
         if !apiKey.isEmpty {
             initialDictParams.updateValue(apiKey, forKey: ServerParamNames.apiKey)
         }

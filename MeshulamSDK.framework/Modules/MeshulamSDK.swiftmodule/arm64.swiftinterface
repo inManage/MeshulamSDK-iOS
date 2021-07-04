@@ -1,12 +1,13 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 effective-4.1.50 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name MeshulamSDK
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name MeshulamSDK
 import Alamofire
 import Foundation
 @_exported import MeshulamSDK
 import Swift
 import UIKit
 @_hasMissingDesignatedInitializers public class PaymentManager {
+  public static var shared: MeshulamSDK.PaymentManager
   public var isTappedOnExitBtn: Swift.Bool
   public var createPaymentProcess: MeshulamSDK.CreatePaymentProcessResponse?
   public func callCreatePaymentProcess(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
@@ -47,12 +48,13 @@ public enum PaymentStatusOptions : Swift.Int {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class Meshulam : ObjectiveC.NSObject {
   weak open var delegate: MeshulamSDK.MeshulamDelegate?
-  public static let shared: MeshulamSDK.Meshulam
+  open class func shared() -> MeshulamSDK.Meshulam
+  open class func destroy()
   public var pageCode: Swift.String
   public var apiKey: Swift.String
   public var userId: Swift.String
-  public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
   @objc deinit
+  public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
 }
 @objc @_inheritsConvenienceInitializers public class BaseRequest : ObjectiveC.NSObject {
   public var requestName: Swift.String {
@@ -67,6 +69,7 @@ public enum PaymentStatusOptions : Swift.Int {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SessionManager {
+  public static func shared() -> MeshulamSDK.SessionManager
   public func pushBitVC()
   @objc deinit
 }
@@ -80,6 +83,7 @@ public enum PaymentStatusOptions : Swift.Int {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class StartupManager {
+  public static func shared() -> MeshulamSDK.StartupManager
   public func callInitSDK(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   @objc deinit
 }
@@ -102,7 +106,7 @@ extension StartupManager : MeshulamSDK.RequestFinishedProtocol {
 public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
   func onSuccess()
   func onFailure(_ error: MeshulamSDK.Error)
-  func onCancle()
+  func onCancel()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ErrorResponse : MeshulamSDK.BaseInnerResponse {
   @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse

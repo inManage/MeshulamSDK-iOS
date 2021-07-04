@@ -266,6 +266,7 @@ SWIFT_CLASS("_TtC11MeshulamSDK21SetBitPaymentResponse")
 - (BaseInnerResponse * _Nonnull)buildFromJSONDictWithJSONDict:(NSDictionary<NSString *, id> * _Nonnull)JSONDict SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif

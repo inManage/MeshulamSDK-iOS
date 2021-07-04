@@ -9,9 +9,18 @@ import Foundation
 
 public class StartupManager  {
     
-    static let shared = StartupManager()
+    private static var sharedInstance: StartupManager?
+    
+    public static func shared() -> StartupManager {
+        guard let instance = self.sharedInstance else {
+            self.sharedInstance = StartupManager()
+            return sharedInstance!
+        }
+        return instance
+    }
     
     public func callInitSDK(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+        PaymentManager.shared.isTappedOnExitBtn = false
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = InitSDKRequest.createInitialDictParams()
         let request    = InitSDKRequest().initWithDictParams(parameters, delegate)
@@ -28,7 +37,7 @@ extension StartupManager: RequestFinishedProtocol {
     public func requestFailed(request: BaseRequest, response: BaseServerResponse?) {
         if let response = response {
             let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
-            Meshulam.shared.delegate?.onFailure(error)
+            Meshulam.shared().delegate?.onFailure(error)
         }
     }
     

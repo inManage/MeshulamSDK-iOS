@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770132691E3F800DFD8F3 /* Gallery.xcassets */; };
 		8D3770172691E3F800DFD8F3 /* MainS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770142691E3F800DFD8F3 /* MainS.storyboard */; };
-		8DB45E18268DEB00009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
-		8DB45E19268DEB07009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
+		8D6297AE26920D910034DA47 /* UIApplicationExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */; };
 		8DBC47652691D03400CE44E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB45E16268DEAFE009EAA00 /* Alamofire.framework */; };
 		8DBC47662691D03400CE44E2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB45E16268DEAFE009EAA00 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DBC47682691D03900CE44E2 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBC47672691D03900CE44E2 /* Lottie.framework */; };
@@ -79,6 +78,7 @@
 		8D6297AA2691E7280034DA47 /* Heebo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Medium.ttf"; sourceTree = "<group>"; };
 		8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Regular.ttf"; sourceTree = "<group>"; };
 		8D6297AC2691E7280034DA47 /* Heebo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Thin.ttf"; sourceTree = "<group>"; };
+		8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtenstion.swift; sourceTree = "<group>"; };
 		8DB45E16268DEAFE009EAA00 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBC47672691D03900CE44E2 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,8 +125,6 @@
 			files = (
 				C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */,
 				8DBC47682691D03900CE44E2 /* Lottie.framework in Frameworks */,
-				8DB45E19268DEB07009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */,
-				8DB45E18268DEB00009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */,
 				8DBC47652691D03400CE44E2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F3667A268DA1580018D734 /* NSObjectExtenstion.swift */,
+				8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -419,6 +418,7 @@
 				C7F3669D268DA1590018D734 /* NSObjectExtenstion.swift in Sources */,
 				C7F366A5268DA1590018D734 /* MeshulamDelegate.swift in Sources */,
 				C7F3669A268DA1590018D734 /* ErrorResponse.swift in Sources */,
+				8D6297AE26920D910034DA47 /* UIApplicationExtenstion.swift in Sources */,
 				C7F366A1268DA1590018D734 /* NetworkManager.swift in Sources */,
 				C7F366A4268DA1590018D734 /* RequestFinishedProtocol.swift in Sources */,
 				C7F36691268DA1590018D734 /* CancelBitPaymentRequest.swift in Sources */,
@@ -482,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -541,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
