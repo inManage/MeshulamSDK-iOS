@@ -97,11 +97,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/MainS.storyboard"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Api/MainS.storyboard"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/Resources/MainS.storyboard"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/MainS.storyboard"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Api/MainS.storyboard"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/Resources/MainS.storyboard"
 fi
 

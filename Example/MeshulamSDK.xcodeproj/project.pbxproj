@@ -334,7 +334,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-resources.sh",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/MainS.storyboard",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Api/MainS.storyboard",
 				"${PODS_ROOT}/../../MeshulamSDK/Resources/MainS.storyboard",
 			);
 			name = "[CP] Copy Pods Resources";
