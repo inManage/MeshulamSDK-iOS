@@ -152,9 +152,7 @@
 				C7F36661268DA1580018D734 /* BitViewController.swift */,
 				C7F36686268DA1580018D734 /* Constants.swift */,
 				C7F36679268DA1580018D734 /* Extenstions */,
-				C7F3667B268DA1580018D734 /* MainS.storyboard */,
 				C7F3667E268DA1580018D734 /* Managers */,
-				C7F36687268DA1580018D734 /* Meshulam.swift */,
 				C7F36683268DA1580018D734 /* Protocols */,
 				C7F3667C268DA1580018D734 /* Validators */,
 				C7F3664A268DA11D0018D734 /* MeshulamSDK.h */,
@@ -166,6 +164,8 @@
 		C7F36662268DA1580018D734 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				C7F36687268DA1580018D734 /* Meshulam.swift */,
+				C7F3667B268DA1580018D734 /* MainS.storyboard */,
 				C7F36663268DA1580018D734 /* Requestes */,
 				C7F3666D268DA1580018D734 /* Responses */,
 			);
