@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		to0oIq2GZmnS0SyC3mI9EYpIT3k=
+		</data>
 		<key>Fonts/heebo/Heebo-Black.ttf</key>
 		<data>
 		WTeOkJAX7OzsWigqFV91qyGADBs=
@@ -98,7 +102,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eE1y3PM0gmjS2C5w5e+qPXwWjTE=
+		sCVhga2VuX7wbmLKSi5COVcpvIg=
+		</data>
+		<key>MainS.storyboardc/BitViewController.nib</key>
+		<data>
+		ISuEkNEGv/3BYaQuNIf+l8Soq4E=
+		</data>
+		<key>MainS.storyboardc/Info.plist</key>
+		<data>
+		sJDgw6KEjNrBYCz8zouW85CL0AA=
+		</data>
+		<key>MainS.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
+		<data>
+		7YBAxNYhf242do/4jApclivnA18=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
@@ -139,6 +155,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lMOre7C/1H+Jm2OeyYmDf7d5kr/Nm93sJ0yq8f++13E=
+			</data>
+		</dict>
 		<key>Fonts/heebo/Heebo-Black.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -298,6 +321,27 @@
 			<key>hash2</key>
 			<data>
 			mZzr8WJpn8eho3GVNnImBie7kPuE4WdEE2BtmmkFNoY=
+			</data>
+		</dict>
+		<key>MainS.storyboardc/BitViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZqxL2Ibf2YagB/TtJ1EX7tWkBNdsdRmeU74zfysLm5c=
+			</data>
+		</dict>
+		<key>MainS.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZYN4RTUcywZdvBTco/Pc/5e4Xqj81dO7RDNAZk0/eBk=
+			</data>
+		</dict>
+		<key>MainS.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2TLzLW94X1XL4Jf9yBAKtoOGgPrKuYVU51sKbTjrULU=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
