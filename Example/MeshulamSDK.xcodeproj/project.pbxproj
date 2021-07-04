@@ -334,11 +334,32 @@
 				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets",
 				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Api/MainS.storyboard",
 				"${PODS_ROOT}/../../MeshulamSDK/Resources/MainS.storyboard",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/bitLogo.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/bitLogo@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/bitLogo@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground.png",
+				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo.png",
+				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@3x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MainS.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@3x.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

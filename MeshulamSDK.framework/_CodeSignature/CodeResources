@@ -4,6 +4,38 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Fonts/heebo/Heebo-Black.ttf</key>
+		<data>
+		WTeOkJAX7OzsWigqFV91qyGADBs=
+		</data>
+		<key>Fonts/heebo/Heebo-Bold.ttf</key>
+		<data>
+		6OwKy/1w0ervZgbMe8f2c0xiVtM=
+		</data>
+		<key>Fonts/heebo/Heebo-ExtraBold.ttf</key>
+		<data>
+		HPsNQ4msrmCR2BeMR40sFjS9lak=
+		</data>
+		<key>Fonts/heebo/Heebo-Light.ttf</key>
+		<data>
+		1GdeGsBWMsJ7NZKwRuePEne7e/g=
+		</data>
+		<key>Fonts/heebo/Heebo-Medium.ttf</key>
+		<data>
+		JZUkaK+ubvleOle1Pt1uN6OQW3k=
+		</data>
+		<key>Fonts/heebo/Heebo-Regular.ttf</key>
+		<data>
+		mR2+sTJv08+g+I/vlNSfq9rLRVY=
+		</data>
+		<key>Fonts/heebo/Heebo-Thin.ttf</key>
+		<data>
+		CVs8nSjcWrlBbcnzZPpcc3QPEF8=
+		</data>
+		<key>Fonts/heebo/OFL.txt</key>
+		<data>
+		42edrk11kCGIejxPnwrwxIyiOqY=
+		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
 		c6A1PfBY2K6VdBSJ+JgE/aJFUh4=
@@ -86,7 +118,7 @@
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9aQTDCFXn3RNMzOlW5pCBd3+Lec=
+		SvCzcQ/DNr6Z+K8Rpa766z/Sen4=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -98,7 +130,7 @@
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		9aQTDCFXn3RNMzOlW5pCBd3+Lec=
+		SvCzcQ/DNr6Z+K8Rpa766z/Sen4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,6 +139,62 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Fonts/heebo/Heebo-Black.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eKgA5tQMN1IsDeXgBcdnc30v7etMZ/Qh1OfdxCfhPQE=
+			</data>
+		</dict>
+		<key>Fonts/heebo/Heebo-Bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WKVxLrl1lQSQhkIyYTtFgXY49hE/73D8Zr+FXYESIeM=
+			</data>
+		</dict>
+		<key>Fonts/heebo/Heebo-ExtraBold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KXNH0Th1WGTnxK/OfIisCRLWjJS7Mbv0fxI+MCt+lvk=
+			</data>
+		</dict>
+		<key>Fonts/heebo/Heebo-Light.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u+d/ZQd9rYNXEGbRIKaWnSAiHCnDqjsmFlu6lnWoFIA=
+			</data>
+		</dict>
+		<key>Fonts/heebo/Heebo-Medium.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hvmQWRy3DlMDn7fCLYzn+Ce90vv0JnJ/oX3qlRRnrN8=
+			</data>
+		</dict>
+		<key>Fonts/heebo/Heebo-Regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RpQ4kJMiOJsuCD1Tzem9bUTFSFqni3MrjSDe4OBkff8=
+			</data>
+		</dict>
+		<key>Fonts/heebo/Heebo-Thin.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cnVngOqi/Bb+xzSqnv7cdyVzT9j631dowfr2DJyfmdE=
+			</data>
+		</dict>
+		<key>Fonts/heebo/OFL.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qQqOvijzwpBaRFVxZgEKPSGf/M4XA8PDKA6oco1eLr0=
+			</data>
+		</dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<dict>
 			<key>hash2</key>
@@ -244,7 +332,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V5PRmXb2/683rYFW00+Cnbu0dgvbrnBCBM9IhJFXHjk=
+			tZquH5aQqdfOaKJRPYGuCP7VTJY4FT2o/8G0xzEviuw=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftdoc</key>
@@ -265,7 +353,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V5PRmXb2/683rYFW00+Cnbu0dgvbrnBCBM9IhJFXHjk=
+			tZquH5aQqdfOaKJRPYGuCP7VTJY4FT2o/8G0xzEviuw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

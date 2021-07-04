@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3770082691DE4600DFD8F3 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770072691DE4600DFD8F3 /* Fonts */; };
 		8DB45E18268DEB00009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
 		8DB45E19268DEB07009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
 		8DBC47652691D03400CE44E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB45E16268DEAFE009EAA00 /* Alamofire.framework */; };
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		4E30A5DD2ED8771447877801 /* Pods-MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK/Pods-MeshulamSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3770072691DE4600DFD8F3 /* Fonts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fonts; path = Resources/Fonts; sourceTree = SOURCE_ROOT; };
 		8DB45E16268DEAFE009EAA00 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBC47672691D03900CE44E2 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 		C7F36649268DA11D0018D734 /* MeshulamSDK */ = {
 			isa = PBXGroup;
 			children = (
+				8D3770072691DE4600DFD8F3 /* Fonts */,
 				C7F36662268DA1580018D734 /* Api */,
 				C7F36661268DA1580018D734 /* BitViewController.swift */,
 				C7F36686268DA1580018D734 /* Constants.swift */,
@@ -328,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3770082691DE4600DFD8F3 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
