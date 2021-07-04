@@ -68,18 +68,6 @@
 		<data>
 		eE1y3PM0gmjS2C5w5e+qPXwWjTE=
 		</data>
-		<key>MainS.storyboardc/BitViewController.nib</key>
-		<data>
-		aWCrS4LI0UzfFnzmfxI1r6DIVwU=
-		</data>
-		<key>MainS.storyboardc/Info.plist</key>
-		<data>
-		sJDgw6KEjNrBYCz8zouW85CL0AA=
-		</data>
-		<key>MainS.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
-		<data>
-		w21O9RkhIfHlmdg9US6623F+Mms=
-		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
 		v+eGu1uS2oCAy7YDOle4qbGcYRw=
@@ -222,27 +210,6 @@
 			<key>hash2</key>
 			<data>
 			mZzr8WJpn8eho3GVNnImBie7kPuE4WdEE2BtmmkFNoY=
-			</data>
-		</dict>
-		<key>MainS.storyboardc/BitViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pVrMHYMkzlnyg9W2ua6sF1ClTFlttjxu6f8Sb22atpo=
-			</data>
-		</dict>
-		<key>MainS.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZYN4RTUcywZdvBTco/Pc/5e4Xqj81dO7RDNAZk0/eBk=
-			</data>
-		</dict>
-		<key>MainS.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5D+e0xGdvL/JIbcGYj7JyfdjpMyZbDqd8YYKylbrVMo=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
