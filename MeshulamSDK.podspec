@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
    s.resources = [
    'MeshulamSDK/**/*.xcassets',
    'MeshulamSDK/**/*.storyboard',
-    'MeshulamSDK/**/*.xib',
+   'MeshulamSDK/**/*.xib',
    'MeshulamSDK/**/*.png']
     
    # s.source_files = 'MeshulamSDK/Classes/**/*'

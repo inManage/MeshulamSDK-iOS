@@ -18,19 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="עמוד המתנה " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-dH-B2M">
-                                <rect key="frame" x="143.5" y="323" width="88.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asz-fQ-296">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitBackground" translatesAutoresizingMaskIntoConstraints="NO" id="REP-WJ-XhS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asz-fQ-296">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="k2K-S1-ecQ"/>
                                     <constraint firstAttribute="width" constant="50" id="vOc-fH-19v"/>
                                 </constraints>
-                                <state key="normal" title="X"/>
+                                <state key="normal" image="x"/>
                                 <connections>
                                     <action selector="didTapExit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rTU-B0-nA5"/>
                                 </connections>
@@ -38,16 +35,22 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Bno-dH-B2M" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="38G-U0-Ii1"/>
                             <constraint firstItem="Asz-fQ-296" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="5wB-MA-wA6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="REP-WJ-XhS" secondAttribute="bottom" id="CMb-KR-Zkv"/>
                             <constraint firstItem="Asz-fQ-296" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Cx9-Nk-fiO"/>
-                            <constraint firstItem="Bno-dH-B2M" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="zNv-ih-DWe"/>
+                            <constraint firstItem="REP-WJ-XhS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="EYT-sm-dA7"/>
+                            <constraint firstAttribute="trailing" secondItem="REP-WJ-XhS" secondAttribute="trailing" id="wP9-ux-dzz"/>
+                            <constraint firstItem="REP-WJ-XhS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="z3F-eZ-h60"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="134"/>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bitBackground" width="375" height="812"/>
+        <image name="x" width="15" height="15"/>
+    </resources>
 </document>
