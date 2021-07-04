@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol PaymentManagerDelegate: class {
     func createPaymentProcessResponseSucceeded(with response: CreatePaymentProcessResponse)
@@ -15,9 +16,9 @@ public class PaymentManager {
     
     static let shared = PaymentManager()
     weak var delegate: PaymentManagerDelegate?
-    
-    public var bitPaymentId = ""
-    
+    public var isTappedOnExitBtn = false
+    public var createPaymentProcess: CreatePaymentProcessResponse?
+
     public func callCreatePaymentProcess(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CreatePaymentProcessRequest.createPaymentProcessDictParams()
@@ -38,6 +39,13 @@ public class PaymentManager {
         let request    = CancelBitPaymentRequest().initWithDictParams(parameters, delegate)
         NetworkManager.shared.sendRequest(request)
     }
+    
+    private func openBitApp() {
+        let url = createPaymentProcess?.url ?? ""
+        if let url = URL(string: url) {
+            UIApplication.shared.open(url)
+        }
+    }
 }
 
 extension PaymentManager: RequestFinishedProtocol {
@@ -54,8 +62,13 @@ extension PaymentManager: RequestFinishedProtocol {
        
         case ServerRequests.createPaymentProcess:
             if let response = response as? CreatePaymentProcessResponse {
-                bitPaymentId = response.bitPaymentId
-                delegate?.createPaymentProcessResponseSucceeded(with: response)
+                createPaymentProcess = response
+                if isTappedOnExitBtn {
+                    callCancelBitPaymentRequest()
+                } else {
+                    openBitApp()
+                    delegate?.createPaymentProcessResponseSucceeded(with: response)
+                }
             }
             break
             

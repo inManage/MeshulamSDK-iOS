@@ -7,7 +7,8 @@ import Foundation
 import Swift
 import UIKit
 @_hasMissingDesignatedInitializers public class PaymentManager {
-  public var bitPaymentId: Swift.String
+  public var isTappedOnExitBtn: Swift.Bool
+  public var createPaymentProcess: MeshulamSDK.CreatePaymentProcessResponse?
   public func callCreatePaymentProcess(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   public func callGetBitPaymentStatusRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   public func callCancelBitPaymentRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)

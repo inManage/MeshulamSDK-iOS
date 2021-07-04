@@ -9,25 +9,26 @@ import UIKit
 
  class BitViewController: UIViewController, UIAlertViewDelegate {
 
-    var createPaymentProcess: CreatePaymentProcessResponse?
+    @IBOutlet weak var titleLable: UILabel!
+    @IBOutlet weak var exitBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        setDelegats()
+    }
+    
+    private func setDelegats() {
         PaymentManager.shared.delegate = self
     }
     
-    private func startBitProgress() {
-        openBitApp()
-    }
-    
-    private func openBitApp() {
-        if let url = URL(string: createPaymentProcess?.url ?? "") {
-            UIApplication.shared.open(url)
-        }
+    private func setupUI() {
+        titleLable.font = UIFont(name: "Heebo-Regular", size: 22)
     }
     
     @IBAction func didTapExit(_ sender: Any) {
-        PaymentManager.shared.callCancelBitPaymentRequest(requestFinishDelegate: nil)
+        PaymentManager.shared.isTappedOnExitBtn = true
+        self.dismiss(animated: true, completion: nil)
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
@@ -41,11 +42,8 @@ import UIKit
     }
 }
 
-
-
 extension BitViewController: PaymentManagerDelegate {
     func createPaymentProcessResponseSucceeded(with response: CreatePaymentProcessResponse) {
-        createPaymentProcess = response
-        startBitProgress()
+        //TODO: Delete this delegate if not nedded!
     }
 }

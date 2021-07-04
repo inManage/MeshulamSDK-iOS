@@ -64,7 +64,9 @@ Pod::Spec.new do |s|
    'MeshulamSDK/**/*.xcassets',
    'MeshulamSDK/**/*.storyboard',
    'MeshulamSDK/**/*.xib',
-   'MeshulamSDK/**/*.png']
+   'MeshulamSDK/**/*.png',
+   'MeshulamSDK/**/*.otf',
+   'MeshulamSDK/**/*.ttf']
     
    # s.source_files = 'MeshulamSDK/Classes/**/*'
 #    s.public_header_files =  'MeshulamSDK/Classes/PublicHeaders/*.h'

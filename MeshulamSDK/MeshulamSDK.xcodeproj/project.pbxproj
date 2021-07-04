@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D3770152691E3F800DFD8F3 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770122691E3F700DFD8F3 /* Fonts */; };
 		8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770132691E3F800DFD8F3 /* Gallery.xcassets */; };
 		8D3770172691E3F800DFD8F3 /* MainS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770142691E3F800DFD8F3 /* MainS.storyboard */; };
 		8DB45E18268DEB00009EAA00 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
@@ -71,9 +70,15 @@
 /* Begin PBXFileReference section */
 		4E30A5DD2ED8771447877801 /* Pods-MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK/Pods-MeshulamSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D3770122691E3F700DFD8F3 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		8D3770132691E3F800DFD8F3 /* Gallery.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Gallery.xcassets; sourceTree = "<group>"; };
 		8D3770142691E3F800DFD8F3 /* MainS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainS.storyboard; sourceTree = "<group>"; };
+		8D6297A62691E7280034DA47 /* Heebo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8D6297A72691E7280034DA47 /* Heebo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Bold.ttf"; sourceTree = "<group>"; };
+		8D6297A82691E7280034DA47 /* Heebo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Black.ttf"; sourceTree = "<group>"; };
+		8D6297A92691E7280034DA47 /* Heebo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Light.ttf"; sourceTree = "<group>"; };
+		8D6297AA2691E7280034DA47 /* Heebo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Medium.ttf"; sourceTree = "<group>"; };
+		8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Regular.ttf"; sourceTree = "<group>"; };
+		8D6297AC2691E7280034DA47 /* Heebo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Thin.ttf"; sourceTree = "<group>"; };
 		8DB45E16268DEAFE009EAA00 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBC47672691D03900CE44E2 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +146,13 @@
 		8D37700B2691E3BB00DFD8F3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8D3770122691E3F700DFD8F3 /* Fonts */,
+				8D6297A82691E7280034DA47 /* Heebo-Black.ttf */,
+				8D6297A72691E7280034DA47 /* Heebo-Bold.ttf */,
+				8D6297A62691E7280034DA47 /* Heebo-ExtraBold.ttf */,
+				8D6297A92691E7280034DA47 /* Heebo-Light.ttf */,
+				8D6297AA2691E7280034DA47 /* Heebo-Medium.ttf */,
+				8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */,
+				8D6297AC2691E7280034DA47 /* Heebo-Thin.ttf */,
 				8D3770132691E3F800DFD8F3 /* Gallery.xcassets */,
 				8D3770142691E3F800DFD8F3 /* MainS.storyboard */,
 			);
@@ -346,7 +357,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */,
-				8D3770152691E3F800DFD8F3 /* Fonts in Resources */,
 				8D3770172691E3F800DFD8F3 /* MainS.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

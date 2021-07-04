@@ -26,6 +26,8 @@
     "MeshulamSDK/**/*.xcassets",
     "MeshulamSDK/**/*.storyboard",
     "MeshulamSDK/**/*.xib",
-    "MeshulamSDK/**/*.png"
+    "MeshulamSDK/**/*.png",
+    "MeshulamSDK/**/*.otf",
+    "MeshulamSDK/**/*.ttf"
   ]
 }

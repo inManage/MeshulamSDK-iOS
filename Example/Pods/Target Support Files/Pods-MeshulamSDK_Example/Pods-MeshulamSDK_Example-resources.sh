@@ -113,6 +113,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@2x.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@3x.png"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Black.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Bold.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-ExtraBold.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Light.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets"
@@ -131,6 +138,13 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@2x.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@3x.png"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Black.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Bold.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-ExtraBold.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Light.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

@@ -20,6 +20,7 @@ open class Meshulam: NSObject {
     private override init() {
         super.init()
         StartupManager.shared.callInitSDK()
+        SessionManager.shared.pushBitVC()
     }
     
     public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {

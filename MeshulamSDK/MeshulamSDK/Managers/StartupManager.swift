@@ -21,7 +21,6 @@ public class StartupManager  {
     private func handleInitSDKResponse(_ response: InitSDKResponse) {
         NetworkManager.shared.fillWithInitSDKResponse(response)
         PaymentManager.shared.callCreatePaymentProcess()
-        SessionManager.shared.pushBitVC()
     }
 }
 

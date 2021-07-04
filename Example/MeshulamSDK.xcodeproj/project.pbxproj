@@ -346,6 +346,13 @@
 				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x.png",
 				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@2x.png",
 				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Black.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Bold.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-ExtraBold.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Light.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -360,6 +367,13 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Black.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Bold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-ExtraBold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Light.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Medium.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Thin.ttf",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

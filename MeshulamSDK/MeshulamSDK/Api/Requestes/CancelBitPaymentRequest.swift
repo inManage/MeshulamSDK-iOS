@@ -15,8 +15,14 @@ class CancelBitPaymentRequest: BaseRequest {
     
     public static func createCancelBitPaymentParams() -> Dict {
         var initialDictParams = [String:Any]()
-        let bitPaymentId = PaymentManager.shared.bitPaymentId
-        initialDictParams.updateValue(bitPaymentId, forKey: ServerParamNames.bitPaymentId)
+        
+        let applicationToken = NetworkManager.shared.applicationToken
+        if !applicationToken.isEmpty {
+            initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
+        }
+        
+        let bitPaymentId = PaymentManager.shared.createPaymentProcess?.bitPaymentId
+        initialDictParams.updateValue(bitPaymentId ?? "", forKey: ServerParamNames.bitPaymentId)
         return initialDictParams
     }
     
