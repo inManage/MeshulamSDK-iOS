@@ -79,6 +79,8 @@ public class NetworkManager: NSObject {
         if let delegate = request.requestFinishedDelegate {
             delegate.requestFailed(request: request, response: serverResponse ?? nil)
         }
+        PopupManager.shared.pushErrorPopup(strTitle: serverResponse?.failureMessage, strFirstBtn: ButtonsTitle.okBtn) { _ in
+        }
     }
     
     public func fillWithInitSDKResponse(_ response: InitSDKResponse) {

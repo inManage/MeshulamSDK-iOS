@@ -28,14 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A45990A6FF1311BAE254ED4CAFD936A /* PBXContainerItemProxy */ = {
+		3888615B1457F17B26DC5CADE3A8B3A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 16FE490789A2B1758E422A712A15C863;
 			remoteInfo = "Pods-MeshulamSDK_Example";
 		};
-		E5F48FCB42E9471ED04562AE846D1299 /* PBXContainerItemProxy */ = {
+		57AC433613B7C8A83DBBF0CB0F9A3772 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -46,44 +46,45 @@
 
 /* Begin PBXFileReference section */
 		000F8CFD01A3AF72DC36676A8932FF4B /* Pods-MeshulamSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Tests.modulemap"; sourceTree = "<group>"; };
-		0DDEA5B01362935E9951A233B60EE519 /* Heebo-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Thin.ttf"; sourceTree = "<group>"; };
+		0D6B21ADBDDDAB6AB97F9B8258FCA304 /* Gallery.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Gallery.xcassets; sourceTree = "<group>"; };
 		10EFEABBEA74DF3B77A972054EBD087D /* Pods-MeshulamSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		166DE5498AC2AC851724632B5DF71C37 /* MainS.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MainS.storyboard; sourceTree = "<group>"; };
-		1ADF4EE8E4CC283658327B2C4680DE5F /* MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.debug.xcconfig; sourceTree = "<group>"; };
-		1C93382B5F9D6C757078EF20D22F47C3 /* Gallery.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Gallery.xcassets; path = MeshulamSDK/MeshulamSDK/Gallery.xcassets; sourceTree = "<group>"; };
+		14B87C21C46BDF1A5983AB306115E9D2 /* MainS.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MainS.storyboard; sourceTree = "<group>"; };
+		1EE04612F674B5B1DF63C8AFDA436136 /* Heebo-ExtraBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-ExtraBold.ttf"; sourceTree = "<group>"; };
 		2655CFFF703373D0F4711B53E5118DB5 /* Pods-MeshulamSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-Info.plist"; sourceTree = "<group>"; };
 		27A8CA6868BA868801A1AE8CD915DE0D /* Pods-MeshulamSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		29B2E3B5DD868E202840665CE03E1C88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3637D1CD1CF9F3894B64F1C42075E5FB /* MeshulamPopup.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MeshulamPopup.storyboard; sourceTree = "<group>"; };
 		3C4707B92782BA31D4EDB4EB2EBB55EF /* Pods_MeshulamSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MeshulamSDK_Tests.framework; path = "Pods-MeshulamSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D85E4068F86D7D1E6FDA53BD4CA124 /* Pods-MeshulamSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MeshulamSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4368A7B672820104729EC788E6FA3FFA /* Pods-MeshulamSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4F8BEC60B39C495BA6F2F26A20BC15E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		5017FA47AB425A9953C4ACF820CBB434 /* Heebo-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Regular.ttf"; sourceTree = "<group>"; };
-		6CF32165834138C58B1FC9F94A76F7D8 /* Heebo-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Light.ttf"; sourceTree = "<group>"; };
-		721841834786377792CC51B72FF3F3CB /* MeshulamSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MeshulamSDK.framework; sourceTree = "<group>"; };
+		45AC6BEED7783145D8FF8047CF0D4EC5 /* Heebo-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Regular.ttf"; sourceTree = "<group>"; };
+		5C13DFC244485C85EBAFD9C93EDF77B8 /* Heebo-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Black.ttf"; sourceTree = "<group>"; };
+		696AF194AFAA5096DEE2EB38FDFAC582 /* Heebo-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Medium.ttf"; sourceTree = "<group>"; };
+		6EF16CE03BD0C648B95B81664FACDF24 /* MeshulamSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MeshulamSDK.framework; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7372E73D748B3BC34954E24BD058EA15 /* Pods-MeshulamSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-Info.plist"; sourceTree = "<group>"; };
-		76DEE542C048F65ECD2DDB9277839394 /* Heebo-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Black.ttf"; sourceTree = "<group>"; };
-		7C8CCC53A600F12CECCECE60E41CD06F /* MainS.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MainS.storyboard; sourceTree = "<group>"; };
 		7D2253964FB21DFCBBFC9BE8E8B45960 /* Pods_MeshulamSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MeshulamSDK_Example.framework; path = "Pods-MeshulamSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F05161E4A2C10FCD8855D386B2721BC /* MeshulamSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.release.xcconfig; sourceTree = "<group>"; };
+		813A0651B8888EE2C2998689B2B210FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		94657E4ED96FC7F89C2DE5E6720C72F0 /* Pods-MeshulamSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6746271266E3D1551E2135E1065C754 /* Heebo-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Bold.ttf"; sourceTree = "<group>"; };
+		A8832E886F1B7EFF18C319CC4F567DFC /* MeshulamMain.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MeshulamMain.storyboard; sourceTree = "<group>"; };
 		A8CFDCF6E3BF21D7D75F1244405A432E /* Pods-MeshulamSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFB9E97B110DFA09568182600CB5C4A /* Pods-MeshulamSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Example.modulemap"; sourceTree = "<group>"; };
-		BB724C3863239222696B5D9331720AC2 /* Heebo-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Bold.ttf"; sourceTree = "<group>"; };
 		BD66884D975D4A1B507A8DBA846EB623 /* Pods-MeshulamSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MeshulamSDK_Example-resources.sh"; sourceTree = "<group>"; };
 		C08590278A8AE9CFACA18F4044BF41A7 /* Pods-MeshulamSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C142E1644E60ACB9CD8DD8D8D99354FF /* MeshulamSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MeshulamSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C571780579319FA0C4CD2C0D40B60168 /* Heebo-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Thin.ttf"; sourceTree = "<group>"; };
 		D883A3C59F3F8582DEE084AEEDB65845 /* Pods-MeshulamSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		D97224925F5E1B796391E06202034A4C /* Gallery.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Gallery.xcassets; sourceTree = "<group>"; };
+		D89374CDB804BBDC09D06A8B4ADDFD0F /* MeshulamSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MeshulamSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DA7B0606D3955C92896AF085427835FC /* MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.debug.xcconfig; sourceTree = "<group>"; };
 		DC1C3DFEC5FF8057CD6312264248B2DE /* Pods-MeshulamSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		DD740AAA757D92E01F00F376716BE139 /* Heebo-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Medium.ttf"; sourceTree = "<group>"; };
+		E6F9ED487EC2CCB3E7AA523F1D5476E4 /* MeshulamSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.release.xcconfig; sourceTree = "<group>"; };
 		E850E4E30AF179ED2D04F635D31FE21D /* Pods-MeshulamSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EAD270F3238F772E64CA079009EDF6B2 /* Gallery.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Gallery.xcassets; path = MeshulamSDK/MeshulamSDK/Gallery.xcassets; sourceTree = "<group>"; };
 		EED0773077D7CC2E68E0D01063750908 /* Pods-MeshulamSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EEF00729ACF7BA8650F4A5BF0E3013E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F093E3C8F75049F13A31C751661B844A /* Pods-MeshulamSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F47DE567BFAAA48FFBA1BB62A2800092 /* Heebo-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-Light.ttf"; sourceTree = "<group>"; };
 		F9C2838BACDE921F92698638469BF2CC /* Pods-MeshulamSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		FED119AEBCA631417BE77CC65899AC46 /* Heebo-ExtraBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Heebo-ExtraBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,26 +107,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		007220CC399FA641AC411F7B7930CCF8 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				4F8BEC60B39C495BA6F2F26A20BC15E6 /* LICENSE */,
-				C142E1644E60ACB9CD8DD8D8D99354FF /* MeshulamSDK.podspec */,
-				EEF00729ACF7BA8650F4A5BF0E3013E4 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		0346CEEB392B5AD218BB4A03C11A0ADB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1ADF4EE8E4CC283658327B2C4680DE5F /* MeshulamSDK.debug.xcconfig */,
-				7F05161E4A2C10FCD8855D386B2721BC /* MeshulamSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MeshulamSDK";
-			sourceTree = "<group>";
-		};
 		2401E2DFD9E76E556FEE9258F4A2A90A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,13 +116,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A8648C388369C98D6C843FDE62346E6 /* Api */ = {
+		3B9A1172E278F164AB49241EA121AAAF /* MeshulamSDK */ = {
 			isa = PBXGroup;
 			children = (
-				7C8CCC53A600F12CECCECE60E41CD06F /* MainS.storyboard */,
+				EAD270F3238F772E64CA079009EDF6B2 /* Gallery.xcassets */,
+				E3AC4E9A507AF24660F905FC53B413DB /* Api */,
+				D7DB90D36445D9B61FE2FEB47BE52EFA /* Frameworks */,
+				BE86E160A590BB79BB80DB41F99AED70 /* Pod */,
+				499AA1FE33614350EC19974FD737F337 /* Resources */,
+				96DA680E82417CFAA02F7661477F72EF /* Support Files */,
 			);
-			name = Api;
-			path = MeshulamSDK/MeshulamSDK/Api;
+			name = MeshulamSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		499AA1FE33614350EC19974FD737F337 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D6B21ADBDDDAB6AB97F9B8258FCA304 /* Gallery.xcassets */,
+				5C13DFC244485C85EBAFD9C93EDF77B8 /* Heebo-Black.ttf */,
+				A6746271266E3D1551E2135E1065C754 /* Heebo-Bold.ttf */,
+				1EE04612F674B5B1DF63C8AFDA436136 /* Heebo-ExtraBold.ttf */,
+				F47DE567BFAAA48FFBA1BB62A2800092 /* Heebo-Light.ttf */,
+				696AF194AFAA5096DEE2EB38FDFAC582 /* Heebo-Medium.ttf */,
+				45AC6BEED7783145D8FF8047CF0D4EC5 /* Heebo-Regular.ttf */,
+				C571780579319FA0C4CD2C0D40B60168 /* Heebo-Thin.ttf */,
+				A8832E886F1B7EFF18C319CC4F567DFC /* MeshulamMain.storyboard */,
+				3637D1CD1CF9F3894B64F1C42075E5FB /* MeshulamPopup.storyboard */,
+			);
+			name = Resources;
+			path = MeshulamSDK/MeshulamSDK/Resources;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -152,24 +156,10 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		809FCB366F08A7A8750C5049F89C8C91 /* MeshulamSDK */ = {
-			isa = PBXGroup;
-			children = (
-				1C93382B5F9D6C757078EF20D22F47C3 /* Gallery.xcassets */,
-				3A8648C388369C98D6C843FDE62346E6 /* Api */,
-				93008CD34326FEA038C0F91152E4F4CC /* Frameworks */,
-				007220CC399FA641AC411F7B7930CCF8 /* Pod */,
-				E69657D4061B7A0183BC7A76EB8AA436 /* Resources */,
-				0346CEEB392B5AD218BB4A03C11A0ADB /* Support Files */,
-			);
-			name = MeshulamSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		9093E2BECA3615BFD3DA84C4928D50C4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				809FCB366F08A7A8750C5049F89C8C91 /* MeshulamSDK */,
+				3B9A1172E278F164AB49241EA121AAAF /* MeshulamSDK */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -192,12 +182,14 @@
 			path = "Target Support Files/Pods-MeshulamSDK_Example";
 			sourceTree = "<group>";
 		};
-		93008CD34326FEA038C0F91152E4F4CC /* Frameworks */ = {
+		96DA680E82417CFAA02F7661477F72EF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				721841834786377792CC51B72FF3F3CB /* MeshulamSDK.framework */,
+				DA7B0606D3955C92896AF085427835FC /* MeshulamSDK.debug.xcconfig */,
+				E6F9ED487EC2CCB3E7AA523F1D5476E4 /* MeshulamSDK.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MeshulamSDK";
 			sourceTree = "<group>";
 		};
 		97218321739A5A7B9B4D982C6E9B6E81 /* Targets Support Files */ = {
@@ -225,6 +217,16 @@
 			path = "Target Support Files/Pods-MeshulamSDK_Tests";
 			sourceTree = "<group>";
 		};
+		BE86E160A590BB79BB80DB41F99AED70 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				29B2E3B5DD868E202840665CE03E1C88 /* LICENSE */,
+				D89374CDB804BBDC09D06A8B4ADDFD0F /* MeshulamSDK.podspec */,
+				813A0651B8888EE2C2998689B2B210FB /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -244,21 +246,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E69657D4061B7A0183BC7A76EB8AA436 /* Resources */ = {
+		D7DB90D36445D9B61FE2FEB47BE52EFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D97224925F5E1B796391E06202034A4C /* Gallery.xcassets */,
-				76DEE542C048F65ECD2DDB9277839394 /* Heebo-Black.ttf */,
-				BB724C3863239222696B5D9331720AC2 /* Heebo-Bold.ttf */,
-				FED119AEBCA631417BE77CC65899AC46 /* Heebo-ExtraBold.ttf */,
-				6CF32165834138C58B1FC9F94A76F7D8 /* Heebo-Light.ttf */,
-				DD740AAA757D92E01F00F376716BE139 /* Heebo-Medium.ttf */,
-				5017FA47AB425A9953C4ACF820CBB434 /* Heebo-Regular.ttf */,
-				0DDEA5B01362935E9951A233B60EE519 /* Heebo-Thin.ttf */,
-				166DE5498AC2AC851724632B5DF71C37 /* MainS.storyboard */,
+				6EF16CE03BD0C648B95B81664FACDF24 /* MeshulamSDK.framework */,
 			);
-			name = Resources;
-			path = MeshulamSDK/MeshulamSDK/Resources;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3AC4E9A507AF24660F905FC53B413DB /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				14B87C21C46BDF1A5983AB306115E9D2 /* MainS.storyboard */,
+			);
+			name = Api;
+			path = MeshulamSDK/MeshulamSDK/Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +297,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				850B25023DDE1F91B871E11262A0CDB3 /* PBXTargetDependency */,
+				E225488F2C69D4DAA716205EF46FE3B5 /* PBXTargetDependency */,
 			);
 			name = "Pods-MeshulamSDK_Example";
 			productName = "Pods-MeshulamSDK_Example";
@@ -314,7 +316,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				914904BB43FF60503297C26AB16B1948 /* PBXTargetDependency */,
+				53F36E88ABF5B2969537DB44867838AD /* PBXTargetDependency */,
 			);
 			name = "Pods-MeshulamSDK_Tests";
 			productName = "Pods-MeshulamSDK_Tests";
@@ -387,24 +389,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		850B25023DDE1F91B871E11262A0CDB3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MeshulamSDK;
-			target = 11A29FD9D8AE06C53CB25F0B8AA20DBD /* MeshulamSDK */;
-			targetProxy = E5F48FCB42E9471ED04562AE846D1299 /* PBXContainerItemProxy */;
-		};
-		914904BB43FF60503297C26AB16B1948 /* PBXTargetDependency */ = {
+		53F36E88ABF5B2969537DB44867838AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MeshulamSDK_Example";
 			target = 16FE490789A2B1758E422A712A15C863 /* Pods-MeshulamSDK_Example */;
-			targetProxy = 0A45990A6FF1311BAE254ED4CAFD936A /* PBXContainerItemProxy */;
+			targetProxy = 3888615B1457F17B26DC5CADE3A8B3A5 /* PBXContainerItemProxy */;
+		};
+		E225488F2C69D4DAA716205EF46FE3B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MeshulamSDK;
+			target = 11A29FD9D8AE06C53CB25F0B8AA20DBD /* MeshulamSDK */;
+			targetProxy = 57AC433613B7C8A83DBBF0CB0F9A3772 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		175CB0DEB5D57C46505EC11229DCBD2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F05161E4A2C10FCD8855D386B2721BC /* MeshulamSDK.release.xcconfig */;
+			baseConfigurationReference = E6F9ED487EC2CCB3E7AA523F1D5476E4 /* MeshulamSDK.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -524,7 +526,7 @@
 		};
 		7A9C9B672E63F587E9EF97870E80319C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1ADF4EE8E4CC283658327B2C4680DE5F /* MeshulamSDK.debug.xcconfig */;
+			baseConfigurationReference = DA7B0606D3955C92896AF085427835FC /* MeshulamSDK.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

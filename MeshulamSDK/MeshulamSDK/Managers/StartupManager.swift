@@ -9,15 +9,7 @@ import Foundation
 
 public class StartupManager  {
     
-    private static var sharedInstance: StartupManager?
-    
-    public static func shared() -> StartupManager {
-        guard let instance = self.sharedInstance else {
-            self.sharedInstance = StartupManager()
-            return sharedInstance!
-        }
-        return instance
-    }
+    public static var shared = StartupManager()
     
     public func callInitSDK(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         PaymentManager.shared.isTappedOnExitBtn = false

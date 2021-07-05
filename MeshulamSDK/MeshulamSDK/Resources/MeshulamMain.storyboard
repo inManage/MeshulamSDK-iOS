@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -21,17 +21,17 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitBackground" translatesAutoresizingMaskIntoConstraints="NO" id="REP-WJ-XhS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asz-fQ-296">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="44" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="k2K-S1-ecQ"/>
-                                    <constraint firstAttribute="width" constant="50" id="vOc-fH-19v"/>
+                                    <constraint firstAttribute="height" constant="80" id="k2K-S1-ecQ"/>
+                                    <constraint firstAttribute="width" constant="80" id="vOc-fH-19v"/>
                                 </constraints>
                                 <state key="normal" image="x"/>
                                 <connections>
@@ -39,16 +39,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="93" placeholderIntrinsicHeight="132" translatesAutoresizingMaskIntoConstraints="NO" id="Sv1-8V-7Ta">
-                                <rect key="frame" x="116" y="264.5" width="143" height="138"/>
+                                <rect key="frame" x="120" y="384.33333333333331" width="174" height="137.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מיד תועברו לתשלום ב-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsZ-dg-Aa6">
-                                        <rect key="frame" x="0.0" y="0.0" width="143" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="64.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Heebo-Regular" family="Heebo" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tfa-IE-MEy">
-                                        <rect key="frame" x="0.0" y="69" width="143" height="69"/>
+                                        <rect key="frame" x="0.0" y="68.666666666666686" width="174" height="69"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,7 +66,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Asz-fQ-296" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="5wB-MA-wA6"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="REP-WJ-XhS" secondAttribute="bottom" id="CMb-KR-Zkv"/>
+                            <constraint firstAttribute="bottom" secondItem="REP-WJ-XhS" secondAttribute="bottom" id="CMb-KR-Zkv"/>
                             <constraint firstItem="Asz-fQ-296" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Cx9-Nk-fiO"/>
                             <constraint firstItem="REP-WJ-XhS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="EYT-sm-dA7"/>
                             <constraint firstItem="Sv1-8V-7Ta" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="100" id="LKN-ME-CSw"/>
@@ -74,7 +74,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Sv1-8V-7Ta" secondAttribute="trailing" constant="100" id="iPn-L4-8Ie"/>
                             <constraint firstItem="Sv1-8V-7Ta" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerXWithinMargins" id="r7k-7f-js6"/>
                             <constraint firstAttribute="trailing" secondItem="REP-WJ-XhS" secondAttribute="trailing" id="wP9-ux-dzz"/>
-                            <constraint firstItem="REP-WJ-XhS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="z3F-eZ-h60"/>
+                            <constraint firstItem="REP-WJ-XhS" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="z3F-eZ-h60"/>
                         </constraints>
                     </view>
                     <connections>

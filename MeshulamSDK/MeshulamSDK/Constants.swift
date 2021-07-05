@@ -15,15 +15,25 @@ public class Constants {
     #endif
 }
 
+public struct Titles {
+    static let canclePaymentTitle = "האם אתה בטוח שברצונך לבטל את התשלום?"
+}
+
+public struct ButtonsTitle {
+    static let okBtn = "הבנתי, תודה"
+    static let bitBtn = "המשך עם"
+    static let cancleBtn = "ביטול"
+}
+
 public struct ServerRequests {
     static let request = "request"
     static let initSDK = "initSDK"
     static let createPaymentProcess = "createPaymentProcess"
     static let getBitPaymentStatus = "getBitPaymentStatus"
-    static let setBitPayment = "setBitPaymentRequest"
+    static let setBitPayment = "setBitPayment"
     static let cancelBitPayment = "cancelBitPayment"
     static let getPaymentProcessInfo = "getPaymentProcessInfo"
-    static let settleSuspendedTransaction = "settleSuspendedTransactionRequest"
+    static let settleSuspendedTransaction = "settleSuspendedTransaction"
     static let doPayment = "doPayment"
 }
 

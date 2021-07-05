@@ -13,6 +13,7 @@ import UIKit
   public func callCreatePaymentProcess(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   public func callGetBitPaymentStatusRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   public func callCancelBitPaymentRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callSetBitPaymentRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   @objc deinit
 }
 extension PaymentManager : MeshulamSDK.RequestFinishedProtocol {
@@ -53,8 +54,13 @@ public enum PaymentStatusOptions : Swift.Int {
   public var pageCode: Swift.String
   public var apiKey: Swift.String
   public var userId: Swift.String
-  @objc deinit
   public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PopupManager : ObjectiveC.NSObject {
+  public static var shared: MeshulamSDK.PopupManager
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class BaseRequest : ObjectiveC.NSObject {
   public var requestName: Swift.String {
@@ -69,7 +75,7 @@ public enum PaymentStatusOptions : Swift.Int {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SessionManager {
-  public static func shared() -> MeshulamSDK.SessionManager
+  public static var shared: MeshulamSDK.SessionManager
   public func pushBitVC()
   @objc deinit
 }
@@ -83,7 +89,7 @@ public enum PaymentStatusOptions : Swift.Int {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class StartupManager {
-  public static func shared() -> MeshulamSDK.StartupManager
+  public static var shared: MeshulamSDK.StartupManager
   public func callInitSDK(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   @objc deinit
 }

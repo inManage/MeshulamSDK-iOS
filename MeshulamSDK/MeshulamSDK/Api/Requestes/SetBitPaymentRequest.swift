@@ -13,9 +13,15 @@ class SetBitPaymentRequest : BaseRequest {
         return  BaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
     }
     
-    public static func createInitialDictParams() -> Dict {
+    public static func createSetBitPaymentParams() -> Dict {
         var initialDictParams = [String:Any]()
-        // add params to dictionary params
+        let applicationToken = NetworkManager.shared.applicationToken
+        if !applicationToken.isEmpty {
+            initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
+        }
+        
+        let bitPaymentId = PaymentManager.shared.createPaymentProcess?.bitPaymentId
+        initialDictParams.updateValue(bitPaymentId ?? "", forKey: ServerParamNames.bitPaymentId)
         return initialDictParams
     }
     

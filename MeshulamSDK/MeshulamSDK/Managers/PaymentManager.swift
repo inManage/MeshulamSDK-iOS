@@ -21,6 +21,7 @@ public class PaymentManager {
     public var createPaymentProcess: CreatePaymentProcessResponse?
 
     public func callCreatePaymentProcess(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+        PaymentManager.shared.isTappedOnExitBtn = false
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CreatePaymentProcessRequest.createPaymentProcessDictParams()
         let request    = CreatePaymentProcessRequest().initWithDictParams(parameters, delegate)
@@ -41,6 +42,13 @@ public class PaymentManager {
         NetworkManager.shared.sendRequest(request)
     }
     
+    public func callSetBitPaymentRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+        let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
+        let parameters = SetBitPaymentRequest.createSetBitPaymentParams()
+        let request    = SetBitPaymentRequest().initWithDictParams(parameters, delegate)
+        NetworkManager.shared.sendRequest(request)
+    }
+    
     private func openBitApp() {
         let url = createPaymentProcess?.url ?? ""
         if let url = URL(string: url) {
@@ -54,6 +62,7 @@ extension PaymentManager: RequestFinishedProtocol {
         if let response = response {
             let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
             Meshulam.shared().delegate?.onFailure(error)
+            Meshulam.destroy()
         }
     }
     
@@ -64,9 +73,7 @@ extension PaymentManager: RequestFinishedProtocol {
         case ServerRequests.createPaymentProcess:
             if let response = response as? CreatePaymentProcessResponse {
                 createPaymentProcess = response
-                if isTappedOnExitBtn {
-                    callCancelBitPaymentRequest()
-                } else {
+                if !isTappedOnExitBtn {
                     openBitApp()
                     delegate?.createPaymentProcessResponseSucceeded(with: response)
                 }

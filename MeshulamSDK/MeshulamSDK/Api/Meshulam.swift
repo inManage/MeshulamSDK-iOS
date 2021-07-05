@@ -14,7 +14,7 @@ open class Meshulam: NSObject {
     
     /**
      Initialize `Meshulam` (as singleton)
-     @Returns: Returns the default singleton instance. You are not allowed to create your own instances of this class.
+     Returns the default singleton instance. You are not allowed to create your own instances of this class.
      */
     open class func shared() -> Meshulam {
         guard let instance = self.sharedInstance else {
@@ -24,6 +24,9 @@ open class Meshulam: NSObject {
         return instance
     }
 
+    /**
+     Destroy `Meshulam` singleton
+     */
     open class func destroy() {
         self.sharedInstance = nil
     }
@@ -33,15 +36,12 @@ open class Meshulam: NSObject {
     public var userId = ""
     
     private override init() {
-        StartupManager.shared().callInitSDK()
-        SessionManager.shared().pushBitVC()
-    }
-    
-    deinit {
-        print("deinit")
+        StartupManager.shared.callInitSDK()
+        SessionManager.shared.pushBitVC()
     }
 
     public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
+        PaymentManager.shared.callSetBitPaymentRequest()
         print("url meshulam",url.absoluteString)
     }
 }
