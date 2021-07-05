@@ -7,67 +7,62 @@
 
 import UIKit
 
- class BitViewController: UIViewController, UIAlertViewDelegate {
+class BitViewController: UIViewController, PaymentManagerDelegate {
 
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var exitBtn: UIButton!
-    
-    var priviosStatusBarColor: UIColor?
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setDelegats()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
-    private func setDelegats() {
-        PaymentManager.shared.delegate = self
+        setDelegate()
     }
     
     private func setupUI() {
+        //TODO: add font to system:
+        // chack list:
+        // added ftt to podspec in s.resources
+        // added full font Heebo.tff to resurces
+        // Experience to change font from storyboard
         titleLable.font = UIFont(name: "Heebo-Regular", size: 22)
+    }
+    
+    private func setDelegate() {
+        PaymentManager.shared.delegate = self
     }
     
     @IBAction func didTapExit(_ sender: Any) {
         PaymentManager.shared.isTappedOnExitBtn = true
-        presentAreYouSurePopup()
+        presentCanclePaymentProccesPopup()
     }
     
-    private func presentAreYouSurePopup() {
-        PopupManager.shared.pushErrorPopup(strTitle: Titles.canclePaymentTitle,
+    private func presentCanclePaymentProccesPopup() {
+        PopupManager.shared.pushPopup(strTitle: Titles.canclePaymentTitle,
                                            showImageInFirstBtn: true,
                                            strFirstBtn: ButtonsTitle.bitBtn,
-                                           strSecondBtn: ButtonsTitle.cancleBtn) { isSecondBtnTap in
-            if isSecondBtnTap {
-                self.dismissVC()
-                PaymentManager.shared.callCancelBitPaymentRequest()
-            } else {
-                PaymentManager.shared.callCreatePaymentProcess()
-            }
+                                           strSecondBtn: ButtonsTitle.cancleBtn) { tryAgain in
+            tryAgain ? self.handlePayTap() : self.handleExitTap()
         }
     }
+    
+    private func handleExitTap() {
+        dismissVC()
+        PaymentManager.shared.callCancelBitPaymentRequest()
+    }
+    
+    private func handlePayTap() {
+        PaymentManager.shared.callCreatePaymentProcess()
+    }
+    
     private func dismissVC() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.dismiss(animated: false)
         }
     }
-    
-//    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
-//
-//        let alert = UIAlertController(title: "Bit",
-//                                      message: "Succ",
-//                                      preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "Ok", style: .default))
-//        present(alert, animated: true)
-//    }
 }
 
-extension BitViewController: PaymentManagerDelegate {
-    func createPaymentProcessResponseSucceeded(with response: CreatePaymentProcessResponse) {
-        //TODO: Delete this delegate if not nedded!
+extension BitViewController {
+    func setBitPaymentFailure() {
+        dismissVC()
     }
 }

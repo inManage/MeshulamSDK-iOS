@@ -27,6 +27,10 @@ extension PaymentManager : MeshulamSDK.RequestFinishedProtocol {
 @_hasMissingDesignatedInitializers public class Constants {
   @objc deinit
 }
+public struct Titles {
+}
+public struct ButtonsTitle {
+}
 public struct ServerRequests {
 }
 public struct ServerParamNames {
@@ -51,9 +55,7 @@ public enum PaymentStatusOptions : Swift.Int {
   weak open var delegate: MeshulamSDK.MeshulamDelegate?
   open class func shared() -> MeshulamSDK.Meshulam
   open class func destroy()
-  public var pageCode: Swift.String
-  public var apiKey: Swift.String
-  public var userId: Swift.String
+  public func configure(withParams pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String)
   public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
   @objc deinit
 }

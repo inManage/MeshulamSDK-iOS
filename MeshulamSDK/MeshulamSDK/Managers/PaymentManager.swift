@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol PaymentManagerDelegate: class {
-    func createPaymentProcessResponseSucceeded(with response: CreatePaymentProcessResponse)
+    func setBitPaymentFailure()
 }
 
 public class PaymentManager {
@@ -46,6 +46,7 @@ public class PaymentManager {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = SetBitPaymentRequest.createSetBitPaymentParams()
         let request    = SetBitPaymentRequest().initWithDictParams(parameters, delegate)
+        request.showErrorMsg = false
         NetworkManager.shared.sendRequest(request)
     }
     
@@ -60,9 +61,20 @@ public class PaymentManager {
 extension PaymentManager: RequestFinishedProtocol {
     public func requestFailed(request: BaseRequest, response: BaseServerResponse?) {
         if let response = response {
+            let requestName = request.requestName
+            
+            switch requestName {
+            
+            case ServerRequests.setBitPayment:
+                delegate?.setBitPaymentFailure()
+                //MARK How i Know if is cancel or failure
+                callCancelBitPaymentRequest()
+                break
+            default: break
+            }
+            
             let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
             Meshulam.shared().delegate?.onFailure(error)
-            Meshulam.destroy()
         }
     }
     
@@ -75,7 +87,6 @@ extension PaymentManager: RequestFinishedProtocol {
                 createPaymentProcess = response
                 if !isTappedOnExitBtn {
                     openBitApp()
-                    delegate?.createPaymentProcessResponseSucceeded(with: response)
                 }
             }
             break
@@ -83,6 +94,10 @@ extension PaymentManager: RequestFinishedProtocol {
         case ServerRequests.cancelBitPayment:
             Meshulam.shared().delegate?.onCancel()
             Meshulam.destroy()
+            break
+            
+        case ServerRequests.setBitPayment :
+            print("setBitPayment seccuss")
             break
         default: break
         }

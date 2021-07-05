@@ -31,14 +31,20 @@ open class Meshulam: NSObject {
         self.sharedInstance = nil
     }
     
-    public var pageCode = ""
-    public var apiKey = ""
-    public var userId = ""
+    private (set) var pageCode = ""
+    private (set) var apiKey = ""
+    private (set) var userId = ""
     
-    private override init() {
+    private override init() {}
+    
+    public func configure(withParams pageCode: String, apiKey: String, userId: String) {
+        Meshulam.shared().apiKey = apiKey
+        Meshulam.shared().pageCode = pageCode
+        Meshulam.shared().userId = userId
         StartupManager.shared.callInitSDK()
         SessionManager.shared.pushBitVC()
     }
+    
 
     public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
         PaymentManager.shared.callSetBitPaymentRequest()

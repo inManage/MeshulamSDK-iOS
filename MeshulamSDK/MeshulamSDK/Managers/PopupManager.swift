@@ -12,7 +12,7 @@ public class PopupManager: NSObject {
     
     public static var shared = PopupManager()
     
-    func pushErrorPopup(strTitle: String?,
+    func pushPopup(strTitle: String?,
                         strSubTitle: String? = nil,
                         showImageInFirstBtn: Bool? = nil,
                         strFirstBtn: String?,

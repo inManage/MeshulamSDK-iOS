@@ -12,6 +12,7 @@ public class BaseRequest: NSObject {
     private(set) var dictParams : Dict = Dict()
     public var requestName: String { get { "" } }
     
+    var showErrorMsg: Bool = true
     var requestFinishedDelegate: RequestFinishedProtocol?
     var requestAttemptsCounter: Int = 0
     var maxAllowedRequestAttempts: Int = 3
