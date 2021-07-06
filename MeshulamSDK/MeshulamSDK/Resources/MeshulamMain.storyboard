@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -86,10 +87,103 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--Bit Status View Controller-->
+        <scene sceneID="QuG-W0-XeS">
+            <objects>
+                <viewController storyboardIdentifier="BitStatusViewController" id="vRf-mA-fx9" customClass="BitStatusViewController" customModule="MeshulamSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pi1-za-OjM"/>
+                        <viewControllerLayoutGuide type="bottom" id="sJB-GN-BM5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qn2-dw-2HA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitBackground" translatesAutoresizingMaskIntoConstraints="NO" id="tyS-R0-nc0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8We-Le-n7q">
+                                <rect key="frame" x="143.66666666666666" y="137" width="126.99999999999997" height="69"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWX-6N-Dtx" customClass="LottieView" customModule="Lottie">
+                                <rect key="frame" x="84" y="303" width="246" height="159"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="K3K-TJ-JmL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiV-B5-DrL">
+                                <rect key="frame" x="96.000000000000014" y="521" width="222.33333333333337" height="64.666666666666629"/>
+                                <string key="text">אנחנו מעבירים את הכסף
+זה יקח כמה רגעים</string>
+                                <fontDescription key="fontDescription" name="Heebo-Regular" family="Heebo" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vq-tB-OsV">
+                                <rect key="frame" x="115.66666666666669" y="738" width="183" height="36"/>
+                                <fontDescription key="fontDescription" name="Heebo-Regular" family="Heebo" pointSize="16"/>
+                                <state key="normal" title="חזרה לבחירת אמצעי תשלום">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapExitBtn:" destination="vRf-mA-fx9" eventType="touchUpInside" id="U6K-UT-ftX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a37-ba-gZ6">
+                                <rect key="frame" x="0.0" y="44" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Off-xy-g5r"/>
+                                    <constraint firstAttribute="height" constant="80" id="THm-kp-gpa"/>
+                                </constraints>
+                                <state key="normal" image="x"/>
+                                <connections>
+                                    <action selector="didTapExit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yO4-9j-iah"/>
+                                    <action selector="didTapExitBtn:" destination="vRf-mA-fx9" eventType="touchUpInside" id="ZdB-Lt-4Mc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JiV-B5-DrL" firstAttribute="centerX" secondItem="tyS-R0-nc0" secondAttribute="centerX" id="028-39-Bxb"/>
+                            <constraint firstItem="zWX-6N-Dtx" firstAttribute="leading" secondItem="Qn2-dw-2HA" secondAttribute="leadingMargin" constant="64" id="1Xv-aO-xpa"/>
+                            <constraint firstAttribute="bottom" secondItem="tyS-R0-nc0" secondAttribute="bottom" id="1Zx-EW-ap6"/>
+                            <constraint firstItem="JiV-B5-DrL" firstAttribute="top" secondItem="zWX-6N-Dtx" secondAttribute="bottom" constant="59" id="AlO-Ot-fVh"/>
+                            <constraint firstAttribute="trailing" secondItem="tyS-R0-nc0" secondAttribute="trailing" id="C5M-WV-qFh"/>
+                            <constraint firstItem="5Vq-tB-OsV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qn2-dw-2HA" secondAttribute="leadingMargin" constant="12" id="Igv-Yr-dXK"/>
+                            <constraint firstItem="a37-ba-gZ6" firstAttribute="top" secondItem="pi1-za-OjM" secondAttribute="bottom" id="Ir2-B6-Ztj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zWX-6N-Dtx" secondAttribute="trailing" constant="64" id="MTv-AI-wT5"/>
+                            <constraint firstItem="8We-Le-n7q" firstAttribute="centerX" secondItem="tyS-R0-nc0" secondAttribute="centerX" id="Rhk-am-Ftb"/>
+                            <constraint firstItem="5Vq-tB-OsV" firstAttribute="centerX" secondItem="tyS-R0-nc0" secondAttribute="centerX" id="Rk3-20-LBt"/>
+                            <constraint firstItem="5Vq-tB-OsV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JiV-B5-DrL" secondAttribute="bottom" constant="152.33000000000001" id="SAl-f3-ncx"/>
+                            <constraint firstItem="8We-Le-n7q" firstAttribute="top" secondItem="pi1-za-OjM" secondAttribute="bottom" constant="93" id="Tyu-PF-wG7"/>
+                            <constraint firstItem="JiV-B5-DrL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qn2-dw-2HA" secondAttribute="leadingMargin" constant="40" id="VhP-Bw-uyU"/>
+                            <constraint firstItem="a37-ba-gZ6" firstAttribute="leading" secondItem="Qn2-dw-2HA" secondAttribute="leading" id="XYY-It-hTI"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="JiV-B5-DrL" secondAttribute="trailing" constant="40" id="YOC-I8-pB7"/>
+                            <constraint firstItem="sJB-GN-BM5" firstAttribute="top" secondItem="5Vq-tB-OsV" secondAttribute="bottom" constant="88" id="hpS-GE-WmF"/>
+                            <constraint firstItem="tyS-R0-nc0" firstAttribute="top" secondItem="Qn2-dw-2HA" secondAttribute="top" id="jgH-F4-Bls"/>
+                            <constraint firstItem="tyS-R0-nc0" firstAttribute="leading" secondItem="Qn2-dw-2HA" secondAttribute="leading" id="tif-a7-DzG"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="5Vq-tB-OsV" secondAttribute="trailing" constant="12" id="tlE-4T-fbi"/>
+                            <constraint firstItem="zWX-6N-Dtx" firstAttribute="top" secondItem="8We-Le-n7q" secondAttribute="bottom" constant="97" id="xmA-7g-T3O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animateView" destination="zWX-6N-Dtx" id="IAe-nt-QsQ"/>
+                        <outlet property="bottonBtn" destination="5Vq-tB-OsV" id="kqY-tk-oUJ"/>
+                        <outlet property="subTitleLable" destination="JiV-B5-DrL" id="Ndx-co-L93"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yu4-TK-Oc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917.39130434782612" y="133.25892857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bitBackground" width="375" height="812"/>
         <image name="bitLogo" width="127" height="69"/>
         <image name="x" width="15" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

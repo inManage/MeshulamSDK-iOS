@@ -17,9 +17,12 @@ class ViewController: UIViewController {
     
     private func configureMeshulamSDK() {
         Meshulam.shared().delegate = self
-        Meshulam.shared().configure(withParams: "a1a40d5ce46f",
+        Meshulam.shared().configure(pageCode: "a1a40d5ce46f",
                                     apiKey: "cbf3b862e094",
-                                    userId: "41deb6f1347ee8b2")
+                                    userId: "41deb6f1347ee8b2",
+                                    fullName: "Amit Azulay",
+                                    phoneNumber: "0542533691",
+                                    sum: "1")
     }
     
     @IBAction func didTapPayWithBit(_ sender: Any) {

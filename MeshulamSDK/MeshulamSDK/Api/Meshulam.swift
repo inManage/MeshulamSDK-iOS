@@ -34,10 +34,16 @@ open class Meshulam: NSObject {
     private (set) var pageCode = ""
     private (set) var apiKey = ""
     private (set) var userId = ""
-    
+    private (set) var fullName = ""
+    private (set) var phoneNumber = ""
+    private (set) var sum = ""
+
     private override init() {}
     
-    public func configure(withParams pageCode: String, apiKey: String, userId: String) {
+    public func configure(pageCode: String, apiKey: String, userId: String, fullName: String, phoneNumber: String, sum: String) {
+        Meshulam.shared().fullName = fullName
+        Meshulam.shared().phoneNumber = phoneNumber
+        Meshulam.shared().sum = sum
         Meshulam.shared().apiKey = apiKey
         Meshulam.shared().pageCode = pageCode
         Meshulam.shared().userId = userId

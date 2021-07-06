@@ -14,7 +14,7 @@ public class SessionManager  {
     
     public func pushBitVC() {
         let storyboard = UIStoryboard(name: "MeshulamMain", bundle: nil)
-        guard let bitVC = storyboard.instantiateViewController(withIdentifier: "BitViewController") as? BitViewController else { return }
+        guard let bitVC = storyboard.instantiateViewController(withIdentifier: "BitStatusViewController") as? BitStatusViewController else { return }
         bitVC.modalPresentationStyle = .fullScreen
         UIApplication.shared.keyWindow!.rootViewController?.present(bitVC, animated: true)
     }

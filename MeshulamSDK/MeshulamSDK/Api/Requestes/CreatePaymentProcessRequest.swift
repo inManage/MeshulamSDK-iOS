@@ -37,12 +37,23 @@ class CreatePaymentProcessRequest: BaseRequest {
             initialDictParams.updateValue(apiKey, forKey: ServerParamNames.apiKey)
         }
         
-        initialDictParams.updateValue("1", forKey: "sum")
-        initialDictParams.updateValue("2", forKey: "chargeType")
-        initialDictParams.updateValue("test test", forKey: "pageField[fullName]")
-        initialDictParams.updateValue("0542533691", forKey: "pageField[phone]")
-        initialDictParams.updateValue("8", forKey: "templateType")
-
+        let sum = Meshulam.shared().sum
+        if !sum.isEmpty {
+            initialDictParams.updateValue(sum, forKey: ServerParamNames.sum)
+        }
+        
+        let fullName = Meshulam.shared().fullName
+        if !fullName.isEmpty {
+            initialDictParams.updateValue(fullName, forKey: ServerParamNames.fullName)
+        }
+        
+        let phoneNumber =  Meshulam.shared().phoneNumber
+        if !phoneNumber.isEmpty {
+            initialDictParams.updateValue(phoneNumber, forKey: ServerParamNames.phoneNumber)
+        }
+       
+        initialDictParams.updateValue("2", forKey: ServerParamNames.chargeType)
+        initialDictParams.updateValue("8", forKey: ServerParamNames.templateType)
 
         return initialDictParams
     }

@@ -363,6 +363,15 @@
 				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf",
 				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf",
 				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/Contents.json",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/Contents.json",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/Contents.json",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/Contents.json",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/Contents.json",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/Contents.json",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/Contents.json",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/Contents.json",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/loader.json",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -395,6 +404,8 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Medium.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Regular.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Thin.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Contents.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/loader.json",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

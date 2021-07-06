@@ -28,6 +28,7 @@
     "MeshulamSDK/**/*.xib",
     "MeshulamSDK/**/*.png",
     "MeshulamSDK/**/*.otf",
-    "MeshulamSDK/**/*.ttf"
+    "MeshulamSDK/**/*.ttf",
+    "MeshulamSDK/**/*.json"
   ]
 }

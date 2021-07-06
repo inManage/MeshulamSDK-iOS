@@ -130,6 +130,15 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/loader.json"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets"
@@ -165,6 +174,15 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/Contents.json"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/loader.json"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

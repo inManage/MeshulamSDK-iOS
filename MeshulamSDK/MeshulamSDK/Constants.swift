@@ -44,6 +44,11 @@ public struct ServerParamNames {
     static let userId = "userId"
     static let apiKey = "apiKey"
     static let bitPaymentId = "bit_payment_id"
+    static let sum = "sum"
+    static let fullName = "pageField[fullName]"
+    static let phoneNumber = "pageField[phone]"
+    static let chargeType = "chargeType"
+    static let templateType = "templateType"
 }
 
 public struct HeadersRequest {
