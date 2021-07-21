@@ -48,7 +48,7 @@ open class Meshulam: NSObject {
         Meshulam.shared().pageCode = pageCode
         Meshulam.shared().userId = userId
         StartupManager.shared.callInitSDK()
-        SessionManager.shared.pushBitVC()
+        SessionManager.shared.pushBitStatusVC()
     }
     
 

@@ -12,10 +12,12 @@ public class SessionManager  {
     
     public static var shared = SessionManager()
     
-    public func pushBitVC() {
+    public func pushBitStatusVC() {
         let storyboard = UIStoryboard(name: "MeshulamMain", bundle: nil)
         guard let bitVC = storyboard.instantiateViewController(withIdentifier: "BitStatusViewController") as? BitStatusViewController else { return }
         bitVC.modalPresentationStyle = .fullScreen
-        UIApplication.shared.keyWindow!.rootViewController?.present(bitVC, animated: true)
+        if let vc = UIApplication.getTopViewController() {
+            vc.present(bitVC, animated: true)
+        }
     }
 }

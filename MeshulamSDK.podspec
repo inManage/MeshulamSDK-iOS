@@ -65,7 +65,6 @@ Pod::Spec.new do |s|
    'MeshulamSDK/**/*.storyboard',
    'MeshulamSDK/**/*.xib',
    'MeshulamSDK/**/*.png',
-   'MeshulamSDK/**/*.otf',
    'MeshulamSDK/**/*.ttf',
    'MeshulamSDK/**/*.json']
     

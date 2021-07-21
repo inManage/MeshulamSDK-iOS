@@ -18,8 +18,8 @@ import UIKit
   @objc deinit
 }
 extension PaymentManager : MeshulamSDK.RequestFinishedProtocol {
-  public func requestFailed(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseServerResponse?)
   public func requestSucceeded(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseInnerResponse)
+  public func requestFailed(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseServerResponse?)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SetBitPaymentResponse : MeshulamSDK.BaseInnerResponse {
   @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
@@ -79,7 +79,7 @@ public enum PaymentStatusOptions : Swift.Int {
 }
 @_hasMissingDesignatedInitializers public class SessionManager {
   public static var shared: MeshulamSDK.SessionManager
-  public func pushBitVC()
+  public func pushBitStatusVC()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class InitSDKRequest : MeshulamSDK.BaseRequest {

@@ -15,17 +15,23 @@
 		8D6297E02692E5FE0034DA47 /* MeshulamPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */; };
 		8D6297E32692FC080034DA47 /* PopupInfoObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297E22692FC080034DA47 /* PopupInfoObj.swift */; };
 		8D6297E5269305210034DA47 /* PopupViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297E4269305210034DA47 /* PopupViewControllerDelegate.swift */; };
+		8D7BE78F26A82DE500403915 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78B26A82D3800403915 /* Lottie.framework */; };
+		8D7BE79026A82DE500403915 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78B26A82D3800403915 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D7BE79126A82DE600403915 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78D26A82D3E00403915 /* Alamofire.framework */; };
+		8D7BE79226A82DE600403915 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78D26A82D3E00403915 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D7BE79326A82EC500403915 /* Heebo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A82691E7280034DA47 /* Heebo-Black.ttf */; };
+		8D7BE79426A82EC500403915 /* Heebo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A72691E7280034DA47 /* Heebo-Bold.ttf */; };
+		8D7BE79526A82EC500403915 /* Heebo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A62691E7280034DA47 /* Heebo-ExtraBold.ttf */; };
+		8D7BE79626A82EC500403915 /* Heebo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A92691E7280034DA47 /* Heebo-Light.ttf */; };
+		8D7BE79726A82EC500403915 /* Heebo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AA2691E7280034DA47 /* Heebo-Medium.ttf */; };
+		8D7BE79826A82EC500403915 /* Heebo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */; };
+		8D7BE79926A82EC500403915 /* Heebo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AC2691E7280034DA47 /* Heebo-Thin.ttf */; };
 		8D8967602693536B00DE0DC0 /* UIViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D89675F2693536B00DE0DC0 /* UIViewExtenstion.swift */; };
 		8D9B18022694946300E56DF9 /* BitStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B18012694946300E56DF9 /* BitStatusViewController.swift */; };
 		8D9B1804269495B500E56DF9 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B1803269495B500E56DF9 /* loader.json */; };
-		8DBC47652691D03400CE44E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB45E16268DEAFE009EAA00 /* Alamofire.framework */; };
-		8DBC47662691D03400CE44E2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB45E16268DEAFE009EAA00 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8DBC47682691D03900CE44E2 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBC47672691D03900CE44E2 /* Lottie.framework */; };
-		8DBC47692691D03900CE44E2 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBC47672691D03900CE44E2 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
 		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7F36688268DA1590018D734 /* BitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36661268DA1580018D734 /* BitViewController.swift */; };
 		C7F36689268DA1590018D734 /* SettleSuspendedTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36664268DA1580018D734 /* SettleSuspendedTransactionRequest.swift */; };
 		C7F3668A268DA1590018D734 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36665268DA1580018D734 /* BaseRequest.swift */; };
 		C7F3668B268DA1590018D734 /* GetBitPaymentStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36666268DA1580018D734 /* GetBitPaymentStatusRequest.swift */; };
@@ -66,8 +72,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */,
-				8DBC47662691D03400CE44E2 /* Alamofire.framework in Embed Frameworks */,
-				8DBC47692691D03900CE44E2 /* Lottie.framework in Embed Frameworks */,
+				8D7BE79226A82DE600403915 /* Alamofire.framework in Embed Frameworks */,
+				8D7BE79026A82DE500403915 /* Lottie.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,15 +98,14 @@
 		8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshulamPopupViewController.swift; sourceTree = "<group>"; };
 		8D6297E22692FC080034DA47 /* PopupInfoObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupInfoObj.swift; sourceTree = "<group>"; };
 		8D6297E4269305210034DA47 /* PopupViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewControllerDelegate.swift; sourceTree = "<group>"; };
+		8D7BE78B26A82D3800403915 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lottie.framework; sourceTree = "<group>"; };
+		8D7BE78D26A82D3E00403915 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		8D89675F2693536B00DE0DC0 /* UIViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtenstion.swift; sourceTree = "<group>"; };
 		8D9B18012694946300E56DF9 /* BitStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitStatusViewController.swift; sourceTree = "<group>"; };
 		8D9B1803269495B500E56DF9 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
-		8DB45E16268DEAFE009EAA00 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DBC47672691D03900CE44E2 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3664A268DA11D0018D734 /* MeshulamSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeshulamSDK.h; sourceTree = "<group>"; };
 		C7F3664B268DA11D0018D734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7F36661268DA1580018D734 /* BitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitViewController.swift; sourceTree = "<group>"; };
 		C7F36664268DA1580018D734 /* SettleSuspendedTransactionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettleSuspendedTransactionRequest.swift; sourceTree = "<group>"; };
 		C7F36665268DA1580018D734 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		C7F36666268DA1580018D734 /* GetBitPaymentStatusRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBitPaymentStatusRequest.swift; sourceTree = "<group>"; };
@@ -140,8 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */,
-				8DBC47682691D03900CE44E2 /* Lottie.framework in Frameworks */,
-				8DBC47652691D03400CE44E2 /* Alamofire.framework in Frameworks */,
+				8D7BE79126A82DE600403915 /* Alamofire.framework in Frameworks */,
+				8D7BE78F26A82DE500403915 /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +213,6 @@
 				8D37700B2691E3BB00DFD8F3 /* Resources */,
 				C7F36662268DA1580018D734 /* Api */,
 				8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */,
-				C7F36661268DA1580018D734 /* BitViewController.swift */,
 				8D9B18012694946300E56DF9 /* BitStatusViewController.swift */,
 				C7F36686268DA1580018D734 /* Constants.swift */,
 				C7F36679268DA1580018D734 /* Extenstions */,
@@ -308,8 +312,8 @@
 		D4DDD34A0811702E2C816062 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8DBC47672691D03900CE44E2 /* Lottie.framework */,
-				8DB45E16268DEAFE009EAA00 /* Alamofire.framework */,
+				8D7BE78D26A82D3E00403915 /* Alamofire.framework */,
+				8D7BE78B26A82D3800403915 /* Lottie.framework */,
 				55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */,
 			);
 			name = Frameworks;
@@ -387,6 +391,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D7BE79326A82EC500403915 /* Heebo-Black.ttf in Resources */,
+				8D7BE79426A82EC500403915 /* Heebo-Bold.ttf in Resources */,
+				8D7BE79526A82EC500403915 /* Heebo-ExtraBold.ttf in Resources */,
+				8D7BE79626A82EC500403915 /* Heebo-Light.ttf in Resources */,
+				8D7BE79726A82EC500403915 /* Heebo-Medium.ttf in Resources */,
+				8D7BE79826A82EC500403915 /* Heebo-Regular.ttf in Resources */,
+				8D7BE79926A82EC500403915 /* Heebo-Thin.ttf in Resources */,
 				8D6297DE2692E57E0034DA47 /* MeshulamPopup.storyboard in Resources */,
 				8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */,
 				8D9B1804269495B500E56DF9 /* loader.json in Resources */,
@@ -427,7 +438,6 @@
 			files = (
 				C7F366A0268DA1590018D734 /* PaymentManager.swift in Sources */,
 				C7F36692268DA1590018D734 /* SetBitPaymentResponse.swift in Sources */,
-				C7F36688268DA1590018D734 /* BitViewController.swift in Sources */,
 				8D8967602693536B00DE0DC0 /* UIViewExtenstion.swift in Sources */,
 				C7F36699268DA1590018D734 /* SettleSuspendedTransactionResponse.swift in Sources */,
 				C7F36693268DA1590018D734 /* GetPaymentProcessInfoResponse.swift in Sources */,
@@ -605,6 +615,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MeshulamSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -634,6 +648,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MeshulamSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

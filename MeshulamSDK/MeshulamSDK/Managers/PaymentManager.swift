@@ -8,15 +8,20 @@
 import Foundation
 import UIKit
 
-protocol PaymentManagerDelegate: class {
+protocol PaymentManagerToBitStatusVCDelegate: class {
     func setBitPaymentFailure()
+    func createPaymentProcessSuccess()
+    func setBitPaymentSuccess()
+    func cancelBitPayment()
+    func bitOpened()
 }
 
 public class PaymentManager {
     
     public static var shared = PaymentManager()
     
-    weak var delegate: PaymentManagerDelegate?
+    weak var delegate: PaymentManagerToBitStatusVCDelegate?
+    
     public var isTappedOnExitBtn = false
     public var createPaymentProcess: CreatePaymentProcessResponse?
 
@@ -53,30 +58,14 @@ public class PaymentManager {
     private func openBitApp() {
         let url = createPaymentProcess?.url ?? ""
         if let url = URL(string: url) {
-            UIApplication.shared.open(url)
+            UIApplication.shared.open(url, options: Dict()) { _ in
+                self.delegate?.bitOpened()
+            }
         }
     }
 }
 
 extension PaymentManager: RequestFinishedProtocol {
-    public func requestFailed(request: BaseRequest, response: BaseServerResponse?) {
-        if let response = response {
-            let requestName = request.requestName
-            
-            switch requestName {
-            
-            case ServerRequests.setBitPayment:
-                delegate?.setBitPaymentFailure()
-                //MARK How i Know if is cancel or failure
-                callCancelBitPaymentRequest()
-                break
-            default: break
-            }
-            
-            let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
-            Meshulam.shared().delegate?.onFailure(error)
-        }
-    }
     
     public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
         let requestName = request.requestName
@@ -86,20 +75,38 @@ extension PaymentManager: RequestFinishedProtocol {
             if let response = response as? CreatePaymentProcessResponse {
                 createPaymentProcess = response
                 if !isTappedOnExitBtn {
+                    delegate?.createPaymentProcessSuccess()
                     openBitApp()
                 }
             }
             break
             
         case ServerRequests.cancelBitPayment:
-            Meshulam.shared().delegate?.onCancel()
-            Meshulam.destroy()
+            delegate?.cancelBitPayment()
             break
             
-        case ServerRequests.setBitPayment :
-            print("setBitPayment seccuss")
+        case ServerRequests.setBitPayment:
+            delegate?.setBitPaymentSuccess()
             break
+            
         default: break
+        }
+    }
+    
+    public func requestFailed(request: BaseRequest, response: BaseServerResponse?) {
+        if let response = response {
+            let requestName = request.requestName
+            
+            switch requestName {
+            
+            case ServerRequests.setBitPayment:
+                delegate?.setBitPaymentFailure()
+                break
+            default: break
+            }
+            
+            let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
+            Meshulam.shared().delegate?.onFailure(error)
         }
     }
 }
