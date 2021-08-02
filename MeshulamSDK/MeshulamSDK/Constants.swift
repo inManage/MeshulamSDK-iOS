@@ -7,12 +7,10 @@
 
 import Foundation
 
-public class Constants {
-    #if DEBUG
-    static let debugMode = true
-    #else
-    static let debugMode = true
-    #endif
+public typealias Dict = [String: Any]
+
+public struct Observers {
+    static let willEnterForeground = Notification.Name("UIApplicationWillEnterForegroundNotification")
 }
 
 public struct Titles {
@@ -42,9 +40,11 @@ public struct ServerParamNames {
     static let applicationToken = "applicationToken"
     static let pageCode = "pageCode"
     static let userId = "userId"
+    static let desc = "description"
     static let apiKey = "apiKey"
     static let bitPaymentId = "bit_payment_id"
     static let sum = "sum"
+    static let email = "pageField[email]"
     static let fullName = "pageField[fullName]"
     static let phoneNumber = "pageField[phone]"
     static let chargeType = "chargeType"
@@ -54,6 +54,10 @@ public struct ServerParamNames {
 public struct HeadersRequest {
     static let token = "TOKEN"
     static let inmangaSecure = "inmanga_secure"
+}
+
+public struct Encryption {
+    static let key = ""
 }
 
 public struct Error {
@@ -68,6 +72,15 @@ public enum PaymentStatusOptions: Int {
 let apiVersion = "1.0"
 let defaultPath = "api/light/iphone/\(apiVersion)/"
 let logHelper = "\n\t\t"
+
+
+public class Constants {
+    #if DEBUG
+    static let debugMode = true
+    #else
+    static let debugMode = true
+    #endif
+}
 
 func LogMsg(_ logMessage: Any) {
     if Constants.debugMode {

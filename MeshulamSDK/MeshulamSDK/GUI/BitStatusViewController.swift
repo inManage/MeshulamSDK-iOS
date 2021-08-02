@@ -24,13 +24,24 @@ class BitStatusViewController: UIViewController {
         setDelegate()
     }
 
+    deinit {
+        removeObservers()
+    }
+    
     private func setDelegate() {
         PaymentManager.shared.delegate = self
-        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: Notification.Name("UIApplicationWillEnterForegroundNotification"), object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(willEnterForeground),
+                                               name: Observers.willEnterForeground,
+                                               object: nil)
     }
- 
+    
     @objc func willEnterForeground() {
         animationView!.play()
+    }
+    
+    private func removeObservers() {
+        NotificationCenter.default.removeObserver(self)
     }
     
     private func configureAnimateView() {
@@ -66,14 +77,13 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
         }
     }
     
-    func setBitPaymentSuccess() {
-        Meshulam.shared().delegate?.onSuccess()
+    func setBitPaymentSuccess(_ getPaymentInfoResponse: String) {
+        Meshulam.shared().delegate?.onSuccess(getPaymentInfoResponse)
         Meshulam.destroy()
-        self.dismiss(animated: true)
+        dismiss(animated: true)
     }
-    
-    func createPaymentProcessSuccess() {
-    }
+
+    func createPaymentProcessSuccess() {/* maby need to used?*/}
     
     func setBitPaymentFailure() {
         presentCanclePaymentProccesPopup()
@@ -90,7 +100,7 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     
     private func handleExitTap() {
         PaymentManager.shared.callCancelBitPaymentRequest()
-        self.dismiss(animated: true)
+        dismiss(animated: true)
     }
     
     private func handlePayTap() {

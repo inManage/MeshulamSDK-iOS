@@ -37,20 +37,41 @@ open class Meshulam: NSObject {
     private (set) var fullName = ""
     private (set) var phoneNumber = ""
     private (set) var sum = ""
+    private (set) var email = ""
+    private (set) var strDescription = ""
 
     private override init() {}
     
-    public func configure(pageCode: String, apiKey: String, userId: String, fullName: String, phoneNumber: String, sum: String) {
+    public func createPaymentProcess(pageCode: String, apiKey: String, userId: String, fullName: String, phoneNumber: String, sum: String, email: String? = nil, description: String? = nil) {
         Meshulam.shared().fullName = fullName
         Meshulam.shared().phoneNumber = phoneNumber
         Meshulam.shared().sum = sum
         Meshulam.shared().apiKey = apiKey
         Meshulam.shared().pageCode = pageCode
         Meshulam.shared().userId = userId
+        
+        if let email = email {
+            Meshulam.shared().email = email
+        }
+        if let description = description {
+            Meshulam.shared().strDescription = description
+        }
+        
         StartupManager.shared.callInitSDK()
         SessionManager.shared.pushBitStatusVC()
     }
     
+    public func settleSuspendedTransaction(apiKey: String, userId: String, sum: String, transactionId: String) {
+        
+    }
+    
+    public func getPaymentProcessInfo() {
+        
+    }
+    
+    public func cancelBitPayment() {
+    
+    }
 
     public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
         PaymentManager.shared.callSetBitPaymentRequest()

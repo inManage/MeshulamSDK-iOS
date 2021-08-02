@@ -27,6 +27,7 @@
 		8D7BE79826A82EC500403915 /* Heebo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */; };
 		8D7BE79926A82EC500403915 /* Heebo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AC2691E7280034DA47 /* Heebo-Thin.ttf */; };
 		8D8967602693536B00DE0DC0 /* UIViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D89675F2693536B00DE0DC0 /* UIViewExtenstion.swift */; };
+		8D91280826B296B10065A79C /* StringExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D91280726B296B10065A79C /* StringExtenstion.swift */; };
 		8D9B18022694946300E56DF9 /* BitStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B18012694946300E56DF9 /* BitStatusViewController.swift */; };
 		8D9B1804269495B500E56DF9 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B1803269495B500E56DF9 /* loader.json */; };
 		C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
@@ -101,6 +102,7 @@
 		8D7BE78B26A82D3800403915 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lottie.framework; sourceTree = "<group>"; };
 		8D7BE78D26A82D3E00403915 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		8D89675F2693536B00DE0DC0 /* UIViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtenstion.swift; sourceTree = "<group>"; };
+		8D91280726B296B10065A79C /* StringExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtenstion.swift; sourceTree = "<group>"; };
 		8D9B18012694946300E56DF9 /* BitStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitStatusViewController.swift; sourceTree = "<group>"; };
 		8D9B1803269495B500E56DF9 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,11 +190,19 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		8D7BE79A26A8C17800403915 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				8D9B18012694946300E56DF9 /* BitStatusViewController.swift */,
+				8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
 		C7F3663D268DA11D0018D734 = {
 			isa = PBXGroup;
 			children = (
 				C7F36649268DA11D0018D734 /* MeshulamSDK */,
-				C7F36648268DA11D0018D734 /* Products */,
 				1239C3395320681D05B3A934 /* Pods */,
 				D4DDD34A0811702E2C816062 /* Frameworks */,
 			);
@@ -204,23 +214,24 @@
 				C7F36647268DA11D0018D734 /* MeshulamSDK.framework */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C7F36649268DA11D0018D734 /* MeshulamSDK */ = {
 			isa = PBXGroup;
 			children = (
+				C7F3664B268DA11D0018D734 /* Info.plist */,
+				C7F36686268DA1580018D734 /* Constants.swift */,
+				C7F3664A268DA11D0018D734 /* MeshulamSDK.h */,
+				C7F36648268DA11D0018D734 /* Products */,
+				8D7BE79A26A8C17800403915 /* GUI */,
 				8D6297E12692FBF40034DA47 /* Objects */,
 				8D37700B2691E3BB00DFD8F3 /* Resources */,
 				C7F36662268DA1580018D734 /* Api */,
-				8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */,
-				8D9B18012694946300E56DF9 /* BitStatusViewController.swift */,
-				C7F36686268DA1580018D734 /* Constants.swift */,
 				C7F36679268DA1580018D734 /* Extenstions */,
 				C7F3667E268DA1580018D734 /* Managers */,
 				C7F36683268DA1580018D734 /* Protocols */,
 				C7F3667C268DA1580018D734 /* Validators */,
-				C7F3664A268DA11D0018D734 /* MeshulamSDK.h */,
-				C7F3664B268DA11D0018D734 /* Info.plist */,
 			);
 			path = MeshulamSDK;
 			sourceTree = "<group>";
@@ -275,6 +286,7 @@
 				C7F3667A268DA1580018D734 /* NSObjectExtenstion.swift */,
 				8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */,
 				8D89675F2693536B00DE0DC0 /* UIViewExtenstion.swift */,
+				8D91280726B296B10065A79C /* StringExtenstion.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -447,6 +459,7 @@
 				C7F36690268DA1590018D734 /* CreatePaymentProcessRequest.swift in Sources */,
 				C7F366A7268DA1590018D734 /* Meshulam.swift in Sources */,
 				C7F3668B268DA1590018D734 /* GetBitPaymentStatusRequest.swift in Sources */,
+				8D91280826B296B10065A79C /* StringExtenstion.swift in Sources */,
 				8D6297DC2692E2A60034DA47 /* PopupManager.swift in Sources */,
 				C7F3668A268DA1590018D734 /* BaseRequest.swift in Sources */,
 				C7F3668E268DA1590018D734 /* GetPaymentProcessInfoRequest.swift in Sources */,

@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 protocol PaymentManagerToBitStatusVCDelegate: class {
-    func setBitPaymentFailure()
     func createPaymentProcessSuccess()
-    func setBitPaymentSuccess()
+    func setBitPaymentFailure()
+    func setBitPaymentSuccess(_ getPaymentInfoResponse: String)
     func cancelBitPayment()
     func bitOpened()
 }
@@ -22,7 +22,9 @@ public class PaymentManager {
     
     weak var delegate: PaymentManagerToBitStatusVCDelegate?
     
+    //if it's true getBitPatymentRequest not called, trigger is X button on BitStatusVIewController
     public var isTappedOnExitBtn = false
+    private var response = false
     public var createPaymentProcess: CreatePaymentProcessResponse?
 
     public func callCreatePaymentProcess(requestFinishDelegate: RequestFinishedProtocol? = nil) {
@@ -55,13 +57,23 @@ public class PaymentManager {
         NetworkManager.shared.sendRequest(request)
     }
     
-    private func openBitApp() {
+    private func handleBitAppStartProcces() {
         let url = createPaymentProcess?.url ?? ""
         if let url = URL(string: url) {
             UIApplication.shared.open(url, options: Dict()) { _ in
                 self.delegate?.bitOpened()
             }
         }
+    }
+    
+    private func userDidaponExitButton() -> Bool {
+        return isTappedOnExitBtn
+    }
+    
+    private func getError(from response: BaseServerResponse) -> Error {
+        let error = Error(id: response.errorResponse.id,
+                          errorMessage: response.errorResponse.message)
+        return error
     }
 }
 
@@ -74,9 +86,9 @@ extension PaymentManager: RequestFinishedProtocol {
         case ServerRequests.createPaymentProcess:
             if let response = response as? CreatePaymentProcessResponse {
                 createPaymentProcess = response
-                if !isTappedOnExitBtn {
+                if !userDidaponExitButton() {
                     delegate?.createPaymentProcessSuccess()
-                    openBitApp()
+                    handleBitAppStartProcces()
                 }
             }
             break
@@ -86,7 +98,7 @@ extension PaymentManager: RequestFinishedProtocol {
             break
             
         case ServerRequests.setBitPayment:
-            delegate?.setBitPaymentSuccess()
+            delegate?.setBitPaymentSuccess(<#String#>)// TODO add transactionId to setBitPaymentSuccess
             break
             
         default: break
@@ -105,7 +117,7 @@ extension PaymentManager: RequestFinishedProtocol {
             default: break
             }
             
-            let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
+            let error = getError(from: response)
             Meshulam.shared().delegate?.onFailure(error)
         }
     }

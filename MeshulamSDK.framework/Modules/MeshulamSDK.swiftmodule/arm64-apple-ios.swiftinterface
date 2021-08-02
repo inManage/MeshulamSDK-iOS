@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.4.2 effective-4.1.50 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name MeshulamSDK
 import Alamofire
+import CommonCrypto
 import Foundation
 import Lottie
 @_exported import MeshulamSDK
@@ -25,8 +26,16 @@ extension PaymentManager : MeshulamSDK.RequestFinishedProtocol {
   @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class Constants {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PaymentProcessResponseInfo : MeshulamSDK.BaseInnerResponse {
+  @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Transactions : MeshulamSDK.BaseInnerResponse {
+  @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
+  @objc deinit
+}
+public typealias Dict = [Swift.String : Any]
+public struct Observers {
 }
 public struct Titles {
 }
@@ -38,6 +47,8 @@ public struct ServerParamNames {
 }
 public struct HeadersRequest {
 }
+public struct Encryption {
+}
 public struct Error {
 }
 public enum PaymentStatusOptions : Swift.Int {
@@ -48,6 +59,9 @@ public enum PaymentStatusOptions : Swift.Int {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class Constants {
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CreatePaymentProcessResponse : MeshulamSDK.BaseInnerResponse {
   @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
   @objc deinit
@@ -56,7 +70,10 @@ public enum PaymentStatusOptions : Swift.Int {
   weak open var delegate: MeshulamSDK.MeshulamDelegate?
   open class func shared() -> MeshulamSDK.Meshulam
   open class func destroy()
-  public func configure(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String)
+  public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil)
+  public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, sum: Swift.String, transactionId: Swift.String)
+  public func getPaymentProcessInfo()
+  public func cancelBitPayment()
   public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
   @objc deinit
 }
@@ -113,7 +130,7 @@ extension StartupManager : MeshulamSDK.RequestFinishedProtocol {
   @objc deinit
 }
 public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
-  func onSuccess()
+  func onSuccess(_ getPaymentInfoResponse: Swift.String)
   func onFailure(_ error: MeshulamSDK.Error)
   func onCancel()
 }
@@ -121,7 +138,6 @@ public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
   @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
   @objc deinit
 }
-public typealias Dict = [Swift.String : Any]
 @objc @_inheritsConvenienceInitializers public class NetworkManager : ObjectiveC.NSObject {
   public static let shared: MeshulamSDK.NetworkManager
   public var baseURL: Swift.String {

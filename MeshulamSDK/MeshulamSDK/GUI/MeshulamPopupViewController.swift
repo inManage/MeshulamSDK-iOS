@@ -69,7 +69,12 @@ class MeshulamPopupViewController: UIViewController {
     }
     
     private func dismissPopup() {
-        self.dismiss(animated: true)
+        UIView.animate(withDuration: 0.3) {
+            self.view.alpha = 0
+            self.view.layoutIfNeeded()
+        } completion: { _ in
+            self.dismiss(animated: true)
+        }
     }
     
     @IBAction func didTapExit(_ sender: Any) {

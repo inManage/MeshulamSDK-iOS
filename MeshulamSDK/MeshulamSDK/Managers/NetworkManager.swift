@@ -8,8 +8,6 @@
 import Foundation
 import Alamofire
 
-public typealias Dict = [String: Any]
-
 public class NetworkManager: NSObject {
     
     public static let shared = NetworkManager()
@@ -26,6 +24,7 @@ public class NetworkManager: NSObject {
         let urlRequest: String       = "\(baseURL)\(defaultPath)\(request.requestName)/"
         
         let afRequest = AF.request(urlRequest, method: .post, parameters: request.dictParams, headers: headers).validate()
+        
         LogMsg("Full Path:\(logHelper)\(urlRequest)\nParams:\(logHelper)\(request.dictParams)")
         
         request.increaseRequestAttemptsCounter()
@@ -35,15 +34,15 @@ public class NetworkManager: NSObject {
             switch result.result {
             case .success(_):
                 if let response = result.value as? Dict {
-                    LogMsg("Server Response:\(logHelper)\(result.value ?? "")")
-                    let outerResponse = request.createResponseFromJSONDict(JSONDict: response)
                     
+                    let outerResponse = request.createResponseFromJSONDict(JSONDict: response)
                     if outerResponse?.responseStatus == .statusSuccess {
                         self.handleSuccessForRequest(request, outerResponse!)
                     }
                     else if outerResponse?.responseStatus == .statusFailure {
                         self.handleFailureForRequest(request, outerResponse!)
                     }
+                    LogMsg("Server Response:\(logHelper)\(result.value ?? "")")
                 }
                 break
             case .failure(_):

@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol MeshulamDelegate: NSObjectProtocol {
-    func onSuccess()
+    func onSuccess(_ transactionId: String)
     func onFailure(_ error: Error)
     func onCancel()
 }

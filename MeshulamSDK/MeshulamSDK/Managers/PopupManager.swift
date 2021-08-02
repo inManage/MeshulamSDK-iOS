@@ -53,7 +53,7 @@ public class PopupManager: NSObject {
         let storyboard = UIStoryboard(name: "MeshulamPopup", bundle: nil)
         guard let popup = storyboard.instantiateViewController(withIdentifier: "MeshulamPopupViewController") as? MeshulamPopupViewController else { return }
         popup.popupInfoObj = popupInfoObject
-        popup.modalPresentationStyle = .overCurrentContext
+        popup.modalPresentationStyle = .custom
         let topVC = UIApplication.getTopViewController()
         topVC?.present(popup, animated: true)
     }

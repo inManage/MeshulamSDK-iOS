@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     private func configureMeshulamSDK() {
         Meshulam.shared().delegate = self
-        Meshulam.shared().configure(pageCode: "a1a40d5ce46f",
+        Meshulam.shared().createPaymentProcess(pageCode: "a1a40d5ce46f",
                                     apiKey: "cbf3b862e094",
                                     userId: "41deb6f1347ee8b2",
                                     fullName: "Amit Azulay",
@@ -25,9 +25,18 @@ class ViewController: UIViewController {
                                     sum: "1")
     }
     
+    private func settleSuspendedTransaction() {
+        Meshulam.shared().settleSuspendedTransaction(apiKey: "", userId: "", sum: "", transactionId: "")
+    }
+    
     @IBAction func didTapPayWithBit(_ sender: Any) {
         configureMeshulamSDK()
     }
+    
+    @IBAction func didTapSettleSuspendedTransaction(_ sender: Any) {
+        settleSuspendedTransaction()
+    }
+    
 }
 
 extension ViewController: MeshulamDelegate {
@@ -35,8 +44,8 @@ extension ViewController: MeshulamDelegate {
         print("onCancle")
     }
     
-    func onSuccess() {
-        //
+    func onSuccess(_ getPaymentInfoResponse: String) {
+        print(getPaymentInfoResponse)
     }
 
     func onFailure(_ error: Error) {
