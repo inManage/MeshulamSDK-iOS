@@ -33,13 +33,31 @@
                                     <action selector="didTapSettleSuspendedTransaction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hPV-rk-kN7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EN4-ej-hwN">
+                                <rect key="frame" x="116" y="200" width="143" height="30"/>
+                                <state key="normal" title="cancelBitTransaction"/>
+                                <connections>
+                                    <action selector="didTapCancelBitTransaction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NRk-2w-Hw5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG9-0j-jiv">
+                                <rect key="frame" x="106" y="270" width="163" height="30"/>
+                                <state key="normal" title="getPaymentProcessInfo"/>
+                                <connections>
+                                    <action selector="didTapGetPaymentProcessInfo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="n3B-p0-8hi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="EN4-ej-hwN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="33C-br-jL8"/>
                             <constraint firstItem="RCD-Le-LHF" firstAttribute="top" secondItem="8jG-Oh-Xru" secondAttribute="bottom" constant="40" id="77A-g0-xrh"/>
                             <constraint firstItem="8jG-Oh-Xru" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Zym-at-lgV"/>
+                            <constraint firstItem="DG9-0j-jiv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="eaD-Re-jwf"/>
+                            <constraint firstItem="DG9-0j-jiv" firstAttribute="top" secondItem="EN4-ej-hwN" secondAttribute="bottom" constant="40" id="fTm-mY-lgm"/>
                             <constraint firstItem="RCD-Le-LHF" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="lsb-G8-2ID"/>
                             <constraint firstItem="8jG-Oh-Xru" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="p7S-Tj-snu"/>
+                            <constraint firstItem="EN4-ej-hwN" firstAttribute="top" secondItem="RCD-Le-LHF" secondAttribute="bottom" constant="40" id="zd5-HQ-rRF"/>
                         </constraints>
                     </view>
                 </viewController>

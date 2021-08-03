@@ -15,7 +15,11 @@ import UIKit
   public func callCreatePaymentProcess(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   public func callGetBitPaymentStatusRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   public func callCancelBitPaymentRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callCancelBitTransactionRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   public func callSetBitPaymentRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callGetPaymentProcessInfoRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callSettleSuspendedTransactionRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callDoPayment(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
   @objc deinit
 }
 extension PaymentManager : MeshulamSDK.RequestFinishedProtocol {
@@ -72,8 +76,8 @@ public enum PaymentStatusOptions : Swift.Int {
   open class func destroy()
   public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil)
   public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, sum: Swift.String, transactionId: Swift.String)
-  public func getPaymentProcessInfo()
-  public func cancelBitPayment()
+  public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String)
+  public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String)
   public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
   @objc deinit
 }
@@ -130,7 +134,10 @@ extension StartupManager : MeshulamSDK.RequestFinishedProtocol {
   @objc deinit
 }
 public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
-  func onSuccess(_ getPaymentInfoResponse: Swift.String)
+  func setBitPaymentSuccess(_ transactionId: Swift.String)
+  func settleSuspendedTransactionSuccess(response: Swift.String)
+  func createPaymentProccesSuccess(_ processId: Swift.String, _ processToken: Swift.String)
+  func getPaymentProcessInfoSuccess(response: Swift.String)
   func onFailure(_ error: MeshulamSDK.Error)
   func onCancel()
 }

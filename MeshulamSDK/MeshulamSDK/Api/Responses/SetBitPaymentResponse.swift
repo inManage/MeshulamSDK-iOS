@@ -26,14 +26,16 @@ public class SetBitPaymentResponse: BaseInnerResponse {
 public class PaymentProcessResponseInfo: BaseInnerResponse {
     
     var processId = 0
-    var transactions = Transactions()
+    var transactions = [Transactions]()
     
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
         
         processId = ParseValidator.getIntForKey(key: "processId", JSONDict: JSONDict, defaultValue: 0)
 
-        
+        let tempTransactions = ParseValidator.getArrayForKey(key: "transactions", JSONDict: JSONDict, defaultValue: [Any]())
+        self.transactions = ParseValidator.createArrayOfInnerResponsesFromJSONArray(JSONArray: tempTransactions, innerResponse: Transactions(), shouldReverseOrder: false) as! [Transactions]
+      
         return self
     }
 }
@@ -46,12 +48,12 @@ public class Transactions: BaseInnerResponse {
     var payerPhone = ""
     var paymentDate = ""
     var status = ""
-    
+    var transactionId = ""
+
     var sum = 0
     var statusCode = 0
     var paymentType = 0
     var paymentsNum = 0
-    var transactionId = 0
     var allPaymentsNum = 0
     var transactionTypeId = 0
     
@@ -64,12 +66,12 @@ public class Transactions: BaseInnerResponse {
         paymentDate = ParseValidator.getStringForKey(key: "paymentDate", JSONDict: JSONDict, defaultValue: "")
         status = ParseValidator.getStringForKey(key: "status", JSONDict: JSONDict, defaultValue: "")
         payerPhone = ParseValidator.getStringForKey(key: "payerPhone", JSONDict: JSONDict, defaultValue: "")
+        transactionId = ParseValidator.getStringForKey(key: "transactionId", JSONDict: JSONDict, defaultValue: "")
 
         sum = ParseValidator.getIntForKey(key: "sum", JSONDict: JSONDict, defaultValue: 0)
         statusCode = ParseValidator.getIntForKey(key: "statusCode", JSONDict: JSONDict, defaultValue: 0)
         paymentType = ParseValidator.getIntForKey(key: "paymentType", JSONDict: JSONDict, defaultValue: 0)
         paymentsNum = ParseValidator.getIntForKey(key: "paymentsNum", JSONDict: JSONDict, defaultValue: 0)
-        transactionId = ParseValidator.getIntForKey(key: "transactionId", JSONDict: JSONDict, defaultValue: 0)
         allPaymentsNum = ParseValidator.getIntForKey(key: "allPaymentsNum", JSONDict: JSONDict, defaultValue: 0)
         transactionTypeId = ParseValidator.getIntForKey(key: "transactionTypeId", JSONDict: JSONDict, defaultValue: 0)
         

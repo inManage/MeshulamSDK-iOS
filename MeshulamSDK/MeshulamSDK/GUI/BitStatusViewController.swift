@@ -22,6 +22,7 @@ class BitStatusViewController: UIViewController {
         super.viewDidLoad()
         configureAnimateView()
         setDelegate()
+        subTitleLable.font = UIFont(name: "Hebbo-Regular", size: 18)
     }
 
     deinit {
@@ -53,11 +54,7 @@ class BitStatusViewController: UIViewController {
         animateView.addSubview(animationView!)
         animationView!.play()
     }
-    
-    private func startBitProcces() {
-        PaymentManager.shared.callCreatePaymentProcess()
-    }
-    
+   
     @IBAction func didTapExitBtn(_ sender: Any) {
         PaymentManager.shared.isTappedOnExitBtn = true
         presentCanclePaymentProccesPopup()
@@ -66,9 +63,15 @@ class BitStatusViewController: UIViewController {
 
 extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     
+    func settleSuspendedTransactionSuccess(_ response: String) {
+        Meshulam.shared().delegate?.settleSuspendedTransactionSuccess(response: response)
+        Meshulam.destroy()
+    }
+
     func cancelBitPayment() {
         Meshulam.shared().delegate?.onCancel()
         Meshulam.destroy()
+        dismiss(animated: true)
     }
     
     func bitOpened() {
@@ -77,13 +80,14 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
         }
     }
     
-    func setBitPaymentSuccess(_ getPaymentInfoResponse: String) {
-        Meshulam.shared().delegate?.onSuccess(getPaymentInfoResponse)
-        Meshulam.destroy()
+    func setBitPaymentSuccess(_ transectionId: String) {
+        Meshulam.shared().delegate?.setBitPaymentSuccess(transectionId)
         dismiss(animated: true)
     }
 
-    func createPaymentProcessSuccess() {/* maby need to used?*/}
+    func createPaymentProcessSuccess(_ processId: String,_ processToken: String) {
+        Meshulam.shared().delegate?.createPaymentProccesSuccess(processId, processToken)
+    }
     
     func setBitPaymentFailure() {
         presentCanclePaymentProccesPopup()
@@ -104,6 +108,6 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     }
     
     private func handlePayTap() {
-        startBitProcces()
+        PaymentManager.shared.callDoPayment()
     }
 }

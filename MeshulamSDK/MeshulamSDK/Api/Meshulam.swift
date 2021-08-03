@@ -39,6 +39,9 @@ open class Meshulam: NSObject {
     private (set) var sum = ""
     private (set) var email = ""
     private (set) var strDescription = ""
+    private (set) var transactionId = ""
+    private (set) var processId = ""
+    private (set) var processToken = ""
 
     private override init() {}
     
@@ -62,19 +65,26 @@ open class Meshulam: NSObject {
     }
     
     public func settleSuspendedTransaction(apiKey: String, userId: String, sum: String, transactionId: String) {
-        
+        Meshulam.shared().apiKey = apiKey
+        Meshulam.shared().sum = sum
+        Meshulam.shared().userId = userId
+        Meshulam.shared().transactionId = transactionId
+        PaymentManager.shared.callSettleSuspendedTransactionRequest()
     }
     
-    public func getPaymentProcessInfo() {
-        
+    public func getPaymentProcessInfo(processId: String, processToken: String) {
+        Meshulam.shared().processId = processId
+        Meshulam.shared().processToken = processToken
+        PaymentManager.shared.callGetPaymentProcessInfoRequest()
     }
     
-    public func cancelBitPayment() {
-    
+    public func cancelBitTransaction(processId: String, processToken: String) {
+        Meshulam.shared().processId = processId
+        Meshulam.shared().processToken = processToken
+        PaymentManager.shared.callCancelBitTransactionRequest()
     }
 
     public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
         PaymentManager.shared.callSetBitPaymentRequest()
-        print("url meshulam",url.absoluteString)
     }
 }

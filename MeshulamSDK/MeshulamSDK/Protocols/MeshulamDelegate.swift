@@ -8,7 +8,10 @@
 import Foundation
 
 public protocol MeshulamDelegate: NSObjectProtocol {
-    func onSuccess(_ transactionId: String)
+    func setBitPaymentSuccess(_ transactionId: String)
+    func settleSuspendedTransactionSuccess(response: String)
+    func createPaymentProccesSuccess(_ processId: String,_ processToken: String)
+    func getPaymentProcessInfoSuccess(response: String)
     func onFailure(_ error: Error)
     func onCancel()
 }

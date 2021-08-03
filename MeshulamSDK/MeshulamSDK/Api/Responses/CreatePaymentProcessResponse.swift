@@ -13,7 +13,7 @@ public class CreatePaymentProcessResponse: BaseInnerResponse {
     var bitPaymentId = ""
     var processToken = ""
     var doPaymentRequestArr = DoPaymentRequestArr()
-    var processId = 0
+    var processId = ""
     
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
@@ -22,13 +22,17 @@ public class CreatePaymentProcessResponse: BaseInnerResponse {
         
         url = getString("url", JSONDict,  "")
         processToken = getString("processToken", JSONDict, "")
+        processId = getString("processId", JSONDict, "")
         bitPaymentId = getString("bit_payment_id", JSONDict, "")
+        
+        let doPaymentRequestArrTemp = ParseValidator.getDictionaryForKey(key: "do_payment_requestArr", JSONDict: JSONDict, defaultValue: [String: Any]())
+        doPaymentRequestArr = DoPaymentRequestArr().buildFromJSONDict(JSONDict: doPaymentRequestArrTemp) as! DoPaymentRequestArr
         
         return self
     }
 }
 
-class DoPaymentRequestArr: BaseInnerResponse {
+class DoPaymentRequestArr: BaseInnerResponse, Codable {
     
     var desc = ""
     var firstPaymentSum = ""
@@ -39,18 +43,17 @@ class DoPaymentRequestArr: BaseInnerResponse {
     var phone = ""
     var platform = ""
     var showPaymentsSelect = ""
-    
-    var email = 0
-    var paymentNum = 0
-    var sum = 0
-    var transactionTypeId = 0
-    var typeId = 0
+    var email = ""
+    var paymentNum = ""
+
+    var sum = ""
+    var transactionTypeId = ""
+    var typeId = ""
     
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
         
         let getString = ParseValidator.getStringForKey.self
-        let getInt = ParseValidator.getIntForKey.self
         
         desc = getString("description", JSONDict, "")
         firstPaymentSum = getString("first_payment_sum", JSONDict, "")
@@ -61,12 +64,11 @@ class DoPaymentRequestArr: BaseInnerResponse {
         phone = getString("phone", JSONDict, "")
         platform = getString("platform", JSONDict, "")
         showPaymentsSelect = getString("show_payments_select", JSONDict, "")
-        
-        email = getInt("email", JSONDict, 0)
-        paymentNum = getInt("payment_num", JSONDict, 0)
-        sum = getInt("sum", JSONDict, 0)
-        transactionTypeId = getInt("transaction_type_id", JSONDict, 0)
-        typeId = getInt("typeId", JSONDict, 0)
+        email = getString("email", JSONDict, "")
+        paymentNum = getString("payment_num", JSONDict, "")
+        sum = getString("sum", JSONDict, "")
+        transactionTypeId = getString("transaction_type_id", JSONDict, "")
+        typeId = getString("type_id", JSONDict, "")
         
         return self
     }

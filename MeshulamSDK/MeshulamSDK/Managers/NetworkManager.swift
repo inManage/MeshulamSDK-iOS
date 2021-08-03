@@ -36,6 +36,9 @@ public class NetworkManager: NSObject {
                 if let response = result.value as? Dict {
                     
                     let outerResponse = request.createResponseFromJSONDict(JSONDict: response)
+                    
+                    request.responseJson = "\(result.value ?? "")"
+                    
                     if outerResponse?.responseStatus == .statusSuccess {
                         self.handleSuccessForRequest(request, outerResponse!)
                     }

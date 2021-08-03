@@ -24,7 +24,7 @@ class CreatePaymentProcessRequest: BaseRequest {
         
         let description = Meshulam.shared().strDescription
         if !description.isEmpty {
-            initialDictParams.updateValue(description, forKey: ServerParamNames.desc)
+            initialDictParams.updateValue(description, forKey: ServerParamNames.description)
         }
         
         let email = Meshulam.shared().email

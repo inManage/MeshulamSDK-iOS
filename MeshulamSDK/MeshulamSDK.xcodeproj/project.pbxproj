@@ -30,6 +30,8 @@
 		8D91280826B296B10065A79C /* StringExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D91280726B296B10065A79C /* StringExtenstion.swift */; };
 		8D9B18022694946300E56DF9 /* BitStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B18012694946300E56DF9 /* BitStatusViewController.swift */; };
 		8D9B1804269495B500E56DF9 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B1803269495B500E56DF9 /* loader.json */; };
+		8DB2D08326B9804D00AFAA8D /* CancelBitTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */; };
+		8DB2D08526B9807600AFAA8D /* CancelBitTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */; };
 		C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
 		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -105,6 +107,8 @@
 		8D91280726B296B10065A79C /* StringExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtenstion.swift; sourceTree = "<group>"; };
 		8D9B18012694946300E56DF9 /* BitStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitStatusViewController.swift; sourceTree = "<group>"; };
 		8D9B1803269495B500E56DF9 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionRequest.swift; sourceTree = "<group>"; };
+		8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionResponse.swift; sourceTree = "<group>"; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3664A268DA11D0018D734 /* MeshulamSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeshulamSDK.h; sourceTree = "<group>"; };
 		C7F3664B268DA11D0018D734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -258,6 +262,7 @@
 				C7F3666A268DA1580018D734 /* SetBitPaymentRequest.swift */,
 				C7F3666B268DA1580018D734 /* CreatePaymentProcessRequest.swift */,
 				C7F3666C268DA1580018D734 /* CancelBitPaymentRequest.swift */,
+				8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */,
 			);
 			path = Requestes;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				C7F36676268DA1580018D734 /* ErrorResponse.swift */,
 				C7F36677268DA1580018D734 /* BaseInnerResponse.swift */,
 				C7F36678268DA1580018D734 /* CreatePaymentProcessResponse.swift */,
+				8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -450,6 +456,8 @@
 			files = (
 				C7F366A0268DA1590018D734 /* PaymentManager.swift in Sources */,
 				C7F36692268DA1590018D734 /* SetBitPaymentResponse.swift in Sources */,
+				8DB2D08326B9804D00AFAA8D /* CancelBitTransactionRequest.swift in Sources */,
+				8DB2D08526B9807600AFAA8D /* CancelBitTransactionResponse.swift in Sources */,
 				8D8967602693536B00DE0DC0 /* UIViewExtenstion.swift in Sources */,
 				C7F36699268DA1590018D734 /* SettleSuspendedTransactionResponse.swift in Sources */,
 				C7F36693268DA1590018D734 /* GetPaymentProcessInfoResponse.swift in Sources */,

@@ -29,7 +29,6 @@ public class PopupManager: NSObject {
             popupInfoObj.strSubtitle = strSubTitle!
         }
         
-        
         if strSecondBtn != nil {
             popupInfoObj.strSecondButtonTitle = strSecondBtn!
         }

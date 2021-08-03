@@ -33,6 +33,7 @@ public struct ServerRequests {
     static let getPaymentProcessInfo = "getPaymentProcessInfo"
     static let settleSuspendedTransaction = "settleSuspendedTransaction"
     static let doPayment = "doPayment"
+    static let cancelBitTransaction = "cancelBitTransaction"
 }
 
 public struct ServerParamNames {
@@ -40,7 +41,6 @@ public struct ServerParamNames {
     static let applicationToken = "applicationToken"
     static let pageCode = "pageCode"
     static let userId = "userId"
-    static let desc = "description"
     static let apiKey = "apiKey"
     static let bitPaymentId = "bit_payment_id"
     static let sum = "sum"
@@ -49,6 +49,21 @@ public struct ServerParamNames {
     static let phoneNumber = "pageField[phone]"
     static let chargeType = "chargeType"
     static let templateType = "templateType"
+    static let transactionId = "transactionId"
+    static let description = "description"
+    static let firstPaymentSum = "first_payment_sum"
+    static let full_name = "full_name"
+    static let invoiceName = "invoiceName"
+    static let pageHash = "page_hash"
+    static let paymentNum = "payment_num"
+    static let periodicalPaymentSum = "periodical_payment_sum"
+    static let phone = "phone"
+    static let platform = "platform"
+    static let showPaymentsSelect = "show_payments_select"
+    static let transactionTypeId = "transaction_type_id"
+    static let typeId = "type_id"
+    static let processId = "processId"
+    static let processToken = "processToken"
 }
 
 public struct HeadersRequest {

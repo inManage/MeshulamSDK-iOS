@@ -16,6 +16,7 @@ public class BaseRequest: NSObject {
     var requestFinishedDelegate: RequestFinishedProtocol?
     var requestAttemptsCounter: Int = 0
     var maxAllowedRequestAttempts: Int = 3
+    var responseJson = ""
     
     public func initWithDictParams(_ dictParams: Dict?, _ delegate: RequestFinishedProtocol?) -> BaseRequest {
         

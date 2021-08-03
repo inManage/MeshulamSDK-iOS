@@ -9,9 +9,16 @@ import Foundation
 
 class DoPaymentResponse: BaseInnerResponse {
     
+    var url = ""
+    var bitPaymentId = ""
+    
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
              
+        let getString = ParseValidator.getStringForKey.self
+        url = getString("application_link", JSONDict,  "")
+        bitPaymentId = getString("bit_payment_id", JSONDict, "")
+        
         return self
     }
 }

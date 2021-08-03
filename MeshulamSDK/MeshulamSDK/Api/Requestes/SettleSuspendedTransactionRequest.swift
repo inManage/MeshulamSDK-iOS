@@ -13,9 +13,33 @@ class SettleSuspendedTransactionRequest: BaseRequest {
         return  BaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
     }
     
-    public static func createInitialDictParams() -> Dict {
-        let initialDictParams = [String:Any]()
-        // add params to dictionary params
+    public static func createSettleSuspendedTransactionDictParams() -> Dict {
+        var initialDictParams = [String:Any]()
+        let applicationToken = NetworkManager.shared.applicationToken
+        if !applicationToken.isEmpty {
+            initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
+        }
+        
+        let sum = Meshulam.shared().sum
+        if !sum.isEmpty {
+            initialDictParams.updateValue(sum, forKey: ServerParamNames.sum)
+        }
+        
+        let userId = Meshulam.shared().userId.aesEncrypt()
+        if !userId.isEmpty {
+            initialDictParams.updateValue(userId, forKey: ServerParamNames.userId)
+        }
+        
+        let apiKey = Meshulam.shared().apiKey.aesEncrypt()
+        if !apiKey.isEmpty {
+            initialDictParams.updateValue(apiKey, forKey: ServerParamNames.apiKey)
+        }
+        
+        let transactionId = Meshulam.shared().transactionId
+        if !apiKey.isEmpty {
+            initialDictParams.updateValue(transactionId, forKey: ServerParamNames.transactionId)
+        }
+
         return initialDictParams
     }
     

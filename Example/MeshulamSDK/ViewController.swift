@@ -11,6 +11,10 @@ import MeshulamSDK
 
 class ViewController: UIViewController {
     
+    var transactionId = ""
+    var processId = ""
+    var processToken = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,30 +30,64 @@ class ViewController: UIViewController {
     }
     
     private func settleSuspendedTransaction() {
-        Meshulam.shared().settleSuspendedTransaction(apiKey: "", userId: "", sum: "", transactionId: "")
+        Meshulam.shared().settleSuspendedTransaction(apiKey: "cbf3b862e094",
+                                                     userId: "41deb6f1347ee8b2",
+                                                     sum: "1",
+                                                     transactionId: transactionId)
+    }
+    
+    private func handleGetPaymentProcessInfo() {
+        Meshulam.shared().getPaymentProcessInfo(processId: processId, processToken: processToken)
+    }
+    
+    private func handleCancelBitTransaction() {
+        Meshulam.shared().cancelBitTransaction(processId: processId, processToken: processToken)
+    }
+
+    
+    //MARK - Actions
+    @IBAction func didTapCancelBitTransaction(_ sender: Any) {
+        handleCancelBitTransaction()
     }
     
     @IBAction func didTapPayWithBit(_ sender: Any) {
         configureMeshulamSDK()
     }
     
+    @IBAction func didTapGetPaymentProcessInfo(_ sender: Any) {
+        handleGetPaymentProcessInfo()
+    }
+    
     @IBAction func didTapSettleSuspendedTransaction(_ sender: Any) {
         settleSuspendedTransaction()
     }
-    
 }
 
 extension ViewController: MeshulamDelegate {
-    func onCancel() {
-        print("onCancle")
+    
+    func createPaymentProccesSuccess(_ processId: String,_ processToken: String) {
+        self.processId = processId
+        self.processToken = processToken
     }
     
-    func onSuccess(_ getPaymentInfoResponse: String) {
-        print(getPaymentInfoResponse)
+    func setBitPaymentSuccess(_ transactionId: String) {
+        self.transactionId = transactionId
+    }
+
+    func settleSuspendedTransactionSuccess(response: String) {
+        print("\(response)")
+    }
+    
+    func getPaymentProcessInfoSuccess(response: String) {
+        print("\(response)")
     }
 
     func onFailure(_ error: Error) {
         print(error)
+    }
+
+    func onCancel() {
+     
     }
 }
 
