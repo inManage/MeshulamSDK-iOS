@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+enum callBackStatus: Int {
+    case firstBtnTap = 1, secondBtnTap, exitTap
+}
+
 public class PopupManager: NSObject {
     
     public static var shared = PopupManager()
@@ -17,7 +21,7 @@ public class PopupManager: NSObject {
                         showImageInFirstBtn: Bool? = nil,
                         strFirstBtn: String?,
                         strSecondBtn: String? = nil,
-                        callback: @escaping ((_ isFirstBtn: Bool) -> Void)) {
+                        callback: @escaping ((_ callBackStatus: callBackStatus) -> Void)) {
         
         let popupInfoObj = PopupInfoObj()
         
@@ -38,11 +42,15 @@ public class PopupManager: NSObject {
         }
         
         popupInfoObj.firstButtonAction = {
-            callback(false)
+            callback(.firstBtnTap)
         }
         
         popupInfoObj.secondButtonAction = {
-            callback(true)
+            callback(.secondBtnTap)
+        }
+        
+        popupInfoObj.exitPopup = {
+            callback(.exitTap)
         }
         
         showPopup(popupInfoObj)

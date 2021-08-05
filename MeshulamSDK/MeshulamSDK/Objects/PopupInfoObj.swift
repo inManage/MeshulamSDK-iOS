@@ -19,6 +19,8 @@ class PopupInfoObj : NSObject {
     // Close button action if needed.    
     var firstButtonAction: (() -> ())?
     var secondButtonAction: (() -> ())?
+    var exitPopup: (() -> ())?
+    
     var showImageInFirstButton: Bool?
     
     // Buttons are in the order of top to bottom / left to right - Actions/Titles

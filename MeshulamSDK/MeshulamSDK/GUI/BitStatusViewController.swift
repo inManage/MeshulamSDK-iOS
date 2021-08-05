@@ -13,23 +13,28 @@ class BitStatusViewController: UIViewController {
     
     @IBOutlet weak var animateView: LottieView!
     @IBOutlet weak var subTitleLable: UILabel!
-    @IBOutlet weak var bottonBtn: UIButton!
     @IBOutlet weak var initialBitView: UIView!
+    @IBOutlet weak var titleLable: UILabel!
     
     private var animationView: AnimationView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureAnimateView()
-        setDelegate()
-        subTitleLable.font = UIFont(name: "Hebbo-Regular", size: 18)
     }
 
     deinit {
         removeObservers()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setDelegate()
+    }
+    
     private func setDelegate() {
+        NetworkManager.shared.delegate = self
+        StartupManager.shared.delegate = self
         PaymentManager.shared.delegate = self
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(willEnterForeground),
@@ -54,6 +59,13 @@ class BitStatusViewController: UIViewController {
         animateView.addSubview(animationView!)
         animationView!.play()
     }
+    
+    private func destroySDK() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.dismiss(animated: true)
+            Meshulam.destroy()
+        }
+    }
    
     @IBAction func didTapExitBtn(_ sender: Any) {
         PaymentManager.shared.isTappedOnExitBtn = true
@@ -61,16 +73,26 @@ class BitStatusViewController: UIViewController {
     }
 }
 
+extension BitStatusViewController: NetworkManagerDelegate {
+    func callBackFromEroorPopup() {
+        destroySDK()
+    }
+}
+
+extension BitStatusViewController: StartupManagerDelegate {
+    func initSDKFailed(error: Error) {
+        Meshulam.shared().delegate?.onFailure(error)
+    }
+}
+
 extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     
-    func settleSuspendedTransactionSuccess(_ response: String) {
-        Meshulam.shared().delegate?.settleSuspendedTransactionSuccess(response: response)
-        Meshulam.destroy()
+    func createPaymentProcessFaild(error: Error) {
+        Meshulam.shared().delegate?.onFailure(error)
     }
 
     func cancelBitPayment() {
         Meshulam.shared().delegate?.onCancel()
-        Meshulam.destroy()
         dismiss(animated: true)
     }
     
@@ -97,8 +119,17 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
         PopupManager.shared.pushPopup(strTitle: Titles.canclePaymentTitle,
                                            showImageInFirstBtn: true,
                                            strFirstBtn: ButtonsTitle.bitBtn,
-                                           strSecondBtn: ButtonsTitle.cancleBtn) { tryAgain in
-            tryAgain ? self.handlePayTap() : self.handleExitTap()
+                                           strSecondBtn: ButtonsTitle.cancleBtn) { callBackStatus in
+            switch callBackStatus {
+            case .firstBtnTap: self.handlePayTap()
+                break
+                
+            case .secondBtnTap: self.handleExitTap()
+                break
+                
+            case .exitTap: self.handleExitTap()
+                break
+            }
         }
     }
     

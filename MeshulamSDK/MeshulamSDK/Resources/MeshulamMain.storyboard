@@ -46,16 +46,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vq-tB-OsV">
-                                <rect key="frame" x="115.66666666666669" y="738" width="183" height="36"/>
-                                <fontDescription key="fontDescription" name="Heebo-Regular" family="Heebo" pointSize="16"/>
-                                <state key="normal" title="חזרה לבחירת אמצעי תשלום">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapExitBtn:" destination="vRf-mA-fx9" eventType="touchUpInside" id="U6K-UT-ftX"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a37-ba-gZ6">
                                 <rect key="frame" x="0.0" y="44" width="80" height="80"/>
                                 <constraints>
@@ -132,30 +122,25 @@
                             <constraint firstItem="LKU-PH-Kyc" firstAttribute="leading" secondItem="Qn2-dw-2HA" secondAttribute="leading" id="BkC-9A-6cD"/>
                             <constraint firstAttribute="trailing" secondItem="tyS-R0-nc0" secondAttribute="trailing" id="C5M-WV-qFh"/>
                             <constraint firstAttribute="trailing" secondItem="LKU-PH-Kyc" secondAttribute="trailing" id="HcI-1D-xF5"/>
-                            <constraint firstItem="5Vq-tB-OsV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qn2-dw-2HA" secondAttribute="leadingMargin" constant="12" id="Igv-Yr-dXK"/>
                             <constraint firstItem="a37-ba-gZ6" firstAttribute="top" secondItem="pi1-za-OjM" secondAttribute="bottom" id="Ir2-B6-Ztj"/>
                             <constraint firstItem="LKU-PH-Kyc" firstAttribute="top" secondItem="Qn2-dw-2HA" secondAttribute="top" id="Jww-RP-GrP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zWX-6N-Dtx" secondAttribute="trailing" constant="64" id="MTv-AI-wT5"/>
                             <constraint firstItem="8We-Le-n7q" firstAttribute="centerX" secondItem="tyS-R0-nc0" secondAttribute="centerX" id="Rhk-am-Ftb"/>
-                            <constraint firstItem="5Vq-tB-OsV" firstAttribute="centerX" secondItem="tyS-R0-nc0" secondAttribute="centerX" id="Rk3-20-LBt"/>
-                            <constraint firstItem="5Vq-tB-OsV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JiV-B5-DrL" secondAttribute="bottom" constant="20" id="SAl-f3-ncx"/>
                             <constraint firstItem="8We-Le-n7q" firstAttribute="top" secondItem="pi1-za-OjM" secondAttribute="bottom" constant="93" id="Tyu-PF-wG7"/>
                             <constraint firstItem="JiV-B5-DrL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qn2-dw-2HA" secondAttribute="leadingMargin" constant="40" id="VhP-Bw-uyU"/>
                             <constraint firstItem="a37-ba-gZ6" firstAttribute="leading" secondItem="Qn2-dw-2HA" secondAttribute="leading" id="XYY-It-hTI"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="JiV-B5-DrL" secondAttribute="trailing" constant="40" id="YOC-I8-pB7"/>
-                            <constraint firstItem="sJB-GN-BM5" firstAttribute="top" secondItem="5Vq-tB-OsV" secondAttribute="bottom" constant="88" id="hpS-GE-WmF"/>
                             <constraint firstItem="tyS-R0-nc0" firstAttribute="top" secondItem="Qn2-dw-2HA" secondAttribute="top" id="jgH-F4-Bls"/>
                             <constraint firstItem="tyS-R0-nc0" firstAttribute="leading" secondItem="Qn2-dw-2HA" secondAttribute="leading" id="tif-a7-DzG"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="5Vq-tB-OsV" secondAttribute="trailing" constant="12" id="tlE-4T-fbi"/>
                             <constraint firstItem="zWX-6N-Dtx" firstAttribute="top" secondItem="8We-Le-n7q" secondAttribute="bottom" constant="97" id="xmA-7g-T3O"/>
                             <constraint firstAttribute="bottom" secondItem="LKU-PH-Kyc" secondAttribute="bottom" id="zbB-6D-g7e"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="animateView" destination="zWX-6N-Dtx" id="IAe-nt-QsQ"/>
-                        <outlet property="bottonBtn" destination="5Vq-tB-OsV" id="kqY-tk-oUJ"/>
                         <outlet property="initialBitView" destination="LKU-PH-Kyc" id="Tvw-3C-YDZ"/>
                         <outlet property="subTitleLable" destination="JiV-B5-DrL" id="Ndx-co-L93"/>
+                        <outlet property="titleLable" destination="aJP-QK-Zc2" id="Zlx-cT-G3f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yu4-TK-Oc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -14,7 +14,7 @@ protocol PaymentManagerToBitStatusVCDelegate: class {
     func setBitPaymentSuccess(_ transectionId: String)
     func cancelBitPayment()
     func bitOpened()
-    func settleSuspendedTransactionSuccess(_ response: String)
+    func createPaymentProcessFaild(error: Error)
 }
 
 public class PaymentManager {
@@ -38,7 +38,7 @@ public class PaymentManager {
     
     public func callGetBitPaymentStatusRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
-        let parameters = Dict()//CreatePaymentStatusRequest.createPaymentProcessDictParams()
+        let parameters = Dict()
         let request    = GetBitPaymentStatusRequest().initWithDictParams(parameters, delegate)
         NetworkManager.shared.sendRequest(request)
     }
@@ -54,6 +54,7 @@ public class PaymentManager {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CancelBitTransactionRequest.createCancelBitTransactionParams()
         let request    = CancelBitTransactionRequest().initWithDictParams(parameters, delegate)
+        request.showLoader = true
         NetworkManager.shared.sendRequest(request)
     }
     
@@ -69,6 +70,7 @@ public class PaymentManager {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = GetPaymentProcessInfoRequest.createGetPaymentProcessInfoParams()
         let request    = GetPaymentProcessInfoRequest().initWithDictParams(parameters, delegate)
+        request.showLoader = true
         NetworkManager.shared.sendRequest(request)
     }
     
@@ -76,90 +78,14 @@ public class PaymentManager {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = SettleSuspendedTransactionRequest.createSettleSuspendedTransactionDictParams()
         let request    = SettleSuspendedTransactionRequest().initWithDictParams(parameters, delegate)
+        request.showLoader = true
         NetworkManager.shared.sendRequest(request)
     }
     
     public func callDoPayment(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let doPaymentArr = createPaymentProcess?.doPaymentRequestArr ?? DoPaymentRequestArr()
-       
-        var parameters = [String: Any]()
-        
-        let applicationToken = NetworkManager.shared.applicationToken
-        if !applicationToken.isEmpty {
-            parameters.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
-        }
-        
-        let description = doPaymentArr.desc
-        if !description.isEmpty {
-            parameters.updateValue(description, forKey: ServerParamNames.description)
-        }
-        
-        let email = doPaymentArr.email
-        if !email.isEmpty {
-            parameters.updateValue(email, forKey: ServerParamNames.email)
-        }
-        
-        let firstPaymentSum = doPaymentArr.firstPaymentSum
-        if !firstPaymentSum.isEmpty {
-            parameters.updateValue(firstPaymentSum, forKey: ServerParamNames.firstPaymentSum)
-        }
-        
-        let fullName = doPaymentArr.fullName
-        if !fullName.isEmpty {
-            parameters.updateValue(fullName, forKey: ServerParamNames.full_name)
-        }
-        
-        let invoiceName = doPaymentArr.invoiceName
-        if !invoiceName.isEmpty {
-            parameters.updateValue(invoiceName, forKey: ServerParamNames.invoiceName)
-        }
-        
-        let pageHash = doPaymentArr.pageHash
-        if !pageHash.isEmpty {
-            parameters.updateValue(pageHash, forKey: ServerParamNames.pageHash)
-        }
-        
-        let paymentNum = doPaymentArr.paymentNum
-        if !paymentNum.isEmpty {
-            parameters.updateValue(paymentNum, forKey: ServerParamNames.paymentNum)
-        }
-        
-        let periodicalPaymentSum = doPaymentArr.periodicalPaymentSum
-        if !periodicalPaymentSum.isEmpty {
-            parameters.updateValue(periodicalPaymentSum, forKey: ServerParamNames.periodicalPaymentSum)
-        }
-        
-        let phone = doPaymentArr.phone
-        if !phone.isEmpty {
-            parameters.updateValue(phone, forKey: ServerParamNames.phone)
-        }
-        
-        let platform = doPaymentArr.platform
-        if !platform.isEmpty {
-            parameters.updateValue(platform, forKey: ServerParamNames.platform)
-        }
-        
-        let showPaymentsSelect = doPaymentArr.showPaymentsSelect
-        if !showPaymentsSelect.isEmpty {
-            parameters.updateValue(showPaymentsSelect, forKey: ServerParamNames.showPaymentsSelect)
-        }
-        
-        let sum = doPaymentArr.sum
-        if !sum.isEmpty {
-            parameters.updateValue(sum, forKey: ServerParamNames.sum)
-        }
-        
-        let transactionTypeId = doPaymentArr.transactionTypeId
-        if !transactionTypeId.isEmpty {
-            parameters.updateValue(transactionTypeId, forKey: ServerParamNames.transactionTypeId)
-        }
-        
-        let typeId = doPaymentArr.typeId
-        if !typeId.isEmpty {
-            parameters.updateValue(typeId, forKey: ServerParamNames.typeId)
-        }
-        
+        let parameters = DoPaymentRequest.createDoPaymentParams(doPaymentArr)
         let request    = DoPaymentRequest().initWithDictParams(parameters, delegate)
         NetworkManager.shared.sendRequest(request)
     }
@@ -203,7 +129,7 @@ extension PaymentManager: RequestFinishedProtocol {
             break
             
         case ServerRequests.settleSuspendedTransaction:
-            delegate?.settleSuspendedTransactionSuccess(request.responseJson)
+            Meshulam.shared().delegate?.settleSuspendedTransactionSuccess(response: request.responseJson)
             break
             
         case ServerRequests.doPayment:
@@ -263,9 +189,15 @@ extension PaymentManager: RequestFinishedProtocol {
             case ServerRequests.setBitPayment:
                 delegate?.setBitPaymentFailure()
                 break
+                
+            case ServerRequests.createPaymentProcess:
+                let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
+                delegate?.createPaymentProcessFaild(error: error)
+                break
+                
             default: break
             }
-            
+            print("onFailure")
             let error = getError(from: response)
             Meshulam.shared().delegate?.onFailure(error)
         }

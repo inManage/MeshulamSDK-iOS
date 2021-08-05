@@ -7,6 +7,11 @@
 
 import Foundation
 import Alamofire
+import UIKit
+
+protocol NetworkManagerDelegate: NSObject {
+    func callBackFromEroorPopup()
+}
 
 public class NetworkManager: NSObject {
     
@@ -18,13 +23,16 @@ public class NetworkManager: NSObject {
     public private(set) var startDelay : Int = 0
     public private(set) var intervalLength: Int = 0
     
+
+    weak var delegate: NetworkManagerDelegate?
+    
     public func sendRequest(_ request: BaseRequest) {
         
         let headers   : HTTPHeaders  = [HeadersRequest.token: HeadersRequest.inmangaSecure]
         let urlRequest: String       = "\(baseURL)\(defaultPath)\(request.requestName)/"
         
         let afRequest = AF.request(urlRequest, method: .post, parameters: request.dictParams, headers: headers).validate()
-        
+       
         LogMsg("Full Path:\(logHelper)\(urlRequest)\nParams:\(logHelper)\(request.dictParams)")
         
         request.increaseRequestAttemptsCounter()
@@ -33,6 +41,7 @@ public class NetworkManager: NSObject {
             
             switch result.result {
             case .success(_):
+              
                 if let response = result.value as? Dict {
                     
                     let outerResponse = request.createResponseFromJSONDict(JSONDict: response)
@@ -49,6 +58,7 @@ public class NetworkManager: NSObject {
                 }
                 break
             case .failure(_):
+                
                 if let error = result.error {
                     LogMsg(error)
                     self.handleAFnetworkingFailure(request)
@@ -82,7 +92,18 @@ public class NetworkManager: NSObject {
             delegate.requestFailed(request: request, response: serverResponse ?? nil)
         }
         if request.showErrorMsg {
-            PopupManager.shared.pushPopup(strTitle: serverResponse?.failureMessage, strFirstBtn: ButtonsTitle.okBtn) { _ in
+            PopupManager.shared.pushPopup(strTitle: serverResponse?.failureMessage, strFirstBtn: ButtonsTitle.okBtn) {
+                callBackStatus in
+                
+                switch callBackStatus {
+                case .exitTap: self.delegate?.callBackFromEroorPopup()
+                    break
+                    
+                case .firstBtnTap: self.delegate?.callBackFromEroorPopup()
+                    break
+                    
+                case .secondBtnTap: break
+                }
             }
         }
     }

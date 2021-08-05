@@ -20,29 +20,29 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jG-Oh-Xru">
-                                <rect key="frame" x="108.5" y="60" width="158" height="30"/>
-                                <state key="normal" title="createPaymentProcess"/>
+                                <rect key="frame" x="134" y="60" width="107" height="30"/>
+                                <state key="normal" title="שלם באמצעות Bit"/>
                                 <connections>
                                     <action selector="didTapPayWithBit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mDu-jc-5Ao"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCD-Le-LHF">
-                                <rect key="frame" x="89.5" y="130" width="196" height="30"/>
-                                <state key="normal" title="settleSuspendedTransaction"/>
+                                <rect key="frame" x="153.5" y="130" width="68" height="30"/>
+                                <state key="normal" title="החל בהכנה"/>
                                 <connections>
                                     <action selector="didTapSettleSuspendedTransaction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hPV-rk-kN7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EN4-ej-hwN">
-                                <rect key="frame" x="116" y="200" width="143" height="30"/>
-                                <state key="normal" title="cancelBitTransaction"/>
+                                <rect key="frame" x="152.5" y="200" width="70" height="30"/>
+                                <state key="normal" title="ביטול עסקה"/>
                                 <connections>
                                     <action selector="didTapCancelBitTransaction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NRk-2w-Hw5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG9-0j-jiv">
-                                <rect key="frame" x="106" y="270" width="163" height="30"/>
-                                <state key="normal" title="getPaymentProcessInfo"/>
+                                <rect key="frame" x="145" y="270" width="85" height="30"/>
+                                <state key="normal" title="מידע על עסקה"/>
                                 <connections>
                                     <action selector="didTapGetPaymentProcessInfo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="n3B-p0-8hi"/>
                                 </connections>

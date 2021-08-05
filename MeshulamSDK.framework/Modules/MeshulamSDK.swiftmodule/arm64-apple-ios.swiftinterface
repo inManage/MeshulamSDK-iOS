@@ -118,8 +118,8 @@ public enum PaymentStatusOptions : Swift.Int {
   @objc deinit
 }
 extension StartupManager : MeshulamSDK.RequestFinishedProtocol {
-  public func requestFailed(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseServerResponse?)
   public func requestSucceeded(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseInnerResponse)
+  public func requestFailed(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseServerResponse?)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseInnerResponse : ObjectiveC.NSObject {
   @discardableResult

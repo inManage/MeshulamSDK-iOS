@@ -79,7 +79,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <state key="normal" title="כפתור ראשון" image="group7" backgroundImage="button2"/>
                                                         <connections>
-                                                            <action selector="didTapSecondBtn:" destination="N0f-o5-aju" eventType="touchUpInside" id="7dk-b5-Dbs"/>
+                                                            <action selector="didTapFirstBtn:" destination="N0f-o5-aju" eventType="touchUpInside" id="v6K-6q-02z"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQl-dw-7Iz">
@@ -104,7 +104,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="didTapFirstBtn:" destination="N0f-o5-aju" eventType="touchUpInside" id="qkw-Q1-3Qh"/>
+                                                            <action selector="didTapSecondBtn:" destination="N0f-o5-aju" eventType="touchUpInside" id="Xy1-2v-TwF"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
