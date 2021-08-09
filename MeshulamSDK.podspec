@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     
     s.name         = "MeshulamSDK"
-    s.version      = "0.0.5"
+    s.version      = "0.0.6"
     s.summary          = 'A short description of MeshulamSDK.'
     s.description      = <<-DESC
     TODO: Add long description of the pod here.
