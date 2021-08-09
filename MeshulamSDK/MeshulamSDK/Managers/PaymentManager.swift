@@ -197,7 +197,6 @@ extension PaymentManager: RequestFinishedProtocol {
                 
             default: break
             }
-            print("onFailure")
             let error = getError(from: response)
             Meshulam.shared().delegate?.onFailure(error)
         }

@@ -26,6 +26,7 @@ public class StartupManager  {
   
     private func handleInitSDKResponse(_ response: InitSDKResponse) {
         NetworkManager.shared.fillWithInitSDKResponse(response)
+//        NetworkManager.shared.startModeling()
         PaymentManager.shared.callCreatePaymentProcess()
     }
 }

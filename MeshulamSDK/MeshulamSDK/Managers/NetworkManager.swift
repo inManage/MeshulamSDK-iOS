@@ -22,8 +22,8 @@ public class NetworkManager: NSObject {
     public private(set) var maxTime : Int = 0
     public private(set) var startDelay : Int = 0
     public private(set) var intervalLength: Int = 0
+    private var timer = Timer()
     
-
     weak var delegate: NetworkManagerDelegate?
     
     public func sendRequest(_ request: BaseRequest) {
@@ -107,13 +107,37 @@ public class NetworkManager: NSObject {
             }
         }
     }
-    
+
     public func fillWithInitSDKResponse(_ response: InitSDKResponse) {
         baseURL = response.hostURL
         maxTime = response.maxTime
         startDelay = response.startDelay
         intervalLength = response.intervalLength
         applicationToken = response.applicationToken
+    }
+    
+    
+    public func startModeling() {
+    
+//        DispatchQueue.main.async {
+//            print("startModeling")
+//            self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(0.1), target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+//        }
+    }
+    
+    @objc func update() {
+//        print("update")
+//
+//        DispatchQueue.main.async {
+//            if(self.maxTime > 0) {
+//                self.maxTime -= self.intervalLength
+//                print(self.maxTime)
+//            } else {
+//                print("time end")
+//                self.timer.invalidate()
+//            }
+//        }
+        
     }
 }
 

@@ -74,10 +74,10 @@ public enum PaymentStatusOptions : Swift.Int {
   weak open var delegate: MeshulamSDK.MeshulamDelegate?
   open class func shared() -> MeshulamSDK.Meshulam
   open class func destroy()
-  public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil)
-  public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, sum: Swift.String, transactionId: Swift.String)
-  public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String)
-  public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String)
+  public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate)
+  public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, sum: Swift.String, transactionId: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
+  public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
+  public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
   public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
   @objc deinit
 }
@@ -164,6 +164,7 @@ public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
   }
   public func sendRequest(_ request: MeshulamSDK.BaseRequest)
   public func fillWithInitSDKResponse(_ response: MeshulamSDK.InitSDKResponse)
+  public func startModeling()
   @objc override dynamic public init()
   @objc deinit
 }
