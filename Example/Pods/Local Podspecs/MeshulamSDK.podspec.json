@@ -1,0 +1,33 @@
+{
+  "name": "MeshulamSDK",
+  "version": "0.0.4",
+  "summary": "A short description of MeshulamSDK.",
+  "description": "A shotr Description",
+  "homepage": "https://github.com/inManage/MeshulamSDK-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "inmanage@gmail.com": "inmanage@gmail.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "ios": {
+    "vendored_frameworks": "MeshulamSDK.framework"
+  },
+  "source": {
+    "git": "https://github.com/inManage/MeshulamSDK-iOS.git",
+    "tag": "0.0.4"
+  },
+  "exclude_files": "Classes/Exclude",
+  "resources": [
+    "MeshulamSDK/**/*.xcassets",
+    "MeshulamSDK/**/*.storyboard",
+    "MeshulamSDK/**/*.xib",
+    "MeshulamSDK/**/*.png",
+    "MeshulamSDK/**/*.ttf",
+    "MeshulamSDK/**/*.json"
+  ]
+}

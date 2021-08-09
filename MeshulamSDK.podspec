@@ -9,11 +9,11 @@
 Pod::Spec.new do |s|
 
     s.name         = "MeshulamSDK"
-    s.version      = "0.0.3"
+    s.version      = "0.0.4"
     s.summary          = 'A short description of MeshulamSDK.'
-    s.description  = <<-DESC
-    A nice logger tool in Swift. Cheers
-                     DESC
+    s.description  = 'A shotr Description'
+    #A nice logger tool in Swift. Cheers
+    #                DESC
   
     s.homepage     = "https://github.com/inManage/MeshulamSDK-iOS"
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
