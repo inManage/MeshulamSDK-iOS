@@ -133,6 +133,9 @@ extension StartupManager : MeshulamSDK.RequestFinishedProtocol {
 @_hasMissingDesignatedInitializers public class BaseServerResponse {
   @objc deinit
 }
+extension UIFont {
+  public static func jbs_registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle)
+}
 public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
   func setBitPaymentSuccess(_ transactionId: Swift.String)
   func settleSuspendedTransactionSuccess(response: Swift.String)

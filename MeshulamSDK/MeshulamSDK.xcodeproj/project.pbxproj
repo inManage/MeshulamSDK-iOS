@@ -34,6 +34,7 @@
 		8DB2D08526B9807600AFAA8D /* CancelBitTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */; };
 		C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
 		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4A18826C2D65900568915 /* FontExtenstion.swift */; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F36689268DA1590018D734 /* SettleSuspendedTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36664268DA1580018D734 /* SettleSuspendedTransactionRequest.swift */; };
 		C7F3668A268DA1590018D734 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36665268DA1580018D734 /* BaseRequest.swift */; };
@@ -109,6 +110,7 @@
 		8D9B1803269495B500E56DF9 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionRequest.swift; sourceTree = "<group>"; };
 		8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionResponse.swift; sourceTree = "<group>"; };
+		C7C4A18826C2D65900568915 /* FontExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtenstion.swift; sourceTree = "<group>"; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3664A268DA11D0018D734 /* MeshulamSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeshulamSDK.h; sourceTree = "<group>"; };
 		C7F3664B268DA11D0018D734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */,
 				8D89675F2693536B00DE0DC0 /* UIViewExtenstion.swift */,
 				8D91280726B296B10065A79C /* StringExtenstion.swift */,
+				C7C4A18826C2D65900568915 /* FontExtenstion.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				C7F3668D268DA1590018D734 /* DoPaymentRequest.swift in Sources */,
 				C7F36696268DA1590018D734 /* BaseServerResponse.swift in Sources */,
 				C7F3669F268DA1590018D734 /* ParseValidator.swift in Sources */,
+				C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */,
 				8D9B18022694946300E56DF9 /* BitStatusViewController.swift in Sources */,
 				C7F3669D268DA1590018D734 /* NSObjectExtenstion.swift in Sources */,
 				8D6297E5269305210034DA47 /* PopupViewControllerDelegate.swift in Sources */,

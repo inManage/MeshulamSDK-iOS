@@ -43,9 +43,13 @@ open class Meshulam: NSObject {
     private (set) var processId = ""
     private (set) var processToken = ""
 
-    private override init() {}
+    private override init() {
+        super.init()
+        initCustomFont()
+    }
     
     public func createPaymentProcess(pageCode: String, apiKey: String, userId: String, fullName: String, phoneNumber: String, sum: String, email: String? = nil, description: String? = nil, delegate: MeshulamDelegate) {
+    
         Meshulam.shared().fullName = fullName
         Meshulam.shared().phoneNumber = phoneNumber
         Meshulam.shared().sum = sum
@@ -90,5 +94,12 @@ open class Meshulam: NSObject {
 
     public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
         PaymentManager.shared.callSetBitPaymentRequest()
+    }
+    
+    private func initCustomFont() {
+        UIFont.jbs_registerFont(
+            withFilenameString: "Heebo-Regular.ttf",
+            bundle: Bundle(identifier: "com.inmanage.MeshulamSDK")!
+        )
     }
 }

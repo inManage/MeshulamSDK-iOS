@@ -1,4 +1,5 @@
 import CommonCrypto
+import UIKit
 
 extension String {
 
@@ -72,3 +73,4 @@ extension String {
           return ""
       }
 }
+

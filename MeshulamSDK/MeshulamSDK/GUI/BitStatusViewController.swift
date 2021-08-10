@@ -21,6 +21,7 @@ class BitStatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureAnimateView()
+       
     }
 
     deinit {
