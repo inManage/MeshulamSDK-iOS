@@ -51,7 +51,11 @@ class BitStatusViewController: UIViewController {
     }
     
     private func configureAnimateView() {
-        animationView = .init(name: "loader")
+        let frameworkBundle = Bundle(identifier: "com.inmanage.MeshulamSDK")
+        let bundle = frameworkBundle?.path(forResource: "loader", ofType: "json")
+        if let b = bundle {
+            animationView = .init(filePath: b)
+        }
         animationView!.frame = animateView.bounds
         animationView!.contentMode = .scaleAspectFit
         animationView!.loopMode = .loop

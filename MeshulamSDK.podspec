@@ -7,37 +7,37 @@
 #MeshulamSDK
 
 Pod::Spec.new do |s|
-    
-    s.name         = "MeshulamSDK"
-    s.version      = "0.0.7"
-    s.summary          = 'A short description of MeshulamSDK.'
-    s.description      = <<-DESC
+    s.name = "MeshulamSDK"
+    s.version = "0.0.6"
+    s.summary = 'A short description of MeshulamSDK.'
+    s.description = <<-DESC
     TODO: Add long description of the pod here.
     DESC
-    
-    s.homepage     = "https://github.com/inManage/MeshulamSDK-iOS"
-    s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    s.author           = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
+    s.homepage = "https://github.com/inManage/MeshulamSDK-iOS"
+    s.license = { :type => 'MIT', :file => 'LICENSE' }
+    s.author = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
     s.platform = :ios, '11.0'
     s.ios.vendored_frameworks = 'MeshulamSDK.framework'
-    s.source           = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
-    
+    s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
     s.ios.deployment_target = '11.0'
     s.static_framework = true
     s.requires_arc = true
     s.swift_version = '4.0'
-    
-    s.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-        'ENABLE_BITCODE' => 'YES'
+    s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+    'ENABLE_BITCODE' => 'YES'
     }
+    # s.resources = [
+    # 'MeshulamSDK/**/*.xcassets',
+    # 'MeshulamSDK/**/*.storyboard',
+    # 'MeshulamSDK/**/*.xib',
+    # 'MeshulamSDK/**/*.png',
+    # 'MeshulamSDK/**/*.ttf',
+    # 'MeshulamSDK/**/*.json']
     
-    s.resources = [
-    'MeshulamSDK/**/*.xcassets',
-    'MeshulamSDK/**/*.storyboard',
-    'MeshulamSDK/**/*.xib',
-    'MeshulamSDK/**/*.png',
-    'MeshulamSDK/**/*.ttf',
-    'MeshulamSDK/**/*.json']
+    # s.source_files = "MeshulamSDK/*.{h,m}"
     
-    
-end
+    s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    end
