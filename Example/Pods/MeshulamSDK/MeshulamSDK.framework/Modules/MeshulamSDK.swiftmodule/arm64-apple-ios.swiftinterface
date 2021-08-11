@@ -1,0 +1,177 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 effective-4.1.50 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name MeshulamSDK
+import Alamofire
+import CommonCrypto
+import Foundation
+import Lottie
+@_exported import MeshulamSDK
+import Swift
+import UIKit
+@_hasMissingDesignatedInitializers public class PaymentManager {
+  public static var shared: MeshulamSDK.PaymentManager
+  public var isTappedOnExitBtn: Swift.Bool
+  public var createPaymentProcess: MeshulamSDK.CreatePaymentProcessResponse?
+  public func callCreatePaymentProcess(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callGetBitPaymentStatusRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callCancelBitPaymentRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callCancelBitTransactionRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callSetBitPaymentRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callGetPaymentProcessInfoRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callSettleSuspendedTransactionRequest(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  public func callDoPayment(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  @objc deinit
+}
+extension PaymentManager : MeshulamSDK.RequestFinishedProtocol {
+  public func requestSucceeded(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseInnerResponse)
+  public func requestFailed(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseServerResponse?)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SetBitPaymentResponse : MeshulamSDK.BaseInnerResponse {
+  @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PaymentProcessResponseInfo : MeshulamSDK.BaseInnerResponse {
+  @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Transactions : MeshulamSDK.BaseInnerResponse {
+  @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
+  @objc deinit
+}
+public typealias Dict = [Swift.String : Any]
+public struct Observers {
+}
+public struct Titles {
+}
+public struct ButtonsTitle {
+}
+public struct ServerRequests {
+}
+public struct ServerParamNames {
+}
+public struct HeadersRequest {
+}
+public struct Encryption {
+}
+public struct Error {
+}
+public enum PaymentStatusOptions : Swift.Int {
+  case success, failed, pending
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Constants {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CreatePaymentProcessResponse : MeshulamSDK.BaseInnerResponse {
+  @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class Meshulam : ObjectiveC.NSObject {
+  weak open var delegate: MeshulamSDK.MeshulamDelegate?
+  open class func shared() -> MeshulamSDK.Meshulam
+  open class func destroy()
+  public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate)
+  public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, sum: Swift.String, transactionId: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
+  public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
+  public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
+  public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PopupManager : ObjectiveC.NSObject {
+  public static var shared: MeshulamSDK.PopupManager
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class BaseRequest : ObjectiveC.NSObject {
+  public var requestName: Swift.String {
+    get
+  }
+  public func initWithDictParams(_ dictParams: MeshulamSDK.Dict?, _ delegate: MeshulamSDK.RequestFinishedProtocol?) -> MeshulamSDK.BaseRequest
+  public func createResponseFromJSONDict(JSONDict: Swift.Dictionary<Swift.String, Any>) -> MeshulamSDK.BaseServerResponse?
+  public func shouldAttemptSendingRequestAgain() -> Swift.Bool
+  public func increaseRequestAttemptsCounter()
+  public func resetRequestAttemptsCounter()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SessionManager {
+  public static var shared: MeshulamSDK.SessionManager
+  public func pushBitStatusVC()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class InitSDKRequest : MeshulamSDK.BaseRequest {
+  override public func createResponseFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseServerResponse?
+  public static func createInitialDictParams() -> MeshulamSDK.Dict
+  override public var requestName: Swift.String {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StartupManager {
+  public static var shared: MeshulamSDK.StartupManager
+  public func callInitSDK(requestFinishDelegate: MeshulamSDK.RequestFinishedProtocol? = nil)
+  @objc deinit
+}
+extension StartupManager : MeshulamSDK.RequestFinishedProtocol {
+  public func requestSucceeded(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseInnerResponse)
+  public func requestFailed(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseServerResponse?)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseInnerResponse : ObjectiveC.NSObject {
+  @discardableResult
+  @objc dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class InitSDKResponse : MeshulamSDK.BaseInnerResponse {
+  @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BaseServerResponse {
+  @objc deinit
+}
+public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
+  func setBitPaymentSuccess(_ transactionId: Swift.String)
+  func settleSuspendedTransactionSuccess(response: Swift.String)
+  func createPaymentProccesSuccess(_ processId: Swift.String, _ processToken: Swift.String)
+  func getPaymentProcessInfoSuccess(response: Swift.String)
+  func onFailure(_ error: MeshulamSDK.Error)
+  func onCancel()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ErrorResponse : MeshulamSDK.BaseInnerResponse {
+  @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class NetworkManager : ObjectiveC.NSObject {
+  public static let shared: MeshulamSDK.NetworkManager
+  public var baseURL: Swift.String {
+    get
+  }
+  public var applicationToken: Swift.String {
+    get
+  }
+  public var maxTime: Swift.Int {
+    get
+  }
+  public var startDelay: Swift.Int {
+    get
+  }
+  public var intervalLength: Swift.Int {
+    get
+  }
+  public func sendRequest(_ request: MeshulamSDK.BaseRequest)
+  public func fillWithInitSDKResponse(_ response: MeshulamSDK.InitSDKResponse)
+  public func startModeling()
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol RequestFinishedProtocol : AnyObject {
+  func requestSucceeded(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseInnerResponse)
+  func requestFailed(request: MeshulamSDK.BaseRequest, response: MeshulamSDK.BaseServerResponse?)
+}
+extension MeshulamSDK.PaymentStatusOptions : Swift.Equatable {}
+extension MeshulamSDK.PaymentStatusOptions : Swift.Hashable {}
+extension MeshulamSDK.PaymentStatusOptions : Swift.RawRepresentable {}
