@@ -8,11 +8,12 @@
 
 Pod::Spec.new do |s|
     s.name = "MeshulamSDK"
-    s.version = "0.0.6"
+    s.version = "0.0.8"
     s.summary = 'A short description of MeshulamSDK.'
     s.description = <<-DESC
     TODO: Add long description of the pod here.
     DESC
+    
     s.homepage = "https://github.com/inManage/MeshulamSDK-iOS"
     s.license = { :type => 'MIT', :file => 'LICENSE' }
     s.author = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
@@ -26,15 +27,6 @@ Pod::Spec.new do |s|
     s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'ENABLE_BITCODE' => 'YES'
     }
-    # s.resources = [
-    # 'MeshulamSDK/**/*.xcassets',
-    # 'MeshulamSDK/**/*.storyboard',
-    # 'MeshulamSDK/**/*.xib',
-    # 'MeshulamSDK/**/*.png',
-    # 'MeshulamSDK/**/*.ttf',
-    # 'MeshulamSDK/**/*.json']
-    
-    # s.source_files = "MeshulamSDK/*.{h,m}"
     
     s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
