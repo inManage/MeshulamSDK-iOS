@@ -78,29 +78,30 @@ class MeshulamPopupViewController: UIViewController {
     }
     
     @IBAction func didTapExit(_ sender: Any) {
+        dismissPopup()
         if let aPopupInfo = self.popupInfoObj {
             if let exitPopup = aPopupInfo.exitPopup {
                 exitPopup()
             }
         }
-        dismissPopup()
+        
     }
     
     @IBAction func didTapSecondBtn(_ sender: Any) {
+        dismissPopup()
         if let aPopupInfo = self.popupInfoObj {
             if let secondButtonAction = aPopupInfo.secondButtonAction {
                 secondButtonAction()
             }
         }
-       dismissPopup()
     }
     
     @IBAction func didTapFirstBtn(_ sender: Any) {
+        dismissPopup()
         if let aPopupInfo = self.popupInfoObj {
             if let firstButtonAction = aPopupInfo.firstButtonAction {
                 firstButtonAction()
             }
         }
-        dismissPopup()
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D14BC1326C3DD7C001A20A1 /* Heebo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */; };
 		8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770132691E3F800DFD8F3 /* Gallery.xcassets */; };
 		8D3770172691E3F800DFD8F3 /* MeshulamMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770142691E3F800DFD8F3 /* MeshulamMain.storyboard */; };
 		8D6297AE26920D910034DA47 /* UIApplicationExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */; };
@@ -24,7 +25,6 @@
 		8D7BE79526A82EC500403915 /* Heebo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A62691E7280034DA47 /* Heebo-ExtraBold.ttf */; };
 		8D7BE79626A82EC500403915 /* Heebo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A92691E7280034DA47 /* Heebo-Light.ttf */; };
 		8D7BE79726A82EC500403915 /* Heebo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AA2691E7280034DA47 /* Heebo-Medium.ttf */; };
-		8D7BE79826A82EC500403915 /* Heebo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */; };
 		8D7BE79926A82EC500403915 /* Heebo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AC2691E7280034DA47 /* Heebo-Thin.ttf */; };
 		8D8967602693536B00DE0DC0 /* UIViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D89675F2693536B00DE0DC0 /* UIViewExtenstion.swift */; };
 		8D91280826B296B10065A79C /* StringExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D91280726B296B10065A79C /* StringExtenstion.swift */; };
@@ -414,10 +414,10 @@
 			files = (
 				8D7BE79326A82EC500403915 /* Heebo-Black.ttf in Resources */,
 				8D7BE79426A82EC500403915 /* Heebo-Bold.ttf in Resources */,
+				8D14BC1326C3DD7C001A20A1 /* Heebo-Regular.ttf in Resources */,
 				8D7BE79526A82EC500403915 /* Heebo-ExtraBold.ttf in Resources */,
 				8D7BE79626A82EC500403915 /* Heebo-Light.ttf in Resources */,
 				8D7BE79726A82EC500403915 /* Heebo-Medium.ttf in Resources */,
-				8D7BE79826A82EC500403915 /* Heebo-Regular.ttf in Resources */,
 				8D7BE79926A82EC500403915 /* Heebo-Thin.ttf in Resources */,
 				8D6297DE2692E57E0034DA47 /* MeshulamPopup.storyboard in Resources */,
 				8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */,

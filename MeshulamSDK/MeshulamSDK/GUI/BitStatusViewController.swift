@@ -140,7 +140,6 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     
     private func handleExitTap() {
         PaymentManager.shared.callCancelBitPaymentRequest()
-        dismiss(animated: true)
     }
     
     private func handlePayTap() {

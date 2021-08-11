@@ -101,5 +101,13 @@ open class Meshulam: NSObject {
             withFilenameString: "Heebo-Regular.ttf",
             bundle: Bundle(identifier: "com.inmanage.MeshulamSDK")!
         )
+        UIFont.jbs_registerFont(
+            withFilenameString: "Heebo-Medium.ttf",
+            bundle: Bundle(identifier: "com.inmanage.MeshulamSDK")!
+        )
+        UIFont.jbs_registerFont(
+            withFilenameString: "Heebo-Bold.ttf",
+            bundle: Bundle(identifier: "com.inmanage.MeshulamSDK")!
+        )
     }
 }

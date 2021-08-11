@@ -5,6 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Heebo-Regular</string>
+		<string>Heebo-Bold</string>
+		<string>Heebo-Medium</string>
 		<string>Heebo</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
