@@ -53,7 +53,9 @@ public struct HeadersRequest {
 }
 public struct Encryption {
 }
-public struct Error {
+@_hasMissingDesignatedInitializers @objc public class Error : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
 }
 public enum PaymentStatusOptions : Swift.Int {
   case success, failed, pending
@@ -136,13 +138,13 @@ extension StartupManager : MeshulamSDK.RequestFinishedProtocol {
 extension UIFont {
   public static func jbs_registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle)
 }
-public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
-  func setBitPaymentSuccess(_ transactionId: Swift.String)
-  func settleSuspendedTransactionSuccess(response: Swift.String)
-  func createPaymentProccesSuccess(_ processId: Swift.String, _ processToken: Swift.String)
-  func getPaymentProcessInfoSuccess(response: Swift.String)
-  func onFailure(_ error: MeshulamSDK.Error)
-  func onCancel()
+@objc public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func setBitPaymentSuccess(_ transactionId: Swift.String)
+  @objc func settleSuspendedTransactionSuccess(response: Swift.String)
+  @objc func createPaymentProccesSuccess(_ processId: Swift.String, _ processToken: Swift.String)
+  @objc func getPaymentProcessInfoSuccess(response: Swift.String)
+  @objc func onFailure(_ error: MeshulamSDK.Error)
+  @objc func onCancel()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ErrorResponse : MeshulamSDK.BaseInnerResponse {
   @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse

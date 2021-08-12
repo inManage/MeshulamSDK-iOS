@@ -229,6 +229,13 @@ SWIFT_CLASS("_TtC11MeshulamSDK28CreatePaymentProcessResponse")
 @end
 
 
+SWIFT_CLASS("_TtC11MeshulamSDK5Error")
+@interface Error : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC11MeshulamSDK13ErrorResponse")
 @interface ErrorResponse : BaseInnerResponse
 - (BaseInnerResponse * _Nonnull)buildFromJSONDictWithJSONDict:(NSDictionary<NSString *, id> * _Nonnull)JSONDict SWIFT_WARN_UNUSED_RESULT;
@@ -251,6 +258,17 @@ SWIFT_CLASS("_TtC11MeshulamSDK8Meshulam")
 @interface Meshulam : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP11MeshulamSDK16MeshulamDelegate_")
+@protocol MeshulamDelegate <NSObject>
+- (void)setBitPaymentSuccess:(NSString * _Nonnull)transactionId;
+- (void)settleSuspendedTransactionSuccessWithResponse:(NSString * _Nonnull)response;
+- (void)createPaymentProccesSuccess:(NSString * _Nonnull)processId :(NSString * _Nonnull)processToken;
+- (void)getPaymentProcessInfoSuccessWithResponse:(NSString * _Nonnull)response;
+- (void)onFailure:(Error * _Nonnull)error;
+- (void)onCancel;
 @end
 
 

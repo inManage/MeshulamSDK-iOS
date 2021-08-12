@@ -75,9 +75,15 @@ public struct Encryption {
     static let key = ""
 }
 
-public struct Error {
+@objc public class Error: NSObject {
+    
     var id: Int = 0
     var errorMessage = ""
+    
+    init(id: Int, errorMessage: String) {
+        self.id = id
+        self.errorMessage = errorMessage
+    }
 }
 
 public enum PaymentStatusOptions: Int {
