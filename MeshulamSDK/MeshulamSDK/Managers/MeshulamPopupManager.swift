@@ -12,9 +12,9 @@ enum callBackStatus: Int {
     case firstBtnTap = 1, secondBtnTap, exitTap
 }
 
-public class PopupManager: NSObject {
+public class MeshulamPopupManager: NSObject {
     
-    public static var shared = PopupManager()
+    public static var shared = MeshulamPopupManager()
     
     func pushPopup(strTitle: String?,
                         strSubTitle: String? = nil,

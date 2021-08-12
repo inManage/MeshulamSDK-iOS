@@ -17,9 +17,9 @@ protocol PaymentManagerToBitStatusVCDelegate: class {
     func createPaymentProcessFaild(error: Error)
 }
 
-public class PaymentManager {
+public class MeshulamPaymentManager {
     
-    public static var shared = PaymentManager()
+    public static var shared = MeshulamPaymentManager()
     
     weak var delegate: PaymentManagerToBitStatusVCDelegate?
     
@@ -29,25 +29,25 @@ public class PaymentManager {
     public var createPaymentProcess: CreatePaymentProcessResponse?
     
     public func callCreatePaymentProcess(requestFinishDelegate: RequestFinishedProtocol? = nil) {
-        PaymentManager.shared.isTappedOnExitBtn = false
+        MeshulamPaymentManager.shared.isTappedOnExitBtn = false
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CreatePaymentProcessRequest.createPaymentProcessDictParams()
         let request    = CreatePaymentProcessRequest().initWithDictParams(parameters, delegate)
-        NetworkManager.shared.sendRequest(request)
+        MeshulamNetworkManager.shared.sendRequest(request)
     }
     
     public func callGetBitPaymentStatusRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = Dict()
         let request    = GetBitPaymentStatusRequest().initWithDictParams(parameters, delegate)
-        NetworkManager.shared.sendRequest(request)
+        MeshulamNetworkManager.shared.sendRequest(request)
     }
     
     public func callCancelBitPaymentRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CancelBitPaymentRequest.createCancelBitPaymentParams()
         let request    = CancelBitPaymentRequest().initWithDictParams(parameters, delegate)
-        NetworkManager.shared.sendRequest(request)
+        MeshulamNetworkManager.shared.sendRequest(request)
     }
     
     public func callCancelBitTransactionRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
@@ -55,7 +55,7 @@ public class PaymentManager {
         let parameters = CancelBitTransactionRequest.createCancelBitTransactionParams()
         let request    = CancelBitTransactionRequest().initWithDictParams(parameters, delegate)
         request.showLoader = true
-        NetworkManager.shared.sendRequest(request)
+        MeshulamNetworkManager.shared.sendRequest(request)
     }
     
     public func callSetBitPaymentRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
@@ -63,7 +63,7 @@ public class PaymentManager {
         let parameters = SetBitPaymentRequest.createSetBitPaymentParams()
         let request    = SetBitPaymentRequest().initWithDictParams(parameters, delegate)
         request.showErrorMsg = false
-        NetworkManager.shared.sendRequest(request)
+        MeshulamNetworkManager.shared.sendRequest(request)
     }
     
     public func callGetPaymentProcessInfoRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
@@ -71,7 +71,7 @@ public class PaymentManager {
         let parameters = GetPaymentProcessInfoRequest.createGetPaymentProcessInfoParams()
         let request    = GetPaymentProcessInfoRequest().initWithDictParams(parameters, delegate)
         request.showLoader = true
-        NetworkManager.shared.sendRequest(request)
+        MeshulamNetworkManager.shared.sendRequest(request)
     }
     
     public func callSettleSuspendedTransactionRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
@@ -79,7 +79,7 @@ public class PaymentManager {
         let parameters = SettleSuspendedTransactionRequest.createSettleSuspendedTransactionDictParams()
         let request    = SettleSuspendedTransactionRequest().initWithDictParams(parameters, delegate)
         request.showLoader = true
-        NetworkManager.shared.sendRequest(request)
+        MeshulamNetworkManager.shared.sendRequest(request)
     }
     
     public func callDoPayment(requestFinishDelegate: RequestFinishedProtocol? = nil) {
@@ -87,7 +87,7 @@ public class PaymentManager {
         let doPaymentArr = createPaymentProcess?.doPaymentRequestArr ?? DoPaymentRequestArr()
         let parameters = DoPaymentRequest.createDoPaymentParams(doPaymentArr)
         let request    = DoPaymentRequest().initWithDictParams(parameters, delegate)
-        NetworkManager.shared.sendRequest(request)
+        MeshulamNetworkManager.shared.sendRequest(request)
     }
     
     private func handleBitAppStartProcces() {
@@ -110,7 +110,7 @@ public class PaymentManager {
     }
 }
 
-extension PaymentManager: RequestFinishedProtocol {
+extension MeshulamPaymentManager: RequestFinishedProtocol {
     
     public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
         let requestName = request.requestName

@@ -13,9 +13,9 @@ protocol NetworkManagerDelegate: NSObject {
     func callBackFromEroorPopup()
 }
 
-public class NetworkManager: NSObject {
+public class MeshulamNetworkManager: NSObject {
     
-    public static let shared = NetworkManager()
+    public static let shared = MeshulamNetworkManager()
     
     public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/"
     public private(set) var applicationToken: String = ""
@@ -92,7 +92,7 @@ public class NetworkManager: NSObject {
             delegate.requestFailed(request: request, response: serverResponse ?? nil)
         }
         if request.showErrorMsg {
-            PopupManager.shared.pushPopup(strTitle: serverResponse?.failureMessage, strFirstBtn: ButtonsTitle.okBtn) {
+            MeshulamPopupManager.shared.pushPopup(strTitle: serverResponse?.failureMessage, strFirstBtn: ButtonsTitle.okBtn) {
                 callBackStatus in
                 
                 switch callBackStatus {

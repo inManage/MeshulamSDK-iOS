@@ -11,27 +11,27 @@ protocol StartupManagerDelegate: NSObject {
     func initSDKFailed(error: Error)
 }
 
-public class StartupManager  {
+public class MeshulamStartupManager  {
     
-    public static var shared = StartupManager()
+    public static var shared = MeshulamStartupManager()
     weak var delegate: StartupManagerDelegate?
     
     public func callInitSDK(requestFinishDelegate: RequestFinishedProtocol? = nil) {
-        PaymentManager.shared.isTappedOnExitBtn = false
+        MeshulamPaymentManager.shared.isTappedOnExitBtn = false
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = InitSDKRequest.createInitialDictParams()
         let request    = InitSDKRequest().initWithDictParams(parameters, delegate)
-        NetworkManager.shared.sendRequest(request)
+        MeshulamNetworkManager.shared.sendRequest(request)
     }
   
     private func handleInitSDKResponse(_ response: InitSDKResponse) {
-        NetworkManager.shared.fillWithInitSDKResponse(response)
+        MeshulamNetworkManager.shared.fillWithInitSDKResponse(response)
 //        NetworkManager.shared.startModeling()
-        PaymentManager.shared.callCreatePaymentProcess()
+        MeshulamPaymentManager.shared.callCreatePaymentProcess()
     }
 }
 
-extension StartupManager: RequestFinishedProtocol {
+extension MeshulamStartupManager: RequestFinishedProtocol {
     public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
         let requestName = request.requestName
         if requestName == ServerRequests.initSDK {

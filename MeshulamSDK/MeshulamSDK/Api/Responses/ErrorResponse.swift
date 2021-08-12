@@ -14,7 +14,7 @@ public class ErrorResponse: BaseInnerResponse {
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
         
-        message = ParseValidator.getStringForKey(key: "message", JSONDict: JSONDict, defaultValue: "")
+        message = MeshulamParseValidator.getStringForKey(key: "message", JSONDict: JSONDict, defaultValue: "")
         
         return self
     }

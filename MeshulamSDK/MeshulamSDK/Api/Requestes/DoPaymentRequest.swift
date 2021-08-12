@@ -16,7 +16,7 @@ class DoPaymentRequest: BaseRequest {
     public static func createDoPaymentParams(_ paymentRequestArr: DoPaymentRequestArr) -> Dict {
         var parameters = Dict()
         
-        let applicationToken = NetworkManager.shared.applicationToken
+        let applicationToken = MeshulamNetworkManager.shared.applicationToken
         if !applicationToken.isEmpty {
             parameters.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }

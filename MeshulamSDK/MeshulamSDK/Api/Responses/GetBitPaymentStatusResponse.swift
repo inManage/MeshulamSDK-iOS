@@ -14,7 +14,7 @@ class GetBitPaymentStatusResponse: BaseInnerResponse {
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
         
-        let getInt = ParseValidator.getIntForKey.self
+        let getInt = MeshulamParseValidator.getIntForKey.self
         
         paymentStatus = PaymentStatusOptions(rawValue: getInt("payment_status", JSONDict, 0))
         

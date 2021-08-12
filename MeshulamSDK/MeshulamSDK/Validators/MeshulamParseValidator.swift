@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ParseValidator: NSObject {
+class MeshulamParseValidator: NSObject {
     
     public class func parseUrlToJson(strUrl: String, andSubString: String) -> Dict {
         var stringParseToJson = ""
@@ -300,7 +300,7 @@ class ParseValidator: NSObject {
             
             let innerResponseInstance = type(of: innerResponse).init()
             
-            let tempDict = ParseValidator.getDictionaryForKey(key: strKey, JSONDict: aJSONDict, defaultValue: [String:Any]())
+            let tempDict = MeshulamParseValidator.getDictionaryForKey(key: strKey, JSONDict: aJSONDict, defaultValue: [String:Any]())
             
             let anInnerResponse = innerResponseInstance.buildFromJSONDict(JSONDict: tempDict)
 

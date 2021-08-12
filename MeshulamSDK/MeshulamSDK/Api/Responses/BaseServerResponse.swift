@@ -26,8 +26,8 @@ public class BaseServerResponse {
     
     static func initFromJSONDict(JSONDict: Dict, withInnerResponse innerResponse: BaseInnerResponse) -> BaseServerResponse {
        
-        let getInt  = ParseValidator.getIntForKey.self
-        let getDict = ParseValidator.getDictionaryForKey.self
+        let getInt  = MeshulamParseValidator.getIntForKey.self
+        let getDict = MeshulamParseValidator.getDictionaryForKey.self
         
         let baseOuterResponse = BaseServerResponse()
         let responseStatus = getInt(STATUS, JSONDict, 0)

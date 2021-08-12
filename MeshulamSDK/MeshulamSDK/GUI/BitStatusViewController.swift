@@ -34,9 +34,9 @@ class BitStatusViewController: UIViewController {
     }
     
     private func setDelegate() {
-        NetworkManager.shared.delegate = self
-        StartupManager.shared.delegate = self
-        PaymentManager.shared.delegate = self
+        MeshulamNetworkManager.shared.delegate = self
+        MeshulamStartupManager.shared.delegate = self
+        MeshulamPaymentManager.shared.delegate = self
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(willEnterForeground),
                                                name: Observers.willEnterForeground,
@@ -73,7 +73,7 @@ class BitStatusViewController: UIViewController {
     }
    
     @IBAction func didTapExitBtn(_ sender: Any) {
-        PaymentManager.shared.isTappedOnExitBtn = true
+        MeshulamPaymentManager.shared.isTappedOnExitBtn = true
         presentCanclePaymentProccesPopup()
     }
 }
@@ -121,7 +121,7 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     }
     
     private func presentCanclePaymentProccesPopup() {
-        PopupManager.shared.pushPopup(strTitle: Titles.canclePaymentTitle,
+        MeshulamPopupManager.shared.pushPopup(strTitle: Titles.canclePaymentTitle,
                                            showImageInFirstBtn: true,
                                            strFirstBtn: ButtonsTitle.bitBtn,
                                            strSecondBtn: ButtonsTitle.cancleBtn) { callBackStatus in
@@ -139,10 +139,10 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     }
     
     private func handleExitTap() {
-        PaymentManager.shared.callCancelBitPaymentRequest()
+        MeshulamPaymentManager.shared.callCancelBitPaymentRequest()
     }
     
     private func handlePayTap() {
-        PaymentManager.shared.callDoPayment()
+        MeshulamPaymentManager.shared.callDoPayment()
     }
 }

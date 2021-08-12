@@ -18,14 +18,14 @@ public class CreatePaymentProcessResponse: BaseInnerResponse {
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
         
-        let getString = ParseValidator.getStringForKey.self
+        let getString = MeshulamParseValidator.getStringForKey.self
         
         url = getString("url", JSONDict,  "")
         processToken = getString("processToken", JSONDict, "")
         processId = getString("processId", JSONDict, "")
         bitPaymentId = getString("bit_payment_id", JSONDict, "")
         
-        let doPaymentRequestArrTemp = ParseValidator.getDictionaryForKey(key: "do_payment_requestArr", JSONDict: JSONDict, defaultValue: [String: Any]())
+        let doPaymentRequestArrTemp = MeshulamParseValidator.getDictionaryForKey(key: "do_payment_requestArr", JSONDict: JSONDict, defaultValue: [String: Any]())
         doPaymentRequestArr = DoPaymentRequestArr().buildFromJSONDict(JSONDict: doPaymentRequestArrTemp) as! DoPaymentRequestArr
         
         return self
@@ -53,7 +53,7 @@ class DoPaymentRequestArr: BaseInnerResponse, Codable {
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
         
-        let getString = ParseValidator.getStringForKey.self
+        let getString = MeshulamParseValidator.getStringForKey.self
         
         desc = getString("description", JSONDict, "")
         firstPaymentSum = getString("first_payment_sum", JSONDict, "")

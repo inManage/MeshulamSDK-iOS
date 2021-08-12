@@ -14,7 +14,7 @@ public class SetBitPaymentResponse: BaseInnerResponse {
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
              
-        let paymentProcessResponseInfoTemp = ParseValidator.getDictionaryForKey(key: "getPaymentProcessResponseInfo", JSONDict: JSONDict, defaultValue: [String: Any]())
+        let paymentProcessResponseInfoTemp = MeshulamParseValidator.getDictionaryForKey(key: "getPaymentProcessResponseInfo", JSONDict: JSONDict, defaultValue: [String: Any]())
         paymentProcessResponseInfo = PaymentProcessResponseInfo().buildFromJSONDict(JSONDict: paymentProcessResponseInfoTemp) as! PaymentProcessResponseInfo
         
         
@@ -31,10 +31,10 @@ public class PaymentProcessResponseInfo: BaseInnerResponse {
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
         
-        processId = ParseValidator.getIntForKey(key: "processId", JSONDict: JSONDict, defaultValue: 0)
+        processId = MeshulamParseValidator.getIntForKey(key: "processId", JSONDict: JSONDict, defaultValue: 0)
 
-        let tempTransactions = ParseValidator.getArrayForKey(key: "transactions", JSONDict: JSONDict, defaultValue: [Any]())
-        self.transactions = ParseValidator.createArrayOfInnerResponsesFromJSONArray(JSONArray: tempTransactions, innerResponse: Transactions(), shouldReverseOrder: false) as! [Transactions]
+        let tempTransactions = MeshulamParseValidator.getArrayForKey(key: "transactions", JSONDict: JSONDict, defaultValue: [Any]())
+        self.transactions = MeshulamParseValidator.createArrayOfInnerResponsesFromJSONArray(JSONArray: tempTransactions, innerResponse: Transactions(), shouldReverseOrder: false) as! [Transactions]
       
         return self
     }
@@ -60,20 +60,20 @@ public class Transactions: BaseInnerResponse {
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
         
-        desc = ParseValidator.getStringForKey(key: "description", JSONDict: JSONDict, defaultValue: "")
-        fullName = ParseValidator.getStringForKey(key: "fullName", JSONDict: JSONDict, defaultValue: "")
-        payerEmail = ParseValidator.getStringForKey(key: "payerEmail", JSONDict: JSONDict, defaultValue: "")
-        paymentDate = ParseValidator.getStringForKey(key: "paymentDate", JSONDict: JSONDict, defaultValue: "")
-        status = ParseValidator.getStringForKey(key: "status", JSONDict: JSONDict, defaultValue: "")
-        payerPhone = ParseValidator.getStringForKey(key: "payerPhone", JSONDict: JSONDict, defaultValue: "")
-        transactionId = ParseValidator.getStringForKey(key: "transactionId", JSONDict: JSONDict, defaultValue: "")
+        desc = MeshulamParseValidator.getStringForKey(key: "description", JSONDict: JSONDict, defaultValue: "")
+        fullName = MeshulamParseValidator.getStringForKey(key: "fullName", JSONDict: JSONDict, defaultValue: "")
+        payerEmail = MeshulamParseValidator.getStringForKey(key: "payerEmail", JSONDict: JSONDict, defaultValue: "")
+        paymentDate = MeshulamParseValidator.getStringForKey(key: "paymentDate", JSONDict: JSONDict, defaultValue: "")
+        status = MeshulamParseValidator.getStringForKey(key: "status", JSONDict: JSONDict, defaultValue: "")
+        payerPhone = MeshulamParseValidator.getStringForKey(key: "payerPhone", JSONDict: JSONDict, defaultValue: "")
+        transactionId = MeshulamParseValidator.getStringForKey(key: "transactionId", JSONDict: JSONDict, defaultValue: "")
 
-        sum = ParseValidator.getIntForKey(key: "sum", JSONDict: JSONDict, defaultValue: 0)
-        statusCode = ParseValidator.getIntForKey(key: "statusCode", JSONDict: JSONDict, defaultValue: 0)
-        paymentType = ParseValidator.getIntForKey(key: "paymentType", JSONDict: JSONDict, defaultValue: 0)
-        paymentsNum = ParseValidator.getIntForKey(key: "paymentsNum", JSONDict: JSONDict, defaultValue: 0)
-        allPaymentsNum = ParseValidator.getIntForKey(key: "allPaymentsNum", JSONDict: JSONDict, defaultValue: 0)
-        transactionTypeId = ParseValidator.getIntForKey(key: "transactionTypeId", JSONDict: JSONDict, defaultValue: 0)
+        sum = MeshulamParseValidator.getIntForKey(key: "sum", JSONDict: JSONDict, defaultValue: 0)
+        statusCode = MeshulamParseValidator.getIntForKey(key: "statusCode", JSONDict: JSONDict, defaultValue: 0)
+        paymentType = MeshulamParseValidator.getIntForKey(key: "paymentType", JSONDict: JSONDict, defaultValue: 0)
+        paymentsNum = MeshulamParseValidator.getIntForKey(key: "paymentsNum", JSONDict: JSONDict, defaultValue: 0)
+        allPaymentsNum = MeshulamParseValidator.getIntForKey(key: "allPaymentsNum", JSONDict: JSONDict, defaultValue: 0)
+        transactionTypeId = MeshulamParseValidator.getIntForKey(key: "transactionTypeId", JSONDict: JSONDict, defaultValue: 0)
         
         return self
     }

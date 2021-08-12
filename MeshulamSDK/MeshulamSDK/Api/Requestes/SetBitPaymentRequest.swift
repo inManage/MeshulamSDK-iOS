@@ -15,12 +15,12 @@ class SetBitPaymentRequest : BaseRequest {
     
     public static func createSetBitPaymentParams() -> Dict {
         var initialDictParams = [String:Any]()
-        let applicationToken = NetworkManager.shared.applicationToken
+        let applicationToken = MeshulamNetworkManager.shared.applicationToken
         if !applicationToken.isEmpty {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }
         
-        let bitPaymentId = PaymentManager.shared.createPaymentProcess?.bitPaymentId
+        let bitPaymentId = MeshulamPaymentManager.shared.createPaymentProcess?.bitPaymentId
         initialDictParams.updateValue(bitPaymentId ?? "", forKey: ServerParamNames.bitPaymentId)
         return initialDictParams
     }

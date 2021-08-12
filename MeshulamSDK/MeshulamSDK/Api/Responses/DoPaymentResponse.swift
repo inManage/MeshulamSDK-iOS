@@ -15,7 +15,7 @@ class DoPaymentResponse: BaseInnerResponse {
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
              
-        let getString = ParseValidator.getStringForKey.self
+        let getString = MeshulamParseValidator.getStringForKey.self
         url = getString("application_link", JSONDict,  "")
         bitPaymentId = getString("bit_payment_id", JSONDict, "")
         

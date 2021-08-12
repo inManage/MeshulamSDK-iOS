@@ -16,7 +16,7 @@ class GetPaymentProcessInfoRequest: BaseRequest {
     public static func createGetPaymentProcessInfoParams() -> Dict {
         var initialDictParams = [String:Any]()
         
-        let applicationToken = NetworkManager.shared.applicationToken
+        let applicationToken = MeshulamNetworkManager.shared.applicationToken
         if !applicationToken.isEmpty {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }

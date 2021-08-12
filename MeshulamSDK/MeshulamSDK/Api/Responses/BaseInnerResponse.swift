@@ -16,7 +16,7 @@ public class BaseInnerResponse: NSObject {
     }
     
     @objc @discardableResult dynamic public func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
-        id = ParseValidator.getIntForKey(key: "id", JSONDict: JSONDict, defaultValue: 0)
+        id = MeshulamParseValidator.getIntForKey(key: "id", JSONDict: JSONDict, defaultValue: 0)
         return self
     }
 }

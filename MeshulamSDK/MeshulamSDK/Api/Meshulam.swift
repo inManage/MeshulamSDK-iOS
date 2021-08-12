@@ -65,8 +65,8 @@ open class Meshulam: NSObject {
             Meshulam.shared().strDescription = description
         }
         
-        StartupManager.shared.callInitSDK()
-        SessionManager.shared.pushBitStatusVC()
+        MeshulamStartupManager.shared.callInitSDK()
+        MeshulamSessionManager.shared.pushBitStatusVC()
     }
     
     public func settleSuspendedTransaction(apiKey: String, userId: String, sum: String, transactionId: String, delegate: MeshulamDelegate) {
@@ -75,25 +75,25 @@ open class Meshulam: NSObject {
         Meshulam.shared().userId = userId
         Meshulam.shared().transactionId = transactionId
         Meshulam.shared().delegate = delegate
-        PaymentManager.shared.callSettleSuspendedTransactionRequest()
+        MeshulamPaymentManager.shared.callSettleSuspendedTransactionRequest()
     }
     
     public func getPaymentProcessInfo(processId: String, processToken: String, delegate: MeshulamDelegate) {
         Meshulam.shared().processId = processId
         Meshulam.shared().processToken = processToken
         Meshulam.shared().delegate = delegate
-        PaymentManager.shared.callGetPaymentProcessInfoRequest()
+        MeshulamPaymentManager.shared.callGetPaymentProcessInfoRequest()
     }
     
     public func cancelBitTransaction(processId: String, processToken: String, delegate: MeshulamDelegate) {
         Meshulam.shared().processId = processId
         Meshulam.shared().processToken = processToken
         Meshulam.shared().delegate = delegate
-        PaymentManager.shared.callCancelBitTransactionRequest()
+        MeshulamPaymentManager.shared.callCancelBitTransactionRequest()
     }
 
     public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
-        PaymentManager.shared.callSetBitPaymentRequest()
+        MeshulamPaymentManager.shared.callSetBitPaymentRequest()
     }
     
     private func initCustomFont() {

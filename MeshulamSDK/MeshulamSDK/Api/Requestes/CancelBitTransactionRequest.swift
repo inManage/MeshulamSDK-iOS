@@ -16,7 +16,7 @@ class CancelBitTransactionRequest: BaseRequest {
     public static func createCancelBitTransactionParams() -> Dict {
         var initialDictParams = [String:Any]()
         
-        let applicationToken = NetworkManager.shared.applicationToken
+        let applicationToken = MeshulamNetworkManager.shared.applicationToken
         if !applicationToken.isEmpty {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }

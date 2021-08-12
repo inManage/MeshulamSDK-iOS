@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-public class SessionManager  {
+public class MeshulamSessionManager  {
     
-    public static var shared = SessionManager()
+    public static var shared = MeshulamSessionManager()
     
     public func pushBitStatusVC() {
         let frameworkBundle = Bundle(identifier: "com.inmanage.MeshulamSDK")

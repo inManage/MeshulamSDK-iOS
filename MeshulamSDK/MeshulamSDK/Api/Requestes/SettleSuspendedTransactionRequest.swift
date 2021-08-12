@@ -15,7 +15,7 @@ class SettleSuspendedTransactionRequest: BaseRequest {
     
     public static func createSettleSuspendedTransactionDictParams() -> Dict {
         var initialDictParams = [String:Any]()
-        let applicationToken = NetworkManager.shared.applicationToken
+        let applicationToken = MeshulamNetworkManager.shared.applicationToken
         if !applicationToken.isEmpty {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }

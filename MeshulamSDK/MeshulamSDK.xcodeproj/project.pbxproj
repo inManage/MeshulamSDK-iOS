@@ -25,7 +25,7 @@
 		8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770132691E3F800DFD8F3 /* Gallery.xcassets */; };
 		8D3770172691E3F800DFD8F3 /* MeshulamMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770142691E3F800DFD8F3 /* MeshulamMain.storyboard */; };
 		8D6297AE26920D910034DA47 /* UIApplicationExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */; };
-		8D6297DC2692E2A60034DA47 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297DB2692E2A60034DA47 /* PopupManager.swift */; };
+		8D6297DC2692E2A60034DA47 /* MeshulamPopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297DB2692E2A60034DA47 /* MeshulamPopupManager.swift */; };
 		8D6297DE2692E57E0034DA47 /* MeshulamPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297DD2692E57E0034DA47 /* MeshulamPopup.storyboard */; };
 		8D6297E02692E5FE0034DA47 /* MeshulamPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */; };
 		8D6297E32692FC080034DA47 /* PopupInfoObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297E22692FC080034DA47 /* PopupInfoObj.swift */; };
@@ -67,11 +67,11 @@
 		C7F3669B268DA1590018D734 /* BaseInnerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36677268DA1580018D734 /* BaseInnerResponse.swift */; };
 		C7F3669C268DA1590018D734 /* CreatePaymentProcessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36678268DA1580018D734 /* CreatePaymentProcessResponse.swift */; };
 		C7F3669D268DA1590018D734 /* NSObjectExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3667A268DA1580018D734 /* NSObjectExtenstion.swift */; };
-		C7F3669F268DA1590018D734 /* ParseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3667D268DA1580018D734 /* ParseValidator.swift */; };
-		C7F366A0268DA1590018D734 /* PaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3667F268DA1580018D734 /* PaymentManager.swift */; };
-		C7F366A1268DA1590018D734 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36680268DA1580018D734 /* NetworkManager.swift */; };
-		C7F366A2268DA1590018D734 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36681268DA1580018D734 /* SessionManager.swift */; };
-		C7F366A3268DA1590018D734 /* StartupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36682268DA1580018D734 /* StartupManager.swift */; };
+		C7F3669F268DA1590018D734 /* MeshulamParseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3667D268DA1580018D734 /* MeshulamParseValidator.swift */; };
+		C7F366A0268DA1590018D734 /* MeshulamPaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3667F268DA1580018D734 /* MeshulamPaymentManager.swift */; };
+		C7F366A1268DA1590018D734 /* MeshulamNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36680268DA1580018D734 /* MeshulamNetworkManager.swift */; };
+		C7F366A2268DA1590018D734 /* MeshulamSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36681268DA1580018D734 /* MeshulamSessionManager.swift */; };
+		C7F366A3268DA1590018D734 /* MeshulamStartupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36682268DA1580018D734 /* MeshulamStartupManager.swift */; };
 		C7F366A4268DA1590018D734 /* RequestFinishedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36684268DA1580018D734 /* RequestFinishedProtocol.swift */; };
 		C7F366A5268DA1590018D734 /* MeshulamDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36685268DA1580018D734 /* MeshulamDelegate.swift */; };
 		C7F366A6268DA1590018D734 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36686268DA1580018D734 /* Constants.swift */; };
@@ -105,7 +105,7 @@
 		8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Regular.ttf"; sourceTree = "<group>"; };
 		8D6297AC2691E7280034DA47 /* Heebo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Thin.ttf"; sourceTree = "<group>"; };
 		8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtenstion.swift; sourceTree = "<group>"; };
-		8D6297DB2692E2A60034DA47 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
+		8D6297DB2692E2A60034DA47 /* MeshulamPopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshulamPopupManager.swift; sourceTree = "<group>"; };
 		8D6297DD2692E57E0034DA47 /* MeshulamPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeshulamPopup.storyboard; sourceTree = "<group>"; };
 		8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshulamPopupViewController.swift; sourceTree = "<group>"; };
 		8D6297E22692FC080034DA47 /* PopupInfoObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupInfoObj.swift; sourceTree = "<group>"; };
@@ -141,11 +141,11 @@
 		C7F36677268DA1580018D734 /* BaseInnerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInnerResponse.swift; sourceTree = "<group>"; };
 		C7F36678268DA1580018D734 /* CreatePaymentProcessResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePaymentProcessResponse.swift; sourceTree = "<group>"; };
 		C7F3667A268DA1580018D734 /* NSObjectExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtenstion.swift; sourceTree = "<group>"; };
-		C7F3667D268DA1580018D734 /* ParseValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseValidator.swift; sourceTree = "<group>"; };
-		C7F3667F268DA1580018D734 /* PaymentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentManager.swift; sourceTree = "<group>"; };
-		C7F36680268DA1580018D734 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		C7F36681268DA1580018D734 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		C7F36682268DA1580018D734 /* StartupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupManager.swift; sourceTree = "<group>"; };
+		C7F3667D268DA1580018D734 /* MeshulamParseValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshulamParseValidator.swift; sourceTree = "<group>"; };
+		C7F3667F268DA1580018D734 /* MeshulamPaymentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshulamPaymentManager.swift; sourceTree = "<group>"; };
+		C7F36680268DA1580018D734 /* MeshulamNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshulamNetworkManager.swift; sourceTree = "<group>"; };
+		C7F36681268DA1580018D734 /* MeshulamSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshulamSessionManager.swift; sourceTree = "<group>"; };
+		C7F36682268DA1580018D734 /* MeshulamStartupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshulamStartupManager.swift; sourceTree = "<group>"; };
 		C7F36684268DA1580018D734 /* RequestFinishedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFinishedProtocol.swift; sourceTree = "<group>"; };
 		C7F36685268DA1580018D734 /* MeshulamDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshulamDelegate.swift; sourceTree = "<group>"; };
 		C7F36686268DA1580018D734 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -307,7 +307,7 @@
 		C7F3667C268DA1580018D734 /* Validators */ = {
 			isa = PBXGroup;
 			children = (
-				C7F3667D268DA1580018D734 /* ParseValidator.swift */,
+				C7F3667D268DA1580018D734 /* MeshulamParseValidator.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -315,11 +315,11 @@
 		C7F3667E268DA1580018D734 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C7F3667F268DA1580018D734 /* PaymentManager.swift */,
-				C7F36680268DA1580018D734 /* NetworkManager.swift */,
-				C7F36681268DA1580018D734 /* SessionManager.swift */,
-				C7F36682268DA1580018D734 /* StartupManager.swift */,
-				8D6297DB2692E2A60034DA47 /* PopupManager.swift */,
+				C7F3667F268DA1580018D734 /* MeshulamPaymentManager.swift */,
+				C7F36680268DA1580018D734 /* MeshulamNetworkManager.swift */,
+				C7F36681268DA1580018D734 /* MeshulamSessionManager.swift */,
+				C7F36682268DA1580018D734 /* MeshulamStartupManager.swift */,
+				8D6297DB2692E2A60034DA47 /* MeshulamPopupManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -480,7 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F366A0268DA1590018D734 /* PaymentManager.swift in Sources */,
+				C7F366A0268DA1590018D734 /* MeshulamPaymentManager.swift in Sources */,
 				C7F36692268DA1590018D734 /* SetBitPaymentResponse.swift in Sources */,
 				8DB2D08326B9804D00AFAA8D /* CancelBitTransactionRequest.swift in Sources */,
 				8DB2D08526B9807600AFAA8D /* CancelBitTransactionResponse.swift in Sources */,
@@ -494,20 +494,20 @@
 				C7F366A7268DA1590018D734 /* Meshulam.swift in Sources */,
 				C7F3668B268DA1590018D734 /* GetBitPaymentStatusRequest.swift in Sources */,
 				8D91280826B296B10065A79C /* StringExtenstion.swift in Sources */,
-				8D6297DC2692E2A60034DA47 /* PopupManager.swift in Sources */,
+				8D6297DC2692E2A60034DA47 /* MeshulamPopupManager.swift in Sources */,
 				C7F3668A268DA1590018D734 /* BaseRequest.swift in Sources */,
 				C7F3668E268DA1590018D734 /* GetPaymentProcessInfoRequest.swift in Sources */,
 				C7F36694268DA1590018D734 /* DoPaymentResponse.swift in Sources */,
-				C7F366A2268DA1590018D734 /* SessionManager.swift in Sources */,
+				C7F366A2268DA1590018D734 /* MeshulamSessionManager.swift in Sources */,
 				C7F3668C268DA1590018D734 /* InitSDKRequest.swift in Sources */,
-				C7F366A3268DA1590018D734 /* StartupManager.swift in Sources */,
+				C7F366A3268DA1590018D734 /* MeshulamStartupManager.swift in Sources */,
 				C7F36695268DA1590018D734 /* GetBitPaymentStatusResponse.swift in Sources */,
 				C7F3669B268DA1590018D734 /* BaseInnerResponse.swift in Sources */,
 				C7F36698268DA1590018D734 /* InitSDKResponse.swift in Sources */,
 				C7F36697268DA1590018D734 /* CancelBitPaymentResponse.swift in Sources */,
 				C7F3668D268DA1590018D734 /* DoPaymentRequest.swift in Sources */,
 				C7F36696268DA1590018D734 /* BaseServerResponse.swift in Sources */,
-				C7F3669F268DA1590018D734 /* ParseValidator.swift in Sources */,
+				C7F3669F268DA1590018D734 /* MeshulamParseValidator.swift in Sources */,
 				C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */,
 				8D9B18022694946300E56DF9 /* BitStatusViewController.swift in Sources */,
 				C7F3669D268DA1590018D734 /* NSObjectExtenstion.swift in Sources */,
@@ -515,7 +515,7 @@
 				C7F366A5268DA1590018D734 /* MeshulamDelegate.swift in Sources */,
 				C7F3669A268DA1590018D734 /* ErrorResponse.swift in Sources */,
 				8D6297AE26920D910034DA47 /* UIApplicationExtenstion.swift in Sources */,
-				C7F366A1268DA1590018D734 /* NetworkManager.swift in Sources */,
+				C7F366A1268DA1590018D734 /* MeshulamNetworkManager.swift in Sources */,
 				C7F366A4268DA1590018D734 /* RequestFinishedProtocol.swift in Sources */,
 				8D6297E02692E5FE0034DA47 /* MeshulamPopupViewController.swift in Sources */,
 				C7F36691268DA1590018D734 /* CancelBitPaymentRequest.swift in Sources */,
