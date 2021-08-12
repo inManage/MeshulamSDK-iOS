@@ -16,10 +16,6 @@
 		8D6297E02692E5FE0034DA47 /* MeshulamPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */; };
 		8D6297E32692FC080034DA47 /* PopupInfoObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297E22692FC080034DA47 /* PopupInfoObj.swift */; };
 		8D6297E5269305210034DA47 /* PopupViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297E4269305210034DA47 /* PopupViewControllerDelegate.swift */; };
-		8D7BE78F26A82DE500403915 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78B26A82D3800403915 /* Lottie.framework */; };
-		8D7BE79026A82DE500403915 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78B26A82D3800403915 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8D7BE79126A82DE600403915 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78D26A82D3E00403915 /* Alamofire.framework */; };
-		8D7BE79226A82DE600403915 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78D26A82D3E00403915 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D7BE79326A82EC500403915 /* Heebo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A82691E7280034DA47 /* Heebo-Black.ttf */; };
 		8D7BE79426A82EC500403915 /* Heebo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A72691E7280034DA47 /* Heebo-Bold.ttf */; };
 		8D7BE79526A82EC500403915 /* Heebo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A62691E7280034DA47 /* Heebo-ExtraBold.ttf */; };
@@ -76,8 +72,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */,
-				8D7BE79226A82DE600403915 /* Alamofire.framework in Embed Frameworks */,
-				8D7BE79026A82DE500403915 /* Lottie.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,8 +96,6 @@
 		8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshulamPopupViewController.swift; sourceTree = "<group>"; };
 		8D6297E22692FC080034DA47 /* PopupInfoObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupInfoObj.swift; sourceTree = "<group>"; };
 		8D6297E4269305210034DA47 /* PopupViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewControllerDelegate.swift; sourceTree = "<group>"; };
-		8D7BE78B26A82D3800403915 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lottie.framework; sourceTree = "<group>"; };
-		8D7BE78D26A82D3E00403915 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		8D89675F2693536B00DE0DC0 /* UIViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtenstion.swift; sourceTree = "<group>"; };
 		8D91280726B296B10065A79C /* StringExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtenstion.swift; sourceTree = "<group>"; };
 		8D9B18012694946300E56DF9 /* BitStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitStatusViewController.swift; sourceTree = "<group>"; };
@@ -153,8 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */,
-				8D7BE79126A82DE600403915 /* Alamofire.framework in Frameworks */,
-				8D7BE78F26A82DE500403915 /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +323,6 @@
 		D4DDD34A0811702E2C816062 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8D7BE78D26A82D3E00403915 /* Alamofire.framework */,
-				8D7BE78B26A82D3800403915 /* Lottie.framework */,
 				55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */,
 			);
 			name = Frameworks;
@@ -657,7 +645,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -689,7 +677,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

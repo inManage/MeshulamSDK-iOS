@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A6309DA26E26C9FC51BFBB8 /* Pods_MeshulamSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67D38AC78C8D0F52CADBD7A /* Pods_MeshulamSDK_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		83E6260CBCC577B76963E946 /* Pods_MeshulamSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C9815D8CF93900A89B7E44 /* Pods_MeshulamSDK_Tests.framework */; };
+		AC7970522091BB823A9C8F53 /* Pods_MeshulamSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA07E125DA47CD8A61DEFAF /* Pods_MeshulamSDK_Example.framework */; };
+		DCDB04EE0E1D5604471C681A /* Pods_MeshulamSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D5C6271BD0F71A51079EB9 /* Pods_MeshulamSDK_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +28,8 @@
 
 /* Begin PBXFileReference section */
 		0FBEF8364F0BF7FAF57C1EAB /* MeshulamSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MeshulamSDK.podspec; path = ../MeshulamSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2163DDB93C234FA890F4B836 /* Pods-MeshulamSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		52C9815D8CF93900A89B7E44 /* Pods_MeshulamSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BF6580D1E903379D4EA9D5 /* Pods-MeshulamSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		29D5C6271BD0F71A51079EB9 /* Pods_MeshulamSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* MeshulamSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeshulamSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +39,12 @@
 		607FACE51AFB9204008FA782 /* MeshulamSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeshulamSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		79FC8AF0502DC547AE4CAB96 /* Pods-MeshulamSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F110B7E174B7163B24EDB07 /* Pods-MeshulamSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AC5826AA2E1682046C082F35 /* Pods-MeshulamSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBA07E125DA47CD8A61DEFAF /* Pods_MeshulamSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECB49838810BE8009AA7133 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C90C4ED74BA9EC53C49DB4FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D67D38AC78C8D0F52CADBD7A /* Pods_MeshulamSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E787AAE35E46FAA21D181B1C /* Pods-MeshulamSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F11BA3FD1015BDE9B374E269 /* Pods-MeshulamSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6F8F4CA7EFE4B9A7FFDA8B /* Pods-MeshulamSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6309DA26E26C9FC51BFBB8 /* Pods_MeshulamSDK_Example.framework in Frameworks */,
+				AC7970522091BB823A9C8F53 /* Pods_MeshulamSDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83E6260CBCC577B76963E946 /* Pods_MeshulamSDK_Tests.framework in Frameworks */,
+				DCDB04EE0E1D5604471C681A /* Pods_MeshulamSDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +75,7 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				F0A98EDE43713ACFC145228B /* Pods */,
-				A5904CD48E07E422750D34E0 /* Frameworks */,
+				87A4FEB8EAA84F3BA525AFF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,11 +136,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		A5904CD48E07E422750D34E0 /* Frameworks */ = {
+		87A4FEB8EAA84F3BA525AFF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D67D38AC78C8D0F52CADBD7A /* Pods_MeshulamSDK_Example.framework */,
-				52C9815D8CF93900A89B7E44 /* Pods_MeshulamSDK_Tests.framework */,
+				BBA07E125DA47CD8A61DEFAF /* Pods_MeshulamSDK_Example.framework */,
+				29D5C6271BD0F71A51079EB9 /* Pods_MeshulamSDK_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,10 +148,10 @@
 		F0A98EDE43713ACFC145228B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F11BA3FD1015BDE9B374E269 /* Pods-MeshulamSDK_Example.debug.xcconfig */,
-				E787AAE35E46FAA21D181B1C /* Pods-MeshulamSDK_Example.release.xcconfig */,
-				79FC8AF0502DC547AE4CAB96 /* Pods-MeshulamSDK_Tests.debug.xcconfig */,
-				2163DDB93C234FA890F4B836 /* Pods-MeshulamSDK_Tests.release.xcconfig */,
+				11BF6580D1E903379D4EA9D5 /* Pods-MeshulamSDK_Example.debug.xcconfig */,
+				EB6F8F4CA7EFE4B9A7FFDA8B /* Pods-MeshulamSDK_Example.release.xcconfig */,
+				AC5826AA2E1682046C082F35 /* Pods-MeshulamSDK_Tests.debug.xcconfig */,
+				8F110B7E174B7163B24EDB07 /* Pods-MeshulamSDK_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -163,12 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MeshulamSDK_Example" */;
 			buildPhases = (
-				41A24F17EAB4A7625EA009D0 /* [CP] Check Pods Manifest.lock */,
+				DF59F8625D6A138A60E03393 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				853DE3D297B8B7196052EBA7 /* [CP] Embed Pods Frameworks */,
-				B7DE37C769A258A26611D751 /* [CP] Copy Pods Resources */,
+				AF6E8CAA2A1A43BCD4AC242B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,7 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MeshulamSDK_Tests" */;
 			buildPhases = (
-				758C18045FD1F568139DBA7D /* [CP] Check Pods Manifest.lock */,
+				463A6592C0DEF391AD1924D0 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -261,29 +260,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		41A24F17EAB4A7625EA009D0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MeshulamSDK_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		758C18045FD1F568139DBA7D /* [CP] Check Pods Manifest.lock */ = {
+		463A6592C0DEF391AD1924D0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,111 +282,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		853DE3D297B8B7196052EBA7 /* [CP] Embed Pods Frameworks */ = {
+		AF6E8CAA2A1A43BCD4AC242B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-frameworks.sh",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/../../MeshulamSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MeshulamSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B7DE37C769A258A26611D751 /* [CP] Copy Pods Resources */ = {
+		DF59F8625D6A138A60E03393 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-resources.sh",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Gallery.xcassets",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets",
-				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MainS.storyboardc",
-				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamMain.storyboardc",
-				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamPopup.storyboardc",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/bitLogo.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/bitLogo@2x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/bitLogo@3x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground@2x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground@3x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo@2x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo@3x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/button2.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/button2@2x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/button2@3x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/group7.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/group7@2x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/group7@3x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@2x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@3x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/xCopy.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/xCopy@2x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/xCopy@3x.png",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Heebo-Black.ttf",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Heebo-Bold.ttf",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Heebo-ExtraBold.ttf",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Heebo-Light.ttf",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/Contents.json",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/Contents.json",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/Contents.json",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/Contents.json",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/Contents.json",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/Contents.json",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/Contents.json",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/Contents.json",
-				"${PODS_ROOT}/MeshulamSDK/MeshulamSDK/MeshulamSDK/Resources/loader.json",
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MainS.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeshulamMain.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeshulamPopup.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Black.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Bold.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-ExtraBold.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Light.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Medium.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Regular.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Thin.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Contents.json",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/loader.json",
+				"$(DERIVED_FILE_DIR)/Pods-MeshulamSDK_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -577,7 +491,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F11BA3FD1015BDE9B374E269 /* Pods-MeshulamSDK_Example.debug.xcconfig */;
+			baseConfigurationReference = 11BF6580D1E903379D4EA9D5 /* Pods-MeshulamSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -597,7 +511,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E787AAE35E46FAA21D181B1C /* Pods-MeshulamSDK_Example.release.xcconfig */;
+			baseConfigurationReference = EB6F8F4CA7EFE4B9A7FFDA8B /* Pods-MeshulamSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -617,7 +531,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79FC8AF0502DC547AE4CAB96 /* Pods-MeshulamSDK_Tests.debug.xcconfig */;
+			baseConfigurationReference = AC5826AA2E1682046C082F35 /* Pods-MeshulamSDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -647,7 +561,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2163DDB93C234FA890F4B836 /* Pods-MeshulamSDK_Tests.release.xcconfig */;
+			baseConfigurationReference = 8F110B7E174B7163B24EDB07 /* Pods-MeshulamSDK_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = ZW9DGWZF4V;

@@ -28,4 +28,8 @@ Pod::Spec.new do |s|
     'ENABLE_BITCODE' => 'YES'
     }
     
+
+    s.dependency 'lottie-ios'
+    s.dependency 'Alamofire'
+
     end
