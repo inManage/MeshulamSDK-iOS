@@ -1,6 +1,6 @@
 {
   "name": "MeshulamSDK",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "summary": "A short description of MeshulamSDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/inManage/MeshulamSDK-iOS",
@@ -19,7 +19,7 @@
   },
   "source": {
     "git": "https://github.com/inManage/MeshulamSDK-iOS.git",
-    "tag": "0.1.6"
+    "tag": "0.1.7"
   },
   "static_framework": true,
   "requires_arc": true,
@@ -33,14 +33,6 @@
   },
   "user_target_xcconfig": {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  },
-  "dependencies": {
-    "lottie-ios": [
-
-    ],
-    "Alamofire": [
-
-    ]
   },
   "swift_version": "4.0"
 }

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55B9A6E5C8C4C48436D77665 /* Pods_MeshulamSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E615BE81137C0BA2BB8A11 /* Pods_MeshulamSDK_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		EF02DADAAA6BE5F151EE3BCB /* Pods_MeshulamSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C91B7A900F803F2BF792925 /* Pods_MeshulamSDK_Example.framework */; };
+		A25465560807F31C200AA7E0 /* Pods_MeshulamSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D545F674126A104105C74F /* Pods_MeshulamSDK_Tests.framework */; };
+		D6532A13F6062FBE76879160 /* Pods_MeshulamSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B15C2ECAFED4ACC638A93F /* Pods_MeshulamSDK_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09B68567A3C1C617B1F74371 /* Pods-MeshulamSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0FBEF8364F0BF7FAF57C1EAB /* MeshulamSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MeshulamSDK.podspec; path = ../MeshulamSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1C3708C57A883C068C1E7E06 /* Pods-MeshulamSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		28E615BE81137C0BA2BB8A11 /* Pods_MeshulamSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C58BA305BB99B42CEAAD87 /* Pods-MeshulamSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MeshulamSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeshulamSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,11 +38,13 @@
 		607FACE51AFB9204008FA782 /* MeshulamSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeshulamSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8C91B7A900F803F2BF792925 /* Pods_MeshulamSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2F3D279F0F70FA83DC9A9B3 /* Pods-MeshulamSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7280ACFED9004AD4479575CF /* Pods-MeshulamSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		75863859D69DADA5CE45665E /* Pods-MeshulamSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A1D545F674126A104105C74F /* Pods_MeshulamSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECB49838810BE8009AA7133 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C90C4ED74BA9EC53C49DB4FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F3E9DDFC8CDC065E37D50DB5 /* Pods-MeshulamSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D47128BBF19BB868FAB5E1F4 /* Pods-MeshulamSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK_Tests/Pods-MeshulamSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F7B15C2ECAFED4ACC638A93F /* Pods_MeshulamSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF02DADAAA6BE5F151EE3BCB /* Pods_MeshulamSDK_Example.framework in Frameworks */,
+				D6532A13F6062FBE76879160 /* Pods_MeshulamSDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,18 +60,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55B9A6E5C8C4C48436D77665 /* Pods_MeshulamSDK_Tests.framework in Frameworks */,
+				A25465560807F31C200AA7E0 /* Pods_MeshulamSDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C6B9B5BA7013EDA8EBCF525 /* Frameworks */ = {
+		20D97DB6E31DC73A7637F29B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8C91B7A900F803F2BF792925 /* Pods_MeshulamSDK_Example.framework */,
-				28E615BE81137C0BA2BB8A11 /* Pods_MeshulamSDK_Tests.framework */,
+				F7B15C2ECAFED4ACC638A93F /* Pods_MeshulamSDK_Example.framework */,
+				A1D545F674126A104105C74F /* Pods_MeshulamSDK_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				F0A98EDE43713ACFC145228B /* Pods */,
-				5C6B9B5BA7013EDA8EBCF525 /* Frameworks */,
+				20D97DB6E31DC73A7637F29B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,10 +148,10 @@
 		F0A98EDE43713ACFC145228B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F3E9DDFC8CDC065E37D50DB5 /* Pods-MeshulamSDK_Example.debug.xcconfig */,
-				1C3708C57A883C068C1E7E06 /* Pods-MeshulamSDK_Example.release.xcconfig */,
-				09B68567A3C1C617B1F74371 /* Pods-MeshulamSDK_Tests.debug.xcconfig */,
-				B2F3D279F0F70FA83DC9A9B3 /* Pods-MeshulamSDK_Tests.release.xcconfig */,
+				7280ACFED9004AD4479575CF /* Pods-MeshulamSDK_Example.debug.xcconfig */,
+				75863859D69DADA5CE45665E /* Pods-MeshulamSDK_Example.release.xcconfig */,
+				17C58BA305BB99B42CEAAD87 /* Pods-MeshulamSDK_Tests.debug.xcconfig */,
+				D47128BBF19BB868FAB5E1F4 /* Pods-MeshulamSDK_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -163,11 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MeshulamSDK_Example" */;
 			buildPhases = (
-				1C173BF548E97306E103EC65 /* [CP] Check Pods Manifest.lock */,
+				58E621CE383ED7A5425B130C /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				E1CCD440B0F6705842209290 /* [CP] Embed Pods Frameworks */,
+				7408C760034BE855A39A9A65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,7 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MeshulamSDK_Tests" */;
 			buildPhases = (
-				C66D5A1654F1CA9F1D47C348 /* [CP] Check Pods Manifest.lock */,
+				B6DD756C6A2B11A04A832B91 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -260,7 +260,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C173BF548E97306E103EC65 /* [CP] Check Pods Manifest.lock */ = {
+		58E621CE383ED7A5425B130C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,7 +282,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C66D5A1654F1CA9F1D47C348 /* [CP] Check Pods Manifest.lock */ = {
+		7408C760034BE855A39A9A65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-frameworks.sh",
+				"${PODS_ROOT}/../../MeshulamSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MeshulamSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DD756C6A2B11A04A832B91 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,28 +320,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1CCD440B0F6705842209290 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${PODS_ROOT}/../../MeshulamSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MeshulamSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -491,7 +487,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3E9DDFC8CDC065E37D50DB5 /* Pods-MeshulamSDK_Example.debug.xcconfig */;
+			baseConfigurationReference = 7280ACFED9004AD4479575CF /* Pods-MeshulamSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -511,7 +507,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C3708C57A883C068C1E7E06 /* Pods-MeshulamSDK_Example.release.xcconfig */;
+			baseConfigurationReference = 75863859D69DADA5CE45665E /* Pods-MeshulamSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -531,7 +527,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09B68567A3C1C617B1F74371 /* Pods-MeshulamSDK_Tests.debug.xcconfig */;
+			baseConfigurationReference = 17C58BA305BB99B42CEAAD87 /* Pods-MeshulamSDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -561,7 +557,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2F3D279F0F70FA83DC9A9B3 /* Pods-MeshulamSDK_Tests.release.xcconfig */;
+			baseConfigurationReference = D47128BBF19BB868FAB5E1F4 /* Pods-MeshulamSDK_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = ZW9DGWZF4V;
