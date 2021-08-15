@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name = "MeshulamSDK"
-    s.version = "0.0.8"
+    s.version = "0.1.1"
     s.summary = 'A short description of MeshulamSDK.'
     s.description = <<-DESC
     TODO: Add long description of the pod here.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.static_framework = true
     s.requires_arc = true
     s.swift_version = '4.0'
-    
+
     s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'ENABLE_BITCODE' => 'YES'
     }
