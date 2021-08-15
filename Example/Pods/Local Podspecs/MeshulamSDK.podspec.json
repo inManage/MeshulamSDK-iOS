@@ -24,12 +24,11 @@
   "static_framework": true,
   "requires_arc": true,
   "swift_versions": "4.0",
-  "xcconfig": {
-    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
-    "ENABLE_BITCODE": "YES"
-  },
   "pod_target_xcconfig": {
-    "DEFINES_MODULE": "YES"
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "dependencies": {
     "lottie-ios": [
