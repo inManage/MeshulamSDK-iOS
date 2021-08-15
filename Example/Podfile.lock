@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (5.4.3)
   - lottie-ios (3.2.3)
-  - MeshulamSDK (0.1.0):
+  - MeshulamSDK (0.1.4):
     - Alamofire
     - lottie-ios
 
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
-  MeshulamSDK: 2ac27243bbbb71ed9d1517261981ba6f12f0d640
+  MeshulamSDK: 1d341901beaa96a4174c717472c78f639ea0316d
 
 PODFILE CHECKSUM: 220b5f0d26351d0ed1fb6d3434006d1015d1cfce
 
