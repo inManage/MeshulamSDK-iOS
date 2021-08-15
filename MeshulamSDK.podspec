@@ -29,10 +29,10 @@ Pod::Spec.new do |s|
     'ENABLE_BITCODE' => 'YES'
     }
     
-    s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphone*]' => 'arm64'
-    }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphone*]' => 'arm64' }
+    # s.pod_target_xcconfig = {
+    # 'EXCLUDED_ARCHS[sdk=iphone*]' => 'arm64'
+    # }
+    # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphone*]' => 'arm64' }
 
     s.dependency 'lottie-ios'
     s.dependency 'Alamofire'
