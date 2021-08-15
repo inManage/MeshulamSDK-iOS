@@ -12,7 +12,7 @@ class SettleSuspendedTransactionRequest: BaseRequest {
         let response = SettleSuspendedTransactionResponse()
         return  BaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
     }
-    //
+    
     public static func createSettleSuspendedTransactionDictParams() -> Dict {
         var initialDictParams = [String:Any]()
         let applicationToken = MeshulamNetworkManager.shared.applicationToken
