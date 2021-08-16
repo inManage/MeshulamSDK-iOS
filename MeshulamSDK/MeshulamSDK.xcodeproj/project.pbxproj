@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		71ECB4BBC1168EA3DE4E7AAA /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789F699C314B8F575D2E659A /* Pods_MeshulamSDK.framework */; };
 		8D14BC1326C3DD7C001A20A1 /* Heebo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */; };
 		8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770132691E3F800DFD8F3 /* Gallery.xcassets */; };
 		8D3770172691E3F800DFD8F3 /* MeshulamMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770142691E3F800DFD8F3 /* MeshulamMain.storyboard */; };
@@ -43,6 +42,7 @@
 		8D9B1804269495B500E56DF9 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B1803269495B500E56DF9 /* loader.json */; };
 		8DB2D08326B9804D00AFAA8D /* CancelBitTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */; };
 		8DB2D08526B9807600AFAA8D /* CancelBitTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */; };
+		B0240988BE5C4CA0A45611D1 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E84E06EF38F62835E2C5EE /* Pods_MeshulamSDK.framework */; };
 		C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4A18826C2D65900568915 /* FontExtenstion.swift */; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F36689268DA1590018D734 /* SettleSuspendedTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36664268DA1580018D734 /* SettleSuspendedTransactionRequest.swift */; };
@@ -78,7 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		789F699C314B8F575D2E659A /* Pods_MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C95FA11E03CC5F587310106 /* Pods-MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK/Pods-MeshulamSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		2F2EEFAC3281ED8AA9497D73 /* Pods-MeshulamSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK/Pods-MeshulamSDK.release.xcconfig"; sourceTree = "<group>"; };
 		8D3770132691E3F800DFD8F3 /* Gallery.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Gallery.xcassets; sourceTree = "<group>"; };
 		8D3770142691E3F800DFD8F3 /* MeshulamMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeshulamMain.storyboard; sourceTree = "<group>"; };
 		8D6297A62691E7280034DA47 /* Heebo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -100,8 +101,6 @@
 		8D9B1803269495B500E56DF9 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionRequest.swift; sourceTree = "<group>"; };
 		8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionResponse.swift; sourceTree = "<group>"; };
-		A4A46463AAED54E79CD70A0E /* Pods-MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK/Pods-MeshulamSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		A4FABBF6BBEDB4CAF927C481 /* Pods-MeshulamSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK/Pods-MeshulamSDK.release.xcconfig"; sourceTree = "<group>"; };
 		C7C4A18826C2D65900568915 /* FontExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtenstion.swift; sourceTree = "<group>"; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3664A268DA11D0018D734 /* MeshulamSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeshulamSDK.h; sourceTree = "<group>"; };
@@ -136,6 +135,7 @@
 		C7F36685268DA1580018D734 /* MeshulamDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshulamDelegate.swift; sourceTree = "<group>"; };
 		C7F36686268DA1580018D734 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C7F36687268DA1580018D734 /* Meshulam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meshulam.swift; sourceTree = "<group>"; };
+		D5E84E06EF38F62835E2C5EE /* Pods_MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71ECB4BBC1168EA3DE4E7AAA /* Pods_MeshulamSDK.framework in Frameworks */,
+				B0240988BE5C4CA0A45611D1 /* Pods_MeshulamSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,18 +153,10 @@
 		1239C3395320681D05B3A934 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A4A46463AAED54E79CD70A0E /* Pods-MeshulamSDK.debug.xcconfig */,
-				A4FABBF6BBEDB4CAF927C481 /* Pods-MeshulamSDK.release.xcconfig */,
+				1C95FA11E03CC5F587310106 /* Pods-MeshulamSDK.debug.xcconfig */,
+				2F2EEFAC3281ED8AA9497D73 /* Pods-MeshulamSDK.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		40125CEAA36F0569B04646BF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				789F699C314B8F575D2E659A /* Pods_MeshulamSDK.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8D37700B2691E3BB00DFD8F3 /* Resources */ = {
@@ -202,12 +194,20 @@
 			path = GUI;
 			sourceTree = "<group>";
 		};
+		9CB0B8E1C6A4A9781136E3E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5E84E06EF38F62835E2C5EE /* Pods_MeshulamSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7F3663D268DA11D0018D734 = {
 			isa = PBXGroup;
 			children = (
 				C7F36649268DA11D0018D734 /* MeshulamSDK */,
 				1239C3395320681D05B3A934 /* Pods */,
-				40125CEAA36F0569B04646BF /* Frameworks */,
+				9CB0B8E1C6A4A9781136E3E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,7 +345,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7F3665B268DA11D0018D734 /* Build configuration list for PBXNativeTarget "MeshulamSDK" */;
 			buildPhases = (
-				FB808EF91B03C74D2BFDBE57 /* [CP] Check Pods Manifest.lock */,
+				A061D9562F952D967AA81CC9 /* [CP] Check Pods Manifest.lock */,
 				C7F36642268DA11D0018D734 /* Headers */,
 				C7F36643268DA11D0018D734 /* Sources */,
 				C7F36644268DA11D0018D734 /* Frameworks */,
@@ -419,24 +419,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C730C84126C530350045567C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Set bash script to exit immediately if any commands fail.\nset -e\n# Setup some constants for use later on.\nOUTPUT_DIR=\"${SRCROOT}/build\"\n\n# If remains from a previous build exist,delete them.\nif [ -d \"${OUTPUT_DIR}\" ]; then\nrm -rf \"${OUTPUT_DIR}\"\nfi\n\n# Build the framework for device and for simulator.\necho \"Building for device\"\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -configuration Release ONLY_ACTIVE_ARCH=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES OTHER_CFLAGS=\"-fembed-bitcode\" BITCODE_GENERATION_MODE=bitcode defines_module=yes -sdk \"iphoneos\" -derivedDataPath \"${OUTPUT_DIR}\"\necho \"Building for Simulator\"\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -configuration Release ONLY_ACTIVE_ARCH=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES EXCLUDED_ARCHS=arm64 OTHER_CFLAGS=\"-fembed-bitcode\" BITCODE_GENERATION_MODE=bitcode defines_module=yes -sdk \"iphonesimulator\" -derivedDataPath \"${OUTPUT_DIR}\"\n# Remove .framework file if exists from previous run.\nif [ -d \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\" ]; then\nrm -rf \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\"\nfi\n# Copy the device version of framework.\ncp -r \"${OUTPUT_DIR}/Build/Products/Release-iphoneos/${PROJECT_NAME}.framework\" \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\"\n# Merging the device and simulator frameworks' executables with \n# lipo.\nlipo -create -output \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${OUTPUT_DIR}/Build/Products/Release-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${OUTPUT_DIR}/Build/Products/Release-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n# Copy Swift module mappings for simulator into the framework. \ncp -r \"${OUTPUT_DIR}/Build/Products/Release-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/\" \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\ncp -r \"${OUTPUT_DIR}/Build/Products/Release-iphoneos/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/\" \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\n\n#Optional Step to copy the framework to root folder\ncp -r \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\" \"${SRCROOT}\"\n\nif [ -d \"${OUTPUT_DIR}\" ]; then\nrm -rf \"${OUTPUT_DIR}\"\nfi\n";
-		};
-		FB808EF91B03C74D2BFDBE57 /* [CP] Check Pods Manifest.lock */ = {
+		A061D9562F952D967AA81CC9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -457,6 +440,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C730C84126C530350045567C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Set bash script to exit immediately if any commands fail.\nset -e\n# Setup some constants for use later on.\nOUTPUT_DIR=\"${SRCROOT}/build\"\n\n# If remains from a previous build exist,delete them.\nif [ -d \"${OUTPUT_DIR}\" ]; then\nrm -rf \"${OUTPUT_DIR}\"\nfi\n\n# Build the framework for device and for simulator.\necho \"Building for device\"\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -configuration Release ONLY_ACTIVE_ARCH=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES OTHER_CFLAGS=\"-fembed-bitcode\" BITCODE_GENERATION_MODE=bitcode defines_module=yes -sdk \"iphoneos\" -derivedDataPath \"${OUTPUT_DIR}\"\necho \"Building for Simulator\"\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -configuration Release ONLY_ACTIVE_ARCH=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES EXCLUDED_ARCHS=arm64 OTHER_CFLAGS=\"-fembed-bitcode\" BITCODE_GENERATION_MODE=bitcode defines_module=yes -sdk \"iphonesimulator\" -derivedDataPath \"${OUTPUT_DIR}\"\n# Remove .framework file if exists from previous run.\nif [ -d \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\" ]; then\nrm -rf \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\"\nfi\n# Copy the device version of framework.\ncp -r \"${OUTPUT_DIR}/Build/Products/Release-iphoneos/${PROJECT_NAME}.framework\" \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\"\n# Merging the device and simulator frameworks' executables with \n# lipo.\nlipo -create -output \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${OUTPUT_DIR}/Build/Products/Release-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${OUTPUT_DIR}/Build/Products/Release-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n# Copy Swift module mappings for simulator into the framework. \ncp -r \"${OUTPUT_DIR}/Build/Products/Release-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/\" \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\ncp -r \"${OUTPUT_DIR}/Build/Products/Release-iphoneos/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/\" \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\n\n#Optional Step to copy the framework to root folder\ncp -r \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\" \"${SRCROOT}\"\n\nif [ -d \"${OUTPUT_DIR}\" ]; then\nrm -rf \"${OUTPUT_DIR}\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -668,7 +668,7 @@
 		};
 		C7F3665C268DA11D0018D734 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4A46463AAED54E79CD70A0E /* Pods-MeshulamSDK.debug.xcconfig */;
+			baseConfigurationReference = 1C95FA11E03CC5F587310106 /* Pods-MeshulamSDK.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -704,7 +704,7 @@
 		};
 		C7F3665D268DA11D0018D734 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4FABBF6BBEDB4CAF927C481 /* Pods-MeshulamSDK.release.xcconfig */;
+			baseConfigurationReference = 2F2EEFAC3281ED8AA9497D73 /* Pods-MeshulamSDK.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;

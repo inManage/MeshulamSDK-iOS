@@ -39,7 +39,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="JiV-B5-DrL">
-                                <rect key="frame" x="96.000000000000014" y="521" width="222.33333333333337" height="64.666666666666629"/>
+                                <rect key="frame" x="101" y="521" width="212" height="51.333333333333371"/>
                                 <string key="text">אנחנו מעבירים את הכסף
 זה יקח כמה רגעים</string>
                                 <fontDescription key="fontDescription" name="Heebo-Regular" family="Heebo" pointSize="22"/>
@@ -75,16 +75,16 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="93" placeholderIntrinsicHeight="132" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-26-nwG">
-                                        <rect key="frame" x="120" y="379.33333333333331" width="174" height="137.66666666666669"/>
+                                        <rect key="frame" x="120" y="382" width="174" height="132"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מיד תועברו לתשלום ב-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJP-QK-Zc2">
-                                                <rect key="frame" x="0.0" y="0.0" width="174" height="64.666666666666671"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="מיד תועברו לתשלום ב-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJP-QK-Zc2">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="59"/>
                                                 <fontDescription key="fontDescription" name="Heebo-Regular" family="Heebo" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitLogo" translatesAutoresizingMaskIntoConstraints="NO" id="nMT-q8-AB2">
-                                                <rect key="frame" x="23.666666666666657" y="68.666666666666686" width="127" height="69"/>
+                                                <rect key="frame" x="23.666666666666657" y="63" width="127" height="69"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -144,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yu4-TK-Oc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917.39130434782612" y="133.25892857142856"/>
+            <point key="canvasLocation" x="589.85507246376812" y="156.69642857142856"/>
         </scene>
     </scenes>
     <resources>
