@@ -7,16 +7,16 @@
 
 import Foundation
 import UIKit
-import Lottie
+//import Lottie
 
 class BitStatusViewController: UIViewController {
     
-    @IBOutlet weak var animateView: LottieView!
+    @IBOutlet weak var animateView: UIView!
     @IBOutlet weak var subTitleLable: UILabel!
     @IBOutlet weak var initialBitView: UIView!
     @IBOutlet weak var titleLable: UILabel!
     
-    private var animationView: AnimationView?
+//    private var animationView: AnimationView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class BitStatusViewController: UIViewController {
     }
     
     @objc func willEnterForeground() {
-        animationView!.play()
+//        animationView!.play()
     }
     
     private func removeObservers() {
@@ -52,17 +52,17 @@ class BitStatusViewController: UIViewController {
     }
     
     private func configureAnimateView() {
-        let frameworkBundle = Bundle(identifier: "com.inmanage.MeshulamSDK")
-        let bundle = frameworkBundle?.path(forResource: "loader", ofType: "json")
-        if let b = bundle {
-            animationView = .init(filePath: b)
-        }
-        animationView!.frame = animateView.bounds
-        animationView!.contentMode = .scaleAspectFit
-        animationView!.loopMode = .loop
-        animationView!.animationSpeed = 0.9
-        animateView.addSubview(animationView!)
-        animationView!.play()
+//        let frameworkBundle = Bundle(identifier: "com.inmanage.MeshulamSDK")
+//        let bundle = frameworkBundle?.path(forResource: "loader", ofType: "json")
+//        if let b = bundle {
+//            animationView = .init(filePath: b)
+//        }
+//        animationView!.frame = animateView.bounds
+//        animationView!.contentMode = .scaleAspectFit
+//        animationView!.loopMode = .loop
+//        animationView!.animationSpeed = 0.9
+//        animateView.addSubview(animationView!)
+//        animationView!.play()
     }
     
     private func destroySDK() {

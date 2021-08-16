@@ -31,7 +31,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8We-Le-n7q">
                                 <rect key="frame" x="143.66666666666666" y="137" width="126.99999999999997" height="69"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWX-6N-Dtx" customClass="LottieView" customModule="Lottie">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWX-6N-Dtx">
                                 <rect key="frame" x="84" y="303" width="246" height="159"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>

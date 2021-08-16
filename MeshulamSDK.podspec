@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name = "MeshulamSDK"
-    s.version = "0.1.8"
+    s.version = "0.1.9"
     s.summary = 'A short description of MeshulamSDK.'
     s.description = <<-DESC
     TODO: Add long description of the pod here.
@@ -28,13 +28,13 @@ Pod::Spec.new do |s|
     # 'ENABLE_BITCODE' => 'YES'
     # }
     
-    s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
-    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'x86_64'}
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    # s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
+    # s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'x86_64'}
+    # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
     s.static_framework = true
 
-    s.dependency 'lottie-ios'
+    # s.dependency 'lottie-ios'
     s.dependency 'Alamofire'
 
     end

@@ -22,11 +22,14 @@
     "tag": "0.1.8"
   },
   "swift_versions": "4.0",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphoneos*]": "x86_64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
   "static_framework": true,
   "dependencies": {
-    "lottie-ios": [
-
-    ],
     "Alamofire": [
 
     ]
