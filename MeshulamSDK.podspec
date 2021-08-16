@@ -19,7 +19,9 @@ Pod::Spec.new do |s|
     s.author = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
     s.platform = :ios, '11.0'
     s.ios.vendored_frameworks = 'MeshulamSDK.xcframework'
-    s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
+    # s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
+    s.source            = { :http => 'https://drive.google.com/file/d/1loqPggZLyGc0309IX-yxfnpJfCabu4wG/view?usp=sharing.zip' } 
+
     s.ios.deployment_target = '11.0'
     # s.requires_arc = true
     s.swift_version = '4.0'
@@ -29,8 +31,8 @@ Pod::Spec.new do |s|
     # }
     
     # s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
-    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    # s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
     s.static_framework = true
 
