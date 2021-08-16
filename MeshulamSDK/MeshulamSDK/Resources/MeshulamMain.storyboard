@@ -137,7 +137,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animateView" destination="zWX-6N-Dtx" id="IAe-nt-QsQ"/>
                         <outlet property="initialBitView" destination="LKU-PH-Kyc" id="Tvw-3C-YDZ"/>
                         <outlet property="subTitleLable" destination="JiV-B5-DrL" id="Ndx-co-L93"/>
                         <outlet property="titleLable" destination="aJP-QK-Zc2" id="Zlx-cT-G3f"/>

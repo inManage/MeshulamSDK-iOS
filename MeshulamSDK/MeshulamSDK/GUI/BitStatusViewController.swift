@@ -11,7 +11,7 @@ import UIKit
 
 class BitStatusViewController: UIViewController {
     
-    @IBOutlet weak var animateView: UIView!
+//    @IBOutlet weak var animateView: UIView!
     @IBOutlet weak var subTitleLable: UILabel!
     @IBOutlet weak var initialBitView: UIView!
     @IBOutlet weak var titleLable: UILabel!
