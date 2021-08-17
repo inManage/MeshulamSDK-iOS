@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name = "MeshulamSDK"
-    s.version = "0.1.17"
+    s.version = "0.1.18"
     s.summary = 'A short description of MeshulamSDK.'
     s.description = <<-DESC
     TODO: Add long description of the pod here.
@@ -17,10 +17,11 @@ Pod::Spec.new do |s|
     s.homepage = "https://github.com/inManage/MeshulamSDK-iOS"
     s.license = { :type => 'MIT', :file => 'LICENSE' }
     s.author = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
-    s.platform = :ios, '11.0'
+    s.platform = :ios
     s.ios.vendored_frameworks = 'MeshulamSDK.xcframework'
-    # s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
-    s.source            = { :http => 'https://drive.google.com/file/d/1loqPggZLyGc0309IX-yxfnpJfCabu4wG/view?usp=sharing.zip' } 
+    s.source_files = "ios/*.{h,m,swift}"
+    s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
+    # s.source = { :http => 'https://drive.google.com/file/d/1loqPggZLyGc0309IX-yxfnpJfCabu4wG/view?usp=sharing.zip', :tag => s.version.to_s  } 
 
     s.ios.deployment_target = '11.0'
     # s.requires_arc = true
