@@ -275,8 +275,10 @@ SWIFT_PROTOCOL("_TtP11MeshulamSDK16MeshulamDelegate_")
 
 SWIFT_CLASS("_TtC11MeshulamSDK22MeshulamNetworkManager")
 @interface MeshulamNetworkManager : NSObject
+- (void)update;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 SWIFT_CLASS("_TtC11MeshulamSDK20MeshulamPopupManager")

@@ -58,7 +58,7 @@ public struct Encryption {
   @objc deinit
 }
 public enum PaymentStatusOptions : Swift.Int {
-  case success, failed, pending
+  case success, failed, panding
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -169,9 +169,13 @@ extension UIFont {
   }
   public func sendRequest(_ request: MeshulamSDK.MeshulamBaseRequest)
   public func fillWithInitSDKResponse(_ response: MeshulamSDK.InitSDKResponse)
-  public func startModeling()
+  @objc public func update()
   @objc override dynamic public init()
   @objc deinit
+}
+extension MeshulamNetworkManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
+  public func requestSucceeded(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.BaseInnerResponse)
+  public func requestFailed(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.MeshulamBaseServerResponse?)
 }
 public protocol MeshulamRequestFinishedProtocol : AnyObject {
   func requestSucceeded(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.BaseInnerResponse)

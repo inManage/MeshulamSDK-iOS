@@ -10,11 +10,11 @@ import Alamofire
 import UIKit
 
 protocol NetworkManagerDelegate: NSObject {
-    func callBackFromEroorPopup()
+    func destorySDK()
 }
 
 public class MeshulamNetworkManager: NSObject {
-    
+
     public static let shared = MeshulamNetworkManager()
     
     public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/"
@@ -22,7 +22,9 @@ public class MeshulamNetworkManager: NSObject {
     public private(set) var maxTime : Int = 0
     public private(set) var startDelay : Int = 0
     public private(set) var intervalLength: Int = 0
+    private var timeAddingTimeStemp : TimeInterval!
     private var timer = Timer()
+    private var callSetBitPaymentSend = false
     
     weak var delegate: NetworkManagerDelegate?
     
@@ -96,10 +98,10 @@ public class MeshulamNetworkManager: NSObject {
                 callBackStatus in
                 
                 switch callBackStatus {
-                case .exitTap: self.delegate?.callBackFromEroorPopup()
+                case .exitTap: self.delegate?.destorySDK()
                     break
                     
-                case .firstBtnTap: self.delegate?.callBackFromEroorPopup()
+                case .firstBtnTap: self.delegate?.destorySDK()
                     break
                     
                 case .secondBtnTap: break
@@ -114,32 +116,56 @@ public class MeshulamNetworkManager: NSObject {
         startDelay = response.startDelay
         intervalLength = response.intervalLength
         applicationToken = response.applicationToken
+        startModeling(response)
     }
     
-    
-    public func startModeling() {
-    
-//        DispatchQueue.main.async {
-//            print("startModeling")
-//            self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(0.1), target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
-//        }
+    private func startModeling(_ initSDKresonse: InitSDKResponse) {
+        timeAddingTimeStemp = Date().addingTimeInterval(TimeInterval((30/*initSDKresonse.maxTime*/))).timeIntervalSince1970
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(initSDKresonse.intervalLength), target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
     }
     
-    @objc func update() {
-//        print("update")
-//
-//        DispatchQueue.main.async {
-//            if(self.maxTime > 0) {
-//                self.maxTime -= self.intervalLength
-//                print(self.maxTime)
-//            } else {
-//                print("time end")
-//                self.timer.invalidate()
-//            }
-//        }
-        
+    @objc public func update() {
+        if Date().timeIntervalSince1970 < timeAddingTimeStemp! {
+            if !callSetBitPaymentSend {
+                MeshulamPaymentManager.shared.callGetBitPaymentStatusRequest(requestFinishDelegate: self)
+            }
+        } else {
+            stopModeling()
+        }
+    }
+    
+    private func stopModeling() {
+        delegate?.destorySDK()
+        Meshulam.shared().delegate?.onFailure("timeout error")
+        timer.invalidate()
     }
 }
 
-
-
+extension MeshulamNetworkManager: MeshulamRequestFinishedProtocol {
+    public func requestSucceeded(request: MeshulamBaseRequest, response: BaseInnerResponse) {
+        let requestName = request.requestName
+        switch requestName {
+        case ServerRequests.getBitPaymentStatus:
+            if let res = response as? GetBitPaymentStatusResponse {
+                
+                switch res.paymentStatus ?? .panding {
+                case PaymentStatusOptions.success:
+                    MeshulamPaymentManager.shared.callSetBitPaymentRequest()
+                    callSetBitPaymentSend = true
+                    timer.invalidate()
+                    break
+                case PaymentStatusOptions.failed:
+                    stopModeling()
+                    break
+                case PaymentStatusOptions.panding:
+                    break
+                }
+            }
+        default: break
+        }
+    }
+    
+    public func requestFailed(request: MeshulamBaseRequest, response: MeshulamBaseServerResponse?) {
+       
+    }
+}

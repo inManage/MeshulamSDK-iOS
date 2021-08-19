@@ -86,7 +86,7 @@ public struct Encryption {
 }
 
 public enum PaymentStatusOptions: Int {
-    case success = 1, failed, pending
+    case success = 1, failed, panding
 }
 
 let apiVersion = "1.0"

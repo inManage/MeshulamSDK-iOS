@@ -26,7 +26,6 @@ public class MeshulamStartupManager  {
   
     private func handleInitSDKResponse(_ response: InitSDKResponse) {
         MeshulamNetworkManager.shared.fillWithInitSDKResponse(response)
-//        NetworkManager.shared.startModeling()
         MeshulamPaymentManager.shared.callCreatePaymentProcess()
     }
 }

@@ -38,7 +38,7 @@ public class MeshulamPaymentManager {
     
     public func callGetBitPaymentStatusRequest(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
-        let parameters = Dict()
+        let parameters = GetBitPaymentStatusRequest.createBitPaymentStatusDictParams()
         let request    = GetBitPaymentStatusRequest().initWithDictParams(parameters, delegate)
         MeshulamNetworkManager.shared.sendRequest(request)
     }
@@ -143,7 +143,7 @@ extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
         case ServerRequests.cancelBitTransaction:
             Meshulam.shared().delegate?.onCancel()
             break
-            
+        
         default: break
         }
     }

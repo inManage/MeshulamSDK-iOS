@@ -21,7 +21,6 @@ class BitStatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureAnimateView()
-       
     }
 
     deinit {
@@ -68,7 +67,6 @@ class BitStatusViewController: UIViewController {
     private func destroySDK() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.dismiss(animated: true)
-            Meshulam.destroy()
         }
     }
    
@@ -79,7 +77,7 @@ class BitStatusViewController: UIViewController {
 }
 
 extension BitStatusViewController: NetworkManagerDelegate {
-    func callBackFromEroorPopup() {
+    func destorySDK() {
         destroySDK()
     }
 }

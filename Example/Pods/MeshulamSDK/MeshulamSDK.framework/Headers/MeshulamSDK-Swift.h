@@ -217,15 +217,16 @@ SWIFT_CLASS("_TtC11MeshulamSDK17BaseInnerResponse")
 @end
 
 
-SWIFT_CLASS("_TtC11MeshulamSDK11BaseRequest")
-@interface BaseRequest : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC11MeshulamSDK28CreatePaymentProcessResponse")
 @interface CreatePaymentProcessResponse : BaseInnerResponse
 - (BaseInnerResponse * _Nonnull)buildFromJSONDictWithJSONDict:(NSDictionary<NSString *, id> * _Nonnull)JSONDict SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC11MeshulamSDK5Error")
+@interface Error : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 
@@ -235,8 +236,14 @@ SWIFT_CLASS("_TtC11MeshulamSDK13ErrorResponse")
 @end
 
 
+SWIFT_CLASS("_TtC11MeshulamSDK19MeshulamBaseRequest")
+@interface MeshulamBaseRequest : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC11MeshulamSDK14InitSDKRequest")
-@interface InitSDKRequest : BaseRequest
+@interface InitSDKRequest : MeshulamBaseRequest
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -255,21 +262,33 @@ SWIFT_CLASS("_TtC11MeshulamSDK8Meshulam")
 
 
 
-SWIFT_CLASS("_TtC11MeshulamSDK14NetworkManager")
-@interface NetworkManager : NSObject
+SWIFT_PROTOCOL("_TtP11MeshulamSDK16MeshulamDelegate_")
+@protocol MeshulamDelegate <NSObject>
+- (void)setBitPaymentSuccess:(NSString * _Nonnull)transactionId;
+- (void)settleSuspendedTransactionSuccessWithResponse:(NSString * _Nonnull)response;
+- (void)createPaymentProccesSuccess:(NSString * _Nonnull)processId :(NSString * _Nonnull)processToken;
+- (void)getPaymentProcessInfoSuccessWithResponse:(NSString * _Nonnull)response;
+- (void)onFailure:(NSString * _Nonnull)error;
+- (void)onCancel;
+@end
+
+
+SWIFT_CLASS("_TtC11MeshulamSDK22MeshulamNetworkManager")
+@interface MeshulamNetworkManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+SWIFT_CLASS("_TtC11MeshulamSDK20MeshulamPopupManager")
+@interface MeshulamPopupManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 
 SWIFT_CLASS("_TtC11MeshulamSDK26PaymentProcessResponseInfo")
 @interface PaymentProcessResponseInfo : BaseInnerResponse
 - (BaseInnerResponse * _Nonnull)buildFromJSONDictWithJSONDict:(NSDictionary<NSString *, id> * _Nonnull)JSONDict SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-SWIFT_CLASS("_TtC11MeshulamSDK12PopupManager")
-@interface PopupManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -283,6 +302,7 @@ SWIFT_CLASS("_TtC11MeshulamSDK12Transactions")
 @interface Transactions : BaseInnerResponse
 - (BaseInnerResponse * _Nonnull)buildFromJSONDictWithJSONDict:(NSDictionary<NSString *, id> * _Nonnull)JSONDict SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 

@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 class GetBitPaymentStatusResponse: BaseInnerResponse {
     
     var paymentStatus: PaymentStatusOptions? = .none
