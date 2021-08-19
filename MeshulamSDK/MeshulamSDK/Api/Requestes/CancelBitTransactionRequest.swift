@@ -7,10 +7,10 @@
 
 import Foundation
 
-class CancelBitTransactionRequest: BaseRequest {
-    public override func createResponseFromJSONDict(JSONDict: Dict) -> BaseServerResponse? {
+class CancelBitTransactionRequest: MeshulamBaseRequest {
+    public override func createResponseFromJSONDict(JSONDict: Dict) -> MeshulamBaseServerResponse? {
         let response = CancelBitTransactionResponse()
-        return  BaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
+        return  MeshulamBaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
     }
     
     public static func createCancelBitTransactionParams() -> Dict {

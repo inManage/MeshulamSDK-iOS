@@ -7,11 +7,11 @@
 
 import Foundation
 
-class CreatePaymentProcessRequest: BaseRequest {
+class CreatePaymentProcessRequest: MeshulamBaseRequest {
     
-    public override func createResponseFromJSONDict(JSONDict: Dict) -> BaseServerResponse? {
+    public override func createResponseFromJSONDict(JSONDict: Dict) -> MeshulamBaseServerResponse? {
         let response = CreatePaymentProcessResponse()
-        return  BaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
+        return  MeshulamBaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
     }
     
     public static func createPaymentProcessDictParams() -> Dict {

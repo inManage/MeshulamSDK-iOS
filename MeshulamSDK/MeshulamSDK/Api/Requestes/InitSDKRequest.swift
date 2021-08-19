@@ -7,11 +7,11 @@
 
 import UIKit
 
-public class InitSDKRequest: BaseRequest {
+public class InitSDKRequest: MeshulamBaseRequest {
     
-    public override func createResponseFromJSONDict(JSONDict: Dict) -> BaseServerResponse? {
+    public override func createResponseFromJSONDict(JSONDict: Dict) -> MeshulamBaseServerResponse? {
         let response = InitSDKResponse()
-        return  BaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
+        return  MeshulamBaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
     }
     
     public static func createInitialDictParams() -> Dict {

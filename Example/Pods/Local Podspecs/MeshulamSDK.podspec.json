@@ -1,6 +1,6 @@
 {
   "name": "MeshulamSDK",
-  "version": "0.1.16",
+  "version": "0.1.19",
   "summary": "A short description of MeshulamSDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/inManage/MeshulamSDK-iOS",
@@ -15,18 +15,24 @@
     "ios": "11.0"
   },
   "ios": {
-    "vendored_frameworks": "MeshulamSDK.xcframework"
+    "vendored_frameworks": "MeshulamSDK.framework"
   },
   "source": {
-    "http": "https://drive.google.com/file/d/1loqPggZLyGc0309IX-yxfnpJfCabu4wG/view?usp=sharing.zip",
-    "tag": "0.1.16"
+    "git": "https://github.com/inManage/MeshulamSDK-iOS.git",
+    "tag": "0.1.19"
   },
-  "swift_versions": "4.0",
   "static_framework": true,
-  "dependencies": {
-    "Alamofire": [
-
-    ]
+  "requires_arc": true,
+  "swift_versions": "4.0",
+  "xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+    "ENABLE_BITCODE": "YES"
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "swift_version": "4.0"
 }

@@ -16,7 +16,7 @@ public class MeshulamStartupManager  {
     public static var shared = MeshulamStartupManager()
     weak var delegate: StartupManagerDelegate?
     
-    public func callInitSDK(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+    public func callInitSDK(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         MeshulamPaymentManager.shared.isTappedOnExitBtn = false
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = InitSDKRequest.createInitialDictParams()
@@ -31,15 +31,15 @@ public class MeshulamStartupManager  {
     }
 }
 
-extension MeshulamStartupManager: RequestFinishedProtocol {
-    public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
+extension MeshulamStartupManager: MeshulamRequestFinishedProtocol {
+    public func requestSucceeded(request: MeshulamBaseRequest, response: BaseInnerResponse) {
         let requestName = request.requestName
         if requestName == ServerRequests.initSDK {
             handleInitSDKResponse(response as! InitSDKResponse)
         }
     }
     
-    public func requestFailed(request: BaseRequest, response: BaseServerResponse?) {
+    public func requestFailed(request: MeshulamBaseRequest, response: MeshulamBaseServerResponse?) {
         if let response = response {
             let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
             self.delegate?.initSDKFailed(error: error)

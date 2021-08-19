@@ -1,23 +1,16 @@
 PODS:
-  - Alamofire (5.4.3)
-  - MeshulamSDK (0.1.16):
-    - Alamofire
+  - MeshulamSDK (0.1.19)
 
 DEPENDENCIES:
   - MeshulamSDK (from `../MeshulamSDK.podspec`)
-
-SPEC REPOS:
-  trunk:
-    - Alamofire
 
 EXTERNAL SOURCES:
   MeshulamSDK:
     :path: "../MeshulamSDK.podspec"
 
 SPEC CHECKSUMS:
-  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
-  MeshulamSDK: 0692511905203a31dce08bb864d2d32e9955f4ca
+  MeshulamSDK: ed202ca388371d8dd39434e9febfca5c11b2ef86
 
 PODFILE CHECKSUM: 220b5f0d26351d0ed1fb6d3434006d1015d1cfce
 
-COCOAPODS: 1.11.0.beta.2
+COCOAPODS: 1.10.2

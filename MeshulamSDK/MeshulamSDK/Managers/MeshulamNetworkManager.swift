@@ -26,7 +26,7 @@ public class MeshulamNetworkManager: NSObject {
     
     weak var delegate: NetworkManagerDelegate?
     
-    public func sendRequest(_ request: BaseRequest) {
+    public func sendRequest(_ request: MeshulamBaseRequest) {
         
         let headers   : HTTPHeaders  = [HeadersRequest.token: HeadersRequest.inmangaSecure]
         let urlRequest: String       = "\(baseURL)\(defaultPath)\(request.requestName)/"
@@ -68,26 +68,26 @@ public class MeshulamNetworkManager: NSObject {
     }
 
     @objc func sendReqSelector(params: Dict) {
-        guard let request = params[ServerRequests.request] as? BaseRequest  else { return }
+        guard let request = params[ServerRequests.request] as? MeshulamBaseRequest  else { return }
         self.sendRequest(request)
     }
     
-    private func handleAFnetworkingFailure(_ request: BaseRequest) {
+    private func handleAFnetworkingFailure(_ request: MeshulamBaseRequest) {
         let sendRequestAgain = request.shouldAttemptSendingRequestAgain()
         sendRequestAgain ? handleSendRequestAgain(request) : handleFailureForRequest(request)
     }
     
-    private func handleSendRequestAgain(_ request: BaseRequest) {
+    private func handleSendRequestAgain(_ request: MeshulamBaseRequest) {
         perform(#selector(self.sendReqSelector(params:)), with: [ServerRequests.request:request], afterDelay: 0.1)
     }
     
-    private func handleSuccessForRequest(_ request: BaseRequest,_ serverResponse: BaseServerResponse) {
+    private func handleSuccessForRequest(_ request: MeshulamBaseRequest,_ serverResponse: MeshulamBaseServerResponse) {
         if let delegate = request.requestFinishedDelegate {
             delegate.requestSucceeded(request: request, response: serverResponse.innerResponse)
         }
     }
     
-    private func handleFailureForRequest(_ request: BaseRequest,_ serverResponse: BaseServerResponse? = nil) {
+    private func handleFailureForRequest(_ request: MeshulamBaseRequest,_ serverResponse: MeshulamBaseServerResponse? = nil) {
         if let delegate = request.requestFinishedDelegate {
             delegate.requestFailed(request: request, response: serverResponse ?? nil)
         }

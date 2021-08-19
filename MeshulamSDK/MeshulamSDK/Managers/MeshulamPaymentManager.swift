@@ -28,7 +28,7 @@ public class MeshulamPaymentManager {
     private var response = false
     public var createPaymentProcess: CreatePaymentProcessResponse?
     
-    public func callCreatePaymentProcess(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+    public func callCreatePaymentProcess(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         MeshulamPaymentManager.shared.isTappedOnExitBtn = false
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CreatePaymentProcessRequest.createPaymentProcessDictParams()
@@ -36,21 +36,21 @@ public class MeshulamPaymentManager {
         MeshulamNetworkManager.shared.sendRequest(request)
     }
     
-    public func callGetBitPaymentStatusRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+    public func callGetBitPaymentStatusRequest(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = Dict()
         let request    = GetBitPaymentStatusRequest().initWithDictParams(parameters, delegate)
         MeshulamNetworkManager.shared.sendRequest(request)
     }
     
-    public func callCancelBitPaymentRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+    public func callCancelBitPaymentRequest(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CancelBitPaymentRequest.createCancelBitPaymentParams()
         let request    = CancelBitPaymentRequest().initWithDictParams(parameters, delegate)
         MeshulamNetworkManager.shared.sendRequest(request)
     }
     
-    public func callCancelBitTransactionRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+    public func callCancelBitTransactionRequest(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = CancelBitTransactionRequest.createCancelBitTransactionParams()
         let request    = CancelBitTransactionRequest().initWithDictParams(parameters, delegate)
@@ -58,7 +58,7 @@ public class MeshulamPaymentManager {
         MeshulamNetworkManager.shared.sendRequest(request)
     }
     
-    public func callSetBitPaymentRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+    public func callSetBitPaymentRequest(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = SetBitPaymentRequest.createSetBitPaymentParams()
         let request    = SetBitPaymentRequest().initWithDictParams(parameters, delegate)
@@ -66,7 +66,7 @@ public class MeshulamPaymentManager {
         MeshulamNetworkManager.shared.sendRequest(request)
     }
     
-    public func callGetPaymentProcessInfoRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+    public func callGetPaymentProcessInfoRequest(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = GetPaymentProcessInfoRequest.createGetPaymentProcessInfoParams()
         let request    = GetPaymentProcessInfoRequest().initWithDictParams(parameters, delegate)
@@ -74,7 +74,7 @@ public class MeshulamPaymentManager {
         MeshulamNetworkManager.shared.sendRequest(request)
     }
     
-    public func callSettleSuspendedTransactionRequest(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+    public func callSettleSuspendedTransactionRequest(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let parameters = SettleSuspendedTransactionRequest.createSettleSuspendedTransactionDictParams()
         let request    = SettleSuspendedTransactionRequest().initWithDictParams(parameters, delegate)
@@ -82,7 +82,7 @@ public class MeshulamPaymentManager {
         MeshulamNetworkManager.shared.sendRequest(request)
     }
     
-    public func callDoPayment(requestFinishDelegate: RequestFinishedProtocol? = nil) {
+    public func callDoPayment(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil) {
         let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
         let doPaymentArr = createPaymentProcess?.doPaymentRequestArr ?? DoPaymentRequestArr()
         let parameters = DoPaymentRequest.createDoPaymentParams(doPaymentArr)
@@ -103,16 +103,16 @@ public class MeshulamPaymentManager {
         return isTappedOnExitBtn
     }
     
-    private func getError(from response: BaseServerResponse) -> Error {
+    private func getError(from response: MeshulamBaseServerResponse) -> Error {
         let error = Error(id: response.errorResponse.id,
                           errorMessage: response.errorResponse.message)
         return error
     }
 }
 
-extension MeshulamPaymentManager: RequestFinishedProtocol {
+extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
     
-    public func requestSucceeded(request: BaseRequest, response: BaseInnerResponse) {
+    public func requestSucceeded(request: MeshulamBaseRequest, response: BaseInnerResponse) {
         let requestName = request.requestName
         switch requestName {
        
@@ -180,7 +180,7 @@ extension MeshulamPaymentManager: RequestFinishedProtocol {
         }
     }
     
-    public func requestFailed(request: BaseRequest, response: BaseServerResponse?) {
+    public func requestFailed(request: MeshulamBaseRequest, response: MeshulamBaseServerResponse?) {
         if let response = response {
             let requestName = request.requestName
             
@@ -198,7 +198,7 @@ extension MeshulamPaymentManager: RequestFinishedProtocol {
             default: break
             }
             let error = getError(from: response)
-            Meshulam.shared().delegate?.onFailure(error)
+            Meshulam.shared().delegate?.onFailure(error.errorMessage)
         }
     }
 }

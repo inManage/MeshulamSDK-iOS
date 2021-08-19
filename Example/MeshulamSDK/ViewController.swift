@@ -9,7 +9,6 @@
 import UIKit
 import MeshulamSDK
 
-
 class ViewController: UIViewController {
     
     var spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
@@ -83,6 +82,11 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: MeshulamDelegate {
+    func onFailure(_ error: String) {
+        spinner.stopAnimating()
+        showAlert(titiel: "error", message: "error: \(error)")
+    }
+    
     
     func createPaymentProccesSuccess(_ processId: String,_ processToken: String) {
         self.processId = processId
@@ -103,11 +107,6 @@ extension ViewController: MeshulamDelegate {
     func getPaymentProcessInfoSuccess(response: String) {
         spinner.stopAnimating()
         showAlert(titiel: "getPaymentProcessInfoSuccess", message: "response: \(response)")
-    }
-
-    func onFailure(_ error: Error) {
-        spinner.stopAnimating()
-        showAlert(titiel: "error", message: "error: \(error)")
     }
 
     func onCancel() {

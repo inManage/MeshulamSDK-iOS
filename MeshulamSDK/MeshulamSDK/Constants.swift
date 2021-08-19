@@ -76,7 +76,6 @@ public struct Encryption {
 }
 
 @objc public class Error: NSObject {
-    
     var id: Int = 0
     var errorMessage = ""
     

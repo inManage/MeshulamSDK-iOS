@@ -7,10 +7,10 @@
 
 import Foundation
 
-class SetBitPaymentRequest : BaseRequest {
-    public override func createResponseFromJSONDict(JSONDict: Dict) -> BaseServerResponse? {
+class SetBitPaymentRequest : MeshulamBaseRequest {
+    public override func createResponseFromJSONDict(JSONDict: Dict) -> MeshulamBaseServerResponse? {
         let response = SetBitPaymentResponse()
-        return  BaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
+        return  MeshulamBaseServerResponse.initFromJSONDict(JSONDict:JSONDict, withInnerResponse: response)
     }
     
     public static func createSetBitPaymentParams() -> Dict {

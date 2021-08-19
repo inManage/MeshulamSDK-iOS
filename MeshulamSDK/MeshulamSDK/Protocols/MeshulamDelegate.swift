@@ -12,7 +12,7 @@ import Foundation
     func settleSuspendedTransactionSuccess(response: String)
     func createPaymentProccesSuccess(_ processId: String,_ processToken: String)
     func getPaymentProcessInfoSuccess(response: String)
-    func onFailure(_ error: Error)
+    func onFailure(_ error: String)
     func onCancel()
 }
 
