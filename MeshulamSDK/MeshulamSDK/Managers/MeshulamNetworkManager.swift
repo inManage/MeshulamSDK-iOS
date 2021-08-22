@@ -120,7 +120,7 @@ public class MeshulamNetworkManager: NSObject {
     }
     
     private func startModeling(_ initSDKresonse: InitSDKResponse) {
-        timeAddingTimeStemp = Date().addingTimeInterval(TimeInterval((30/*initSDKresonse.maxTime*/))).timeIntervalSince1970
+        timeAddingTimeStemp = Date().addingTimeInterval(TimeInterval((initSDKresonse.maxTime))).timeIntervalSince1970
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(initSDKresonse.intervalLength), target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
     }
     
