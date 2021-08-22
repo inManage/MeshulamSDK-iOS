@@ -32,7 +32,7 @@ class MeshulamParseValidator: NSObject {
                 return json
             }
         } catch let error as NSError {
-            print("Failed to load: \(error.localizedDescription)")
+            LogMsg("Failed to load: \(error.localizedDescription)")
             return Dict()
         }
         return Dict()

@@ -135,9 +135,9 @@ public class MeshulamNetworkManager: NSObject {
     }
     
     private func stopModeling() {
+        timer.invalidate()
         delegate?.destorySDK()
         Meshulam.shared().delegate?.onFailure("timeout error")
-        timer.invalidate()
     }
 }
 
@@ -150,9 +150,11 @@ extension MeshulamNetworkManager: MeshulamRequestFinishedProtocol {
                 
                 switch res.paymentStatus ?? .panding {
                 case PaymentStatusOptions.success:
-                    MeshulamPaymentManager.shared.callSetBitPaymentRequest()
-                    callSetBitPaymentSend = true
                     timer.invalidate()
+                    if !callSetBitPaymentSend {
+                        MeshulamPaymentManager.shared.callSetBitPaymentRequest()
+                        callSetBitPaymentSend = true
+                    }
                     break
                 case PaymentStatusOptions.failed:
                     stopModeling()
