@@ -7,16 +7,16 @@
 
 import UIKit
 
-open class Meshulam: NSObject {
+@objc open class Meshulam: NSObject {
 
-    open weak var delegate: MeshulamDelegate?
+    @objc open weak var delegate: MeshulamDelegate?
     private static var sharedInstance: Meshulam?
     
     /**
      Initialize `Meshulam` (as singleton)
      Returns the default singleton instance. You are not allowed to create your own instances of this class.
      */
-    open class func shared() -> Meshulam {
+    @objc open class func shared() -> Meshulam {
         guard let instance = self.sharedInstance else {
             self.sharedInstance = Meshulam()
             return sharedInstance!
@@ -48,7 +48,7 @@ open class Meshulam: NSObject {
         initCustomFont()
     }
     
-    public func createPaymentProcess(pageCode: String, apiKey: String, userId: String, fullName: String, phoneNumber: String, sum: String, email: String? = nil, description: String? = nil, delegate: MeshulamDelegate) {
+    @objc public func createPaymentProcess(pageCode: String, apiKey: String, userId: String, fullName: String, phoneNumber: String, sum: String, email: String? = nil, description: String? = nil, delegate: MeshulamDelegate) {
     
         Meshulam.shared().fullName = fullName
         Meshulam.shared().phoneNumber = phoneNumber
@@ -69,7 +69,7 @@ open class Meshulam: NSObject {
         MeshulamSessionManager.shared.pushBitStatusVC()
     }
     
-    public func settleSuspendedTransaction(apiKey: String, userId: String, sum: String, transactionId: String, delegate: MeshulamDelegate) {
+    @objc public func settleSuspendedTransaction(apiKey: String, userId: String, sum: String, transactionId: String, delegate: MeshulamDelegate) {
         Meshulam.shared().apiKey = apiKey
         Meshulam.shared().sum = sum
         Meshulam.shared().userId = userId
@@ -78,21 +78,21 @@ open class Meshulam: NSObject {
         MeshulamPaymentManager.shared.callSettleSuspendedTransactionRequest()
     }
     
-    public func getPaymentProcessInfo(processId: String, processToken: String, delegate: MeshulamDelegate) {
+    @objc public func getPaymentProcessInfo(processId: String, processToken: String, delegate: MeshulamDelegate) {
         Meshulam.shared().processId = processId
         Meshulam.shared().processToken = processToken
         Meshulam.shared().delegate = delegate
         MeshulamPaymentManager.shared.callGetPaymentProcessInfoRequest()
     }
     
-    public func cancelBitTransaction(processId: String, processToken: String, delegate: MeshulamDelegate) {
+    @objc public func cancelBitTransaction(processId: String, processToken: String, delegate: MeshulamDelegate) {
         Meshulam.shared().processId = processId
         Meshulam.shared().processToken = processToken
         Meshulam.shared().delegate = delegate
         MeshulamPaymentManager.shared.callCancelBitTransactionRequest()
     }
 
-    public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
+    @objc public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
         MeshulamPaymentManager.shared.callSetBitPaymentRequest()
     }
     
