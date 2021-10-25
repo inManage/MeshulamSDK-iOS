@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 effective-4.1.50 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.4 effective-4.1.50 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name MeshulamSDK
 import Alamofire
 import CommonCrypto
@@ -72,15 +72,15 @@ public enum PaymentStatusOptions : Swift.Int {
   @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class Meshulam : ObjectiveC.NSObject {
-  weak open var delegate: MeshulamSDK.MeshulamDelegate?
-  open class func shared() -> MeshulamSDK.Meshulam
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc open class Meshulam : ObjectiveC.NSObject {
+  @objc weak open var delegate: MeshulamSDK.MeshulamDelegate?
+  @objc open class func shared() -> MeshulamSDK.Meshulam
   open class func destroy()
-  public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate)
-  public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, sum: Swift.String, transactionId: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
-  public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
-  public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
-  public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
+  @objc public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate)
+  @objc public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, sum: Swift.String, transactionId: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
+  @objc public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
+  @objc public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
+  @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplicationOpenURLOptionsKey : Any] = [:])
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class MeshulamPopupManager : ObjectiveC.NSObject {
