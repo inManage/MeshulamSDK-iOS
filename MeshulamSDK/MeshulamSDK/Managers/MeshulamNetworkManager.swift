@@ -16,8 +16,8 @@ protocol NetworkManagerDelegate: NSObject {
 public class MeshulamNetworkManager: NSObject {
 
     public static let shared = MeshulamNetworkManager()
-    
-    public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/"
+
+    public private(set) var baseURL: String = "https://dev.meshulam.co.il/"
     public private(set) var applicationToken: String = ""
     public private(set) var maxTime : Int = 0
     public private(set) var startDelay : Int = 0
@@ -137,7 +137,7 @@ public class MeshulamNetworkManager: NSObject {
     private func stopModeling() {
         timer.invalidate()
         delegate?.destorySDK()
-        Meshulam.shared().delegate?.onFailure("timeout error")
+        Meshulam.shared.delegate?.onFailure("timeout error")
     }
 }
 

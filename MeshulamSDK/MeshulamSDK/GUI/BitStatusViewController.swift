@@ -84,18 +84,18 @@ extension BitStatusViewController: NetworkManagerDelegate {
 
 extension BitStatusViewController: StartupManagerDelegate {
     func initSDKFailed(error: Error) {
-        Meshulam.shared().delegate?.onFailure(error.errorMessage)
+        Meshulam.shared.delegate?.onFailure(error.errorMessage)
     }
 }
 
 extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     
     func createPaymentProcessFaild(error: Error) {
-        Meshulam.shared().delegate?.onFailure(error.errorMessage)
+        Meshulam.shared.delegate?.onFailure(error.errorMessage)
     }
 
     func cancelBitPayment() {
-        Meshulam.shared().delegate?.onCancel()
+        Meshulam.shared.delegate?.onCancel()
         dismiss(animated: true)
     }
     
@@ -106,12 +106,12 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     }
     
     func setBitPaymentSuccess(_ transectionId: String) {
-        Meshulam.shared().delegate?.setBitPaymentSuccess(transectionId)
+        Meshulam.shared.delegate?.setBitPaymentSuccess(transectionId)
         dismiss(animated: true)
     }
 
     func createPaymentProcessSuccess(_ processId: String,_ processToken: String) {
-        Meshulam.shared().delegate?.createPaymentProccesSuccess(processId, processToken)
+        Meshulam.shared.delegate?.createPaymentProccesSuccess(processId, processToken)
     }
     
     func setBitPaymentFailure() {
