@@ -29,7 +29,7 @@ import UIKit
      Destroy `Meshulam` singleton
      */
     open class func destroy() {
-        self.shared = Meshulam()
+        self.sharedInstance = nil
     }
     
     private (set) var pageCode = ""
@@ -71,25 +71,25 @@ import UIKit
     }
 
     @objc public func settleSuspendedTransaction(apiKey: String, userId: String, sum: String, transactionId: String, delegate: MeshulamDelegate) {
-        Meshulam.shared()().apiKey = apiKey
-        Meshulam.shared()().sum = sum
-        Meshulam.shared()().userId = userId
-        Meshulam.shared()().transactionId = transactionId
-        Meshulam.shared()().delegate = delegate
+        Meshulam.shared().apiKey = apiKey
+        Meshulam.shared().sum = sum
+        Meshulam.shared().userId = userId
+        Meshulam.shared().transactionId = transactionId
+        Meshulam.shared().delegate = delegate
         MeshulamPaymentManager.shared.callSettleSuspendedTransactionRequest()
     }
     
     @objc public func getPaymentProcessInfo(processId: String, processToken: String, delegate: MeshulamDelegate) {
-        Meshulam.shared()().processId = processId
-        Meshulam.shared()().processToken = processToken
-        Meshulam.shared()().delegate = delegate
+        Meshulam.shared().processId = processId
+        Meshulam.shared().processToken = processToken
+        Meshulam.shared().delegate = delegate
         MeshulamPaymentManager.shared.callGetPaymentProcessInfoRequest()
     }
     
     @objc public func cancelBitTransaction(processId: String, processToken: String, delegate: MeshulamDelegate) {
-        Meshulam.shared()().processId = processId
-        Meshulam.shared()().processToken = processToken
-        Meshulam.shared()().delegate = delegate
+        Meshulam.shared().processId = processId
+        Meshulam.shared().processToken = processToken
+        Meshulam.shared().delegate = delegate
         MeshulamPaymentManager.shared.callCancelBitTransactionRequest()
     }
 
