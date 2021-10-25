@@ -22,42 +22,42 @@ class CreatePaymentProcessRequest: MeshulamBaseRequest {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }
         
-        let description = Meshulam.shared.strDescription
+        let description = Meshulam.shared().strDescription
         if !description.isEmpty {
             initialDictParams.updateValue(description, forKey: ServerParamNames.description)
         }
         
-        let email = Meshulam.shared.email
+        let email = Meshulam.shared().email
         if !email.isEmpty {
             initialDictParams.updateValue(email, forKey: ServerParamNames.email)
         }
         
-        let pageCode = Meshulam.shared.pageCode.aesEncrypt()
+        let pageCode = Meshulam.shared().pageCode.aesEncrypt()
         if !pageCode.isEmpty {
             initialDictParams.updateValue(pageCode, forKey: ServerParamNames.pageCode)
         }
         
-        let userId = Meshulam.shared.userId.aesEncrypt()
+        let userId = Meshulam.shared().userId.aesEncrypt()
         if !userId.isEmpty {
             initialDictParams.updateValue(userId, forKey: ServerParamNames.userId)
         }
         
-        let apiKey = Meshulam.shared.apiKey.aesEncrypt()
+        let apiKey = Meshulam.shared().apiKey.aesEncrypt()
         if !apiKey.isEmpty {
             initialDictParams.updateValue(apiKey, forKey: ServerParamNames.apiKey)
         }
         
-        let sum = Meshulam.shared.sum
+        let sum = Meshulam.shared().sum
         if !sum.isEmpty {
             initialDictParams.updateValue(sum, forKey: ServerParamNames.sum)
         }
         
-        let fullName = Meshulam.shared.fullName
+        let fullName = Meshulam.shared().fullName
         if !fullName.isEmpty {
             initialDictParams.updateValue(fullName, forKey: ServerParamNames.fullName)
         }
         
-        let phoneNumber =  Meshulam.shared.phoneNumber
+        let phoneNumber =  Meshulam.shared().phoneNumber
         if !phoneNumber.isEmpty {
             initialDictParams.updateValue(phoneNumber, forKey: ServerParamNames.phoneNumber)
         }

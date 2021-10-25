@@ -20,22 +20,22 @@ class SettleSuspendedTransactionRequest: MeshulamBaseRequest {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }
         
-        let sum = Meshulam.shared.sum
+        let sum = Meshulam.shared().sum
         if !sum.isEmpty {
             initialDictParams.updateValue(sum, forKey: ServerParamNames.sum)
         }
         
-        let userId = Meshulam.shared.userId.aesEncrypt()
+        let userId = Meshulam.shared().userId.aesEncrypt()
         if !userId.isEmpty {
             initialDictParams.updateValue(userId, forKey: ServerParamNames.userId)
         }
         
-        let apiKey = Meshulam.shared.apiKey.aesEncrypt()
+        let apiKey = Meshulam.shared().apiKey.aesEncrypt()
         if !apiKey.isEmpty {
             initialDictParams.updateValue(apiKey, forKey: ServerParamNames.apiKey)
         }
         
-        let transactionId = Meshulam.shared.transactionId
+        let transactionId = Meshulam.shared().transactionId
         if !apiKey.isEmpty {
             initialDictParams.updateValue(transactionId, forKey: ServerParamNames.transactionId)
         }

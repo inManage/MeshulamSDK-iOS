@@ -129,7 +129,7 @@ extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
             break
             
         case ServerRequests.settleSuspendedTransaction:
-            Meshulam.shared.delegate?.settleSuspendedTransactionSuccess(response: request.responseJson)
+            Meshulam.shared().delegate?.settleSuspendedTransactionSuccess(response: request.responseJson)
             break
             
         case ServerRequests.doPayment:
@@ -141,7 +141,7 @@ extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
             break
             
         case ServerRequests.cancelBitTransaction:
-            Meshulam.shared.delegate?.onCancel()
+            Meshulam.shared().delegate?.onCancel()
             break
         
         default: break
@@ -149,7 +149,7 @@ extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
     }
     
     private func handleGetPaymentProcessInfo(_ response: String) {
-        Meshulam.shared.delegate?.getPaymentProcessInfoSuccess(response: response)
+        Meshulam.shared().delegate?.getPaymentProcessInfoSuccess(response: response)
     }
     
     private func handleCreatePaymentProcess(_ response: BaseInnerResponse) {
@@ -198,7 +198,7 @@ extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
             default: break
             }
             let error = getError(from: response)
-            Meshulam.shared.delegate?.onFailure(error.errorMessage)
+            Meshulam.shared().delegate?.onFailure(error.errorMessage)
         }
     }
 }

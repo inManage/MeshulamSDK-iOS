@@ -51,19 +51,19 @@ import UIKit
     
     @objc public func createPaymentProcess(pageCode: String, apiKey: String, userId: String, fullName: String, phoneNumber: String, sum: String, email: String? = nil, description: String? = nil, delegate: MeshulamDelegate) {
     
-        Meshulam.shared.fullName = fullName
-        Meshulam.shared.phoneNumber = phoneNumber
-        Meshulam.shared.sum = sum
-        Meshulam.shared.apiKey = apiKey
-        Meshulam.shared.pageCode = pageCode
-        Meshulam.shared.userId = userId
-        Meshulam.shared.delegate = delegate
+        Meshulam.shared().fullName = fullName
+        Meshulam.shared().phoneNumber = phoneNumber
+        Meshulam.shared().sum = sum
+        Meshulam.shared().apiKey = apiKey
+        Meshulam.shared().pageCode = pageCode
+        Meshulam.shared().userId = userId
+        Meshulam.shared().delegate = delegate
         
         if let email = email {
-            Meshulam.shared.email = email
+            Meshulam.shared().email = email
         }
         if let description = description {
-            Meshulam.shared.strDescription = description
+            Meshulam.shared().strDescription = description
         }
         
         MeshulamStartupManager.shared.callInitSDK()
@@ -71,25 +71,25 @@ import UIKit
     }
 
     @objc public func settleSuspendedTransaction(apiKey: String, userId: String, sum: String, transactionId: String, delegate: MeshulamDelegate) {
-        Meshulam.shared().apiKey = apiKey
-        Meshulam.shared().sum = sum
-        Meshulam.shared().userId = userId
-        Meshulam.shared().transactionId = transactionId
-        Meshulam.shared().delegate = delegate
+        Meshulam.shared()().apiKey = apiKey
+        Meshulam.shared()().sum = sum
+        Meshulam.shared()().userId = userId
+        Meshulam.shared()().transactionId = transactionId
+        Meshulam.shared()().delegate = delegate
         MeshulamPaymentManager.shared.callSettleSuspendedTransactionRequest()
     }
     
     @objc public func getPaymentProcessInfo(processId: String, processToken: String, delegate: MeshulamDelegate) {
-        Meshulam.shared().processId = processId
-        Meshulam.shared().processToken = processToken
-        Meshulam.shared().delegate = delegate
+        Meshulam.shared()().processId = processId
+        Meshulam.shared()().processToken = processToken
+        Meshulam.shared()().delegate = delegate
         MeshulamPaymentManager.shared.callGetPaymentProcessInfoRequest()
     }
     
     @objc public func cancelBitTransaction(processId: String, processToken: String, delegate: MeshulamDelegate) {
-        Meshulam.shared().processId = processId
-        Meshulam.shared().processToken = processToken
-        Meshulam.shared().delegate = delegate
+        Meshulam.shared()().processId = processId
+        Meshulam.shared()().processToken = processToken
+        Meshulam.shared()().delegate = delegate
         MeshulamPaymentManager.shared.callCancelBitTransactionRequest()
     }
 

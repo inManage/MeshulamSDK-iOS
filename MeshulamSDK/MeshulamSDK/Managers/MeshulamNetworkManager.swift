@@ -137,7 +137,7 @@ public class MeshulamNetworkManager: NSObject {
     private func stopModeling() {
         timer.invalidate()
         delegate?.destorySDK()
-        Meshulam.shared.delegate?.onFailure("timeout error")
+        Meshulam.shared().delegate?.onFailure("timeout error")
     }
 }
 

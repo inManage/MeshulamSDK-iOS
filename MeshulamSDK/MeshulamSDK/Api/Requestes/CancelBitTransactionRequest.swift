@@ -21,18 +21,18 @@ class CancelBitTransactionRequest: MeshulamBaseRequest {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }
         
-        let pageCode = Meshulam.shared.pageCode.aesEncrypt()
+        let pageCode = Meshulam.shared().pageCode.aesEncrypt()
         if !pageCode.isEmpty {
             initialDictParams.updateValue(pageCode, forKey: ServerParamNames.pageCode)
         }
         
-        let processId = Meshulam.shared.processId
+        let processId = Meshulam.shared().processId
         if !processId.isEmpty {
             initialDictParams.updateValue(processId, forKey: ServerParamNames.processId)
         }
         
         
-        let processToken = Meshulam.shared.processToken
+        let processToken = Meshulam.shared().processToken
         if !processToken.isEmpty {
             initialDictParams.updateValue(processToken, forKey: ServerParamNames.processToken)
         }
