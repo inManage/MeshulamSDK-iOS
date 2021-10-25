@@ -193,6 +193,7 @@ extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
             case ServerRequests.createPaymentProcess:
                 let error = Error(id: response.errorResponse.id, errorMessage: response.errorResponse.message)
                 delegate?.createPaymentProcessFaild(error: error)
+                MeshulamNetworkManager.shared.timer.invalidate()
                 break
                 
             default: break

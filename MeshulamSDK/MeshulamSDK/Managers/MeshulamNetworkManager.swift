@@ -23,7 +23,7 @@ public class MeshulamNetworkManager: NSObject {
     public private(set) var startDelay : Int = 0
     public private(set) var intervalLength: Int = 0
     private var timeAddingTimeStemp : TimeInterval!
-    private var timer = Timer()
+    public var timer = Timer()
     private var callSetBitPaymentSend = false
     
     weak var delegate: NetworkManagerDelegate?

@@ -167,6 +167,7 @@ extension UIFont {
   public var intervalLength: Swift.Int {
     get
   }
+  public var timer: Foundation.Timer
   public func sendRequest(_ request: MeshulamSDK.MeshulamBaseRequest)
   public func fillWithInitSDKResponse(_ response: MeshulamSDK.InitSDKResponse)
   @objc public func update()
