@@ -23,12 +23,12 @@ class ViewController: UIViewController {
     
     private func configureMeshulamSDK() {
         Meshulam.shared().createPaymentProcess(pageCode: "e439ab93f4b2",
-                                    apiKey: "lrgkjslkjfsd",
-                                    userId: "24002fc104f101c0fef",
-                                    fullName: "Amit Azulay",
-                                    phoneNumber: "0542533691",
-                                    sum: "1",
-                                    delegate: self)
+                                            apiKey: "lrgkjslkjfsd",
+                                            userId: "24002fc104f101c0fe2f",
+                                            fullName: "Amit Azulay",
+                                            phoneNumber: "0542533691",
+                                            sum: "1",
+                                            delegate: self)
     }
     
     private func settleSuspendedTransaction() {
@@ -83,35 +83,35 @@ class ViewController: UIViewController {
 
 extension ViewController: MeshulamDelegate {
     func onFailure(_ error: String) {
-        spinner.stopAnimating()
-        showAlert(titiel: "error", message: "error: \(error)")
+//        spinner.stopAnimating()
+//        showAlert(titiel: "error", message: "error: \(error)")
     }
     
     
     func createPaymentProccesSuccess(_ processId: String,_ processToken: String) {
         self.processId = processId
         self.processToken = processToken
-        showAlert(titiel: "createPaymentProccesSuccess", message: "processId: \(processId)\n processToken: \(processToken)")
+//        showAlert(titiel: "createPaymentProccesSuccess", message: "processId: \(processId)\n processToken: \(processToken)")
     }
     
     func setBitPaymentSuccess(_ transactionId: String) {
         self.transactionId = transactionId
-        showAlert(titiel: "setBitPaymentSuccess", message: "transactionId: \(transactionId)")
+//        showAlert(titiel: "setBitPaymentSuccess", message: "transactionId: \(transactionId)")
     }
 
     func settleSuspendedTransactionSuccess(response: String) {
-        spinner.stopAnimating()
-        showAlert(titiel: "settleSuspendedTransactionSuccess", message: "response: \(response)")
+//        spinner.stopAnimating()
+//        showAlert(titiel: "settleSuspendedTransactionSuccess", message: "response: \(response)")
     }
     
     func getPaymentProcessInfoSuccess(response: String) {
-        spinner.stopAnimating()
-        showAlert(titiel: "getPaymentProcessInfoSuccess", message: "response: \(response)")
+//        spinner.stopAnimating()
+//        showAlert(titiel: "getPaymentProcessInfoSuccess", message: "response: \(response)")
     }
 
     func onCancel() {
-        spinner.stopAnimating()
-        showAlert(titiel: "onCancel", message: "onCancel")
+//        spinner.stopAnimating()
+//        showAlert(titiel: "onCancel", message: "onCancel")
     }
     
     private func showAlert(titiel: String, message: String) {
