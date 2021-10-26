@@ -65,11 +65,10 @@ class BitStatusViewController: UIViewController {
     }
     
     private func destroySDK() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            self.dismiss(animated: true)
-        }
+        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
-   
+    
     @IBAction func didTapExitBtn(_ sender: Any) {
         MeshulamPaymentManager.shared.isTappedOnExitBtn = true
         presentCanclePaymentProccesPopup()

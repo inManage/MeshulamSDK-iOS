@@ -68,39 +68,43 @@ class MeshulamPopupViewController: UIViewController {
         }
     }
     
-    private func dismissPopup() {
+    private func dismissPopup(completion: @escaping (() -> Void)) {
         UIView.animate(withDuration: 0.3) {
             self.view.alpha = 0
             self.view.layoutIfNeeded()
         } completion: { _ in
             self.dismiss(animated: true)
+            completion()
         }
     }
     
     @IBAction func didTapExit(_ sender: Any) {
-        dismissPopup()
-        if let aPopupInfo = self.popupInfoObj {
-            if let exitPopup = aPopupInfo.exitPopup {
-                exitPopup()
+        dismissPopup {
+            if let aPopupInfo = self.popupInfoObj {
+                if let exitPopup = aPopupInfo.exitPopup {
+                    exitPopup()
+                }
+            }
+        }
+    }
+    
+    @IBAction func didTapSecondBtn(_ sender: Any) {
+        dismissPopup {
+            if let aPopupInfo = self.popupInfoObj {
+                if let secondButtonAction = aPopupInfo.secondButtonAction {
+                    secondButtonAction()
+                }
             }
         }
         
     }
     
-    @IBAction func didTapSecondBtn(_ sender: Any) {
-        dismissPopup()
-        if let aPopupInfo = self.popupInfoObj {
-            if let secondButtonAction = aPopupInfo.secondButtonAction {
-                secondButtonAction()
-            }
-        }
-    }
-    
     @IBAction func didTapFirstBtn(_ sender: Any) {
-        dismissPopup()
-        if let aPopupInfo = self.popupInfoObj {
-            if let firstButtonAction = aPopupInfo.firstButtonAction {
-                firstButtonAction()
+        dismissPopup {
+            if let aPopupInfo = self.popupInfoObj {
+                if let firstButtonAction = aPopupInfo.firstButtonAction {
+                    firstButtonAction()
+                }
             }
         }
     }
