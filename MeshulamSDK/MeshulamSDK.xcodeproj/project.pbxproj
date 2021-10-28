@@ -16,8 +16,6 @@
 		8D6297E02692E5FE0034DA47 /* MeshulamPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297DF2692E5FE0034DA47 /* MeshulamPopupViewController.swift */; };
 		8D6297E32692FC080034DA47 /* PopupInfoObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297E22692FC080034DA47 /* PopupInfoObj.swift */; };
 		8D6297E5269305210034DA47 /* PopupViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297E4269305210034DA47 /* PopupViewControllerDelegate.swift */; };
-		8D7BE78F26A82DE500403915 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78B26A82D3800403915 /* Lottie.framework */; };
-		8D7BE79126A82DE600403915 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78D26A82D3E00403915 /* Alamofire.framework */; };
 		8D7BE79326A82EC500403915 /* Heebo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A82691E7280034DA47 /* Heebo-Black.ttf */; };
 		8D7BE79426A82EC500403915 /* Heebo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A72691E7280034DA47 /* Heebo-Bold.ttf */; };
 		8D7BE79526A82EC500403915 /* Heebo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297A62691E7280034DA47 /* Heebo-ExtraBold.ttf */; };
@@ -30,8 +28,12 @@
 		8D9B1804269495B500E56DF9 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B1803269495B500E56DF9 /* loader.json */; };
 		8DB2D08326B9804D00AFAA8D /* CancelBitTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */; };
 		8DB2D08526B9807600AFAA8D /* CancelBitTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */; };
+		C75AEA09272AC0DA00268E92 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78B26A82D3800403915 /* Lottie.framework */; };
+		C75AEA0A272AC0DA00268E92 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78B26A82D3800403915 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C75AEA0B272AC0DC00268E92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78D26A82D3E00403915 /* Alamofire.framework */; };
+		C75AEA0C272AC0DC00268E92 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78D26A82D3E00403915 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
-		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4A18826C2D65900568915 /* FontExtenstion.swift */; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F36689268DA1590018D734 /* SettleSuspendedTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36664268DA1580018D734 /* SettleSuspendedTransactionRequest.swift */; };
@@ -74,6 +76,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */,
+				C75AEA0C272AC0DC00268E92 /* Alamofire.framework in Embed Frameworks */,
+				C75AEA0A272AC0DA00268E92 /* Lottie.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,8 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */,
-				8D7BE79126A82DE600403915 /* Alamofire.framework in Frameworks */,
-				8D7BE78F26A82DE500403915 /* Lottie.framework in Frameworks */,
+				C75AEA0B272AC0DC00268E92 /* Alamofire.framework in Frameworks */,
+				C75AEA09272AC0DA00268E92 /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
