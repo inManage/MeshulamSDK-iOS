@@ -18,11 +18,11 @@
 		5C9E72682600BD2EB5AF28CE5A7CC96A /* Pods-MeshulamSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK.modulemap"; sourceTree = "<group>"; };
 		60DF09C72CBE99BADFEF28BDE51DFD93 /* Pods-MeshulamSDK-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA29D3B1713AB5E2F77927F45499F939 /* Pods-MeshulamSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK-umbrella.h"; sourceTree = "<group>"; };
 		AA8ECAA9DA2A91B442BD91B29C4D7066 /* Pods-MeshulamSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK.release.xcconfig"; sourceTree = "<group>"; };
 		BE16FA22DD735FF5D31F2DB7DFDF3303 /* Pods-MeshulamSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK-dummy.m"; sourceTree = "<group>"; };
-		CC4F6835BFFFB20D1A3C2F3B5E93B9C3 /* Pods_MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4F6835BFFFB20D1A3C2F3B5E93B9C3 /* Pods-MeshulamSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MeshulamSDK"; path = Pods_MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F6E339408B419741427B77FE5BD644 /* Pods-MeshulamSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 		A9B55DD44B0AFA8FF403254F602BC433 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC4F6835BFFFB20D1A3C2F3B5E93B9C3 /* Pods_MeshulamSDK.framework */,
+				CC4F6835BFFFB20D1A3C2F3B5E93B9C3 /* Pods-MeshulamSDK */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			);
 			name = "Pods-MeshulamSDK";
 			productName = Pods_MeshulamSDK;
-			productReference = CC4F6835BFFFB20D1A3C2F3B5E93B9C3 /* Pods_MeshulamSDK.framework */;
+			productReference = CC4F6835BFFFB20D1A3C2F3B5E93B9C3 /* Pods-MeshulamSDK */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
