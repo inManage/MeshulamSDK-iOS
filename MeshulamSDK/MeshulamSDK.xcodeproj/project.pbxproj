@@ -71,7 +71,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		C76470BE268DC8E70076AAB7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -632,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E30A5DD2ED8771447877801 /* Pods-MeshulamSDK.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -666,6 +667,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9F4A72564C685E5B6CE6422 /* Pods-MeshulamSDK.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

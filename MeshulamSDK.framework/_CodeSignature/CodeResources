@@ -10,15 +10,11 @@
 		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		I34hrYty5iBxgesFki47mzmVawQ=
+		AJv6MDoDSJxLkBHTIQyfvXaE2zQ=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
 		9jnei9T6rkivalbo0mx6IjcEZt8=
-		</data>
-		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
-		<data>
-		Px88r+KIe3ZlXGOtuVh348d4++M=
 		</data>
 		<key>Frameworks/Lottie.framework/Info.plist</key>
 		<data>
@@ -26,11 +22,7 @@
 		</data>
 		<key>Frameworks/Lottie.framework/Lottie</key>
 		<data>
-		SrAuB511mkylpH+wUQObKn7rxPE=
-		</data>
-		<key>Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
-		<data>
-		vS0YzNws6G/O17E1oA9Kz1KJfuw=
+		OdDVIsRTvj8ssqcJu/THoRxTu9M=
 		</data>
 		<key>Frameworks/Pods_MeshulamSDK.framework/Info.plist</key>
 		<data>
@@ -38,27 +30,7 @@
 		</data>
 		<key>Frameworks/Pods_MeshulamSDK.framework/Pods_MeshulamSDK</key>
 		<data>
-		W3FYAUB5ZwxpviTZwvTA3PPh8Ys=
-		</data>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		UsQCeJ3Htr4m35WBjdITMnGgyDM=
-		</data>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		G145mUGlEXvEEFDWLt1JxI9/BYI=
-		</data>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		6OYx94Kb/xpfsZBvbBZif03Vb7s=
-		</data>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeResources</key>
-		<data>
-		brxUBh8uP1sn+bsxJH1wxIuB92s=
-		</data>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		PD4RUuBBilFNgwpDZ3ulaTuWYho=
+		XelOSW1R8iXiT+uoTntcngwXxj0=
 		</data>
 		<key>Headers/MeshulamSDK-Swift.h</key>
 		<data>
@@ -178,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LQdRKQfyjck09VqBlBBrL2dTMCpWHZBeG+kvhn8PSaI=
+			fC0MWJGguzlRkWul+HcP3mETzCPs3pnV1cn0dLr6en8=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
@@ -186,13 +158,6 @@
 			<key>hash2</key>
 			<data>
 			5rXSUz/cUY3E2JuEKMOzDKuYoiaN/0JaAJ8xF0Bv44I=
-			</data>
-		</dict>
-		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pIKonCYEf1m89pvmZeVz9UhLxmd750e7GzQEfjQxTDw=
 			</data>
 		</dict>
 		<key>Frameworks/Lottie.framework/Info.plist</key>
@@ -206,14 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q8dbPTflzuwClZJ2ennoabQ9sJsOwDY7v48UA922KaI=
-			</data>
-		</dict>
-		<key>Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UMjrdyZNsMMRWYhwUViO4I4wwqx1DcI+cOueO+eyA9U=
+			GXXplU05KEflfDOQ+SZ2tvxFWtb/4tfI5vV/afkkfJ8=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_MeshulamSDK.framework/Info.plist</key>
@@ -227,42 +185,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q3GiwG2m2SZ4sRsarRgR0uzkmYIS3uEDEEltiHR+JxU=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TfSsA5MbEFRERmCIa1otxboHkWN649d9G6HVDLNJw60=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mCupAGYCjR7rxxli4qYMm5N/LftILJLrJiqQ5bp2HLY=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uAPVA86hRGOQioMSZ5B2xyC9+lEGbwjO+J6PoNZWfSE=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6NpYd/VQKmEEu+gnfSmTQ84B92Oc8iQQwF39BfByy/8=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_MeshulamSDK.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QGXbIL6j1v4CYpuiLcueczzHOg4OHAYQLUBm1e1rGbs=
+			XT/nAC5iqvKn/elDT/FdyIdDBEiAELgWwwxypHLLn5g=
 			</data>
 		</dict>
 		<key>Headers/MeshulamSDK-Swift.h</key>
