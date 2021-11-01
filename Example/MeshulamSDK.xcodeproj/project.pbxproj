@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2884142A2CBDEC71B205EECA /* Pods_MeshulamSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1950EF23F16F22A6B0272A /* Pods_MeshulamSDK_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C770D7DD272FC85100A0C38B /* Pods_MeshulamSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1950EF23F16F22A6B0272A /* Pods_MeshulamSDK_Example.framework */; };
+		C770D7DE272FC85100A0C38B /* Pods_MeshulamSDK_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE1950EF23F16F22A6B0272A /* Pods_MeshulamSDK_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE3F60477DAA4A6079C2C93E /* Pods_MeshulamSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEBF56BB04194C0245A101 /* Pods_MeshulamSDK_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,20 @@
 			remoteInfo = MeshulamSDK;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C770D7DF272FC85100A0C38B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C770D7DE272FC85100A0C38B /* Pods_MeshulamSDK_Example.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0FBEF8364F0BF7FAF57C1EAB /* MeshulamSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MeshulamSDK.podspec; path = ../MeshulamSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -52,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2884142A2CBDEC71B205EECA /* Pods_MeshulamSDK_Example.framework in Frameworks */,
+				C770D7DD272FC85100A0C38B /* Pods_MeshulamSDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +183,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				FEB5641E44E69FB4978E7160 /* [CP] Embed Pods Frameworks */,
+				C770D7DF272FC85100A0C38B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -489,13 +505,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E0C35CA4293EFFF92378C40 /* Pods-MeshulamSDK_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				DEVELOPMENT_TEAM = ZW9DGWZF4V;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MeshulamSDK/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,13 +524,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8AD6C21DBF5EFBC1BEA923C3 /* Pods-MeshulamSDK_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				DEVELOPMENT_TEAM = ZW9DGWZF4V;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MeshulamSDK/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

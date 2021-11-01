@@ -1,6 +1,6 @@
 {
   "name": "MeshulamSDK",
-  "version": "0.2.3",
+  "version": "0.2.6",
   "summary": "A short description of MeshulamSDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/inManage/MeshulamSDK-iOS",
@@ -19,7 +19,7 @@
   },
   "source": {
     "git": "https://github.com/inManage/MeshulamSDK-iOS.git",
-    "tag": "0.2.3"
+    "tag": "0.2.6"
   },
   "static_framework": true,
   "requires_arc": true,
