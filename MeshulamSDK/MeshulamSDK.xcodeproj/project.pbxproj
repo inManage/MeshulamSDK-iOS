@@ -28,11 +28,8 @@
 		8D9B1804269495B500E56DF9 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B1803269495B500E56DF9 /* loader.json */; };
 		8DB2D08326B9804D00AFAA8D /* CancelBitTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */; };
 		8DB2D08526B9807600AFAA8D /* CancelBitTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */; };
-		C75AEA09272AC0DA00268E92 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78B26A82D3800403915 /* Lottie.framework */; };
 		C75AEA0A272AC0DA00268E92 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78B26A82D3800403915 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C75AEA0B272AC0DC00268E92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78D26A82D3E00403915 /* Alamofire.framework */; };
 		C75AEA0C272AC0DC00268E92 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7BE78D26A82D3E00403915 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
 		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4A18826C2D65900568915 /* FontExtenstion.swift */; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -146,19 +143,6 @@
 		C7F36687268DA1580018D734 /* Meshulam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meshulam.swift; sourceTree = "<group>"; };
 		E9F4A72564C685E5B6CE6422 /* Pods-MeshulamSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK.release.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK/Pods-MeshulamSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C7F36644268DA11D0018D734 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C76470C2268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Frameworks */,
-				C75AEA0B272AC0DC00268E92 /* Alamofire.framework in Frameworks */,
-				C75AEA09272AC0DA00268E92 /* Lottie.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1239C3395320681D05B3A934 /* Pods */ = {
@@ -361,7 +345,6 @@
 				72359A6CE64BE3893A61365B /* [CP] Check Pods Manifest.lock */,
 				C7F36642268DA11D0018D734 /* Headers */,
 				C7F36643268DA11D0018D734 /* Sources */,
-				C7F36644268DA11D0018D734 /* Frameworks */,
 				C7F36645268DA11D0018D734 /* Resources */,
 				C76470BE268DC8E70076AAB7 /* Embed Frameworks */,
 			);
