@@ -1,5 +1,5 @@
 PODS:
-  - MeshulamSDK (0.2.7)
+  - MeshulamSDK (0.2.8)
 
 DEPENDENCIES:
   - MeshulamSDK (from `../MeshulamSDK.podspec`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../MeshulamSDK.podspec"
 
 SPEC CHECKSUMS:
-  MeshulamSDK: dffae06c05c10a02fed4f73c5222792d2fb30b89
+  MeshulamSDK: 9dec0b6272aab96a4ce47fb20daa3aea18226529
 
 PODFILE CHECKSUM: 220b5f0d26351d0ed1fb6d3434006d1015d1cfce
 

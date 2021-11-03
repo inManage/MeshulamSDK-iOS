@@ -21,15 +21,15 @@ Pod::Spec.new do |s|
     s.ios.vendored_frameworks = 'MeshulamSDK.framework'
     s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
     s.ios.deployment_target = '11.0'
-    s.static_framework = true
+    # s.static_framework = true
     s.requires_arc = true
     s.swift_version = '4.0'
     s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    'ENABLE_BITCODE' => 'YES'
+    'ENABLE_BITCODE' => 'NO'
     }
     
-    s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    # s.pod_target_xcconfig = {
+    # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    # }
+    # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     end
