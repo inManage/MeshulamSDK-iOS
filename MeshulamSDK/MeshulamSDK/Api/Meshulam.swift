@@ -93,7 +93,7 @@ import UIKit
         MeshulamPaymentManager.shared.callCancelBitTransactionRequest()
     }
 
-    @objc public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) {
+    @objc public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) {
         MeshulamPaymentManager.shared.callSetBitPaymentRequest()
     }
     

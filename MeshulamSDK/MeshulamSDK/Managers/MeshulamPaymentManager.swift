@@ -93,7 +93,7 @@ public class MeshulamPaymentManager {
     private func handleBitAppStartProcces() {
         let url = createPaymentProcess?.url ?? ""
         if let url = URL(string: url) {
-            UIApplication.shared.open(url, options: Dict()) { _ in
+            UIApplication.shared.open(url, options: [:]) { _ in
                 self.delegate?.bitOpened()
             }
         }
