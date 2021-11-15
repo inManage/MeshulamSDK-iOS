@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8D14BC1326C3DD7C001A20A1 /* Heebo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */; };
-		8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770132691E3F800DFD8F3 /* Gallery.xcassets */; };
 		8D3770172691E3F800DFD8F3 /* MeshulamMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770142691E3F800DFD8F3 /* MeshulamMain.storyboard */; };
 		8D6297AE26920D910034DA47 /* UIApplicationExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */; };
 		8D6297DC2692E2A60034DA47 /* MeshulamPopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297DB2692E2A60034DA47 /* MeshulamPopupManager.swift */; };
@@ -31,6 +30,12 @@
 		C1EC52A453D3DF1C1973CB10 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
 		C73D7F04274280B800BD3CB0 /* MeshulamLoader.gif in Resources */ = {isa = PBXBuildFile; fileRef = C73D7F03274280B800BD3CB0 /* MeshulamLoader.gif */; };
 		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7759E0A2742934600A29BC2 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = C7759E042742934500A29BC2 /* button2.png */; };
+		C7759E0B2742934600A29BC2 /* xCopy.png in Resources */ = {isa = PBXBuildFile; fileRef = C7759E052742934500A29BC2 /* xCopy.png */; };
+		C7759E0C2742934600A29BC2 /* bitBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C7759E062742934500A29BC2 /* bitBackground.png */; };
+		C7759E0D2742934600A29BC2 /* group7.png in Resources */ = {isa = PBXBuildFile; fileRef = C7759E072742934600A29BC2 /* group7.png */; };
+		C7759E0E2742934600A29BC2 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7759E082742934600A29BC2 /* x.png */; };
+		C7759E0F2742934600A29BC2 /* bitLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7759E092742934600A29BC2 /* bitLogo.png */; };
 		C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4A18826C2D65900568915 /* FontExtenstion.swift */; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F36689268DA1590018D734 /* SettleSuspendedTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36664268DA1580018D734 /* SettleSuspendedTransactionRequest.swift */; };
@@ -82,7 +87,6 @@
 /* Begin PBXFileReference section */
 		4E30A5DD2ED8771447877801 /* Pods-MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshulamSDK.debug.xcconfig"; path = "Target Support Files/Pods-MeshulamSDK/Pods-MeshulamSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D3770132691E3F800DFD8F3 /* Gallery.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Gallery.xcassets; sourceTree = "<group>"; };
 		8D3770142691E3F800DFD8F3 /* MeshulamMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeshulamMain.storyboard; sourceTree = "<group>"; };
 		8D6297A62691E7280034DA47 /* Heebo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-ExtraBold.ttf"; sourceTree = "<group>"; };
 		8D6297A72691E7280034DA47 /* Heebo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Bold.ttf"; sourceTree = "<group>"; };
@@ -104,6 +108,12 @@
 		8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionRequest.swift; sourceTree = "<group>"; };
 		8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionResponse.swift; sourceTree = "<group>"; };
 		C73D7F03274280B800BD3CB0 /* MeshulamLoader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MeshulamLoader.gif; sourceTree = "<group>"; };
+		C7759E042742934500A29BC2 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
+		C7759E052742934500A29BC2 /* xCopy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xCopy.png; sourceTree = "<group>"; };
+		C7759E062742934500A29BC2 /* bitBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitBackground.png; sourceTree = "<group>"; };
+		C7759E072742934600A29BC2 /* group7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group7.png; sourceTree = "<group>"; };
+		C7759E082742934600A29BC2 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		C7759E092742934600A29BC2 /* bitLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitLogo.png; sourceTree = "<group>"; };
 		C7C4A18826C2D65900568915 /* FontExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtenstion.swift; sourceTree = "<group>"; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3664A268DA11D0018D734 /* MeshulamSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeshulamSDK.h; sourceTree = "<group>"; };
@@ -165,6 +175,12 @@
 		8D37700B2691E3BB00DFD8F3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C7759E072742934600A29BC2 /* group7.png */,
+				C7759E082742934600A29BC2 /* x.png */,
+				C7759E062742934500A29BC2 /* bitBackground.png */,
+				C7759E092742934600A29BC2 /* bitLogo.png */,
+				C7759E042742934500A29BC2 /* button2.png */,
+				C7759E052742934500A29BC2 /* xCopy.png */,
 				C73D7F03274280B800BD3CB0 /* MeshulamLoader.gif */,
 				8D9B1803269495B500E56DF9 /* loader.json */,
 				8D6297A82691E7280034DA47 /* Heebo-Black.ttf */,
@@ -174,7 +190,6 @@
 				8D6297AA2691E7280034DA47 /* Heebo-Medium.ttf */,
 				8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */,
 				8D6297AC2691E7280034DA47 /* Heebo-Thin.ttf */,
-				8D3770132691E3F800DFD8F3 /* Gallery.xcassets */,
 				8D3770142691E3F800DFD8F3 /* MeshulamMain.storyboard */,
 				8D6297DD2692E57E0034DA47 /* MeshulamPopup.storyboard */,
 			);
@@ -407,15 +422,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7759E0E2742934600A29BC2 /* x.png in Resources */,
 				8D7BE79326A82EC500403915 /* Heebo-Black.ttf in Resources */,
+				C7759E0D2742934600A29BC2 /* group7.png in Resources */,
+				C7759E0A2742934600A29BC2 /* button2.png in Resources */,
 				8D7BE79426A82EC500403915 /* Heebo-Bold.ttf in Resources */,
 				8D14BC1326C3DD7C001A20A1 /* Heebo-Regular.ttf in Resources */,
 				8D7BE79526A82EC500403915 /* Heebo-ExtraBold.ttf in Resources */,
+				C7759E0B2742934600A29BC2 /* xCopy.png in Resources */,
 				8D7BE79626A82EC500403915 /* Heebo-Light.ttf in Resources */,
 				8D7BE79726A82EC500403915 /* Heebo-Medium.ttf in Resources */,
+				C7759E0F2742934600A29BC2 /* bitLogo.png in Resources */,
 				8D7BE79926A82EC500403915 /* Heebo-Thin.ttf in Resources */,
 				8D6297DE2692E57E0034DA47 /* MeshulamPopup.storyboard in Resources */,
-				8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */,
+				C7759E0C2742934600A29BC2 /* bitBackground.png in Resources */,
 				C73D7F04274280B800BD3CB0 /* MeshulamLoader.gif in Resources */,
 				8D9B1804269495B500E56DF9 /* loader.json in Resources */,
 				8D3770172691E3F800DFD8F3 /* MeshulamMain.storyboard in Resources */,
