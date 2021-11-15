@@ -25,7 +25,7 @@ public class MeshulamPopupManager: NSObject {
         
         let popupInfoObj = PopupInfoObj()
         
-        popupInfoObj.strTitle = strTitle ?? "no error content"
+        popupInfoObj.strTitle = strTitle ?? "מצטערים, אנו חווים בעיה רגעית בשרת"
         popupInfoObj.strFirstButtonTitle = strFirstBtn
         
         //Optional variables

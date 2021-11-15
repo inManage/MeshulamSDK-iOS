@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Alamofire
 import UIKit
 
 protocol NetworkManagerDelegate: NSObject {
@@ -17,7 +16,8 @@ public class MeshulamNetworkManager: NSObject {
 
     public static let shared = MeshulamNetworkManager()
 
-    public private(set) var baseURL: String = "https://dev.meshulam.co.il/"
+//    public private(set) var baseURL: String = "https://dev.meshulam.co.il/"
+    public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/"
     public private(set) var applicationToken: String = ""
     public private(set) var maxTime : Int = 0
     public private(set) var startDelay : Int = 0
@@ -29,44 +29,42 @@ public class MeshulamNetworkManager: NSObject {
     weak var delegate: NetworkManagerDelegate?
     
     public func sendRequest(_ request: MeshulamBaseRequest) {
-        
-        let headers   : HTTPHeaders  = [HeadersRequest.token: HeadersRequest.inmangaSecure]
         let urlRequest: String       = "\(baseURL)\(defaultPath)\(request.requestName)/"
         
-        let afRequest = AF.request(urlRequest, method: .post, parameters: request.dictParams, headers: headers).validate()
-       
-        LogMsg("Full Path:\(logHelper)\(urlRequest)\nParams:\(logHelper)\(request.dictParams)")
-        
+        let url = URL(string: urlRequest)!
+        var requestSession = URLRequest(url: url)
+        requestSession.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        requestSession.httpMethod = "POST"
+        let headers: [String: String] = [HeadersRequest.token: HeadersRequest.inmangaSecure]
+        requestSession.allHTTPHeaderFields = headers
+        requestSession.httpBody = request.dictParams.percentEncoded()
         request.increaseRequestAttemptsCounter()
-    
-        afRequest.responseJSON { (result) in
-            
-            switch result.result {
-            case .success(_):
-              
-                if let response = result.value as? Dict {
-                    
-                    let outerResponse = request.createResponseFromJSONDict(JSONDict: response)
-                    
-                    request.responseJson = "\(result.value ?? "")"
-                    
-                    if outerResponse?.responseStatus == .statusSuccess {
-                        self.handleSuccessForRequest(request, outerResponse!)
-                    }
-                    else if outerResponse?.responseStatus == .statusFailure {
-                        self.handleFailureForRequest(request, outerResponse!)
-                    }
-                    LogMsg("Server Response:\(logHelper)\(result.value ?? "")")
-                }
-                break
-            case .failure(_):
+        
+            let task = URLSession.shared.dataTask(with: requestSession) { data, response, error in
                 
-                if let error = result.error {
-                    LogMsg(error)
-                    self.handleAFnetworkingFailure(request)
+                DispatchQueue.main.async {
+                    if error != nil {
+                        self.handleAFnetworkingFailure(request)
+                    }
+                    
+                    if let data = data {
+                        if let jsonString = try? JSONSerialization.jsonObject(with: data, options: []) as! Dict {
+                            let outerResponse = request.createResponseFromJSONDict(JSONDict: jsonString)
+                            
+                            request.responseJson = "\(jsonString)"
+                            
+                            if outerResponse?.responseStatus == .statusSuccess {
+                                self.handleSuccessForRequest(request, outerResponse!)
+                            }
+                            else if outerResponse?.responseStatus == .statusFailure {
+                                self.handleFailureForRequest(request, outerResponse!)
+                            }
+                            LogMsg("Server Response:\(logHelper)\(jsonString)")
+                        }
+                    }
                 }
             }
-        }
+            task.resume()
     }
 
     @objc func sendReqSelector(params: Dict) {
@@ -170,4 +168,27 @@ extension MeshulamNetworkManager: MeshulamRequestFinishedProtocol {
     public func requestFailed(request: MeshulamBaseRequest, response: MeshulamBaseServerResponse?) {
        
     }
+}
+
+extension Dictionary {
+    func percentEncoded() -> Data? {
+        return map { key, value in
+            let escapedKey = "\(key)".addingPercentEncoding(withAllowedCharacters: .urlQueryValueAllowed) ?? ""
+            let escapedValue = "\(value)".addingPercentEncoding(withAllowedCharacters: .urlQueryValueAllowed) ?? ""
+            return escapedKey + "=" + escapedValue
+        }
+        .joined(separator: "&")
+        .data(using: .utf8)
+    }
+}
+
+extension CharacterSet {
+    static let urlQueryValueAllowed: CharacterSet = {
+        let generalDelimitersToEncode = ":#[]@" // does not include "?" or "/" due to RFC 3986 - Section 3.4
+        let subDelimitersToEncode = "!$&'()*+,;="
+
+        var allowed = CharacterSet.urlQueryAllowed
+        allowed.remove(charactersIn: "\(generalDelimitersToEncode)\(subDelimitersToEncode)")
+        return allowed
+    }()
 }

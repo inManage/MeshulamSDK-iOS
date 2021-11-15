@@ -29,8 +29,6 @@
 		8DB2D08326B9804D00AFAA8D /* CancelBitTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */; };
 		8DB2D08526B9807600AFAA8D /* CancelBitTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */; };
 		C1EC52A453D3DF1C1973CB10 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
-		C73D7EFF274258EA00BD3CB0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C73D7EFE274258EA00BD3CB0 /* Lottie */; };
-		C73D7F022742592300BD3CB0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C73D7F012742592300BD3CB0 /* Alamofire */; };
 		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4A18826C2D65900568915 /* FontExtenstion.swift */; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -146,9 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73D7F022742592300BD3CB0 /* Alamofire in Frameworks */,
 				C1EC52A453D3DF1C1973CB10 /* Pods_MeshulamSDK.framework in Frameworks */,
-				C73D7EFF274258EA00BD3CB0 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,8 +359,6 @@
 			);
 			name = MeshulamSDK;
 			packageProductDependencies = (
-				C73D7EFE274258EA00BD3CB0 /* Lottie */,
-				C73D7F012742592300BD3CB0 /* Alamofire */,
 			);
 			productName = MeshulamSDK;
 			productReference = C7F36647268DA11D0018D734 /* MeshulamSDK.framework */;
@@ -750,19 +744,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C73D7EFE274258EA00BD3CB0 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C73D7EFD274258EA00BD3CB0 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-		C73D7F012742592300BD3CB0 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C73D7F002742592300BD3CB0 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7F3663E268DA11D0018D734 /* Project object */;
 }

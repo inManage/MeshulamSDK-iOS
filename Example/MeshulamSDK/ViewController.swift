@@ -22,13 +22,14 @@ class ViewController: UIViewController {
     }
     
     private func configureMeshulamSDK() {
-        Meshulam.shared().createPaymentProcess(pageCode: "e439ab93f4b2",
-                                    apiKey: "lrgkjslkjfsd",
-                                    userId: "24002fc104f101c0fef",
+        Meshulam.shared().createPaymentProcess(pageCode: "a1a40d5ce46f",
+                                    apiKey: "cbf3b862e094",
+                                    userId: "41deb6f1347ee8b2",
                                     fullName: "Amit Azulay",
                                     phoneNumber: "0542533691",
                                     sum: "1",
                                     delegate: self)
+
     }
     
     private func settleSuspendedTransaction() {
@@ -83,7 +84,7 @@ class ViewController: UIViewController {
 
 extension ViewController: MeshulamDelegate {
     func onFailure(_ error: String) {
-        spinner.stopAnimating()
+        //spinner.stopAnimating()
         showAlert(titiel: "error", message: "error: \(error)")
     }
     
