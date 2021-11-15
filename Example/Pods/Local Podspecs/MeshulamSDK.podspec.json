@@ -21,7 +21,7 @@
   "static_framework": true,
   "swift_versions": "4.0",
   "source_files": "MeshulamSDK/**/*.{h,m,swift}",
-  "resources": "MeshulamSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf}",
+  "resources": "MeshulamSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,gif}",
   "dependencies": {
     "Alamofire": [
 

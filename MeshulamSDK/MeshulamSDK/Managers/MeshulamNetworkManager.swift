@@ -40,31 +40,31 @@ public class MeshulamNetworkManager: NSObject {
         requestSession.httpBody = request.dictParams.percentEncoded()
         request.increaseRequestAttemptsCounter()
         
-            let task = URLSession.shared.dataTask(with: requestSession) { data, response, error in
+        let task = URLSession.shared.dataTask(with: requestSession) { data, response, error in
+            
+            DispatchQueue.main.async {
+                if error != nil {
+                    self.handleAFnetworkingFailure(request)
+                }
                 
-                DispatchQueue.main.async {
-                    if error != nil {
-                        self.handleAFnetworkingFailure(request)
-                    }
-                    
-                    if let data = data {
-                        if let jsonString = try? JSONSerialization.jsonObject(with: data, options: []) as! Dict {
-                            let outerResponse = request.createResponseFromJSONDict(JSONDict: jsonString)
-                            
-                            request.responseJson = "\(jsonString)"
-                            
-                            if outerResponse?.responseStatus == .statusSuccess {
-                                self.handleSuccessForRequest(request, outerResponse!)
-                            }
-                            else if outerResponse?.responseStatus == .statusFailure {
-                                self.handleFailureForRequest(request, outerResponse!)
-                            }
-                            LogMsg("Server Response:\(logHelper)\(jsonString)")
+                if let data = data {
+                    if let jsonString = try? JSONSerialization.jsonObject(with: data, options: []) as! Dict {
+                        let outerResponse = request.createResponseFromJSONDict(JSONDict: jsonString)
+                        
+                        request.responseJson = "\(jsonString)"
+                        
+                        if outerResponse?.responseStatus == .statusSuccess {
+                            self.handleSuccessForRequest(request, outerResponse!)
                         }
+                        else if outerResponse?.responseStatus == .statusFailure {
+                            self.handleFailureForRequest(request, outerResponse!)
+                        }
+                        LogMsg("Server Response:\(logHelper)\(jsonString)")
                     }
                 }
             }
-            task.resume()
+        }
+        task.resume()
     }
 
     @objc func sendReqSelector(params: Dict) {

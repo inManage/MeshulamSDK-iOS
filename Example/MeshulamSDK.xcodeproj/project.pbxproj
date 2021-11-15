@@ -184,7 +184,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				C770D7DF272FC85100A0C38B /* Embed Frameworks */,
 				BFAA2E5203534E3E5BC89967 /* [CP] Embed Pods Frameworks */,
-				29ED47A45A6D26E8C6109AF8 /* [CP] Copy Pods Resources */,
+				A6B61FB9C34B2DA67CE8677A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,84 +277,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29ED47A45A6D26E8C6109AF8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-resources.sh",
-				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MainS.storyboardc",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/bitLogo.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/bitLogo@2x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets/bitLogo.imageset/bitLogo@3x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground@2x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground@3x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo@2x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo@3x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/button2.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/button2@2x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/button2@3x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/group7.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/group7@2x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/group7@3x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@2x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@3x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/xCopy.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/xCopy@2x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/xCopy@3x.png",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Black.ttf",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Bold.ttf",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-ExtraBold.ttf",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Light.ttf",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf",
-				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamMain.storyboardc",
-				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamPopup.storyboardc",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Gallery.xcassets",
-				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MainS.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Black.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Bold.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-ExtraBold.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Light.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Medium.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Regular.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Thin.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeshulamMain.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeshulamPopup.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3E0BF6E921D208506DEA2CFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +319,80 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B61FB9C34B2DA67CE8677A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-resources.sh",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitBackground.imageset/bitBackground@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/bitLogo.imageset/bitLogo@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/button2.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/button2@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/button2.imageset/button2@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/group7.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/group7@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/group7.imageset/group7@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/x.imageset/x@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/xCopy.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/xCopy@2x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets/xCopy.imageset/xCopy@3x.png",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Black.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Bold.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-ExtraBold.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Light.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/MeshulamLoader.gif",
+				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamMain.storyboardc",
+				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamPopup.storyboardc",
+				"${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Gallery.xcassets",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Black.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Bold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-ExtraBold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Light.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Medium.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Heebo-Thin.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeshulamLoader.gif",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeshulamMain.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeshulamPopup.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BFAA2E5203534E3E5BC89967 /* [CP] Embed Pods Frameworks */ = {

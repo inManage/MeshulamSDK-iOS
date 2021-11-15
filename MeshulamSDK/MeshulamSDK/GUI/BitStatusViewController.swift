@@ -5,7 +5,6 @@
 //  Created by Inmanage LTD on 06/07/2021.
 //
 
-import Foundation
 import UIKit
 
 class BitStatusViewController: UIViewController {
@@ -61,6 +60,17 @@ class BitStatusViewController: UIViewController {
 //        animationView!.animationSpeed = 0.9
 //        animateView.addSubview(animationView!)
 //        animationView!.play()
+        
+//        let jeremyGif = UIImage.gifImageWithName("MeshulamLoader")
+//         let imageView = UIImageView(image: jeremyGif)
+//         imageView.frame = CGRect(x: 20.0, y: 50.0, width: self.view.frame.size.width - 40, height: 150.0)
+        //         view.addSubview(imageView)
+        
+        
+        let imageview = UIImageView.fromGif(frame: CGRect(x: 20.0, y: 50.0, width: self.view.frame.size.width - 40, height: 150.0), resourceName: "MeshulamLoader")
+        animateView.addSubview(imageview)
+        imageview.startAnimating()
+        
     }
     
     private func destroySDK() {
@@ -140,5 +150,28 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     
     private func handlePayTap() {
         MeshulamPaymentManager.shared.callDoPayment()
+    }
+}
+
+
+extension UIImageView {
+    static func fromGif(frame: CGRect, resourceName: String) -> UIImageView {
+        guard let path = Bundle.main.path(forResource: resourceName, ofType: "gif") else {
+            print("Gif does not exist at that path")
+            return UIImageView()
+        }
+        let url = URL(fileURLWithPath: path)
+        guard let gifData = try? Data(contentsOf: url),
+              let source =  CGImageSourceCreateWithData(gifData as CFData, nil) else { return UIImageView() }
+        var images = [UIImage]()
+        let imageCount = CGImageSourceGetCount(source)
+        for i in 0 ..< imageCount {
+            if let image = CGImageSourceCreateImageAtIndex(source, i, nil) {
+                images.append(UIImage(cgImage: image))
+            }
+        }
+        let gifImageView = UIImageView(frame: frame)
+        gifImageView.animationImages = images
+        return gifImageView
     }
 }

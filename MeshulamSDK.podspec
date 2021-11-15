@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
     # s.requires_arc = true
     s.swift_version = '4.0'
     s.source_files = "MeshulamSDK/**/*.{h,m,swift}"
-    s.resources = "MeshulamSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf}"
+    s.resources = "MeshulamSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,gif}"
 
 
     # s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',

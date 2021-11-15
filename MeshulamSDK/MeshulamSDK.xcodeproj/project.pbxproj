@@ -29,6 +29,7 @@
 		8DB2D08326B9804D00AFAA8D /* CancelBitTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */; };
 		8DB2D08526B9807600AFAA8D /* CancelBitTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */; };
 		C1EC52A453D3DF1C1973CB10 /* Pods_MeshulamSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; };
+		C73D7F04274280B800BD3CB0 /* MeshulamLoader.gif in Resources */ = {isa = PBXBuildFile; fileRef = C73D7F03274280B800BD3CB0 /* MeshulamLoader.gif */; };
 		C76470C3268DCC3B0076AAB7 /* Pods_MeshulamSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA937D8623DC22895779D3 /* Pods_MeshulamSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4A18826C2D65900568915 /* FontExtenstion.swift */; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -102,6 +103,7 @@
 		8D9B1803269495B500E56DF9 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		8DB2D08226B9804D00AFAA8D /* CancelBitTransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionRequest.swift; sourceTree = "<group>"; };
 		8DB2D08426B9807600AFAA8D /* CancelBitTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionResponse.swift; sourceTree = "<group>"; };
+		C73D7F03274280B800BD3CB0 /* MeshulamLoader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MeshulamLoader.gif; sourceTree = "<group>"; };
 		C7C4A18826C2D65900568915 /* FontExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtenstion.swift; sourceTree = "<group>"; };
 		C7F36647268DA11D0018D734 /* MeshulamSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3664A268DA11D0018D734 /* MeshulamSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeshulamSDK.h; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		8D37700B2691E3BB00DFD8F3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C73D7F03274280B800BD3CB0 /* MeshulamLoader.gif */,
 				8D9B1803269495B500E56DF9 /* loader.json */,
 				8D6297A82691E7280034DA47 /* Heebo-Black.ttf */,
 				8D6297A72691E7280034DA47 /* Heebo-Bold.ttf */,
@@ -415,6 +418,7 @@
 				8D7BE79926A82EC500403915 /* Heebo-Thin.ttf in Resources */,
 				8D6297DE2692E57E0034DA47 /* MeshulamPopup.storyboard in Resources */,
 				8D3770162691E3F800DFD8F3 /* Gallery.xcassets in Resources */,
+				C73D7F04274280B800BD3CB0 /* MeshulamLoader.gif in Resources */,
 				8D9B1804269495B500E56DF9 /* loader.json in Resources */,
 				8D3770172691E3F800DFD8F3 /* MeshulamMain.storyboard in Resources */,
 			);
