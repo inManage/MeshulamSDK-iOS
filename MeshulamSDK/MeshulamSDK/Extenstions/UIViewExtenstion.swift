@@ -18,7 +18,7 @@ import UIKit
         }
     }
 
-    @IBInspectable var cornerRadius: CGFloat {
+    @IBInspectable var meshulamCornerRadius: CGFloat {
         set {
             layer.cornerRadius = newValue
         }
