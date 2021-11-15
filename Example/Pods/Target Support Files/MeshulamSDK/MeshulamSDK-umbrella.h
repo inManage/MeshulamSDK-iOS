@@ -11,7 +11,6 @@
 #endif
 
 #import "MeshulamSDK.h"
-#import "Pods-MeshulamSDK-umbrella.h"
 
 FOUNDATION_EXPORT double MeshulamSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char MeshulamSDKVersionString[];
