@@ -46,7 +46,7 @@ import UIKit
 
     private override init() {
         super.init()
-        initCustomFont()
+//        initCustomFont()
     }
     
     @objc public func createPaymentProcess(pageCode: String, apiKey: String, userId: String, fullName: String, phoneNumber: String, sum: String, email: String? = nil, description: String? = nil, delegate: MeshulamDelegate) {

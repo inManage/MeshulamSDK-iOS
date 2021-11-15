@@ -56,12 +56,12 @@ class BitStatusViewController: UIViewController {
         if let b = bundle {
             animationView = .init(filePath: b)
         }
-        animationView!.frame = animateView.bounds
-        animationView!.contentMode = .scaleAspectFit
-        animationView!.loopMode = .loop
-        animationView!.animationSpeed = 0.9
-        animateView.addSubview(animationView!)
-        animationView!.play()
+//        animationView!.frame = animateView.bounds
+//        animationView!.contentMode = .scaleAspectFit
+//        animationView!.loopMode = .loop
+//        animationView!.animationSpeed = 0.9
+//        animateView.addSubview(animationView!)
+//        animationView!.play()
     }
     
     private func destroySDK() {

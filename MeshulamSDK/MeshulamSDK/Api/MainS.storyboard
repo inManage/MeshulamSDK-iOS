@@ -26,9 +26,6 @@
                                     <constraint firstAttribute="width" constant="50" id="vOc-fH-19v"/>
                                 </constraints>
                                 <state key="normal" title="X"/>
-                                <connections>
-                                    <action selector="didTapExit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rTU-B0-nA5"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

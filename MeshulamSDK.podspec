@@ -21,20 +21,25 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'MeshulamSDK.framework'
     s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
     s.ios.deployment_target = '11.0'
-    # s.static_framework = true
+    s.static_framework = true
+    # s.framework = 'MeshulamSDK'
     # s.requires_arc = true
     s.swift_version = '4.0'
-    s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-        'ENABLE_BITCODE' => 'NO'
-    }
+    s.source_files = "MeshulamSDK/**/*.{h,m,swift}"
+    s.resources = "MeshulamSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf}"
+
+
+    # s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+    #     'ENABLE_BITCODE' => 'NO'
+    # }
     
     # s.pod_target_xcconfig = {
     # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
     # }
     # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
-      #pods
-    # s.dependency 'Alamofire'
-    # s.dependency 'lottie-ios'
+      # pods
+    s.dependency 'Alamofire'
+    s.dependency 'lottie-ios'
 
     end

@@ -1,0 +1,6 @@
+framework module MeshulamSDK {
+  umbrella header "MeshulamSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
