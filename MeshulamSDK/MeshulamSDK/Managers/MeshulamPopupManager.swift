@@ -57,7 +57,7 @@ public class MeshulamPopupManager: NSObject {
     }
     
     private func showPopup(_ popupInfoObject: PopupInfoObj) {
-        let frameworkBundle = Bundle(identifier: "com.inmanage.MeshulamSDK")
+        let frameworkBundle = Bundle.main
         let storyboard = UIStoryboard(name: "MeshulamPopup", bundle: frameworkBundle)
         guard let popup = storyboard.instantiateViewController(withIdentifier: "MeshulamPopupViewController") as? MeshulamPopupViewController else { return }
         popup.popupInfoObj = popupInfoObject

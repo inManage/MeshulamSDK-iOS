@@ -49,25 +49,7 @@ class BitStatusViewController: UIViewController {
     }
     
     private func configureAnimateView() {
-//        let frameworkBundle = Bundle(identifier: "com.inmanage.MeshulamSDK")
-//        let bundle = frameworkBundle?.path(forResource: "loader", ofType: "json")
-//        if let b = bundle {
-//            animationView = .init(filePath: b)
-//        }
-//        animationView!.frame = animateView.bounds
-//        animationView!.contentMode = .scaleAspectFit
-//        animationView!.loopMode = .loop
-//        animationView!.animationSpeed = 0.9
-//        animateView.addSubview(animationView!)
-//        animationView!.play()
-        
-//        let jeremyGif = UIImage.gifImageWithName("MeshulamLoader")
-//         let imageView = UIImageView(image: jeremyGif)
-//         imageView.frame = CGRect(x: 20.0, y: 50.0, width: self.view.frame.size.width - 40, height: 150.0)
-        //         view.addSubview(imageView)
-        
-        
-        let imageview = UIImageView.fromGif(frame: CGRect(x: 20.0, y: 50.0, width: self.view.frame.size.width - 40, height: 150.0), resourceName: "MeshulamLoader")
+        let imageview = UIImageView.fromGif(frame: CGRect(x: 0, y: 0, width: self.animateView.frame.size.width - 40.0, height: self.animateView.frame.size.height + 20.0), resourceName: "MeshulamLoader")
         animateView.addSubview(imageview)
         imageview.startAnimating()
         
