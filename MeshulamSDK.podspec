@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name = "MeshulamSDK"
-    s.version = "0.3.3"
+    s.version = "0.3.4"
     s.summary = 'A short description of MeshulamSDK.'
     s.description = <<-DESC
     TODO: Add long description of the pod here.
@@ -27,19 +27,5 @@ Pod::Spec.new do |s|
     s.swift_version = '4.0'
     s.source_files = "MeshulamSDK/**/*.{h,m,swift}"
     s.resources = "MeshulamSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,gif}"
-
-
-    # s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    #     'ENABLE_BITCODE' => 'NO'
-    # }
-    
-    # s.pod_target_xcconfig = {
-    # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    # }
-    # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-
-      # pods
-    s.dependency 'Alamofire'
-    s.dependency 'lottie-ios'
 
     end
