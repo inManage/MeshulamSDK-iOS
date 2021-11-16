@@ -6,6 +6,8 @@
 //
 
 import UIKit
+//import Lottie
+@_implementationOnly import Lottie
 
 class BitStatusViewController: UIViewController {
     
