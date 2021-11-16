@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name = "MeshulamSDK"
-    s.version = "0.3.4"
+    s.version = "0.3.5"
     s.summary = 'A short description of MeshulamSDK.'
     s.description = <<-DESC
     TODO: Add long description of the pod here.
@@ -28,4 +28,8 @@ Pod::Spec.new do |s|
     s.source_files = "MeshulamSDK/**/*.{h,m,swift}"
     s.resources = "MeshulamSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,gif}"
 
+    # pods
+    s.dependency 'Alamofire'
+    s.dependency 'lottie-ios'
+      
     end
