@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     s.license = { :type => 'MIT', :file => 'LICENSE' }
     s.author = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
     s.platform = :ios, '11.0'
-    s.vendored_frameworks = 'MeshulamSDK.framework'
+    s.vendored_frameworks = 'MeshulamSDK.xcframework'
     s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
     s.ios.deployment_target = '11.0'
     s.static_framework = true
