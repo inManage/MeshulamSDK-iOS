@@ -7,71 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		019F7DC8676333E40D18B6E67B2A5BCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		06CA0D93FB643E3E70A1645022AEA402 /* MeshulamNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1866E2905F84AB38FF3BD08DAE8B0DE /* MeshulamNetworkManager.swift */; };
-		0897BB86F6435398883A5832C6CACA01 /* BaseInnerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3C334460EC70E1F19BF33838F5993 /* BaseInnerResponse.swift */; };
-		0D61D605BBF9B0AC72E69431323E2808 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5659CFBEFF515F625BEBC44936DB0924 /* Constants.swift */; };
-		191F0BAFBAED670E63131A2135758477 /* CancelBitTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEF4D10C736C171DE542CEEE3050C4 /* CancelBitTransactionRequest.swift */; };
-		19A28FC191B21031980217A0E68A2E0A /* InitSDKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8193614DB48860B5A0C6BB2E1CB8F6 /* InitSDKRequest.swift */; };
-		1E693A168759FD739FEE9DA234D1D1A0 /* Meshulam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71B1B6420CCB80927A2DF3A56176A /* Meshulam.swift */; };
-		1E8CB575FBA8DAF0E0DE8C67B0FFD705 /* SettleSuspendedTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2852F18929719954F3402F2FE7748FC3 /* SettleSuspendedTransactionRequest.swift */; };
-		29DB2DBB168F51A2AA5445DDB51ACBB9 /* Pods-MeshulamSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00459BD4BD0C9F279A129D05DE64DFF3 /* Pods-MeshulamSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A959A32473564A7E6A37D269A34A393 /* GetBitPaymentStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48271F7DDDC98F4F236899D1D6090D6 /* GetBitPaymentStatusResponse.swift */; };
-		35AE832B5E33F9261F3B9264722326B3 /* SettleSuspendedTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EEE0510C3ED566ECDC81D3D45F009F /* SettleSuspendedTransactionResponse.swift */; };
-		3ED12DC22B84FEBD077351F6D539C0E6 /* MeshulamRequestFinishedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7F55E396E654AED04C484E790B0838 /* MeshulamRequestFinishedProtocol.swift */; };
-		433DB3F51F0741963C9921C34921092B /* InitSDKResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6470FDCE5E1AFB883F34A6EDC9DBA /* InitSDKResponse.swift */; };
-		47E44DFD569C2E931F1F45AAA6E52834 /* BitStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245B7A7A5E7B163A8D8FDCA3298EBDFE /* BitStatusViewController.swift */; };
-		5129CC5A9DF4C6BA38A50EBDE721557E /* MeshulamSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E0B9A2C274D5BF20082C260158E30E /* MeshulamSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5402C348409E88EDAF1FCB6532D385F5 /* MeshulamPopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8140C23BFDDFD174A2279B21428210DE /* MeshulamPopupManager.swift */; };
-		57BBD8C4459C91E9DFAA0C21906965BF /* CreatePaymentProcessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC00B59E619450572BDEE89BEC9B4E /* CreatePaymentProcessResponse.swift */; };
-		5A24D7F4FC51771C92E72B3D865E652A /* MeshulamDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB7497542A1F84DE4594EB6EC4D820 /* MeshulamDelegate.swift */; };
-		5A59E739AE6727DB0A2375D6FB80964D /* MeshulamSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A20434F2BE58A71E3B5E9A64B24981 /* MeshulamSDK-dummy.m */; };
-		5CA8AE1F5915DE007AECACAD2A26147C /* GetPaymentProcessInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ADDBC516C282856872D68DDDAE1864 /* GetPaymentProcessInfoResponse.swift */; };
-		69AA92935104F16E20E4CE550EDBDDB6 /* Pods-MeshulamSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D482297679AF614D1FD03D6C29902432 /* Pods-MeshulamSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E761A6F609A417F42C86C7D709DB5D4 /* CancelBitPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C99ED496134953FBBCF462184EC4F /* CancelBitPaymentResponse.swift */; };
-		76C2C30E58EEEBB8092EAE0DCD536B46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7B79B38544D0DC4109BC43599B6F2D63 /* MeshulamSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B02B105BF40B852BDBF426DADB98A9 /* MeshulamSessionManager.swift */; };
-		7DE1F5B4E77390A4C006CF90A64446FA /* MeshulamStartupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B635DCE23A19BEFA7F13C5D3A84880 /* MeshulamStartupManager.swift */; };
-		8487DC62477A06C97EAA2A69C5EDDB3D /* DoPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511C0683907F0642C6F5AA1D97051EC1 /* DoPaymentRequest.swift */; };
-		89B3CBD0C09B6F53944B0FE1A9DE7A9D /* GetBitPaymentStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE8FD93A58DE47D52002C8313B9C7F /* GetBitPaymentStatusRequest.swift */; };
-		9092FCDB74C1C087BD88CB550EE5E5C2 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A032759A461A252F5561609332C6DC3D /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		914A11D11F1DDBFD5BD5A59F2F0AFFD8 /* SetBitPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341E8BBA6B42B849C16BC22849F6C460 /* SetBitPaymentResponse.swift */; };
-		94FA2172986443368F15A2BCF7DD4CCE /* PopupViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8BC9DDC2E364E7D1494827DA8B1850 /* PopupViewControllerDelegate.swift */; };
-		9E93B10CD66F2545BD614E452B26911C /* FontExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389635E352D4A8F2DB6C83008A2F5FEF /* FontExtenstion.swift */; };
-		A30CB18C38969AC87206E2E74BC81BF6 /* UIViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7B7014537510F7EA8781B8899D1F5B /* UIViewExtenstion.swift */; };
-		A462E6F215E69DE3308A338BC4680B2B /* UIApplicationExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373B81410A107B6532CEC45DE89A170 /* UIApplicationExtenstion.swift */; };
-		ABD0CC9D7A1A8C12F3FBD5BE9FECD748 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EBC07BA4F1FAC634D92116CDEB8C97 /* ErrorResponse.swift */; };
-		AE20B2ED58A798287AF0A5F3405F8095 /* Pods-MeshulamSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 576804AC73F5EE6588ACC3536DF57B5D /* Pods-MeshulamSDK_Example-dummy.m */; };
-		AE7348D5E63727F1C4E79767754C91BF /* MeshulamMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE840B5A14BB1D86244E17A7E2269160 /* MeshulamMain.storyboard */; };
-		B86AA5B13B4CCC430EFA49F7FC0E90F9 /* CancelBitTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC1F3A0D3D13F41D97DE20F184DECA5 /* CancelBitTransactionResponse.swift */; };
-		BA0DA197DB92D4611CBB402BEFB6DBF1 /* CreatePaymentProcessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ED6A531AD4C9EED24CBC51178F4D04 /* CreatePaymentProcessRequest.swift */; };
-		BCDDCBD1098AF17CF8EA4EB36778E201 /* CancelBitPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857B976E081DFB28ABD2CF2243F1EC63 /* CancelBitPaymentRequest.swift */; };
-		C12A1791B8A6A05A061279C404740715 /* StringExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36101406B84DA29098C96E4F909D5783 /* StringExtenstion.swift */; };
+		31089066BCBF2EFDB7831352CB4EB621 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		66BD6FF7D5F6BC612F437F5D2B5DEA01 /* Pods-MeshulamSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63293BF18A8A60DFF53E186CEACDB347 /* Pods-MeshulamSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69AA92935104F16E20E4CE550EDBDDB6 /* Pods-MeshulamSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE48A88CF546A3C3075FE336E4BA /* Pods-MeshulamSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F96ACA6496C6C8624C20E0C1477F15A /* Pods-MeshulamSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C25A11113FEAA5FC9B13B3BB49F7EF02 /* Pods-MeshulamSDK_Example-dummy.m */; };
 		CDAA21556032D62F948D05D286D5B9C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		CFC37D56ABECC3115382A5E686D5AFF3 /* DoPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD83ED9CEF7CB2855ABA1443071E26E /* DoPaymentResponse.swift */; };
-		D10D03498F018F75641AD53E9F2D9D85 /* MeshulamPaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3FACD6563E17BB0DDDF2A48EACB51 /* MeshulamPaymentManager.swift */; };
-		D6BD35BFF43FFBB55DACB24BE4FA6B33 /* MeshulamPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2FF2C6CFE52D6C17587FD1B510842A /* MeshulamPopup.storyboard */; };
-		D9958D787BA8BE08B1EC8F0711D905C2 /* NSObjectExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D00E560E78186E3A539F5FA2DE713 /* NSObjectExtenstion.swift */; };
-		DC72032CC31F4CB5B9B9F8FE4D790D7C /* GetPaymentProcessInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCE3ECE37DAD531FB62E2F55334000 /* GetPaymentProcessInfoRequest.swift */; };
-		E022663E559D98AAEB5D8457FDD1419F /* UIBottonExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75451A05542FEA237DE85BEFA2BDE504 /* UIBottonExtenstion.swift */; };
-		E6942EBE8B5FD9F0DF60F33647F84B82 /* MeshulamPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B5D9752CD98B295B8B6605CA658A7B /* MeshulamPopupViewController.swift */; };
-		EA1B0C4FD26B69329C462090A35A89B7 /* Pods-MeshulamSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E18E2BF9A796B4CD619F7E2DD2463D75 /* Pods-MeshulamSDK_Tests-dummy.m */; };
-		EDF6FC7BDC184EE10550B0C9E11222DE /* MeshulamParseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657801799CB167AC74159797B9EBB03B /* MeshulamParseValidator.swift */; };
-		F20783A522244CB1E7287C2203F76F67 /* MeshulamBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D7057CD7A56CFD5A258DCD6378FDA /* MeshulamBaseRequest.swift */; };
-		F436A1D069D8537248F2D42578630C73 /* PopupInfoObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A20B43809774345D5E8D1E921D0C /* PopupInfoObj.swift */; };
-		FE1F073D88F14370E56846D16A9FDD0B /* SetBitPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB05B03ACE7C2557F60AB3E0FE12866 /* SetBitPaymentRequest.swift */; };
-		FE3B135BEE56EF60FFDBB7594197F26B /* MeshulamBaseServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0167B4DFEFEE7CC184A724B237982 /* MeshulamBaseServerResponse.swift */; };
+		EA1B0C4FD26B69329C462090A35A89B7 /* Pods-MeshulamSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C17DF983197CF3AC402F02C14B310D1A /* Pods-MeshulamSDK_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		96ED5E000B8C06A4D19E1B30B5CAB3EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 11A29FD9D8AE06C53CB25F0B8AA20DBD;
-			remoteInfo = MeshulamSDK;
-		};
-		C668EDA49D39604E1B40E3492E0AD803 /* PBXContainerItemProxy */ = {
+		2E0F070B3B9F1FEEE9099BF79BE40443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -81,105 +26,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00459BD4BD0C9F279A129D05DE64DFF3 /* Pods-MeshulamSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		04A20434F2BE58A71E3B5E9A64B24981 /* MeshulamSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MeshulamSDK-dummy.m"; sourceTree = "<group>"; };
-		05EEE0510C3ED566ECDC81D3D45F009F /* SettleSuspendedTransactionResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettleSuspendedTransactionResponse.swift; sourceTree = "<group>"; };
-		071782AD90AABC66C266A8815AD22E4F /* Heebo-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Heebo-Bold.ttf"; path = "MeshulamSDK/MeshulamSDK/Resources/Heebo-Bold.ttf"; sourceTree = "<group>"; };
-		0858BFBB072BA36D6CC35B06BEFDE8AC /* Pods-MeshulamSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Example.modulemap"; sourceTree = "<group>"; };
-		0A5B48B2B8F42F298BB4547F96CAF61F /* MeshulamSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.release.xcconfig; sourceTree = "<group>"; };
-		0CC1F3A0D3D13F41D97DE20F184DECA5 /* CancelBitTransactionResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionResponse.swift; sourceTree = "<group>"; };
-		0D5444E61B756FDAC7509CD2E0EF6EC9 /* x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = x.png; path = MeshulamSDK/MeshulamSDK/Resources/x.png; sourceTree = "<group>"; };
-		11B02B105BF40B852BDBF426DADB98A9 /* MeshulamSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamSessionManager.swift; sourceTree = "<group>"; };
-		1341B48C832C195FCA71B035912D9880 /* group7.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = group7.png; path = MeshulamSDK/MeshulamSDK/Resources/group7.png; sourceTree = "<group>"; };
-		182DBA1C215904461DDC68F20F0E7A56 /* bitLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = bitLogo.png; path = MeshulamSDK/MeshulamSDK/Resources/bitLogo.png; sourceTree = "<group>"; };
-		1C0B3F7FC7F455E9F31C93C0C53D141F /* MeshulamLoader.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = MeshulamLoader.gif; path = MeshulamSDK/MeshulamSDK/Resources/MeshulamLoader.gif; sourceTree = "<group>"; };
-		1C8E788A1DD8269D801BA7A8949FC933 /* Pods-MeshulamSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		21043376A8F2747A7D210CBF50CBC57B /* Heebo-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Heebo-Light.ttf"; path = "MeshulamSDK/MeshulamSDK/Resources/Heebo-Light.ttf"; sourceTree = "<group>"; };
-		245B7A7A5E7B163A8D8FDCA3298EBDFE /* BitStatusViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BitStatusViewController.swift; sourceTree = "<group>"; };
-		26012E533F1AA4C17E4903C4FB71AA91 /* MeshulamSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MeshulamSDK.modulemap; sourceTree = "<group>"; };
-		282C7555BE8B17ABF94EF34E6C5B80C4 /* bitBackground.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = bitBackground.png; path = MeshulamSDK/MeshulamSDK/Resources/bitBackground.png; sourceTree = "<group>"; };
-		2852F18929719954F3402F2FE7748FC3 /* SettleSuspendedTransactionRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettleSuspendedTransactionRequest.swift; sourceTree = "<group>"; };
-		2D7B7014537510F7EA8781B8899D1F5B /* UIViewExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtenstion.swift; sourceTree = "<group>"; };
-		30371143D6F2C2C87F39AC3DCFAD6EFD /* MeshulamSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MeshulamSDK-Info.plist"; sourceTree = "<group>"; };
-		341E8BBA6B42B849C16BC22849F6C460 /* SetBitPaymentResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetBitPaymentResponse.swift; sourceTree = "<group>"; };
-		36101406B84DA29098C96E4F909D5783 /* StringExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringExtenstion.swift; sourceTree = "<group>"; };
-		381402959A3C153D2EE520F997BD69DA /* Pods-MeshulamSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-Info.plist"; sourceTree = "<group>"; };
-		389635E352D4A8F2DB6C83008A2F5FEF /* FontExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontExtenstion.swift; sourceTree = "<group>"; };
-		38D96F79A3F6A0C3E89B73BD7B264DB6 /* Pods-MeshulamSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		394A2F754734C19AA4081133EF68AE43 /* Heebo-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Heebo-Thin.ttf"; path = "MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf"; sourceTree = "<group>"; };
-		3B8BC9DDC2E364E7D1494827DA8B1850 /* PopupViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PopupViewControllerDelegate.swift; sourceTree = "<group>"; };
+		04A63B8948121C0316AA208574F92B12 /* Pods-MeshulamSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FCF2AF671B37093FD49DE92174DE56F /* Pods-MeshulamSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		338E6902B64C38033815A342528703D8 /* Pods-MeshulamSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		36CE2EADF49AEA045D0F09396B1923FA /* Pods-MeshulamSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3C4707B92782BA31D4EDB4EB2EBB55EF /* Pods-MeshulamSDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MeshulamSDK_Tests"; path = Pods_MeshulamSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E7F55E396E654AED04C484E790B0838 /* MeshulamRequestFinishedProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamRequestFinishedProtocol.swift; sourceTree = "<group>"; };
-		3FCE8FD93A58DE47D52002C8313B9C7F /* GetBitPaymentStatusRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetBitPaymentStatusRequest.swift; sourceTree = "<group>"; };
-		42B635DCE23A19BEFA7F13C5D3A84880 /* MeshulamStartupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamStartupManager.swift; sourceTree = "<group>"; };
-		48E0B9A2C274D5BF20082C260158E30E /* MeshulamSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MeshulamSDK-umbrella.h"; sourceTree = "<group>"; };
-		4A5E681B575954C7BD3EFC77A75A237D /* Heebo-ExtraBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Heebo-ExtraBold.ttf"; path = "MeshulamSDK/MeshulamSDK/Resources/Heebo-ExtraBold.ttf"; sourceTree = "<group>"; };
-		4C70DE933FBC23BD91760C41D86B6BFE /* Pods-MeshulamSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4DC3FACD6563E17BB0DDDF2A48EACB51 /* MeshulamPaymentManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamPaymentManager.swift; sourceTree = "<group>"; };
-		4E2FF2C6CFE52D6C17587FD1B510842A /* MeshulamPopup.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = MeshulamPopup.storyboard; path = MeshulamSDK/MeshulamSDK/Resources/MeshulamPopup.storyboard; sourceTree = "<group>"; };
-		511C0683907F0642C6F5AA1D97051EC1 /* DoPaymentRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DoPaymentRequest.swift; sourceTree = "<group>"; };
-		546D8122979399FF1FEEDF87C572FEEF /* MeshulamSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MeshulamSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5659CFBEFF515F625BEBC44936DB0924 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = MeshulamSDK/MeshulamSDK/Constants.swift; sourceTree = "<group>"; };
-		576804AC73F5EE6588ACC3536DF57B5D /* Pods-MeshulamSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		61EBC07BA4F1FAC634D92116CDEB8C97 /* ErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		654A33F6237F3DF4D23D96F66E59B6C4 /* Pods-MeshulamSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-Info.plist"; sourceTree = "<group>"; };
-		657801799CB167AC74159797B9EBB03B /* MeshulamParseValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamParseValidator.swift; sourceTree = "<group>"; };
-		6FE6470FDCE5E1AFB883F34A6EDC9DBA /* InitSDKResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitSDKResponse.swift; sourceTree = "<group>"; };
-		720F144889382A65B450B227A46146D1 /* button2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = button2.png; path = MeshulamSDK/MeshulamSDK/Resources/button2.png; sourceTree = "<group>"; };
+		41840968A5E747B2CB9D73EB12EF61B1 /* Pods-MeshulamSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		4B06955405A384637B42A7D93C6A6A40 /* Pods-MeshulamSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Example.modulemap"; sourceTree = "<group>"; };
+		63293BF18A8A60DFF53E186CEACDB347 /* Pods-MeshulamSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		6E1AEA08B0C8089AC720867A3B1A4AD1 /* Pods-MeshulamSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		75451A05542FEA237DE85BEFA2BDE504 /* UIBottonExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIBottonExtenstion.swift; sourceTree = "<group>"; };
+		797A3227335A29F82D1D2013C89A5FDA /* Pods-MeshulamSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		7B699B813FE4432E6F456A18147D8D98 /* Pods-MeshulamSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7D2253964FB21DFCBBFC9BE8E8B45960 /* Pods-MeshulamSDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MeshulamSDK_Example"; path = Pods_MeshulamSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DD83ED9CEF7CB2855ABA1443071E26E /* DoPaymentResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DoPaymentResponse.swift; sourceTree = "<group>"; };
-		80FC2449B877CF3EA17B84FD7B624574 /* MeshulamSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MeshulamSDK; path = MeshulamSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8140C23BFDDFD174A2279B21428210DE /* MeshulamPopupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamPopupManager.swift; sourceTree = "<group>"; };
-		82E0680C129F05B90E07FE802485CDB3 /* Pods-MeshulamSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		857B976E081DFB28ABD2CF2243F1EC63 /* CancelBitPaymentRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CancelBitPaymentRequest.swift; sourceTree = "<group>"; };
-		8AAF7A31D1288A5E8628B313B3AFFADB /* Heebo-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Heebo-Black.ttf"; path = "MeshulamSDK/MeshulamSDK/Resources/Heebo-Black.ttf"; sourceTree = "<group>"; };
-		8DB1D0E89C62C846D094D7E437FD9AA3 /* MeshulamSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MeshulamSDK.debug.xcconfig; sourceTree = "<group>"; };
-		9000F4EE04F99EE19507EBF35EE8900C /* Pods-MeshulamSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MeshulamSDK_Example-resources.sh"; sourceTree = "<group>"; };
-		919FB3BDC1EC963C8ED3F9085D4CFDBE /* Pods-MeshulamSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		934C99ED496134953FBBCF462184EC4F /* CancelBitPaymentResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CancelBitPaymentResponse.swift; sourceTree = "<group>"; };
+		95F360EEC7953568F51C1A5CD0221558 /* Pods-MeshulamSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DDCE3ECE37DAD531FB62E2F55334000 /* GetPaymentProcessInfoRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetPaymentProcessInfoRequest.swift; sourceTree = "<group>"; };
-		9FA71B1B6420CCB80927A2DF3A56176A /* Meshulam.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Meshulam.swift; sourceTree = "<group>"; };
-		A032759A461A252F5561609332C6DC3D /* MeshulamSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MeshulamSDK.h; path = MeshulamSDK/MeshulamSDK/MeshulamSDK.h; sourceTree = "<group>"; };
-		B0FB7497542A1F84DE4594EB6EC4D820 /* MeshulamDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamDelegate.swift; sourceTree = "<group>"; };
-		B1866E2905F84AB38FF3BD08DAE8B0DE /* MeshulamNetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamNetworkManager.swift; sourceTree = "<group>"; };
-		B292A20B43809774345D5E8D1E921D0C /* PopupInfoObj.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PopupInfoObj.swift; sourceTree = "<group>"; };
-		B48271F7DDDC98F4F236899D1D6090D6 /* GetBitPaymentStatusResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetBitPaymentStatusResponse.swift; sourceTree = "<group>"; };
-		C373B81410A107B6532CEC45DE89A170 /* UIApplicationExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIApplicationExtenstion.swift; sourceTree = "<group>"; };
-		C69DFE77F09E4B45FBA2EEB21BFAD4FF /* Pods-MeshulamSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MeshulamSDK_Tests.modulemap"; sourceTree = "<group>"; };
-		C8ED6A531AD4C9EED24CBC51178F4D04 /* CreatePaymentProcessRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreatePaymentProcessRequest.swift; sourceTree = "<group>"; };
-		CB03AF3856A23E70588F4044D4BB6023 /* Pods-MeshulamSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeshulamSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		CF3D7057CD7A56CFD5A258DCD6378FDA /* MeshulamBaseRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamBaseRequest.swift; sourceTree = "<group>"; };
-		D149417F29592826F2D4728556D62E1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		D22D4E6A05E638DCEC4983D564105697 /* Heebo-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Heebo-Medium.ttf"; path = "MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf"; sourceTree = "<group>"; };
-		D482297679AF614D1FD03D6C29902432 /* Pods-MeshulamSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		DC8193614DB48860B5A0C6BB2E1CB8F6 /* InitSDKRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitSDKRequest.swift; sourceTree = "<group>"; };
-		DF0B78BD68E029911D991B8EA5269BF7 /* xCopy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = xCopy.png; path = MeshulamSDK/MeshulamSDK/Resources/xCopy.png; sourceTree = "<group>"; };
-		E18E2BF9A796B4CD619F7E2DD2463D75 /* Pods-MeshulamSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		E5B5D9752CD98B295B8B6605CA658A7B /* MeshulamPopupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamPopupViewController.swift; sourceTree = "<group>"; };
-		E6CC00B59E619450572BDEE89BEC9B4E /* CreatePaymentProcessResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreatePaymentProcessResponse.swift; sourceTree = "<group>"; };
-		E8ADDBC516C282856872D68DDDAE1864 /* GetPaymentProcessInfoResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetPaymentProcessInfoResponse.swift; sourceTree = "<group>"; };
-		EE0D00E560E78186E3A539F5FA2DE713 /* NSObjectExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSObjectExtenstion.swift; sourceTree = "<group>"; };
-		EE840B5A14BB1D86244E17A7E2269160 /* MeshulamMain.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = MeshulamMain.storyboard; path = MeshulamSDK/MeshulamSDK/Resources/MeshulamMain.storyboard; sourceTree = "<group>"; };
-		F0EEF4D10C736C171DE542CEEE3050C4 /* CancelBitTransactionRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CancelBitTransactionRequest.swift; sourceTree = "<group>"; };
-		F1465A873C424CBCDD09BC17834725E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		F4C0167B4DFEFEE7CC184A724B237982 /* MeshulamBaseServerResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MeshulamBaseServerResponse.swift; sourceTree = "<group>"; };
-		F5D3C334460EC70E1F19BF33838F5993 /* BaseInnerResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseInnerResponse.swift; sourceTree = "<group>"; };
-		FBE1E4B1D4DEC996D583D155EE84F4C3 /* Pods-MeshulamSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FCC4513129653B18E75525F3BD2E9CB0 /* MeshulamSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MeshulamSDK-prefix.pch"; sourceTree = "<group>"; };
-		FCF8F19CFA1667455235933EDE383E89 /* Heebo-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Heebo-Regular.ttf"; path = "MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf"; sourceTree = "<group>"; };
-		FF40F6A151CC3705DBA5871466B95014 /* Pods-MeshulamSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FFB05B03ACE7C2557F60AB3E0FE12866 /* SetBitPaymentRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetBitPaymentRequest.swift; sourceTree = "<group>"; };
+		B7F4FE48A88CF546A3C3075FE336E4BA /* Pods-MeshulamSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeshulamSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BEF3178FF08A7C64D347324EE6B25A20 /* Pods-MeshulamSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeshulamSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C17DF983197CF3AC402F02C14B310D1A /* Pods-MeshulamSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		C25A11113FEAA5FC9B13B3BB49F7EF02 /* Pods-MeshulamSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeshulamSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		E15ED8F314CBA155AE630606CF96E405 /* Pods-MeshulamSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeshulamSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5F3C24BA3E1B4CA8623C07091C64012B /* Frameworks */ = {
+		134E09D39D7226816D633496A9830212 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C2C30E58EEEBB8092EAE0DCD536B46 /* Foundation.framework in Frameworks */,
+				31089066BCBF2EFDB7831352CB4EB621 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,135 +65,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1886F21FFB8713ABBC122525CA6ADE2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				019F7DC8676333E40D18B6E67B2A5BCA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B3618376FE6CD8E7015B17C67E0E1CE /* MeshulamSDK */ = {
+		3F45E61042A5B2146F93B8147EFFC07C /* Pods-MeshulamSDK_Example */ = {
 			isa = PBXGroup;
 			children = (
-				282C7555BE8B17ABF94EF34E6C5B80C4 /* bitBackground.png */,
-				182DBA1C215904461DDC68F20F0E7A56 /* bitLogo.png */,
-				720F144889382A65B450B227A46146D1 /* button2.png */,
-				5659CFBEFF515F625BEBC44936DB0924 /* Constants.swift */,
-				1341B48C832C195FCA71B035912D9880 /* group7.png */,
-				8AAF7A31D1288A5E8628B313B3AFFADB /* Heebo-Black.ttf */,
-				071782AD90AABC66C266A8815AD22E4F /* Heebo-Bold.ttf */,
-				4A5E681B575954C7BD3EFC77A75A237D /* Heebo-ExtraBold.ttf */,
-				21043376A8F2747A7D210CBF50CBC57B /* Heebo-Light.ttf */,
-				D22D4E6A05E638DCEC4983D564105697 /* Heebo-Medium.ttf */,
-				FCF8F19CFA1667455235933EDE383E89 /* Heebo-Regular.ttf */,
-				394A2F754734C19AA4081133EF68AE43 /* Heebo-Thin.ttf */,
-				1C0B3F7FC7F455E9F31C93C0C53D141F /* MeshulamLoader.gif */,
-				EE840B5A14BB1D86244E17A7E2269160 /* MeshulamMain.storyboard */,
-				4E2FF2C6CFE52D6C17587FD1B510842A /* MeshulamPopup.storyboard */,
-				A032759A461A252F5561609332C6DC3D /* MeshulamSDK.h */,
-				0D5444E61B756FDAC7509CD2E0EF6EC9 /* x.png */,
-				DF0B78BD68E029911D991B8EA5269BF7 /* xCopy.png */,
-				AE3305EF0CDD12947BC68BF021FAE8A8 /* Api */,
-				1F818DB176FD1A6BA6C83596A4C3E03A /* Extenstions */,
-				DCF6EBC9E72B95C0FE4E14DD75D13838 /* GUI */,
-				5AC368BE1C2C1A419DD2C8B1DC929A23 /* Managers */,
-				4DE5CC8DE0B861CF0752B73E9F0E17A0 /* Objects */,
-				36BEF346FBD12BD0B5F9EBB7A45D3A40 /* Pod */,
-				FE9191F9AEB532BC28E0F0021F5EDCFC /* Protocols */,
-				BBB92D8EBDDB857889092DDA388DF75C /* Support Files */,
-				DDB05FF23D86E59F3A510C8265309FB6 /* Validators */,
-			);
-			name = MeshulamSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		0ECADEEE5E7CCADB0DA5412EE33DD678 /* Requestes */ = {
-			isa = PBXGroup;
-			children = (
-				857B976E081DFB28ABD2CF2243F1EC63 /* CancelBitPaymentRequest.swift */,
-				F0EEF4D10C736C171DE542CEEE3050C4 /* CancelBitTransactionRequest.swift */,
-				C8ED6A531AD4C9EED24CBC51178F4D04 /* CreatePaymentProcessRequest.swift */,
-				511C0683907F0642C6F5AA1D97051EC1 /* DoPaymentRequest.swift */,
-				3FCE8FD93A58DE47D52002C8313B9C7F /* GetBitPaymentStatusRequest.swift */,
-				9DDCE3ECE37DAD531FB62E2F55334000 /* GetPaymentProcessInfoRequest.swift */,
-				DC8193614DB48860B5A0C6BB2E1CB8F6 /* InitSDKRequest.swift */,
-				CF3D7057CD7A56CFD5A258DCD6378FDA /* MeshulamBaseRequest.swift */,
-				FFB05B03ACE7C2557F60AB3E0FE12866 /* SetBitPaymentRequest.swift */,
-				2852F18929719954F3402F2FE7748FC3 /* SettleSuspendedTransactionRequest.swift */,
-			);
-			name = Requestes;
-			path = Requestes;
-			sourceTree = "<group>";
-		};
-		1F818DB176FD1A6BA6C83596A4C3E03A /* Extenstions */ = {
-			isa = PBXGroup;
-			children = (
-				389635E352D4A8F2DB6C83008A2F5FEF /* FontExtenstion.swift */,
-				EE0D00E560E78186E3A539F5FA2DE713 /* NSObjectExtenstion.swift */,
-				36101406B84DA29098C96E4F909D5783 /* StringExtenstion.swift */,
-				C373B81410A107B6532CEC45DE89A170 /* UIApplicationExtenstion.swift */,
-				75451A05542FEA237DE85BEFA2BDE504 /* UIBottonExtenstion.swift */,
-				2D7B7014537510F7EA8781B8899D1F5B /* UIViewExtenstion.swift */,
-			);
-			name = Extenstions;
-			path = MeshulamSDK/MeshulamSDK/Extenstions;
-			sourceTree = "<group>";
-		};
-		36BEF346FBD12BD0B5F9EBB7A45D3A40 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D149417F29592826F2D4728556D62E1C /* LICENSE */,
-				546D8122979399FF1FEEDF87C572FEEF /* MeshulamSDK.podspec */,
-				F1465A873C424CBCDD09BC17834725E5 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		49CA94F64887DF9B185BC20A8BFBA363 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				F5D3C334460EC70E1F19BF33838F5993 /* BaseInnerResponse.swift */,
-				934C99ED496134953FBBCF462184EC4F /* CancelBitPaymentResponse.swift */,
-				0CC1F3A0D3D13F41D97DE20F184DECA5 /* CancelBitTransactionResponse.swift */,
-				E6CC00B59E619450572BDEE89BEC9B4E /* CreatePaymentProcessResponse.swift */,
-				7DD83ED9CEF7CB2855ABA1443071E26E /* DoPaymentResponse.swift */,
-				61EBC07BA4F1FAC634D92116CDEB8C97 /* ErrorResponse.swift */,
-				B48271F7DDDC98F4F236899D1D6090D6 /* GetBitPaymentStatusResponse.swift */,
-				E8ADDBC516C282856872D68DDDAE1864 /* GetPaymentProcessInfoResponse.swift */,
-				6FE6470FDCE5E1AFB883F34A6EDC9DBA /* InitSDKResponse.swift */,
-				F4C0167B4DFEFEE7CC184A724B237982 /* MeshulamBaseServerResponse.swift */,
-				341E8BBA6B42B849C16BC22849F6C460 /* SetBitPaymentResponse.swift */,
-				05EEE0510C3ED566ECDC81D3D45F009F /* SettleSuspendedTransactionResponse.swift */,
-			);
-			name = Responses;
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		4DE5CC8DE0B861CF0752B73E9F0E17A0 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				B292A20B43809774345D5E8D1E921D0C /* PopupInfoObj.swift */,
-			);
-			name = Objects;
-			path = MeshulamSDK/MeshulamSDK/Objects;
-			sourceTree = "<group>";
-		};
-		573A682973DC96A1414C832DA227A818 /* Pods-MeshulamSDK_Example */ = {
-			isa = PBXGroup;
-			children = (
-				0858BFBB072BA36D6CC35B06BEFDE8AC /* Pods-MeshulamSDK_Example.modulemap */,
-				FBE1E4B1D4DEC996D583D155EE84F4C3 /* Pods-MeshulamSDK_Example-acknowledgements.markdown */,
-				CB03AF3856A23E70588F4044D4BB6023 /* Pods-MeshulamSDK_Example-acknowledgements.plist */,
-				576804AC73F5EE6588ACC3536DF57B5D /* Pods-MeshulamSDK_Example-dummy.m */,
-				381402959A3C153D2EE520F997BD69DA /* Pods-MeshulamSDK_Example-Info.plist */,
-				9000F4EE04F99EE19507EBF35EE8900C /* Pods-MeshulamSDK_Example-resources.sh */,
-				00459BD4BD0C9F279A129D05DE64DFF3 /* Pods-MeshulamSDK_Example-umbrella.h */,
-				FF40F6A151CC3705DBA5871466B95014 /* Pods-MeshulamSDK_Example.debug.xcconfig */,
-				1C8E788A1DD8269D801BA7A8949FC933 /* Pods-MeshulamSDK_Example.release.xcconfig */,
+				4B06955405A384637B42A7D93C6A6A40 /* Pods-MeshulamSDK_Example.modulemap */,
+				BEF3178FF08A7C64D347324EE6B25A20 /* Pods-MeshulamSDK_Example-acknowledgements.markdown */,
+				338E6902B64C38033815A342528703D8 /* Pods-MeshulamSDK_Example-acknowledgements.plist */,
+				C25A11113FEAA5FC9B13B3BB49F7EF02 /* Pods-MeshulamSDK_Example-dummy.m */,
+				0FCF2AF671B37093FD49DE92174DE56F /* Pods-MeshulamSDK_Example-Info.plist */,
+				63293BF18A8A60DFF53E186CEACDB347 /* Pods-MeshulamSDK_Example-umbrella.h */,
+				6E1AEA08B0C8089AC720867A3B1A4AD1 /* Pods-MeshulamSDK_Example.debug.xcconfig */,
+				95F360EEC7953568F51C1A5CD0221558 /* Pods-MeshulamSDK_Example.release.xcconfig */,
 			);
 			name = "Pods-MeshulamSDK_Example";
 			path = "Target Support Files/Pods-MeshulamSDK_Example";
@@ -333,53 +92,47 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5AC368BE1C2C1A419DD2C8B1DC929A23 /* Managers */ = {
+		927879B34F06E0359C082B31085D7020 /* Pods-MeshulamSDK_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B1866E2905F84AB38FF3BD08DAE8B0DE /* MeshulamNetworkManager.swift */,
-				4DC3FACD6563E17BB0DDDF2A48EACB51 /* MeshulamPaymentManager.swift */,
-				8140C23BFDDFD174A2279B21428210DE /* MeshulamPopupManager.swift */,
-				11B02B105BF40B852BDBF426DADB98A9 /* MeshulamSessionManager.swift */,
-				42B635DCE23A19BEFA7F13C5D3A84880 /* MeshulamStartupManager.swift */,
+				797A3227335A29F82D1D2013C89A5FDA /* Pods-MeshulamSDK_Tests.modulemap */,
+				36CE2EADF49AEA045D0F09396B1923FA /* Pods-MeshulamSDK_Tests-acknowledgements.markdown */,
+				7B699B813FE4432E6F456A18147D8D98 /* Pods-MeshulamSDK_Tests-acknowledgements.plist */,
+				C17DF983197CF3AC402F02C14B310D1A /* Pods-MeshulamSDK_Tests-dummy.m */,
+				41840968A5E747B2CB9D73EB12EF61B1 /* Pods-MeshulamSDK_Tests-Info.plist */,
+				B7F4FE48A88CF546A3C3075FE336E4BA /* Pods-MeshulamSDK_Tests-umbrella.h */,
+				04A63B8948121C0316AA208574F92B12 /* Pods-MeshulamSDK_Tests.debug.xcconfig */,
+				E15ED8F314CBA155AE630606CF96E405 /* Pods-MeshulamSDK_Tests.release.xcconfig */,
 			);
-			name = Managers;
-			path = MeshulamSDK/MeshulamSDK/Managers;
+			name = "Pods-MeshulamSDK_Tests";
+			path = "Target Support Files/Pods-MeshulamSDK_Tests";
 			sourceTree = "<group>";
 		};
-		AE3305EF0CDD12947BC68BF021FAE8A8 /* Api */ = {
+		947C07C6427244C2E6CEE0746333D8F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9FA71B1B6420CCB80927A2DF3A56176A /* Meshulam.swift */,
-				0ECADEEE5E7CCADB0DA5412EE33DD678 /* Requestes */,
-				49CA94F64887DF9B185BC20A8BFBA363 /* Responses */,
+				7D2253964FB21DFCBBFC9BE8E8B45960 /* Pods-MeshulamSDK_Example */,
+				3C4707B92782BA31D4EDB4EB2EBB55EF /* Pods-MeshulamSDK_Tests */,
 			);
-			name = Api;
-			path = MeshulamSDK/MeshulamSDK/Api;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		BBB92D8EBDDB857889092DDA388DF75C /* Support Files */ = {
+		A2A2DE6B905A84D6A77E1C720801E007 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				26012E533F1AA4C17E4903C4FB71AA91 /* MeshulamSDK.modulemap */,
-				04A20434F2BE58A71E3B5E9A64B24981 /* MeshulamSDK-dummy.m */,
-				30371143D6F2C2C87F39AC3DCFAD6EFD /* MeshulamSDK-Info.plist */,
-				FCC4513129653B18E75525F3BD2E9CB0 /* MeshulamSDK-prefix.pch */,
-				48E0B9A2C274D5BF20082C260158E30E /* MeshulamSDK-umbrella.h */,
-				8DB1D0E89C62C846D094D7E437FD9AA3 /* MeshulamSDK.debug.xcconfig */,
-				0A5B48B2B8F42F298BB4547F96CAF61F /* MeshulamSDK.release.xcconfig */,
+				3F45E61042A5B2146F93B8147EFFC07C /* Pods-MeshulamSDK_Example */,
+				927879B34F06E0359C082B31085D7020 /* Pods-MeshulamSDK_Tests */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MeshulamSDK";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F075A99D57954A573741AC87E4680CBC /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F2EA0975B75BF2E0DBB03229035A2690 /* Products */,
-				E8650C13E82180692763523FA2E4C3EA /* Targets Support Files */,
+				947C07C6427244C2E6CEE0746333D8F2 /* Products */,
+				A2A2DE6B905A84D6A77E1C720801E007 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -391,82 +144,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DCF6EBC9E72B95C0FE4E14DD75D13838 /* GUI */ = {
-			isa = PBXGroup;
-			children = (
-				245B7A7A5E7B163A8D8FDCA3298EBDFE /* BitStatusViewController.swift */,
-				E5B5D9752CD98B295B8B6605CA658A7B /* MeshulamPopupViewController.swift */,
-			);
-			name = GUI;
-			path = MeshulamSDK/MeshulamSDK/GUI;
-			sourceTree = "<group>";
-		};
-		DDB05FF23D86E59F3A510C8265309FB6 /* Validators */ = {
-			isa = PBXGroup;
-			children = (
-				657801799CB167AC74159797B9EBB03B /* MeshulamParseValidator.swift */,
-			);
-			name = Validators;
-			path = MeshulamSDK/MeshulamSDK/Validators;
-			sourceTree = "<group>";
-		};
-		E8650C13E82180692763523FA2E4C3EA /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				573A682973DC96A1414C832DA227A818 /* Pods-MeshulamSDK_Example */,
-				FC713D61727992062F8878DA38FA5477 /* Pods-MeshulamSDK_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F075A99D57954A573741AC87E4680CBC /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0B3618376FE6CD8E7015B17C67E0E1CE /* MeshulamSDK */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		F2EA0975B75BF2E0DBB03229035A2690 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				80FC2449B877CF3EA17B84FD7B624574 /* MeshulamSDK */,
-				7D2253964FB21DFCBBFC9BE8E8B45960 /* Pods-MeshulamSDK_Example */,
-				3C4707B92782BA31D4EDB4EB2EBB55EF /* Pods-MeshulamSDK_Tests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FC713D61727992062F8878DA38FA5477 /* Pods-MeshulamSDK_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C69DFE77F09E4B45FBA2EEB21BFAD4FF /* Pods-MeshulamSDK_Tests.modulemap */,
-				82E0680C129F05B90E07FE802485CDB3 /* Pods-MeshulamSDK_Tests-acknowledgements.markdown */,
-				919FB3BDC1EC963C8ED3F9085D4CFDBE /* Pods-MeshulamSDK_Tests-acknowledgements.plist */,
-				E18E2BF9A796B4CD619F7E2DD2463D75 /* Pods-MeshulamSDK_Tests-dummy.m */,
-				654A33F6237F3DF4D23D96F66E59B6C4 /* Pods-MeshulamSDK_Tests-Info.plist */,
-				D482297679AF614D1FD03D6C29902432 /* Pods-MeshulamSDK_Tests-umbrella.h */,
-				38D96F79A3F6A0C3E89B73BD7B264DB6 /* Pods-MeshulamSDK_Tests.debug.xcconfig */,
-				4C70DE933FBC23BD91760C41D86B6BFE /* Pods-MeshulamSDK_Tests.release.xcconfig */,
-			);
-			name = "Pods-MeshulamSDK_Tests";
-			path = "Target Support Files/Pods-MeshulamSDK_Tests";
-			sourceTree = "<group>";
-		};
-		FE9191F9AEB532BC28E0F0021F5EDCFC /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				B0FB7497542A1F84DE4594EB6EC4D820 /* MeshulamDelegate.swift */,
-				3E7F55E396E654AED04C484E790B0838 /* MeshulamRequestFinishedProtocol.swift */,
-				3B8BC9DDC2E364E7D1494827DA8B1850 /* PopupViewControllerDelegate.swift */,
-			);
-			name = Protocols;
-			path = MeshulamSDK/MeshulamSDK/Protocols;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		08338C7168E0A64657AEF9893E8C2F65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BD6FF7D5F6BC612F437F5D2B5DEA01 /* Pods-MeshulamSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58A81D3BE109E0745E1389A3DB71CFB2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,57 +163,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DF9A29685CA04D920AFAB09DDD186B0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29DB2DBB168F51A2AA5445DDB51ACBB9 /* Pods-MeshulamSDK_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6FE16C04AAC4017CE59CFFD1CC6D194B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9092FCDB74C1C087BD88CB550EE5E5C2 /* MeshulamSDK.h in Headers */,
-				5129CC5A9DF4C6BA38A50EBDE721557E /* MeshulamSDK-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		11A29FD9D8AE06C53CB25F0B8AA20DBD /* MeshulamSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7A06BE01AD33F94DA42237498805C751 /* Build configuration list for PBXNativeTarget "MeshulamSDK" */;
-			buildPhases = (
-				6FE16C04AAC4017CE59CFFD1CC6D194B /* Headers */,
-				246E509FB00676ACCD9BBAAC4609A023 /* Sources */,
-				5F3C24BA3E1B4CA8623C07091C64012B /* Frameworks */,
-				484825DCBEB5C8248184B4644C7B433F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MeshulamSDK;
-			productName = MeshulamSDK;
-			productReference = 80FC2449B877CF3EA17B84FD7B624574 /* MeshulamSDK */;
-			productType = "com.apple.product-type.framework";
-		};
 		16FE490789A2B1758E422A712A15C863 /* Pods-MeshulamSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7648D00AD41AF9783364F6E58C341B62 /* Build configuration list for PBXNativeTarget "Pods-MeshulamSDK_Example" */;
+			buildConfigurationList = D3EB9BDDAAE77611E40F0A4E5AD92AA7 /* Build configuration list for PBXNativeTarget "Pods-MeshulamSDK_Example" */;
 			buildPhases = (
-				6DF9A29685CA04D920AFAB09DDD186B0 /* Headers */,
-				9516969658827D76598A12C25D546CEC /* Sources */,
-				D1886F21FFB8713ABBC122525CA6ADE2 /* Frameworks */,
-				14C33AA1DCF83DEA0539122322647ADE /* Resources */,
+				08338C7168E0A64657AEF9893E8C2F65 /* Headers */,
+				8B9171C87099271AF95E8511439EB075 /* Sources */,
+				134E09D39D7226816D633496A9830212 /* Frameworks */,
+				DE609A3C08FD6A58CF0861701009D856 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				085034C8E14FAA826421EE35F2F7953D /* PBXTargetDependency */,
 			);
 			name = "Pods-MeshulamSDK_Example";
 			productName = Pods_MeshulamSDK_Example;
@@ -544,7 +196,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				482DCD18A3C47EA9AB71417077658311 /* PBXTargetDependency */,
+				04CBBC43CBD645BF08250B1B10BD3BAE /* PBXTargetDependency */,
 			);
 			name = "Pods-MeshulamSDK_Tests";
 			productName = Pods_MeshulamSDK_Tests;
@@ -569,11 +221,10 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F2EA0975B75BF2E0DBB03229035A2690 /* Products */;
+			productRefGroup = 947C07C6427244C2E6CEE0746333D8F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11A29FD9D8AE06C53CB25F0B8AA20DBD /* MeshulamSDK */,
 				16FE490789A2B1758E422A712A15C863 /* Pods-MeshulamSDK_Example */,
 				D2267DC1064A9D250FBF433EC753BBDF /* Pods-MeshulamSDK_Tests */,
 			);
@@ -581,19 +232,10 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		14C33AA1DCF83DEA0539122322647ADE /* Resources */ = {
+		DE609A3C08FD6A58CF0861701009D856 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		484825DCBEB5C8248184B4644C7B433F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE7348D5E63727F1C4E79767754C91BF /* MeshulamMain.storyboard in Resources */,
-				D6BD35BFF43FFBB55DACB24BE4FA6B33 /* MeshulamPopup.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,61 +249,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		246E509FB00676ACCD9BBAAC4609A023 /* Sources */ = {
+		8B9171C87099271AF95E8511439EB075 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0897BB86F6435398883A5832C6CACA01 /* BaseInnerResponse.swift in Sources */,
-				47E44DFD569C2E931F1F45AAA6E52834 /* BitStatusViewController.swift in Sources */,
-				BCDDCBD1098AF17CF8EA4EB36778E201 /* CancelBitPaymentRequest.swift in Sources */,
-				6E761A6F609A417F42C86C7D709DB5D4 /* CancelBitPaymentResponse.swift in Sources */,
-				191F0BAFBAED670E63131A2135758477 /* CancelBitTransactionRequest.swift in Sources */,
-				B86AA5B13B4CCC430EFA49F7FC0E90F9 /* CancelBitTransactionResponse.swift in Sources */,
-				0D61D605BBF9B0AC72E69431323E2808 /* Constants.swift in Sources */,
-				BA0DA197DB92D4611CBB402BEFB6DBF1 /* CreatePaymentProcessRequest.swift in Sources */,
-				57BBD8C4459C91E9DFAA0C21906965BF /* CreatePaymentProcessResponse.swift in Sources */,
-				8487DC62477A06C97EAA2A69C5EDDB3D /* DoPaymentRequest.swift in Sources */,
-				CFC37D56ABECC3115382A5E686D5AFF3 /* DoPaymentResponse.swift in Sources */,
-				ABD0CC9D7A1A8C12F3FBD5BE9FECD748 /* ErrorResponse.swift in Sources */,
-				9E93B10CD66F2545BD614E452B26911C /* FontExtenstion.swift in Sources */,
-				89B3CBD0C09B6F53944B0FE1A9DE7A9D /* GetBitPaymentStatusRequest.swift in Sources */,
-				2A959A32473564A7E6A37D269A34A393 /* GetBitPaymentStatusResponse.swift in Sources */,
-				DC72032CC31F4CB5B9B9F8FE4D790D7C /* GetPaymentProcessInfoRequest.swift in Sources */,
-				5CA8AE1F5915DE007AECACAD2A26147C /* GetPaymentProcessInfoResponse.swift in Sources */,
-				19A28FC191B21031980217A0E68A2E0A /* InitSDKRequest.swift in Sources */,
-				433DB3F51F0741963C9921C34921092B /* InitSDKResponse.swift in Sources */,
-				1E693A168759FD739FEE9DA234D1D1A0 /* Meshulam.swift in Sources */,
-				F20783A522244CB1E7287C2203F76F67 /* MeshulamBaseRequest.swift in Sources */,
-				FE3B135BEE56EF60FFDBB7594197F26B /* MeshulamBaseServerResponse.swift in Sources */,
-				5A24D7F4FC51771C92E72B3D865E652A /* MeshulamDelegate.swift in Sources */,
-				06CA0D93FB643E3E70A1645022AEA402 /* MeshulamNetworkManager.swift in Sources */,
-				EDF6FC7BDC184EE10550B0C9E11222DE /* MeshulamParseValidator.swift in Sources */,
-				D10D03498F018F75641AD53E9F2D9D85 /* MeshulamPaymentManager.swift in Sources */,
-				5402C348409E88EDAF1FCB6532D385F5 /* MeshulamPopupManager.swift in Sources */,
-				E6942EBE8B5FD9F0DF60F33647F84B82 /* MeshulamPopupViewController.swift in Sources */,
-				3ED12DC22B84FEBD077351F6D539C0E6 /* MeshulamRequestFinishedProtocol.swift in Sources */,
-				5A59E739AE6727DB0A2375D6FB80964D /* MeshulamSDK-dummy.m in Sources */,
-				7B79B38544D0DC4109BC43599B6F2D63 /* MeshulamSessionManager.swift in Sources */,
-				7DE1F5B4E77390A4C006CF90A64446FA /* MeshulamStartupManager.swift in Sources */,
-				D9958D787BA8BE08B1EC8F0711D905C2 /* NSObjectExtenstion.swift in Sources */,
-				F436A1D069D8537248F2D42578630C73 /* PopupInfoObj.swift in Sources */,
-				94FA2172986443368F15A2BCF7DD4CCE /* PopupViewControllerDelegate.swift in Sources */,
-				FE1F073D88F14370E56846D16A9FDD0B /* SetBitPaymentRequest.swift in Sources */,
-				914A11D11F1DDBFD5BD5A59F2F0AFFD8 /* SetBitPaymentResponse.swift in Sources */,
-				1E8CB575FBA8DAF0E0DE8C67B0FFD705 /* SettleSuspendedTransactionRequest.swift in Sources */,
-				35AE832B5E33F9261F3B9264722326B3 /* SettleSuspendedTransactionResponse.swift in Sources */,
-				C12A1791B8A6A05A061279C404740715 /* StringExtenstion.swift in Sources */,
-				A462E6F215E69DE3308A338BC4680B2B /* UIApplicationExtenstion.swift in Sources */,
-				E022663E559D98AAEB5D8457FDD1419F /* UIBottonExtenstion.swift in Sources */,
-				A30CB18C38969AC87206E2E74BC81BF6 /* UIViewExtenstion.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9516969658827D76598A12C25D546CEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE20B2ED58A798287AF0A5F3405F8095 /* Pods-MeshulamSDK_Example-dummy.m in Sources */,
+				8F96ACA6496C6C8624C20E0C1477F15A /* Pods-MeshulamSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,58 +268,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		085034C8E14FAA826421EE35F2F7953D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MeshulamSDK;
-			target = 11A29FD9D8AE06C53CB25F0B8AA20DBD /* MeshulamSDK */;
-			targetProxy = 96ED5E000B8C06A4D19E1B30B5CAB3EC /* PBXContainerItemProxy */;
-		};
-		482DCD18A3C47EA9AB71417077658311 /* PBXTargetDependency */ = {
+		04CBBC43CBD645BF08250B1B10BD3BAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MeshulamSDK_Example";
 			target = 16FE490789A2B1758E422A712A15C863 /* Pods-MeshulamSDK_Example */;
-			targetProxy = C668EDA49D39604E1B40E3492E0AD803 /* PBXContainerItemProxy */;
+			targetProxy = 2E0F070B3B9F1FEEE9099BF79BE40443 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		19D90CB23FCC1ED9F4FE8323133CCC79 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF40F6A151CC3705DBA5871466B95014 /* Pods-MeshulamSDK_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		3D167F685FE8EE281D03413047B33183 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C70DE933FBC23BD91760C41D86B6BFE /* Pods-MeshulamSDK_Tests.release.xcconfig */;
+			baseConfigurationReference = E15ED8F314CBA155AE630606CF96E405 /* Pods-MeshulamSDK_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -760,9 +312,9 @@
 			};
 			name = Release;
 		};
-		67AF41341D0B862E4ADFB54DE4930BBB /* Release */ = {
+		46E1038F99DC7BA7F9B36ADF61BCE572 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C8E788A1DD8269D801BA7A8949FC933 /* Pods-MeshulamSDK_Example.release.xcconfig */;
+			baseConfigurationReference = 6E1AEA08B0C8089AC720867A3B1A4AD1 /* Pods-MeshulamSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -788,40 +340,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6AC4206B7DFF124BE629B25D0CE8B88F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DB1D0E89C62C846D094D7E437FD9AA3 /* MeshulamSDK.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MeshulamSDK/MeshulamSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK.modulemap";
-				PRODUCT_MODULE_NAME = MeshulamSDK;
-				PRODUCT_NAME = MeshulamSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -892,7 +410,7 @@
 		};
 		91612D6E9A9394C015A4300F7409D6D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38D96F79A3F6A0C3E89B73BD7B264DB6 /* Pods-MeshulamSDK_Tests.debug.xcconfig */;
+			baseConfigurationReference = 04A63B8948121C0316AA208574F92B12 /* Pods-MeshulamSDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -923,6 +441,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		98FF3DDEC8DCB2DD0A93ABAB992FDFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95F360EEC7953568F51C1A5CD0221558 /* Pods-MeshulamSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -990,40 +543,6 @@
 			};
 			name = Debug;
 		};
-		EFE5AEE1DE91720FEEAF78425EDF1187 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A5B48B2B8F42F298BB4547F96CAF61F /* MeshulamSDK.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MeshulamSDK/MeshulamSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/MeshulamSDK/MeshulamSDK.modulemap";
-				PRODUCT_MODULE_NAME = MeshulamSDK;
-				PRODUCT_NAME = MeshulamSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1036,20 +555,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7648D00AD41AF9783364F6E58C341B62 /* Build configuration list for PBXNativeTarget "Pods-MeshulamSDK_Example" */ = {
+		D3EB9BDDAAE77611E40F0A4E5AD92AA7 /* Build configuration list for PBXNativeTarget "Pods-MeshulamSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19D90CB23FCC1ED9F4FE8323133CCC79 /* Debug */,
-				67AF41341D0B862E4ADFB54DE4930BBB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7A06BE01AD33F94DA42237498805C751 /* Build configuration list for PBXNativeTarget "MeshulamSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6AC4206B7DFF124BE629B25D0CE8B88F /* Debug */,
-				EFE5AEE1DE91720FEEAF78425EDF1187 /* Release */,
+				46E1038F99DC7BA7F9B36ADF61BCE572 /* Debug */,
+				98FF3DDEC8DCB2DD0A93ABAB992FDFA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

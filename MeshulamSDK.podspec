@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name = "MeshulamSDK"
-    s.version = "0.3.5"
+    s.version = "0.3.6"
     s.summary = 'A short description of MeshulamSDK.'
     s.description = <<-DESC
     TODO: Add long description of the pod here.
@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
     s.license = { :type => 'MIT', :file => 'LICENSE' }
     s.author = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
     s.platform = :ios, '11.0'
-    # s.vendored_frameworks = 'MeshulamSDK.framework'
+    s.vendored_frameworks = 'MeshulamSDK.framework'
     s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
     s.ios.deployment_target = '11.0'
     s.static_framework = true
     # s.framework = 'MeshulamSDK'
     # s.requires_arc = true
     s.swift_version = '4.0'
-    s.source_files = "MeshulamSDK/**/*.{h,m,swift}"
-    s.resources = "MeshulamSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,gif}"
+    # s.source_files = "MeshulamSDK/**/*.{h,m,swift}"
+    # s.resources = "MeshulamSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,gif}"
 
     # pods
     s.dependency 'Alamofire'

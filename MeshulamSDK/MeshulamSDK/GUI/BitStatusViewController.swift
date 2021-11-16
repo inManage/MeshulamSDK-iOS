@@ -135,10 +135,10 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     }
 }
 
-
 extension UIImageView {
     static func fromGif(frame: CGRect, resourceName: String) -> UIImageView {
-        guard let path = Bundle.main.path(forResource: resourceName, ofType: "gif") else {
+        let frameworkBundle = Bundle(identifier: "com.inmanage.MeshulamSDK")
+        guard let path = frameworkBundle!.path(forResource: resourceName, ofType: "gif") else {
             print("Gif does not exist at that path")
             return UIImageView()
         }
