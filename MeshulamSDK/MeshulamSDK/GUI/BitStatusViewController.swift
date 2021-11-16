@@ -6,17 +6,16 @@
 //
 
 import UIKit
-//import Lottie
 @_implementationOnly import Lottie
 
 class BitStatusViewController: UIViewController {
     
-    @IBOutlet weak var animateView: UIView!
+    @IBOutlet weak var animateView: LottieView!
     @IBOutlet weak var subTitleLable: UILabel!
     @IBOutlet weak var initialBitView: UIView!
     @IBOutlet weak var titleLable: UILabel!
     
-//    private var animationView: AnimationView?
+    private var animationView: AnimationView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +42,7 @@ class BitStatusViewController: UIViewController {
     }
     
     @objc func willEnterForeground() {
-//        animationView!.play()
+        animationView!.play()
     }
     
     private func removeObservers() {
@@ -51,10 +50,17 @@ class BitStatusViewController: UIViewController {
     }
     
     private func configureAnimateView() {
-        let imageview = UIImageView.fromGif(frame: CGRect(x: 0, y: 0, width: self.animateView.frame.size.width - 40.0, height: self.animateView.frame.size.height + 20.0), resourceName: "MeshulamLoader")
-        animateView.addSubview(imageview)
-        imageview.startAnimating()
-        
+        let frameworkBundle = Bundle(identifier: "com.inmanage.MeshulamSDK")
+        let bundle = frameworkBundle?.path(forResource: "loader", ofType: "json")
+        if let b = bundle {
+            animationView = .init(filePath: b)
+        }
+        animationView!.frame = animateView.bounds
+        animationView!.contentMode = .scaleAspectFit
+        animationView!.loopMode = .loop
+        animationView!.animationSpeed = 0.9
+        animateView.addSubview(animationView!)
+        animationView!.play()
     }
     
     private func destroySDK() {
@@ -134,28 +140,5 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     
     private func handlePayTap() {
         MeshulamPaymentManager.shared.callDoPayment()
-    }
-}
-
-extension UIImageView {
-    static func fromGif(frame: CGRect, resourceName: String) -> UIImageView {
-        let frameworkBundle = Bundle(identifier: "com.inmanage.MeshulamSDK")
-        guard let path = frameworkBundle!.path(forResource: resourceName, ofType: "gif") else {
-            print("Gif does not exist at that path")
-            return UIImageView()
-        }
-        let url = URL(fileURLWithPath: path)
-        guard let gifData = try? Data(contentsOf: url),
-              let source =  CGImageSourceCreateWithData(gifData as CFData, nil) else { return UIImageView() }
-        var images = [UIImage]()
-        let imageCount = CGImageSourceGetCount(source)
-        for i in 0 ..< imageCount {
-            if let image = CGImageSourceCreateImageAtIndex(source, i, nil) {
-                images.append(UIImage(cgImage: image))
-            }
-        }
-        let gifImageView = UIImageView(frame: frame)
-        gifImageView.animationImages = images
-        return gifImageView
     }
 }

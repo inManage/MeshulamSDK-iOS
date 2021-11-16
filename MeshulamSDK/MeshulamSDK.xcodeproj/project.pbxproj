@@ -36,6 +36,7 @@
 		C7759E0E2742934600A29BC2 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7759E082742934600A29BC2 /* x.png */; };
 		C7759E0F2742934600A29BC2 /* bitLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7759E092742934600A29BC2 /* bitLogo.png */; };
 		C7C484352743DFC700F5BB7F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7C484342743DFC700F5BB7F /* Lottie */; };
+		C7C484382743E59900F5BB7F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C7C484372743E59900F5BB7F /* Alamofire */; };
 		C7C4A18926C2D65900568915 /* FontExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4A18826C2D65900568915 /* FontExtenstion.swift */; };
 		C7F36658268DA11D0018D734 /* MeshulamSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F3664A268DA11D0018D734 /* MeshulamSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F36689268DA1590018D734 /* SettleSuspendedTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F36664268DA1580018D734 /* SettleSuspendedTransactionRequest.swift */; };
@@ -154,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C484352743DFC700F5BB7F /* Lottie in Frameworks */,
+				C7C484382743E59900F5BB7F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +365,7 @@
 			name = MeshulamSDK;
 			packageProductDependencies = (
 				C7C484342743DFC700F5BB7F /* Lottie */,
+				C7C484372743E59900F5BB7F /* Alamofire */,
 			);
 			productName = MeshulamSDK;
 			productReference = C7F36647268DA11D0018D734 /* MeshulamSDK.framework */;
@@ -394,6 +397,7 @@
 			mainGroup = C7F3663D268DA11D0018D734;
 			packageReferences = (
 				C7C484332743DFC700F5BB7F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C7C484362743E59900F5BB7F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = C7F36648268DA11D0018D734 /* Products */;
 			projectDirPath = "";
@@ -718,6 +722,14 @@
 				minimumVersion = 3.2.3;
 			};
 		};
+		C7C484362743E59900F5BB7F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -725,6 +737,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C7C484332743DFC700F5BB7F /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		C7C484372743E59900F5BB7F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7C484362743E59900F5BB7F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

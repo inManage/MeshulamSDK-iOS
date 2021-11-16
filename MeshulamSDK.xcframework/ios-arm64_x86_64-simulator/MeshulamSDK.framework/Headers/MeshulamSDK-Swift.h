@@ -324,7 +324,6 @@ SWIFT_CLASS("_TtC11MeshulamSDK12Transactions")
 
 
 
-
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -651,7 +650,6 @@ SWIFT_CLASS("_TtC11MeshulamSDK12Transactions")
 @interface Transactions : BaseInnerResponse
 - (BaseInnerResponse * _Nonnull)buildFromJSONDictWithJSONDict:(NSDictionary<NSString *, id> * _Nonnull)JSONDict SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 

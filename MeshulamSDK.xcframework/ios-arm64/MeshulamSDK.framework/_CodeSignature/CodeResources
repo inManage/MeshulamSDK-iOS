@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MeshulamSDK-Swift.h</key>
 		<data>
-		hejqFMWgWwqpcjCNEWVPyPEgk8k=
+		0Qhk7EUboXXyxSqyLtakvuhdk8A=
 		</data>
 		<key>Headers/MeshulamSDK.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>MeshulamMain.storyboardc/BitStatusViewController.nib</key>
 		<data>
-		cQ5W4HldbBxpE9E/nqrCJSxmFHY=
+		4TmGQsvOClIu67iBYJeNhAhQvk0=
 		</data>
 		<key>MeshulamMain.storyboardc/Info.plist</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>MeshulamMain.storyboardc/vRf-mA-fx9-view-Qn2-dw-2HA.nib</key>
 		<data>
-		EXCy2P38uGtsMEIRMts/FVQnQoU=
+		0Xs8dqv6lgGbtuQ56fdGpC1fH3I=
 		</data>
 		<key>MeshulamPopup.storyboardc/Info.plist</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>MeshulamPopup.storyboardc/MeshulamPopupViewController.nib</key>
 		<data>
-		lIDgiwcyp5UPBNLR2D4eOgv4hrg=
+		ulgpCPhaN5kAEKiGRdISPVjdBDg=
 		</data>
 		<key>MeshulamPopup.storyboardc/N0f-o5-aju-view-BFh-wS-jCE.nib</key>
 		<data>
-		xb7gpQMxF+dc2oGV9dGsRbdwGOs=
+		8ohT/Zr9TM+diryhb5ZXloJLed4=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		XMG32euRU3eLJZ/VmHoHms0qesM=
+		FK1bi0bovYzwgSUIslpiPP8P2ag=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		XMG32euRU3eLJZ/VmHoHms0qesM=
+		FK1bi0bovYzwgSUIslpiPP8P2ag=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -135,7 +135,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SZcQxIVC31IhQwBt8iecj25P+fbqGJ1QDObhbP3NXDs=
+			NMyz6WOVx7GhSoVJ2rF75+XCrI5Y9/5oCW/sRbK9Gkg=
 			</data>
 		</dict>
 		<key>Headers/MeshulamSDK.h</key>
@@ -205,7 +205,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bfBT8UgHc3KicxHIZ1iC2pb7yfA9nJLqhSTnGthkROQ=
+			rL8CxcMA2PB3wnuSa/SbnO9TaprqQ16mHVODk0/KwIg=
 			</data>
 		</dict>
 		<key>MeshulamMain.storyboardc/Info.plist</key>
@@ -219,7 +219,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0tfU00vMOm0GW/UBYw6vbQdvS2HJgTmTpbeMjHtZUKQ=
+			/GQ8O7fvM8Hdk0n3tsjm6WZQSD4Ch0aI9G7ikLt1AUQ=
 			</data>
 		</dict>
 		<key>MeshulamPopup.storyboardc/Info.plist</key>
@@ -233,14 +233,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ts2bn8eIw2W3vC4IP3cM8JIQ1drkB4cdMUItyQpXcfA=
+			YV6dvT/93e/tejw5QYy95VozCwF9rv1bM2ACNWKuzaE=
 			</data>
 		</dict>
 		<key>MeshulamPopup.storyboardc/N0f-o5-aju-view-BFh-wS-jCE.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LF4Y2WoyL4gFv0QCzA+iJoQmdLlCgL+pY6HJbAsMSrQ=
+			JqfB6mUUAmkI1OGfkFFRLYDtL7ds2ADGNAKP31nKsHI=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EUirnI5TFTS5TdDM8oQlO+89pMuWM9ILMuMKZ0nt81U=
+			s3q8wMrO29uZ0qT3FsJ1p1xSJZ24q2lLEM8vDmVjJkY=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftdoc</key>
@@ -282,7 +282,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EUirnI5TFTS5TdDM8oQlO+89pMuWM9ILMuMKZ0nt81U=
+			s3q8wMrO29uZ0qT3FsJ1p1xSJZ24q2lLEM8vDmVjJkY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
