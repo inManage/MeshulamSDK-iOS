@@ -162,13 +162,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1239C3395320681D05B3A934 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		8D37700B2691E3BB00DFD8F3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				C7F36649268DA11D0018D734 /* MeshulamSDK */,
-				1239C3395320681D05B3A934 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
