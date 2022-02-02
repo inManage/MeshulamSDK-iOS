@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     }
     
     private func configureMeshulamSDK() {
-        Meshulam.shared().createPaymentProcess(pageCode: "a1a40d5ce46f",
-                                    apiKey: "cbf3b862e094",
-                                    userId: "41deb6f1347ee8b2",
+        Meshulam.shared().createPaymentProcess(pageCode: "535dd4248592",
+                                    apiKey: "566ac39a90e8",
+                                    userId: "b9e895139851c3c5",
                                     fullName: "Amit Azulay",
                                     phoneNumber: "0542533691",
                                     sum: "1",
