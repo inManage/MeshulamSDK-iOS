@@ -24,6 +24,8 @@ Pod::Spec.new do |s|
     s.static_framework = true
     s.swift_version = '4.0'
 
+     
+
     # pods
     s.dependency 'Alamofire'
     s.dependency 'lottie-ios'

@@ -86,10 +86,11 @@ import UIKit
         MeshulamPaymentManager.shared.callGetPaymentProcessInfoRequest()
     }
     
-    @objc public func cancelBitTransaction(processId: String, processToken: String, delegate: MeshulamDelegate) {
+    @objc public func cancelBitTransaction(processId: String, processToken: String, pageCode: String, delegate: MeshulamDelegate) {
         Meshulam.shared().processId = processId
         Meshulam.shared().processToken = processToken
         Meshulam.shared().delegate = delegate
+        Meshulam.shared().pageCode = pageCode
         MeshulamPaymentManager.shared.callCancelBitTransactionRequest()
     }
 

@@ -271,7 +271,7 @@ SWIFT_CLASS("_TtC11MeshulamSDK8Meshulam")
 - (void)createPaymentProcessWithPageCode:(NSString * _Nonnull)pageCode apiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId fullName:(NSString * _Nonnull)fullName phoneNumber:(NSString * _Nonnull)phoneNumber sum:(NSString * _Nonnull)sum email:(NSString * _Nullable)email description:(NSString * _Nullable)description delegate:(id <MeshulamDelegate> _Nonnull)delegate;
 - (void)settleSuspendedTransactionWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId sum:(NSString * _Nonnull)sum transactionId:(NSString * _Nonnull)transactionId delegate:(id <MeshulamDelegate> _Nonnull)delegate;
 - (void)getPaymentProcessInfoWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken delegate:(id <MeshulamDelegate> _Nonnull)delegate;
-- (void)cancelBitTransactionWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken delegate:(id <MeshulamDelegate> _Nonnull)delegate;
+- (void)cancelBitTransactionWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken pageCode:(NSString * _Nonnull)pageCode delegate:(id <MeshulamDelegate> _Nonnull)delegate;
 - (void)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options;
 @end
 
@@ -602,7 +602,7 @@ SWIFT_CLASS("_TtC11MeshulamSDK8Meshulam")
 - (void)createPaymentProcessWithPageCode:(NSString * _Nonnull)pageCode apiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId fullName:(NSString * _Nonnull)fullName phoneNumber:(NSString * _Nonnull)phoneNumber sum:(NSString * _Nonnull)sum email:(NSString * _Nullable)email description:(NSString * _Nullable)description delegate:(id <MeshulamDelegate> _Nonnull)delegate;
 - (void)settleSuspendedTransactionWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId sum:(NSString * _Nonnull)sum transactionId:(NSString * _Nonnull)transactionId delegate:(id <MeshulamDelegate> _Nonnull)delegate;
 - (void)getPaymentProcessInfoWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken delegate:(id <MeshulamDelegate> _Nonnull)delegate;
-- (void)cancelBitTransactionWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken delegate:(id <MeshulamDelegate> _Nonnull)delegate;
+- (void)cancelBitTransactionWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken pageCode:(NSString * _Nonnull)pageCode delegate:(id <MeshulamDelegate> _Nonnull)delegate;
 - (void)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options;
 @end
 

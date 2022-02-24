@@ -52,6 +52,7 @@ class ViewController: UIViewController {
         startAnimate()
         Meshulam.shared().cancelBitTransaction(processId: processId,
                                                processToken: processToken,
+                                               pageCode: "535dd4248592",
                                                delegate: self)
     }
 

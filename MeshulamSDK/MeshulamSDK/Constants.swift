@@ -96,14 +96,14 @@ let logHelper = "\n\t\t"
 
 public class Constants {
     #if DEBUG
-    static let debugMode = false
+    static let debugMode = true
     #else
-    static let debugMode = false
+    static let debugMode = true
     #endif
 }
 
 func LogMsg(_ logMessage: Any) {
     if Constants.debugMode {
-        print("\(logMessage)")
+        print("MeshulamSDK: \(logMessage)")
     } else { return }
 }

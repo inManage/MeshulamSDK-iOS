@@ -77,7 +77,7 @@ public enum PaymentStatusOptions : Swift.Int {
   @objc public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate)
   @objc public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, sum: Swift.String, transactionId: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
   @objc public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
-  @objc public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
+  @objc public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String, pageCode: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
   @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:])
   @objc deinit
 }

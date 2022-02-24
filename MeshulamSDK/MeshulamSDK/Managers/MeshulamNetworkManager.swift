@@ -18,13 +18,15 @@ public class MeshulamNetworkManager: NSObject {
     public static let shared = MeshulamNetworkManager()
     //public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/" plus
     //public private(set) var baseURL: String = "https://dev.meshulam.co.il/" dev
-    public private(set) var baseURL: String = "https://meshulam.co.il/" //live
+    //public private(set) var baseURL: String = "https://meshulam.co.il/" //live - todo delete
+    
+    public private(set) var baseURL: String = "https://secure.meshulam.co.il/" //secure-live
+
     public private(set) var applicationToken: String = ""
     public private(set) var maxTime : Int = 0
     public private(set) var startDelay : Int = 0
     public private(set) var intervalLength: Int = 0
     private var timeAddingTimeStemp : TimeInterval!
-    public var timer = Timer()
     private var callSetBitPaymentSend = false
     
     weak var delegate: NetworkManagerDelegate?
@@ -122,45 +124,41 @@ public class MeshulamNetworkManager: NSObject {
     
     private func startModeling(_ initSDKresonse: InitSDKResponse) {
         timeAddingTimeStemp = Date().addingTimeInterval(TimeInterval((initSDKresonse.maxTime))).timeIntervalSince1970
-        timer = Timer.scheduledTimer(timeInterval: TimeInterval(initSDKresonse.intervalLength), target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: TimeInterval(intervalLength), target: self, selector: #selector(self.update), userInfo: nil, repeats: false)
     }
     
     @objc public func update() {
+                
         if Date().timeIntervalSince1970 < timeAddingTimeStemp! {
-            if !callSetBitPaymentSend {
-                MeshulamPaymentManager.shared.callGetBitPaymentStatusRequest(requestFinishDelegate: self)
-            }
+            MeshulamPaymentManager.shared.callGetBitPaymentStatusRequest(requestFinishDelegate: self)
         } else {
             stopModeling()
         }
     }
     
     private func stopModeling() {
-        timer.invalidate()
         Meshulam.shared().delegate?.onFailure("timeout error")
-        delegate?.destorySDK()
     }
 }
 
 extension MeshulamNetworkManager: MeshulamRequestFinishedProtocol {
     public func requestSucceeded(request: MeshulamBaseRequest, response: BaseInnerResponse) {
+
         let requestName = request.requestName
         switch requestName {
         case ServerRequests.getBitPaymentStatus:
+
             if let res = response as? GetBitPaymentStatusResponse {
-                
+
                 switch res.paymentStatus ?? .panding {
                 case PaymentStatusOptions.success:
-                    timer.invalidate()
-                    if !callSetBitPaymentSend {
-                        MeshulamPaymentManager.shared.callSetBitPaymentRequest()
-                        callSetBitPaymentSend = true
-                    }
+                    MeshulamPaymentManager.shared.callSetBitPaymentRequest()
                     break
                 case PaymentStatusOptions.failed:
                     stopModeling()
                     break
                 case PaymentStatusOptions.panding:
+                    Timer.scheduledTimer(timeInterval: TimeInterval(intervalLength), target: self, selector: #selector(self.update), userInfo: nil, repeats: false)
                     break
                 }
             }

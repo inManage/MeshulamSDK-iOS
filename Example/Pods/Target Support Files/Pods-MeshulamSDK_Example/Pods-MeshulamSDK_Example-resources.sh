@@ -97,10 +97,14 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamMain.storyboardc"
+  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamPopup.storyboardc"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/bitBackground.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/bitLogo.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/button2.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/group7.png"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/x.png"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/xCopy.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Black.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Bold.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-ExtraBold.ttf"
@@ -108,17 +112,17 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf"
-  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/MeshulamLoader.gif"
-  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamMain.storyboardc"
-  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamPopup.storyboardc"
-  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/x.png"
-  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/xCopy.png"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/loader.json"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamMain.storyboardc"
+  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamPopup.storyboardc"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/bitBackground.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/bitLogo.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/button2.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/group7.png"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/x.png"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/xCopy.png"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Black.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Bold.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-ExtraBold.ttf"
@@ -126,11 +130,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Medium.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Regular.ttf"
   install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/Heebo-Thin.ttf"
-  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/MeshulamLoader.gif"
-  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamMain.storyboardc"
-  install_resource "${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamPopup.storyboardc"
-  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/x.png"
-  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/xCopy.png"
+  install_resource "${PODS_ROOT}/../../MeshulamSDK/MeshulamSDK/Resources/loader.json"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
