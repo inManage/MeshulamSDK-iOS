@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D06C28227CF85DF006F9D8F /* MeshulamTranslationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D06C28127CF85DF006F9D8F /* MeshulamTranslationManager.swift */; };
+		8D06C28427CF883E006F9D8F /* MeshulamTranslations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D06C28327CF883E006F9D8F /* MeshulamTranslations.swift */; };
 		8D14BC1326C3DD7C001A20A1 /* Heebo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D6297AB2691E7280034DA47 /* Heebo-Regular.ttf */; };
 		8D3770172691E3F800DFD8F3 /* MeshulamMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3770142691E3F800DFD8F3 /* MeshulamMain.storyboard */; };
 		8D6297AE26920D910034DA47 /* UIApplicationExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6297AD26920D910034DA47 /* UIApplicationExtenstion.swift */; };
@@ -86,6 +88,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8D06C28127CF85DF006F9D8F /* MeshulamTranslationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshulamTranslationManager.swift; sourceTree = "<group>"; };
+		8D06C28327CF883E006F9D8F /* MeshulamTranslations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshulamTranslations.swift; sourceTree = "<group>"; };
 		8D3770142691E3F800DFD8F3 /* MeshulamMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeshulamMain.storyboard; sourceTree = "<group>"; };
 		8D6297A62691E7280034DA47 /* Heebo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-ExtraBold.ttf"; sourceTree = "<group>"; };
 		8D6297A72691E7280034DA47 /* Heebo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Bold.ttf"; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F3664B268DA11D0018D734 /* Info.plist */,
+				8D06C28327CF883E006F9D8F /* MeshulamTranslations.swift */,
 				C7F36686268DA1580018D734 /* Constants.swift */,
 				C7F3664A268DA11D0018D734 /* MeshulamSDK.h */,
 				C7F36648268DA11D0018D734 /* Products */,
@@ -312,6 +317,7 @@
 				C7F36681268DA1580018D734 /* MeshulamSessionManager.swift */,
 				C7F36682268DA1580018D734 /* MeshulamStartupManager.swift */,
 				8D6297DB2692E2A60034DA47 /* MeshulamPopupManager.swift */,
+				8D06C28127CF85DF006F9D8F /* MeshulamTranslationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -445,6 +451,7 @@
 				C7F36690268DA1590018D734 /* CreatePaymentProcessRequest.swift in Sources */,
 				C7F366A7268DA1590018D734 /* Meshulam.swift in Sources */,
 				C7F3668B268DA1590018D734 /* GetBitPaymentStatusRequest.swift in Sources */,
+				8D06C28227CF85DF006F9D8F /* MeshulamTranslationManager.swift in Sources */,
 				8D91280826B296B10065A79C /* StringExtenstion.swift in Sources */,
 				8D6297DC2692E2A60034DA47 /* MeshulamPopupManager.swift in Sources */,
 				C7F3668A268DA1590018D734 /* MeshulamBaseRequest.swift in Sources */,
@@ -469,6 +476,7 @@
 				8D6297AE26920D910034DA47 /* UIApplicationExtenstion.swift in Sources */,
 				C7F366A1268DA1590018D734 /* MeshulamNetworkManager.swift in Sources */,
 				C7F366A4268DA1590018D734 /* MeshulamRequestFinishedProtocol.swift in Sources */,
+				8D06C28427CF883E006F9D8F /* MeshulamTranslations.swift in Sources */,
 				8D6297E02692E5FE0034DA47 /* MeshulamPopupViewController.swift in Sources */,
 				C7F36691268DA1590018D734 /* CancelBitPaymentRequest.swift in Sources */,
 				C7F3668F268DA1590018D734 /* SetBitPaymentRequest.swift in Sources */,

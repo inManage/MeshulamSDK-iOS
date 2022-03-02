@@ -20,6 +20,7 @@ class BitStatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureAnimateView()
+        setupTranslations()
     }
 
     deinit {
@@ -29,6 +30,11 @@ class BitStatusViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setDelegate()
+    }
+    
+    private func setupTranslations() {
+        titleLable.text = Translation(MeshulamTranslations.Titles.key_sdk_activity_title, MeshulamTranslations.Titles.key_sdk_activity_title_def)
+        subTitleLable.text = Translation(MeshulamTranslations.Titles.key_sdk_activity_wait, MeshulamTranslations.Titles.key_sdk_activity_wait_def)
     }
     
     private func setDelegate() {
@@ -117,10 +123,10 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
     }
     
     private func presentCanclePaymentProccesPopup() {
-        MeshulamPopupManager.shared.pushPopup(strTitle: Titles.canclePaymentTitle,
+        MeshulamPopupManager.shared.pushPopup(strTitle: Translation(MeshulamTranslations.Titles.key_cancel_payment_title, MeshulamTranslations.Titles.key_cancel_payment_title_def),
                                            showImageInFirstBtn: true,
-                                           strFirstBtn: ButtonsTitle.bitBtn,
-                                           strSecondBtn: ButtonsTitle.cancleBtn) { callBackStatus in
+                                           strFirstBtn: Translation(MeshulamTranslations.Titles.key_retry_payment_blue_btn, MeshulamTranslations.Titles.key_retry_payment_blue_btn_def),
+                                           strSecondBtn: Translation(MeshulamTranslations.Titles.key_error_dialog_btn, MeshulamTranslations.Titles.key_error_dialog_btn_def)) { callBackStatus in
             switch callBackStatus {
             case .firstBtnTap: self.handlePayTap()
                 break

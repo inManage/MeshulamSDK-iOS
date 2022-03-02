@@ -16,9 +16,9 @@ protocol NetworkManagerDelegate: NSObject {
 public class MeshulamNetworkManager: NSObject {
 
     public static let shared = MeshulamNetworkManager()
-    //public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/" plus
-    //public private(set) var baseURL: String = "https://dev.meshulam.co.il/" dev
-    //public private(set) var baseURL: String = "https://meshulam.co.il/" //live - todo delete
+    //public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/" //plus
+    //public private(set) var baseURL: String = "https://dev.meshulam.co.il/" //dev
+    //public private(set) var baseURL: String = "https://meshulam.co.il/" //live
     
     public private(set) var baseURL: String = "https://secure.meshulam.co.il/" //secure-live
 
@@ -97,7 +97,8 @@ public class MeshulamNetworkManager: NSObject {
             delegate.requestFailed(request: request, response: serverResponse ?? nil)
         }
         if request.showErrorMsg {
-            MeshulamPopupManager.shared.pushPopup(strTitle: serverResponse?.failureMessage, strFirstBtn: ButtonsTitle.okBtn) {
+            MeshulamPopupManager.shared.pushPopup(strTitle: serverResponse?.failureMessage,
+                                                  strFirstBtn: Translation(MeshulamTranslations.Titles.key_ok_btn, MeshulamTranslations.Titles.key_ok_btn_def)) {
                 callBackStatus in
                 
                 switch callBackStatus {

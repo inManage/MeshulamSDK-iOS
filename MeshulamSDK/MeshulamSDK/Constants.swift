@@ -13,16 +13,6 @@ public struct Observers {
     static let willEnterForeground = Notification.Name("UIApplicationWillEnterForegroundNotification")
 }
 
-public struct Titles {
-    static let canclePaymentTitle = "האם אתה בטוח שברצונך לבטל את התשלום?"
-}
-
-public struct ButtonsTitle {
-    static let okBtn = "הבנתי, תודה"
-    static let bitBtn = "המשך עם"
-    static let cancleBtn = "ביטול"
-}
-
 public struct ServerRequests {
     static let request = "request"
     static let initSDK = "initSDK"
@@ -96,9 +86,9 @@ let logHelper = "\n\t\t"
 
 public class Constants {
     #if DEBUG
-    static let debugMode = true
+    static let debugMode = false
     #else
-    static let debugMode = true
+    static let debugMode = false
     #endif
 }
 

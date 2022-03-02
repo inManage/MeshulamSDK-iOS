@@ -16,8 +16,6 @@ public class InitSDKResponse: BaseInnerResponse {
     var startDelay : Int = 0
     var intervalLength: Int = 0
     
-    var translationArr = ""//TODO - pars translationArr
-    
     public override func buildFromJSONDict(JSONDict: Dict) -> BaseInnerResponse {
         super.buildFromJSONDict(JSONDict: JSONDict)
         hostURL = MeshulamParseValidator.getStringForKey(key: "hostUrl", JSONDict: JSONDict, defaultValue: "")
@@ -27,7 +25,8 @@ public class InitSDKResponse: BaseInnerResponse {
         maxTime =  MeshulamParseValidator.getIntForKey(key: "maxTime", JSONDict: JSONDict, defaultValue: 0)
         startDelay = MeshulamParseValidator.getIntForKey(key: "startDelay", JSONDict: JSONDict, defaultValue: 0)
         
-        translationArr = ""//TODO - pars translationArr
+        let translationArr: Dict  = MeshulamParseValidator.getDictionaryForKey(key: "translationArr", JSONDict: JSONDict, defaultValue: [:])
+        MeshulamTranslationManager.sharedInstance.dictTranslations = translationArr
         
         return self
     }

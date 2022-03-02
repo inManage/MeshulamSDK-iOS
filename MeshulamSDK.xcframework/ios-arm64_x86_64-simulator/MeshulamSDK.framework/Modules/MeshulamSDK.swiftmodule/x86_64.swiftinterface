@@ -39,10 +39,6 @@ extension MeshulamPaymentManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
 public typealias Dict = [Swift.String : Any]
 public struct Observers {
 }
-public struct Titles {
-}
-public struct ButtonsTitle {
-}
 public struct ServerRequests {
 }
 public struct ServerParamNames {
@@ -79,6 +75,9 @@ public enum PaymentStatusOptions : Swift.Int {
   @objc public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
   @objc public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String, pageCode: Swift.String, delegate: MeshulamSDK.MeshulamDelegate)
   @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:])
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MeshulamTranslationManager {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class MeshulamPopupManager : ObjectiveC.NSObject {
@@ -165,7 +164,6 @@ extension UIFont {
   public var intervalLength: Swift.Int {
     get
   }
-  public var timer: Foundation.Timer
   public func sendRequest(_ request: MeshulamSDK.MeshulamBaseRequest)
   public func fillWithInitSDKResponse(_ response: MeshulamSDK.InitSDKResponse)
   @objc public func update()
