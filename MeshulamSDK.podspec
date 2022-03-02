@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name = "MeshulamSDK"
-    s.version = "0.4.1"
+    s.version = "0.4.2"
     s.summary = 'A short description of MeshulamSDK.'
     s.description = <<-DESC
     TODO: Add long description of the pod here.
@@ -23,8 +23,6 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '11.0'
     s.static_framework = true
     s.swift_version = '4.0'
-
-     
 
     # pods
     s.dependency 'Alamofire'
