@@ -19,7 +19,6 @@ public class MeshulamNetworkManager: NSObject {
     //public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/" //plus
     //public private(set) var baseURL: String = "https://dev.meshulam.co.il/" //dev
     //public private(set) var baseURL: String = "https://meshulam.co.il/" //live
-    
     public private(set) var baseURL: String = "https://secure.meshulam.co.il/" //secure-live
 
     public private(set) var applicationToken: String = ""
