@@ -100,6 +100,7 @@ extension BitStatusViewController: PaymentManagerToBitStatusVCDelegate {
 
     func cancelBitPayment() {
         Meshulam.shared().delegate?.onCancel()
+        navigationController?.popViewController(animated: true)
         dismiss(animated: true)
     }
     

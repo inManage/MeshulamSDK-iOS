@@ -128,8 +128,8 @@ public class MeshulamNetworkManager: NSObject {
     }
     
     @objc public func update() {
-                
-        if Date().timeIntervalSince1970 < timeAddingTimeStemp! {
+        let bitPaymentId = MeshulamPaymentManager.shared.createPaymentProcess?.bitPaymentId ?? ""
+        if Date().timeIntervalSince1970 < timeAddingTimeStemp! && !bitPaymentId.isEmpty {
             MeshulamPaymentManager.shared.callGetBitPaymentStatusRequest(requestFinishDelegate: self)
         } else {
             stopModeling()
