@@ -22,7 +22,7 @@ public class MeshulamPaymentManager {
     public static var shared = MeshulamPaymentManager()
     
     weak var delegate: PaymentManagerToBitStatusVCDelegate?
-    
+    private var resumeRequest: MustNeddedInitSDK?
     //if it's true getBitPatymentRequest not called, trigger is X button on BitStatusVIewController
     public var isTappedOnExitBtn = false
     private var response = false
@@ -90,6 +90,15 @@ public class MeshulamPaymentManager {
         MeshulamNetworkManager.shared.sendRequest(request)
     }
     
+    public func callInitSDK(requestFinishDelegate: MeshulamRequestFinishedProtocol? = nil, resumeRequest: MustNeddedInitSDK) {
+        isTappedOnExitBtn = false
+        self.resumeRequest = resumeRequest
+        let delegate   = requestFinishDelegate == nil ? self : requestFinishDelegate
+        let parameters = InitSDKRequest.createInitialDictParams()
+        let request    = InitSDKRequest().initWithDictParams(parameters, delegate)
+        MeshulamNetworkManager.shared.sendRequest(request)
+    }
+    
     private func handleBitAppStartProcces() {
         let url = createPaymentProcess?.url ?? ""
         if let url = URL(string: url) {
@@ -142,6 +151,25 @@ extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
             
         case ServerRequests.cancelBitTransaction:
             Meshulam.shared().delegate?.onCancel()
+            break
+            
+        case ServerRequests.initSDK:
+            
+            switch resumeRequest {
+            
+            case .cancelBitTransaction:
+                callCancelBitTransactionRequest()
+                break
+            case .settleSuspendedTransaction:
+                callSettleSuspendedTransactionRequest()
+                break
+            case .getPaymentProcessInfo:
+                callGetPaymentProcessInfoRequest()
+                break
+                
+            default: break
+                
+            }
             break
         
         default: break
@@ -202,5 +230,3 @@ extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
         }
     }
 }
-
-

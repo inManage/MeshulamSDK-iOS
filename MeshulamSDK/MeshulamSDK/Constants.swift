@@ -13,6 +13,12 @@ public struct Observers {
     static let willEnterForeground = Notification.Name("UIApplicationWillEnterForegroundNotification")
 }
 
+public enum MustNeddedInitSDK {
+    case cancelBitTransaction
+    case getPaymentProcessInfo
+    case settleSuspendedTransaction
+}
+
 public struct ServerRequests {
     static let request = "request"
     static let initSDK = "initSDK"
@@ -84,6 +90,7 @@ let defaultPath = "api/light/iphone/\(apiVersion)/"
 let logHelper = "\n\t\t"
 
 
+//print request + response to console
 public class Constants {
     #if DEBUG
     static let debugMode = false

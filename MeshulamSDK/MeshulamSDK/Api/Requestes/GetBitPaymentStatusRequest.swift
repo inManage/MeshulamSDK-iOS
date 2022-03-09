@@ -5,7 +5,7 @@
 //  Created by Inmanage LTD on 22/06/2021.
 //
 
-import Foundation
+import UIKit
 
 class GetBitPaymentStatusRequest: MeshulamBaseRequest {
     public override func createResponseFromJSONDict(JSONDict: Dict) -> MeshulamBaseServerResponse? {
@@ -19,6 +19,11 @@ class GetBitPaymentStatusRequest: MeshulamBaseRequest {
         let applicationToken = MeshulamNetworkManager.shared.applicationToken
         if !applicationToken.isEmpty {
             dictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
+        }
+        else {
+            if let vendor = UIDevice.current.identifierForVendor {
+                dictParams.updateValue(vendor.uuidString, forKey: ServerParamNames.udid)
+            }
         }
         
         let bitPaymentId = MeshulamPaymentManager.shared.createPaymentProcess?.bitPaymentId

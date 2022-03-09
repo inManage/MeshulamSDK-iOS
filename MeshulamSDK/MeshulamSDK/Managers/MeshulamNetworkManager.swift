@@ -16,10 +16,12 @@ protocol NetworkManagerDelegate: NSObject {
 public class MeshulamNetworkManager: NSObject {
 
     public static let shared = MeshulamNetworkManager()
-    //public private(set) var baseURL: String = "https://plusecure.meshulam.co.il/" //plus
-    //public private(set) var baseURL: String = "https://dev.meshulam.co.il/" //dev
-    //public private(set) var baseURL: String = "https://meshulam.co.il/" //live
-    public private(set) var baseURL: String = "https://secure.meshulam.co.il/" //secure-live
+   //https://plusecure.meshulam.co.il/" //plus
+   //"https://meshulam.co.il/" //live
+   //"https://secure.meshulam.co.il/" //secure-live
+   //"https://dev.meshulam.co.il/" //dev
+    
+    public private(set) var baseURL: String = Meshulam.shared().isDebugMode ? "https://dev.meshulam.co.il/" : "https://secure.meshulam.co.il/" 
 
     public private(set) var applicationToken: String = ""
     public private(set) var maxTime : Int = 0

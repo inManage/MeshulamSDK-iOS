@@ -255,12 +255,14 @@ SWIFT_CLASS("_TtC11MeshulamSDK15InitSDKResponse")
 @end
 
 @protocol MeshulamDelegate;
+@class NSNumber;
 @class UIApplication;
 @class NSURL;
 
 SWIFT_CLASS("_TtC11MeshulamSDK8Meshulam")
 @interface Meshulam : NSObject
 @property (nonatomic, weak) id <MeshulamDelegate> _Nullable delegate;
+@property (nonatomic) BOOL isDebugMode;
 /// Initialize <code>Meshulam</code> (as singleton)
 /// Returns the default singleton instance. You are not allowed to create your own instances of this class.
 + (Meshulam * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;

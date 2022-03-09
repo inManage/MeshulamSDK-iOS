@@ -5,7 +5,7 @@
 //  Created by Inmanage LTD on 23/06/2021.
 //
 
-import Foundation
+import UIKit
 
 class CancelBitPaymentRequest: MeshulamBaseRequest {
     public override func createResponseFromJSONDict(JSONDict: Dict) -> MeshulamBaseServerResponse? {
@@ -19,7 +19,7 @@ class CancelBitPaymentRequest: MeshulamBaseRequest {
         let applicationToken = MeshulamNetworkManager.shared.applicationToken
         if !applicationToken.isEmpty {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
-        }
+        } 
         
         let bitPaymentId = MeshulamPaymentManager.shared.createPaymentProcess?.bitPaymentId
         initialDictParams.updateValue(bitPaymentId ?? "", forKey: ServerParamNames.bitPaymentId)

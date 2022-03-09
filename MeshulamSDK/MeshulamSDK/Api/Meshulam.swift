@@ -12,6 +12,9 @@ import UIKit
     @objc open weak var delegate: MeshulamDelegate?
     private static var sharedInstance: Meshulam?
     
+    //change the base url only
+    @objc open var isDebugMode: Bool = false
+       
     /**
      Initialize `Meshulam` (as singleton)
      Returns the default singleton instance. You are not allowed to create your own instances of this class.
@@ -71,27 +74,48 @@ import UIKit
     }
 
     @objc public func settleSuspendedTransaction(apiKey: String, userId: String, sum: String, transactionId: String, delegate: MeshulamDelegate) {
+        
         Meshulam.shared().apiKey = apiKey
         Meshulam.shared().sum = sum
         Meshulam.shared().userId = userId
         Meshulam.shared().transactionId = transactionId
         Meshulam.shared().delegate = delegate
-        MeshulamPaymentManager.shared.callSettleSuspendedTransactionRequest()
+        
+        if MeshulamNetworkManager.shared.applicationToken.isEmpty {
+            MeshulamPaymentManager.shared.callInitSDK(resumeRequest: .settleSuspendedTransaction)
+        }
+        else {
+            MeshulamPaymentManager.shared.callSettleSuspendedTransactionRequest()
+        }
     }
     
     @objc public func getPaymentProcessInfo(processId: String, processToken: String, delegate: MeshulamDelegate) {
+        
         Meshulam.shared().processId = processId
         Meshulam.shared().processToken = processToken
         Meshulam.shared().delegate = delegate
-        MeshulamPaymentManager.shared.callGetPaymentProcessInfoRequest()
+        
+        if MeshulamNetworkManager.shared.applicationToken.isEmpty {
+            MeshulamPaymentManager.shared.callInitSDK(resumeRequest: .getPaymentProcessInfo)
+        }
+        else {
+            MeshulamPaymentManager.shared.callGetPaymentProcessInfoRequest()
+        }
     }
     
     @objc public func cancelBitTransaction(processId: String, processToken: String, pageCode: String, delegate: MeshulamDelegate) {
+        
         Meshulam.shared().processId = processId
         Meshulam.shared().processToken = processToken
         Meshulam.shared().delegate = delegate
         Meshulam.shared().pageCode = pageCode
-        MeshulamPaymentManager.shared.callCancelBitTransactionRequest()
+        
+        if MeshulamNetworkManager.shared.applicationToken.isEmpty {
+            MeshulamPaymentManager.shared.callInitSDK(resumeRequest: .cancelBitTransaction)
+        }
+        else {
+            MeshulamPaymentManager.shared.callCancelBitTransactionRequest()
+        }
     }
 
     @objc public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) {

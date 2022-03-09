@@ -5,7 +5,7 @@
 //  Created by Inmanage LTD on 03/08/2021.
 //
 
-import Foundation
+import UIKit
 
 class CancelBitTransactionRequest: MeshulamBaseRequest {
     public override func createResponseFromJSONDict(JSONDict: Dict) -> MeshulamBaseServerResponse? {
@@ -20,7 +20,7 @@ class CancelBitTransactionRequest: MeshulamBaseRequest {
         if !applicationToken.isEmpty {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }
-        
+
         let pageCode = Meshulam.shared().pageCode.aesEncrypt()
         if !pageCode.isEmpty {
             initialDictParams.updateValue(pageCode, forKey: ServerParamNames.pageCode)
@@ -30,7 +30,6 @@ class CancelBitTransactionRequest: MeshulamBaseRequest {
         if !processId.isEmpty {
             initialDictParams.updateValue(processId, forKey: ServerParamNames.processId)
         }
-        
         
         let processToken = Meshulam.shared().processToken
         if !processToken.isEmpty {

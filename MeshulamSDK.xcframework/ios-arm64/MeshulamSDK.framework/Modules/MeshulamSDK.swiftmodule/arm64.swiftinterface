@@ -18,6 +18,7 @@ import UIKit
   public func callGetPaymentProcessInfoRequest(requestFinishDelegate: MeshulamSDK.MeshulamRequestFinishedProtocol? = nil)
   public func callSettleSuspendedTransactionRequest(requestFinishDelegate: MeshulamSDK.MeshulamRequestFinishedProtocol? = nil)
   public func callDoPayment(requestFinishDelegate: MeshulamSDK.MeshulamRequestFinishedProtocol? = nil)
+  public func callInitSDK(requestFinishDelegate: MeshulamSDK.MeshulamRequestFinishedProtocol? = nil, resumeRequest: MeshulamSDK.MustNeddedInitSDK)
   @objc deinit
 }
 extension MeshulamPaymentManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
@@ -38,6 +39,16 @@ extension MeshulamPaymentManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
 }
 public typealias Dict = [Swift.String : Any]
 public struct Observers {
+}
+public enum MustNeddedInitSDK {
+  case cancelBitTransaction
+  case getPaymentProcessInfo
+  case settleSuspendedTransaction
+  public static func == (a: MeshulamSDK.MustNeddedInitSDK, b: MeshulamSDK.MustNeddedInitSDK) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct ServerRequests {
 }
@@ -68,6 +79,7 @@ public enum PaymentStatusOptions : Swift.Int {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc open class Meshulam : ObjectiveC.NSObject {
   @objc weak open var delegate: MeshulamSDK.MeshulamDelegate?
+  @objc open var isDebugMode: Swift.Bool
   @objc open class func shared() -> MeshulamSDK.Meshulam
   open class func destroy()
   @objc public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate)
@@ -178,6 +190,8 @@ public protocol MeshulamRequestFinishedProtocol : AnyObject {
   func requestSucceeded(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.BaseInnerResponse)
   func requestFailed(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.MeshulamBaseServerResponse?)
 }
+extension MeshulamSDK.MustNeddedInitSDK : Swift.Equatable {}
+extension MeshulamSDK.MustNeddedInitSDK : Swift.Hashable {}
 extension MeshulamSDK.PaymentStatusOptions : Swift.Equatable {}
 extension MeshulamSDK.PaymentStatusOptions : Swift.Hashable {}
 extension MeshulamSDK.PaymentStatusOptions : Swift.RawRepresentable {}

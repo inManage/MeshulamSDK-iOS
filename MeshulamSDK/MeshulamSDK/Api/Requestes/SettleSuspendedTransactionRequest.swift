@@ -5,7 +5,7 @@
 //  Created by Inmanage LTD on 23/06/2021.
 //
 
-import Foundation
+import UIKit
 
 class SettleSuspendedTransactionRequest: MeshulamBaseRequest {
     public override func createResponseFromJSONDict(JSONDict: Dict) -> MeshulamBaseServerResponse? {
@@ -16,6 +16,7 @@ class SettleSuspendedTransactionRequest: MeshulamBaseRequest {
     public static func createSettleSuspendedTransactionDictParams() -> Dict {
         var initialDictParams = [String:Any]()
         let applicationToken = MeshulamNetworkManager.shared.applicationToken
+        
         if !applicationToken.isEmpty {
             initialDictParams.updateValue(applicationToken, forKey: ServerParamNames.applicationToken)
         }
@@ -36,7 +37,7 @@ class SettleSuspendedTransactionRequest: MeshulamBaseRequest {
         }
         
         let transactionId = Meshulam.shared().transactionId
-        if !apiKey.isEmpty {
+        if !transactionId.isEmpty {
             initialDictParams.updateValue(transactionId, forKey: ServerParamNames.transactionId)
         }
 
