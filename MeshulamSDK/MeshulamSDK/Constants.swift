@@ -93,9 +93,9 @@ let logHelper = "\n\t\t"
 //print request + response to console
 public class Constants {
     #if DEBUG
-    static let debugMode = false
+    static let debugMode = true
     #else
-    static let debugMode = false
+    static let debugMode = true
     #endif
 }
 
