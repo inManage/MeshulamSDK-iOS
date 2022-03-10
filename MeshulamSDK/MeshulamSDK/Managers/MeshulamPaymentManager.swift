@@ -155,6 +155,10 @@ extension MeshulamPaymentManager: MeshulamRequestFinishedProtocol {
             
         case ServerRequests.initSDK:
             
+            if let response = response as? InitSDKResponse {
+                MeshulamNetworkManager.shared.fillWithInitSDKResponse(response)
+            }
+            
             switch resumeRequest {
             
             case .cancelBitTransaction:
