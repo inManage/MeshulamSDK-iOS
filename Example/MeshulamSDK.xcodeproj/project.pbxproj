@@ -188,7 +188,6 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				C770D7DF272FC85100A0C38B /* Embed Frameworks */,
 				3316DC0C4B36EBFE21771F8F /* [CP] Embed Pods Frameworks */,
-				50295752BEE5B37BEE5C68EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,49 +311,17 @@
 				"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MeshulamSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		50295752BEE5B37BEE5C68EF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-resources.sh",
-				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamMain.storyboardc",
-				"${BUILT_PRODUCTS_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamPopup.storyboardc",
-				"${PODS_ROOT}/../../../MeshulamSDK-iOS-Private/MeshulamSDK/MeshulamSDK/Resources/bitBackground.png",
-				"${PODS_ROOT}/../../../MeshulamSDK-iOS-Private/MeshulamSDK/MeshulamSDK/Resources/bitLogo.png",
-				"${PODS_ROOT}/../../../MeshulamSDK-iOS-Private/MeshulamSDK/MeshulamSDK/Resources/button2.png",
-				"${PODS_ROOT}/../../../MeshulamSDK-iOS-Private/MeshulamSDK/MeshulamSDK/Resources/group7.png",
-				"${PODS_ROOT}/../../../MeshulamSDK-iOS-Private/MeshulamSDK/MeshulamSDK/Resources/x.png",
-				"${PODS_ROOT}/../../../MeshulamSDK-iOS-Private/MeshulamSDK/MeshulamSDK/Resources/xCopy.png",
-				"${PODS_ROOT}/../../../MeshulamSDK-iOS-Private/MeshulamSDK/MeshulamSDK/Resources/loader.json",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeshulamMain.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MeshulamPopup.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitBackground.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bitLogo.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/button2.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/group7.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xCopy.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/loader.json",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeshulamSDK_Example/Pods-MeshulamSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B2FE3E6F221BD3C8562983FC /* [CP] Check Pods Manifest.lock */ = {
