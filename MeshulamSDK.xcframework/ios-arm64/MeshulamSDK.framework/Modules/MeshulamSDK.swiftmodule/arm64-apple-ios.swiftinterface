@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 effective-4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 effective-4.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name MeshulamSDK
 import CommonCrypto
 import Foundation
 @_exported import MeshulamSDK
 import Swift
 import UIKit
+import _Concurrency
 @_hasMissingDesignatedInitializers public class MeshulamPaymentManager {
   public static var shared: MeshulamSDK.MeshulamPaymentManager
   public var isTappedOnExitBtn: Swift.Bool
@@ -21,7 +22,7 @@ import UIKit
   public func callInitSDK(requestFinishDelegate: MeshulamSDK.MeshulamRequestFinishedProtocol? = nil, resumeRequest: MeshulamSDK.MustNeddedInitSDK)
   @objc deinit
 }
-extension MeshulamPaymentManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
+extension MeshulamSDK.MeshulamPaymentManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
   public func requestSucceeded(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.BaseInnerResponse)
   public func requestFailed(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.MeshulamBaseServerResponse?)
 }
@@ -39,6 +40,8 @@ extension MeshulamPaymentManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
 }
 public typealias Dict = [Swift.String : Any]
 public struct Observers {
+}
+public struct BundleApp {
 }
 public enum MustNeddedInitSDK {
   case cancelBitTransaction
@@ -59,7 +62,6 @@ public struct HeadersRequest {
 public struct Encryption {
 }
 @_hasMissingDesignatedInitializers @objc public class Error : ObjectiveC.NSObject {
-  @objc override dynamic public init()
   @objc deinit
 }
 public enum PaymentStatusOptions : Swift.Int {
@@ -128,7 +130,7 @@ public enum PaymentStatusOptions : Swift.Int {
   public func callInitSDK(requestFinishDelegate: MeshulamSDK.MeshulamRequestFinishedProtocol? = nil)
   @objc deinit
 }
-extension MeshulamStartupManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
+extension MeshulamSDK.MeshulamStartupManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
   public func requestSucceeded(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.BaseInnerResponse)
   public func requestFailed(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.MeshulamBaseServerResponse?)
 }
@@ -144,7 +146,7 @@ extension MeshulamStartupManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
 @_hasMissingDesignatedInitializers public class MeshulamBaseServerResponse {
   @objc deinit
 }
-extension UIFont {
+extension UIKit.UIFont {
   public static func jbs_registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle)
 }
 @objc public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
@@ -182,7 +184,7 @@ extension UIFont {
   @objc override dynamic public init()
   @objc deinit
 }
-extension MeshulamNetworkManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
+extension MeshulamSDK.MeshulamNetworkManager : MeshulamSDK.MeshulamRequestFinishedProtocol {
   public func requestSucceeded(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.BaseInnerResponse)
   public func requestFailed(request: MeshulamSDK.MeshulamBaseRequest, response: MeshulamSDK.MeshulamBaseServerResponse?)
 }
