@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '11.0'
 
 target 'MeshulamSDK_Example' do
-  pod 'MeshulamSDK' , :path => '/Users/omercohen/IOS Project/MeshulamSDK-iOS-Private/MeshulamSDK.podspec'
+  pod 'MeshulamSDK' 
 
   target 'MeshulamSDK_Tests' do
     inherit! :search_paths
