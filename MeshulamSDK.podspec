@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
     s.name = "MeshulamSDK"
-    s.version = "0.4.9"
+    s.version = "0.5.0"
     s.summary = 'A short description of MeshulamSDK.'
     s.description = <<-DESC
     TODO: Add long description of the pod here.
     DESC
-    
+
     s.homepage = "https://github.com/inManage/MeshulamSDK-iOS"
     s.license = { :type => 'MIT', :file => 'LICENSE' }
     s.author = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
@@ -27,5 +27,5 @@ Pod::Spec.new do |s|
     # pods
     s.dependency 'Alamofire'
     s.dependency 'lottie-ios'
-      
+
     end
