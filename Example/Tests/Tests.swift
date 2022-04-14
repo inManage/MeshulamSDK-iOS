@@ -1,5 +1,4 @@
 import XCTest
-import MeshulamSDK
 
 class Tests: XCTestCase {
     

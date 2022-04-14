@@ -1,9 +1,9 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 target 'MeshulamSDK_Example' do
-  pod 'MeshulamSDK', :path => '../'
+  pod 'MeshulamSDK' 
 
   target 'MeshulamSDK_Tests' do
     inherit! :search_paths

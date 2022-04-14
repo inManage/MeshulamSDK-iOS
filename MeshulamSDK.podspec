@@ -4,39 +4,28 @@
 #
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+#MeshulamSDK
 
 Pod::Spec.new do |s|
-  s.name             = 'MeshulamSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MeshulamSDK.'
+    s.name = "MeshulamSDK"
+    s.version = "0.4.9"
+    s.summary = 'A short description of MeshulamSDK.'
+    s.description = <<-DESC
+    TODO: Add long description of the pod here.
+    DESC
+    
+    s.homepage = "https://github.com/inManage/MeshulamSDK-iOS"
+    s.license = { :type => 'MIT', :file => 'LICENSE' }
+    s.author = { 'inmanage@gmail.com' => 'inmanage@gmail.com' }
+    s.platform = :ios, '11.0'
+    s.vendored_frameworks = 'MeshulamSDK.xcframework'
+    s.source = { :git => 'https://github.com/inManage/MeshulamSDK-iOS.git', :tag => s.version.to_s }
+    s.ios.deployment_target = '11.0'
+    s.static_framework = true
+    s.swift_version = '4.0'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/amita@inmanage.net/MeshulamSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'amita@inmanage.net' => 'amita@inmanage.net' }
-  s.source           = { :git => 'https://github.com/amita@inmanage.net/MeshulamSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '9.0'
-
-  s.source_files = 'MeshulamSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'MeshulamSDK' => ['MeshulamSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
-end
+    # pods
+    s.dependency 'Alamofire'
+    s.dependency 'lottie-ios'
+      
+    end
