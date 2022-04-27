@@ -287,6 +287,7 @@ SWIFT_PROTOCOL("_TtP11MeshulamSDK16MeshulamDelegate_")
 - (void)getPaymentProcessInfoSuccessWithResponse:(NSString * _Nonnull)response;
 - (void)onFailure:(NSString * _Nonnull)error;
 - (void)onCancel;
+- (void)didCloseMeshulamSDK;
 @end
 
 
@@ -620,6 +621,7 @@ SWIFT_PROTOCOL("_TtP11MeshulamSDK16MeshulamDelegate_")
 - (void)getPaymentProcessInfoSuccessWithResponse:(NSString * _Nonnull)response;
 - (void)onFailure:(NSString * _Nonnull)error;
 - (void)onCancel;
+- (void)didCloseMeshulamSDK;
 @end
 
 

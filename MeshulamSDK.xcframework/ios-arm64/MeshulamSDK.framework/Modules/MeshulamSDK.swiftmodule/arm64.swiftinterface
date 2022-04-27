@@ -156,6 +156,7 @@ extension UIKit.UIFont {
   @objc func getPaymentProcessInfoSuccess(response: Swift.String)
   @objc func onFailure(_ error: Swift.String)
   @objc func onCancel()
+  @objc func didCloseMeshulamSDK()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ErrorResponse : MeshulamSDK.BaseInnerResponse {
   @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse

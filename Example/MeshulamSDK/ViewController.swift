@@ -84,6 +84,11 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: MeshulamDelegate {
+    
+    func didCloseMeshulamSDK() {
+        print("")
+    }
+    
     func onFailure(_ error: String) {
         //spinner.stopAnimating()
         showAlert(titiel: "error", message: "error: \(error)")
