@@ -29,7 +29,6 @@ class ViewController: UIViewController {
                                     phoneNumber: "0542533691",
                                     sum: "1",
                                     delegate: self)
-
     }
     
     private func settleSuspendedTransaction() {

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MeshulamSDK-Swift.h</key>
 		<data>
-		6m/Rrx/XrCahaXl5yckkb1jdwTA=
+		9ipejHBmqukvuw1C96AKMRykyP0=
 		</data>
 		<key>Headers/MeshulamSDK.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		91iPuxmDm35WA7sJ6Hi9auSPiPw=
+		ieDS6ZMDWcxKEnnEbbqq58m6N14=
 		</data>
 		<key>MeshulamLoader.gif</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>MeshulamMain.storyboardc/BitStatusViewController.nib</key>
 		<data>
-		JvKUcAjukyr8F971Wqmz0whichI=
+		rBpLS5f9aw6t/bprbBuzoY05uWk=
 		</data>
 		<key>MeshulamMain.storyboardc/Info.plist</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>MeshulamMain.storyboardc/vRf-mA-fx9-view-Qn2-dw-2HA.nib</key>
 		<data>
-		NkstxoqUVrZ2pXIs1oRf8wYsI/g=
+		y8fu12C3dYwkq7JD2J5KnG/x3rI=
 		</data>
 		<key>MeshulamPopup.storyboardc/Info.plist</key>
 		<data>
@@ -66,59 +66,59 @@
 		</data>
 		<key>MeshulamPopup.storyboardc/MeshulamPopupViewController.nib</key>
 		<data>
-		7Qwd1ccmu/+/RmUFo4IaNRgAaWY=
+		FM/VHlt9Jybwcyf3j7WoAKryeHI=
 		</data>
 		<key>MeshulamPopup.storyboardc/N0f-o5-aju-view-BFh-wS-jCE.nib</key>
 		<data>
-		okLeFgoCQYt39Ydu3ee1T8Qxws0=
+		Ytr9UfTbLmsyIK2F4/AZMoFyO4w=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		NZnLkRCzQQBKfE3EQs0iKZRdd94=
+		/bPC3/CuccB1omHLIPAvawCc9S4=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aAvu3A7PA6gYVnCKtTp/Gf6FOuE=
+		+29zg7KRWbLrlxd5R5HOiQJJwk8=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DGPVs6uPLhqviuCGnc0nV3OWGRs=
+		3m4PFUaFKVUGQ5eLvLtazlBh8D8=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		NZnLkRCzQQBKfE3EQs0iKZRdd94=
+		/bPC3/CuccB1omHLIPAvawCc9S4=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		aAvu3A7PA6gYVnCKtTp/Gf6FOuE=
+		+29zg7KRWbLrlxd5R5HOiQJJwk8=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		DGPVs6uPLhqviuCGnc0nV3OWGRs=
+		3m4PFUaFKVUGQ5eLvLtazlBh8D8=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ZItlDxbPujW307iPO9m7iriPmaE=
+		tohwpBf/ISin2fityeoXf2X257s=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tGUNos1+n8ygkJytyG7mozQGKhI=
+		NpIKpxWpninGMuLBedh7LkVu2Ew=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kWuM+cvmSuGxOnXEbScxJNe4eIQ=
+		lg4wqyjmPOoxo3WLT7PH/2d/gyI=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		ZItlDxbPujW307iPO9m7iriPmaE=
+		tohwpBf/ISin2fityeoXf2X257s=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		tGUNos1+n8ygkJytyG7mozQGKhI=
+		NpIKpxWpninGMuLBedh7LkVu2Ew=
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		kWuM+cvmSuGxOnXEbScxJNe4eIQ=
+		lg4wqyjmPOoxo3WLT7PH/2d/gyI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uGkBRL5VSc6sNL2Cn8Cxg3CjhOyZ7NIMbk/KXf1kw5U=
+			tAQj4Jw+EGuR2gDkxAkvOWhnffgKEvewFD6oi8+O56I=
 			</data>
 		</dict>
 		<key>Headers/MeshulamSDK.h</key>
@@ -229,7 +229,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s3YUPfDOjLGiUsIRh651oittNJB+aIldguALkcvyxjs=
+			qGDnu6nneqDZC9neYOBoVrftebsOEiPjPbxkL3PfGE0=
 			</data>
 		</dict>
 		<key>MeshulamMain.storyboardc/Info.plist</key>
@@ -243,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KmXonwVgGTWWFUNe/WvwOPsaN2wqka1+Xs22enkg1qU=
+			+mZRYC8NGoqNlimS2vfulUOkWAUbAnOARflgc0h6FD4=
 			</data>
 		</dict>
 		<key>MeshulamPopup.storyboardc/Info.plist</key>
@@ -257,98 +257,98 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1QnDKOi5hbYkQjWiu/Kh5B7PEthtTWpETnQJjSKL0W0=
+			gVSAhohYzRQ5gQPFRLZ27ikx4StyJ/89ohNWfBgS4fc=
 			</data>
 		</dict>
 		<key>MeshulamPopup.storyboardc/N0f-o5-aju-view-BFh-wS-jCE.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eFZ9c7IhtQiUrMRTJ9+g/qIMFWGc8xNVXAUE6Jo+4MM=
+			YYQPl9qf01VjGYr18mbCdUmmQFTxpvIc2d5lJJlp1E8=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T6m0MDqLkftlKWoBUZV0zG+fODYT2PPUWsqPIFKaQa4=
+			3gg83ljISr6Zv5eMj8mTXb6ebYMQV0RQi9UAyeci1YQ=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qq0p1u9WK+OcTxvBMm63gLsGMQScfM+i1X2ny7zyi6k=
+			mjXHAyLXNYdl0yMf73DaPVKaQKljnfgg1PG7QYXmpgo=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YE7rWGgaNtfG1rwRr/noOp4tAZq+v4CVAJ7SesB+nzM=
+			UMLEVZ8cRjZjPDEQY29zYTxxK0udDkdEXE9FxOixleI=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T6m0MDqLkftlKWoBUZV0zG+fODYT2PPUWsqPIFKaQa4=
+			3gg83ljISr6Zv5eMj8mTXb6ebYMQV0RQi9UAyeci1YQ=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qq0p1u9WK+OcTxvBMm63gLsGMQScfM+i1X2ny7zyi6k=
+			mjXHAyLXNYdl0yMf73DaPVKaQKljnfgg1PG7QYXmpgo=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YE7rWGgaNtfG1rwRr/noOp4tAZq+v4CVAJ7SesB+nzM=
+			UMLEVZ8cRjZjPDEQY29zYTxxK0udDkdEXE9FxOixleI=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DyrwemjK0I6WP+qAF62Rh4rJ3Sd/Ap26pgOi4nBuNJQ=
+			9c2ueDoFkgi992ui2w1z7+fjph8JA73zFehwuKQcgKE=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xhvd/PIKLEs9FP1souB+jVMRdFYbZu1UvpBxFJHIhgU=
+			BgMieMf0KHE4do3IzuvsCepcNIGD0fq7HYNvRTh1rr4=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UvRUSkKtPgHNksQdtikC/WwO39/Y19Mm/zY6hlKo9DA=
+			NHbUeRZ8pMrhNPnpHjfFsaL2OTo0PSkUf4kxIWYQlhM=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DyrwemjK0I6WP+qAF62Rh4rJ3Sd/Ap26pgOi4nBuNJQ=
+			9c2ueDoFkgi992ui2w1z7+fjph8JA73zFehwuKQcgKE=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xhvd/PIKLEs9FP1souB+jVMRdFYbZu1UvpBxFJHIhgU=
+			BgMieMf0KHE4do3IzuvsCepcNIGD0fq7HYNvRTh1rr4=
 			</data>
 		</dict>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UvRUSkKtPgHNksQdtikC/WwO39/Y19Mm/zY6hlKo9DA=
+			NHbUeRZ8pMrhNPnpHjfFsaL2OTo0PSkUf4kxIWYQlhM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
