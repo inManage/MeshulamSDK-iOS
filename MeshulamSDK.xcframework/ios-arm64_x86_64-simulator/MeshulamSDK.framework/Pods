@@ -1,0 +1,4 @@
+
+pod 'MeshulamSDK' , :git => 'https://github.com/inManage/MeshulamSDK-iOS.git'
+pod 'MeshulamSDK' , :path => '/Users/omercohen/IOS Project/MeshulamSDK-iOS/MeshulamSDK.podspec'
+pod 'MeshulamSDK' , :path => '../MeshulamSDK.podspec'

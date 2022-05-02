@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/MeshulamSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		toCYaJT6Mx9tGGNaB1fphhtUTxw=
+		LUKbNNY3vy9ZxDh0xXKKFwRWWJU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,6 +91,10 @@
 		<key>OFL.txt</key>
 		<data>
 		42edrk11kCGIejxPnwrwxIyiOqY=
+		</data>
+		<key>Pods</key>
+		<data>
+		3C4hK4UDqv7s8uxWgptXkoCBCG4=
 		</data>
 		<key>bitBackground.png</key>
 		<data>
@@ -253,7 +257,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JKm3BdcZE8czqpPRkfycX5we1sdECZRj5slCpG1bvWQ=
+			iaydL6gZiVRWEc7/gX89r7Hg2a/k1XwxTeaOAk4Kgvo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -268,6 +272,13 @@
 			<key>hash2</key>
 			<data>
 			qQqOvijzwpBaRFVxZgEKPSGf/M4XA8PDKA6oco1eLr0=
+			</data>
+		</dict>
+		<key>Pods</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8Q/BJoRBueXaS8eHEP+KVLSENjqDo+Wbb3RH2X0n260=
 			</data>
 		</dict>
 		<key>bitBackground.png</key>

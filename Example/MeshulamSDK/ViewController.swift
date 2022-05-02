@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        Meshulam.shared().isDebugMode = false
+        Meshulam.shared().meshulamStart()
     }
     
     private func configureMeshulamSDK() {
