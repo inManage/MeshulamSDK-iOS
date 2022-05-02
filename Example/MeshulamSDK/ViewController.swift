@@ -19,16 +19,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+ 
     }
     
     private func configureMeshulamSDK() {
-        Meshulam.shared().createPaymentProcess(pageCode: "535dd4248592",
-                                    apiKey: "566ac39a90e8",
-                                    userId: "b9e895139851c3c5",
-                                    fullName: "Amit Azulay",
-                                    phoneNumber: "0542533691",
-                                    sum: "1",
-                                    delegate: self)
+        Meshulam.shared().createPaymentProcess(pageCode: "535dd4248592", apiKey: "566ac39a90e8", userId: "b9e895139851c3c5", fullName: "omer cohen", phoneNumber: "0525503402", sum: "1", email: "omerm@inmanage.net", description: "", delegate: self)
     }
     
     private func settleSuspendedTransaction() {
@@ -36,23 +31,20 @@ class ViewController: UIViewController {
         Meshulam.shared().settleSuspendedTransaction(apiKey: "cbf3b862e094",
                                                      userId: "41deb6f1347ee8b2",
                                                      sum: "1",
-                                                     transactionId: transactionId,
-                                                     delegate: self)
+                                                     transactionId: transactionId, delegate: self)
     }
     
     private func handleGetPaymentProcessInfo() {
         startAnimate()
         Meshulam.shared().getPaymentProcessInfo(processId: processId,
-                                                processToken: processToken,
-                                                delegate: self)
+                                                processToken: processToken, delegate: self)
     }
     
     private func handleCancelBitTransaction() {
         startAnimate()
         Meshulam.shared().cancelBitTransaction(processId: processId,
                                                processToken: processToken,
-                                               pageCode: "535dd4248592",
-                                               delegate: self)
+                                               pageCode: "535dd4248592", delegate: self)
     }
 
     private func startAnimate() {
@@ -85,7 +77,6 @@ class ViewController: UIViewController {
 extension ViewController: MeshulamDelegate {
     
     func didCloseMeshulamSDK() {
-        print("")
     }
     
     func onFailure(_ error: String) {

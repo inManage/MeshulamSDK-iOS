@@ -1,13 +1,9 @@
 use_frameworks!
 
-platform :ios, '11.0'
+platform :ios, '12.3'
 
 target 'MeshulamSDK_Example' do
-#  pod 'MeshulamSDK' , :git => 'https://github.com/inManage/MeshulamSDK-iOS.git'
-  pod 'MeshulamSDK' , :path => '../MeshulamSDK.podspec'
 
-  target 'MeshulamSDK_Tests' do
-    inherit! :search_paths
-
-  end
+  pod 'MeshulamSDK'
+ 
 end
