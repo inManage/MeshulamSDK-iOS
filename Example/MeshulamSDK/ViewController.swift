@@ -19,18 +19,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Meshulam.shared().isDebugMode = false
+        Meshulam.shared().isDebugMode = true
         Meshulam.shared().meshulamStart()
     }
     
     private func configureMeshulamSDK() {
-        Meshulam.shared().createPaymentProcess(pageCode: "535dd4248592", apiKey: "566ac39a90e8", userId: "b9e895139851c3c5", fullName: "omer cohen", phoneNumber: "0525503402", sum: "1", email: "omerm@inmanage.net", description: "", delegate: self)
+        Meshulam.shared().createPaymentProcess(pageCode: "acf7864cd5ca", apiKey: "7a0d103abb5a", userId: "a20750bbad55a928", fullName: "omer cohen", phoneNumber: "0525503402", sum: "1", email: "omerm@inmanage.net", description: "", delegate: self)
     }
     
     private func settleSuspendedTransaction() {
         startAnimate()
         Meshulam.shared().settleSuspendedTransaction(apiKey: "cbf3b862e094",
-                                                     userId: "41deb6f1347ee8b2",
+                                                     userId: "41deb6f1347ee8b2", pageCode: "535dd4248592",
                                                      sum: "1",
                                                      transactionId: transactionId, delegate: self)
     }
@@ -97,12 +97,12 @@ extension ViewController: MeshulamDelegate {
         showAlert(titiel: "setBitPaymentSuccess", message: "transactionId: \(transactionId)")
     }
 
-    func settleSuspendedTransactionSuccess(response: String) {
+    func settleSuspendedTransactionSuccess(response: [String : Any]) {
         spinner.stopAnimating()
         showAlert(titiel: "settleSuspendedTransactionSuccess", message: "response: \(response)")
     }
     
-    func getPaymentProcessInfoSuccess(response: String) {
+    func getPaymentProcessInfoSuccess(response: [String : Any]) {
         spinner.stopAnimating()
         showAlert(titiel: "getPaymentProcessInfoSuccess", message: "response: \(response)")
     }

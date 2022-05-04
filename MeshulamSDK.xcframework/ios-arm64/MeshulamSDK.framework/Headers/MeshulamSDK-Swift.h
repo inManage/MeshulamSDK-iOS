@@ -275,9 +275,9 @@ SWIFT_CLASS("_TtC11MeshulamSDK8Meshulam")
 + (Meshulam * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)createPaymentProcessWithPageCode:(NSString * _Nonnull)pageCode apiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId fullName:(NSString * _Nonnull)fullName phoneNumber:(NSString * _Nonnull)phoneNumber sum:(NSString * _Nonnull)sum email:(NSString * _Nullable)email description:(NSString * _Nullable)description delegate:(id <MeshulamDelegate> _Nullable)delegate;
+- (void)createPaymentProcessWithPageCode:(NSString * _Nonnull)pageCode apiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId fullName:(NSString * _Nonnull)fullName phoneNumber:(NSString * _Nonnull)phoneNumber sum:(NSString * _Nonnull)sum email:(NSString * _Nullable)email description:(NSString * _Nullable)description saveCardToken:(NSString * _Nullable)saveCardToken companyCommission:(NSString * _Nullable)companyCommission delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)createPaymentProcessWithPaymentFeilds:(MeshulamPaymentFields * _Nonnull)paymentFeilds delegate:(id <MeshulamDelegate> _Nullable)delegate;
-- (void)settleSuspendedTransactionWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId sum:(NSString * _Nonnull)sum transactionId:(NSString * _Nonnull)transactionId delegate:(id <MeshulamDelegate> _Nullable)delegate;
+- (void)settleSuspendedTransactionWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId pageCode:(NSString * _Nonnull)pageCode sum:(NSString * _Nonnull)sum transactionId:(NSString * _Nonnull)transactionId delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)getPaymentProcessInfoWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)cancelBitTransactionWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken pageCode:(NSString * _Nonnull)pageCode delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options;
@@ -288,9 +288,9 @@ SWIFT_CLASS("_TtC11MeshulamSDK8Meshulam")
 SWIFT_PROTOCOL("_TtP11MeshulamSDK16MeshulamDelegate_")
 @protocol MeshulamDelegate <NSObject>
 - (void)setBitPaymentSuccess:(NSString * _Nonnull)transactionId;
-- (void)settleSuspendedTransactionSuccessWithResponse:(NSString * _Nonnull)response;
+- (void)settleSuspendedTransactionSuccessWithResponse:(NSDictionary<NSString *, id> * _Nonnull)response;
 - (void)createPaymentProccesSuccess:(NSString * _Nonnull)processId :(NSString * _Nonnull)processToken;
-- (void)getPaymentProcessInfoSuccessWithResponse:(NSString * _Nonnull)response;
+- (void)getPaymentProcessInfoSuccessWithResponse:(NSDictionary<NSString *, id> * _Nonnull)response;
 - (void)onFailure:(NSString * _Nonnull)error;
 - (void)onCancel;
 - (void)didCloseMeshulamSDK;

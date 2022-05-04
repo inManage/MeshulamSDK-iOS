@@ -4,7 +4,7 @@ platform :ios, '12.3'
 
 target 'MeshulamSDK_Example' do
 
-  pod 'MeshulamSDK'
+  pod 'MeshulamSDK' , :path => '../MeshulamSDK.podspec'
 
 
 end

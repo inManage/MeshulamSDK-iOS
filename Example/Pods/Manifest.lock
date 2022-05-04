@@ -1,24 +1,27 @@
 PODS:
   - Alamofire (5.6.1)
   - lottie-ios (3.3.0)
-  - MeshulamSDK (0.5.1):
+  - MeshulamSDK (0.5.4):
     - Alamofire
     - lottie-ios
 
 DEPENDENCIES:
-  - MeshulamSDK
+  - MeshulamSDK (from `../MeshulamSDK.podspec`)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - lottie-ios
-    - MeshulamSDK
+
+EXTERNAL SOURCES:
+  MeshulamSDK:
+    :path: "../MeshulamSDK.podspec"
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
-  MeshulamSDK: b465dc0e97d3aff2e64ef441cd0a6effdbf22d0d
+  MeshulamSDK: 9384eb56bfe1e295d4cf9969beed1dc2df960f0e
 
-PODFILE CHECKSUM: 59934e263451654119bc00f6f032386caf3ac2cd
+PODFILE CHECKSUM: 2655641487503679b1915d2897355a3af36b8a83
 
 COCOAPODS: 1.11.2

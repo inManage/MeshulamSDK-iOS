@@ -49,9 +49,9 @@ extension MeshulamSDK.MeshulamNetworkManager : MeshulamSDK.MeshulamRequestFinish
 }
 @objc public protocol MeshulamDelegate : ObjectiveC.NSObjectProtocol {
   @objc func setBitPaymentSuccess(_ transactionId: Swift.String)
-  @objc func settleSuspendedTransactionSuccess(response: Swift.String)
+  @objc func settleSuspendedTransactionSuccess(response: [Swift.String : Any])
   @objc func createPaymentProccesSuccess(_ processId: Swift.String, _ processToken: Swift.String)
-  @objc func getPaymentProcessInfoSuccess(response: Swift.String)
+  @objc func getPaymentProcessInfoSuccess(response: [Swift.String : Any])
   @objc func onFailure(_ error: Swift.String)
   @objc func onCancel()
   @objc func didCloseMeshulamSDK()
@@ -108,7 +108,7 @@ public struct SubjectType {
   public let suspendedTransactionResponse: Swift.String?
   public let processId: Swift.String?
   public let processToken: Swift.String?
-  public let ProcessInfoResponse: Swift.String?
+  public let ProcessInfoResponse: [Swift.String : Any]?
   public let error: Swift.String?
 }
 @_hasMissingDesignatedInitializers public class MeshulamBaseServerResponse {
@@ -134,9 +134,9 @@ public struct SubjectType {
   public func meshulamStart()
   @available(iOS 13, *)
   public func setMeshulamPublisher(subscriber: Combine.PassthroughSubject<MeshulamSDK.SubjectType, Swift.Never>?)
-  @objc public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate? = nil)
+  @objc public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, saveCardToken: Swift.String? = nil, companyCommission: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate? = nil)
   @objc public func createPaymentProcess(paymentFeilds: MeshulamSDK.MeshulamPaymentFields, delegate: MeshulamSDK.MeshulamDelegate? = nil)
-  @objc public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, sum: Swift.String, transactionId: Swift.String, delegate: MeshulamSDK.MeshulamDelegate? = nil)
+  @objc public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, pageCode: Swift.String, sum: Swift.String, transactionId: Swift.String, delegate: MeshulamSDK.MeshulamDelegate? = nil)
   @objc public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate? = nil)
   @objc public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String, pageCode: Swift.String, delegate: MeshulamSDK.MeshulamDelegate? = nil)
   @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:])
