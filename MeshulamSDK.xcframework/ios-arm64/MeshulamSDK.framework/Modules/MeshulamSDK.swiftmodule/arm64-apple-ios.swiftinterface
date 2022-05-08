@@ -15,6 +15,16 @@ import _Concurrency
   @objc dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
   @objc deinit
 }
+public enum statusType {
+  case initSDK
+  case payment
+  case none
+  public static func == (a: MeshulamSDK.statusType, b: MeshulamSDK.statusType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers public class MeshulamNetworkManager : ObjectiveC.NSObject {
   public static let shared: MeshulamSDK.MeshulamNetworkManager
   public var baseURL: Swift.String {
@@ -34,7 +44,8 @@ import _Concurrency
   }
   public func sendRequest(_ request: MeshulamSDK.MeshulamBaseRequest)
   public func fillWithInitSDKResponse(_ response: MeshulamSDK.InitSDKResponse)
-  @objc public func update()
+  @objc public func updateTimer()
+  public func stopTimer()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -137,7 +148,7 @@ public struct SubjectType {
   @objc public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, saveCardToken: Swift.String? = nil, companyCommission: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate? = nil)
   @objc public func createPaymentProcess(paymentFeilds: MeshulamSDK.MeshulamPaymentFields, delegate: MeshulamSDK.MeshulamDelegate? = nil)
   @objc public func settleSuspendedTransaction(apiKey: Swift.String, userId: Swift.String, pageCode: Swift.String, sum: Swift.String, transactionId: Swift.String, delegate: MeshulamSDK.MeshulamDelegate? = nil)
-  @objc public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String, delegate: MeshulamSDK.MeshulamDelegate? = nil)
+  @objc public func getPaymentProcessInfo(processId: Swift.String, processToken: Swift.String, pageCode: Swift.String, delegate: MeshulamSDK.MeshulamDelegate? = nil)
   @objc public func cancelBitTransaction(processId: Swift.String, processToken: Swift.String, pageCode: Swift.String, delegate: MeshulamSDK.MeshulamDelegate? = nil)
   @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:])
   @objc deinit
@@ -229,6 +240,8 @@ public enum PaymentStatusOptions : Swift.Int {
   @objc override dynamic public func buildFromJSONDict(JSONDict: MeshulamSDK.Dict) -> MeshulamSDK.BaseInnerResponse
   @objc deinit
 }
+extension MeshulamSDK.statusType : Swift.Equatable {}
+extension MeshulamSDK.statusType : Swift.Hashable {}
 extension MeshulamSDK.CombineTypes : Swift.Equatable {}
 extension MeshulamSDK.CombineTypes : Swift.Hashable {}
 extension MeshulamSDK.MustNeddedInitSDK : Swift.Equatable {}

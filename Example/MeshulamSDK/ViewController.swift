@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     private func handleGetPaymentProcessInfo() {
         startAnimate()
         Meshulam.shared().getPaymentProcessInfo(processId: processId,
-                                                processToken: processToken, delegate: self)
+                                                processToken: processToken, pageCode: "535dd4248592", delegate: self)
     }
     
     private func handleCancelBitTransaction() {

@@ -278,7 +278,7 @@ SWIFT_CLASS("_TtC11MeshulamSDK8Meshulam")
 - (void)createPaymentProcessWithPageCode:(NSString * _Nonnull)pageCode apiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId fullName:(NSString * _Nonnull)fullName phoneNumber:(NSString * _Nonnull)phoneNumber sum:(NSString * _Nonnull)sum email:(NSString * _Nullable)email description:(NSString * _Nullable)description saveCardToken:(NSString * _Nullable)saveCardToken companyCommission:(NSString * _Nullable)companyCommission delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)createPaymentProcessWithPaymentFeilds:(MeshulamPaymentFields * _Nonnull)paymentFeilds delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)settleSuspendedTransactionWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId pageCode:(NSString * _Nonnull)pageCode sum:(NSString * _Nonnull)sum transactionId:(NSString * _Nonnull)transactionId delegate:(id <MeshulamDelegate> _Nullable)delegate;
-- (void)getPaymentProcessInfoWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken delegate:(id <MeshulamDelegate> _Nullable)delegate;
+- (void)getPaymentProcessInfoWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken pageCode:(NSString * _Nonnull)pageCode delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)cancelBitTransactionWithProcessId:(NSString * _Nonnull)processId processToken:(NSString * _Nonnull)processToken pageCode:(NSString * _Nonnull)pageCode delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options;
 @end
@@ -299,7 +299,7 @@ SWIFT_PROTOCOL("_TtP11MeshulamSDK16MeshulamDelegate_")
 
 SWIFT_CLASS("_TtC11MeshulamSDK22MeshulamNetworkManager")
 @interface MeshulamNetworkManager : NSObject
-- (void)update;
+- (void)updateTimer;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
