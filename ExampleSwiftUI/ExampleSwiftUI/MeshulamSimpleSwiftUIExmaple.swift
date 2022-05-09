@@ -96,8 +96,8 @@ class viewmodel : ObservableObject {
                 print("meshulam did dismiss is view and call publisher ")
             case .cancel:
                 print("meshulam did cancel is view and call publisher ")
-//            case .bitPaymentSuccess:
-//                print("meshulam bitPaymentSuccess publisher ")
+            case .bitPaymentSuccess:
+                print("meshulam bitPaymentSuccess publisher ")
             }
             
         }

@@ -102,6 +102,7 @@ public enum CombineTypes {
   case start
   case failure
   case paymentSuccess
+  case bitPaymentSuccess
   case suspendedTransactionSuccess
   case processInfo
   case dismiss
@@ -116,7 +117,7 @@ public struct SubjectType {
   public let type: MeshulamSDK.CombineTypes
   public let transactionId: Swift.String?
   public let paymentProccesResponse: Swift.String?
-  public let suspendedTransactionResponse: Swift.String?
+  public let suspendedTransactionResponse: [Swift.String : Any]?
   public let processId: Swift.String?
   public let processToken: Swift.String?
   public let ProcessInfoResponse: [Swift.String : Any]?

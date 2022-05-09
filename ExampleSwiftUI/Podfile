@@ -13,16 +13,15 @@ platform :ios, '12.3'
 ENV['SWIFT_VERSION'] = '5.0'
 use_frameworks!
 
-workspace 'MeshulamWorkspace'
+#workspace 'MeshulamWorkspace'
 
 def shared_pods
   pod 'Alamofire'
   pod 'lottie-ios'
 end
 
-
 target 'ExampleSwiftUI' do
-  pod 'MeshulamSDK'
+  pod 'MeshulamSDK', :path => '../MeshulamSDK.podspec'
 end
 
 ##bitcode enable

@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/MeshulamSDK/MeshulamSDK-xcframeworks.sh
-${PODS_ROOT}/MeshulamSDK/MeshulamSDK.xcframework
+${PODS_ROOT}/../../MeshulamSDK.xcframework
