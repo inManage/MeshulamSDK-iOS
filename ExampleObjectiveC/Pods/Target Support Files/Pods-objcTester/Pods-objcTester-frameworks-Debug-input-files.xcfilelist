@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-objcTester/Pods-objcTester-frameworks.sh
-${PODS_ROOT}/../../MeshulamSDK.framework
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MeshulamSDK/MeshulamSDK.framework/MeshulamSDK
