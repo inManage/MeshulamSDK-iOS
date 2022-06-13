@@ -19,12 +19,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Meshulam.shared().isDebugMode = true
+        Meshulam.shared().isDebugMode = false
         Meshulam.shared().meshulamStart()
     }
     
     private func configureMeshulamSDK() {
-        Meshulam.shared().createPaymentProcess(pageCode: "acf7864cd5ca", apiKey: "7a0d103abb5a", userId: "a20750bbad55a928", fullName: "omer cohen", phoneNumber: "0525503402", sum: "1", email: "omerm@inmanage.net", description: "", delegate: self)
+//        Meshulam.shared().createPaymentProcess(pageCode: "535dd4248592", apiKey: "566ac39a90e8", userId: "b9e895139851c3c5", fullName: "omer cohen", phoneNumber: "0525503402", sum: "1", email: "omerm@inmanage.net", description: "", delegate: self)
+        
+        Meshulam.shared().createPaymentProcess(pageCode: "535dd4248592", apiKey: "566ac39a90e8", userId: "b9e895139851c3c5", fullName: "omer cohen", phoneNumber: "0525503402", sum: "1", email: "omerm@inmanage.net", description: "", saveCardToken: nil, companyCommission: nil, delegate: self)
+
+    
     }
     
     private func settleSuspendedTransaction() {

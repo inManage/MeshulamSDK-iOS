@@ -275,6 +275,7 @@ SWIFT_CLASS("_TtC11MeshulamSDK8Meshulam")
 + (Meshulam * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)meshulamStart;
 - (void)createPaymentProcessWithPageCode:(NSString * _Nonnull)pageCode apiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId fullName:(NSString * _Nonnull)fullName phoneNumber:(NSString * _Nonnull)phoneNumber sum:(NSString * _Nonnull)sum email:(NSString * _Nullable)email description:(NSString * _Nullable)description saveCardToken:(NSString * _Nullable)saveCardToken companyCommission:(NSString * _Nullable)companyCommission delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)createPaymentProcessWithPaymentFeilds:(MeshulamPaymentFields * _Nonnull)paymentFeilds delegate:(id <MeshulamDelegate> _Nullable)delegate;
 - (void)settleSuspendedTransactionWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId pageCode:(NSString * _Nonnull)pageCode sum:(NSString * _Nonnull)sum transactionId:(NSString * _Nonnull)transactionId delegate:(id <MeshulamDelegate> _Nullable)delegate;

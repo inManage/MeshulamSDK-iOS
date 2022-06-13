@@ -143,7 +143,7 @@ public struct SubjectType {
   @objc open var isDebugMode: Swift.Bool
   @objc open class func shared() -> MeshulamSDK.Meshulam
   open class func destroy()
-  public func meshulamStart()
+  @objc public func meshulamStart()
   @available(iOS 13, *)
   public func setMeshulamPublisher(subscriber: Combine.PassthroughSubject<MeshulamSDK.SubjectType, Swift.Never>?)
   @objc public func createPaymentProcess(pageCode: Swift.String, apiKey: Swift.String, userId: Swift.String, fullName: Swift.String, phoneNumber: Swift.String, sum: Swift.String, email: Swift.String? = nil, description: Swift.String? = nil, saveCardToken: Swift.String? = nil, companyCommission: Swift.String? = nil, delegate: MeshulamSDK.MeshulamDelegate? = nil)
